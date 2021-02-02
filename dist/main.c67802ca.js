@@ -30049,4 +30049,34 @@ var mySwiper = new _bundle.default('.swiper-container', {
     clickable: true
   }
 });
+var postSlider = new _bundle.default('.post-slider', {
+  slidesPerView: 1,
+  loop: true,
+  spaceBetween: 10,
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev'
+  },
+  breakpoints: {
+    640: {
+      slidesPerView: 2,
+      spaceBetween: 30
+    }
+  }
+}); // const mediaQuery = window.matchMedia('(max-width: 767px)');
+// if (mediaQuery.matches) {
+// 	let targetDom = document.getElementById('navbarNav');
+// 	let socialLink = document.getElementById('social-link');
+// 	targetDom.appendChild(socialLink);
+// }
+
+document.getElementById("burger-btn").onclick = function () {
+  open();
+};
+
+function open() {
+  document.getElementById("header-nav").classList.toggle("show");
+}
+
+;
 },{"bootstrap":"s7bG","swiper/bundle":"ydBv"}]},{},["iFOF"], null)
