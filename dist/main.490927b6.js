@@ -30026,57 +30026,353 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var components = [_virtual.default, _keyboard.default, _mousewheel.default, _navigation.default, _pagination.default, _scrollbar.default, _parallax.default, _zoom.default, _lazy.default, _controller.default, _a11y.default, _history.default, _hashNavigation.default, _autoplay.default, _effectFade.default, _effectCube.default, _effectFlip.default, _effectCoverflow.default, _thumbs.default];
 
 _coreClass.default.use(components);
-},{"./esm/components/core/core-class":"fy7h","./esm/components/virtual/virtual":"lPeZ","./esm/components/keyboard/keyboard":"UABp","./esm/components/mousewheel/mousewheel":"L2R1","./esm/components/navigation/navigation":"DoDY","./esm/components/pagination/pagination":"J0PB","./esm/components/scrollbar/scrollbar":"Z0BC","./esm/components/parallax/parallax":"j5qV","./esm/components/zoom/zoom":"YM4o","./esm/components/lazy/lazy":"PYk5","./esm/components/controller/controller":"mvHS","./esm/components/a11y/a11y":"L3uL","./esm/components/history/history":"TBmA","./esm/components/hash-navigation/hash-navigation":"zI9Y","./esm/components/autoplay/autoplay":"BO68","./esm/components/effect-fade/effect-fade":"N4V4","./esm/components/effect-cube/effect-cube":"DYMQ","./esm/components/effect-flip/effect-flip":"uwwl","./esm/components/effect-coverflow/effect-coverflow":"fg0O","./esm/components/thumbs/thumbs":"gpDU"}],"iFOF":[function(require,module,exports) {
+},{"./esm/components/core/core-class":"fy7h","./esm/components/virtual/virtual":"lPeZ","./esm/components/keyboard/keyboard":"UABp","./esm/components/mousewheel/mousewheel":"L2R1","./esm/components/navigation/navigation":"DoDY","./esm/components/pagination/pagination":"J0PB","./esm/components/scrollbar/scrollbar":"Z0BC","./esm/components/parallax/parallax":"j5qV","./esm/components/zoom/zoom":"YM4o","./esm/components/lazy/lazy":"PYk5","./esm/components/controller/controller":"mvHS","./esm/components/a11y/a11y":"L3uL","./esm/components/history/history":"TBmA","./esm/components/hash-navigation/hash-navigation":"zI9Y","./esm/components/autoplay/autoplay":"BO68","./esm/components/effect-fade/effect-fade":"N4V4","./esm/components/effect-cube/effect-cube":"DYMQ","./esm/components/effect-flip/effect-flip":"uwwl","./esm/components/effect-coverflow/effect-coverflow":"fg0O","./esm/components/thumbs/thumbs":"gpDU"}],"FJWo":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+Object.defineProperty(exports, "Swiper", {
+  enumerable: true,
+  get: function () {
+    return _coreClass.default;
+  }
+});
+Object.defineProperty(exports, "default", {
+  enumerable: true,
+  get: function () {
+    return _coreClass.default;
+  }
+});
+Object.defineProperty(exports, "Virtual", {
+  enumerable: true,
+  get: function () {
+    return _virtual.default;
+  }
+});
+Object.defineProperty(exports, "Keyboard", {
+  enumerable: true,
+  get: function () {
+    return _keyboard.default;
+  }
+});
+Object.defineProperty(exports, "Mousewheel", {
+  enumerable: true,
+  get: function () {
+    return _mousewheel.default;
+  }
+});
+Object.defineProperty(exports, "Navigation", {
+  enumerable: true,
+  get: function () {
+    return _navigation.default;
+  }
+});
+Object.defineProperty(exports, "Pagination", {
+  enumerable: true,
+  get: function () {
+    return _pagination.default;
+  }
+});
+Object.defineProperty(exports, "Scrollbar", {
+  enumerable: true,
+  get: function () {
+    return _scrollbar.default;
+  }
+});
+Object.defineProperty(exports, "Parallax", {
+  enumerable: true,
+  get: function () {
+    return _parallax.default;
+  }
+});
+Object.defineProperty(exports, "Zoom", {
+  enumerable: true,
+  get: function () {
+    return _zoom.default;
+  }
+});
+Object.defineProperty(exports, "Lazy", {
+  enumerable: true,
+  get: function () {
+    return _lazy.default;
+  }
+});
+Object.defineProperty(exports, "Controller", {
+  enumerable: true,
+  get: function () {
+    return _controller.default;
+  }
+});
+Object.defineProperty(exports, "A11y", {
+  enumerable: true,
+  get: function () {
+    return _a11y.default;
+  }
+});
+Object.defineProperty(exports, "History", {
+  enumerable: true,
+  get: function () {
+    return _history.default;
+  }
+});
+Object.defineProperty(exports, "HashNavigation", {
+  enumerable: true,
+  get: function () {
+    return _hashNavigation.default;
+  }
+});
+Object.defineProperty(exports, "Autoplay", {
+  enumerable: true,
+  get: function () {
+    return _autoplay.default;
+  }
+});
+Object.defineProperty(exports, "EffectFade", {
+  enumerable: true,
+  get: function () {
+    return _effectFade.default;
+  }
+});
+Object.defineProperty(exports, "EffectCube", {
+  enumerable: true,
+  get: function () {
+    return _effectCube.default;
+  }
+});
+Object.defineProperty(exports, "EffectFlip", {
+  enumerable: true,
+  get: function () {
+    return _effectFlip.default;
+  }
+});
+Object.defineProperty(exports, "EffectCoverflow", {
+  enumerable: true,
+  get: function () {
+    return _effectCoverflow.default;
+  }
+});
+Object.defineProperty(exports, "Thumbs", {
+  enumerable: true,
+  get: function () {
+    return _thumbs.default;
+  }
+});
+
+var _coreClass = _interopRequireDefault(require("./esm/components/core/core-class"));
+
+var _virtual = _interopRequireDefault(require("./esm/components/virtual/virtual"));
+
+var _keyboard = _interopRequireDefault(require("./esm/components/keyboard/keyboard"));
+
+var _mousewheel = _interopRequireDefault(require("./esm/components/mousewheel/mousewheel"));
+
+var _navigation = _interopRequireDefault(require("./esm/components/navigation/navigation"));
+
+var _pagination = _interopRequireDefault(require("./esm/components/pagination/pagination"));
+
+var _scrollbar = _interopRequireDefault(require("./esm/components/scrollbar/scrollbar"));
+
+var _parallax = _interopRequireDefault(require("./esm/components/parallax/parallax"));
+
+var _zoom = _interopRequireDefault(require("./esm/components/zoom/zoom"));
+
+var _lazy = _interopRequireDefault(require("./esm/components/lazy/lazy"));
+
+var _controller = _interopRequireDefault(require("./esm/components/controller/controller"));
+
+var _a11y = _interopRequireDefault(require("./esm/components/a11y/a11y"));
+
+var _history = _interopRequireDefault(require("./esm/components/history/history"));
+
+var _hashNavigation = _interopRequireDefault(require("./esm/components/hash-navigation/hash-navigation"));
+
+var _autoplay = _interopRequireDefault(require("./esm/components/autoplay/autoplay"));
+
+var _effectFade = _interopRequireDefault(require("./esm/components/effect-fade/effect-fade"));
+
+var _effectCube = _interopRequireDefault(require("./esm/components/effect-cube/effect-cube"));
+
+var _effectFlip = _interopRequireDefault(require("./esm/components/effect-flip/effect-flip"));
+
+var _effectCoverflow = _interopRequireDefault(require("./esm/components/effect-coverflow/effect-coverflow"));
+
+var _thumbs = _interopRequireDefault(require("./esm/components/thumbs/thumbs"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+/**
+ * Swiper 6.4.7
+ * Most modern mobile touch slider and framework with hardware accelerated transitions
+ * https://swiperjs.com
+ *
+ * Copyright 2014-2021 Vladimir Kharlampidi
+ *
+ * Released under the MIT License
+ *
+ * Released on: January 21, 2021
+ */
+// Swiper Class
+var components = [];
+
+_coreClass.default.use(components);
+},{"./esm/components/core/core-class":"fy7h","./esm/components/virtual/virtual":"lPeZ","./esm/components/keyboard/keyboard":"UABp","./esm/components/mousewheel/mousewheel":"L2R1","./esm/components/navigation/navigation":"DoDY","./esm/components/pagination/pagination":"J0PB","./esm/components/scrollbar/scrollbar":"Z0BC","./esm/components/parallax/parallax":"j5qV","./esm/components/zoom/zoom":"YM4o","./esm/components/lazy/lazy":"PYk5","./esm/components/controller/controller":"mvHS","./esm/components/a11y/a11y":"L3uL","./esm/components/history/history":"TBmA","./esm/components/hash-navigation/hash-navigation":"zI9Y","./esm/components/autoplay/autoplay":"BO68","./esm/components/effect-fade/effect-fade":"N4V4","./esm/components/effect-cube/effect-cube":"DYMQ","./esm/components/effect-flip/effect-flip":"uwwl","./esm/components/effect-coverflow/effect-coverflow":"fg0O","./esm/components/thumbs/thumbs":"gpDU"}],"GJqW":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _swiper = _interopRequireDefault(require("swiper"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var Sliders = function Sliders() {
+  var mySwiper = new _swiper.default('.swiper-container', {
+    // Optional parameters
+    autoHeight: true,
+    spaceBetween: 30,
+    loop: true,
+    effect: 'fade',
+    fadeEffect: {
+      crossFade: true
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true
+    },
+    breakpoints: {
+      640: {
+        direction: 'vertical'
+      }
+    }
+  });
+  var postSlider = new _swiper.default('.post-slider', {
+    slidesPerView: 2,
+    direction: 'vertical',
+    loop: true,
+    spaceBetween: 20,
+    pagination: {
+      el: '.pagination-scroll',
+      type: 'progressbar'
+    },
+    breakpoints: {
+      640: {
+        direction: 'horizontal',
+        slidesPerView: 2,
+        spaceBetween: 30,
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev'
+        }
+      }
+    }
+  });
+};
+
+var _default = Sliders;
+exports.default = _default;
+},{"swiper":"FJWo"}],"y582":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var burgerMenu = function burgerMenu() {
+  var mediaQuery = window.matchMedia('(max-width: 768px)');
+
+  if (mediaQuery.matches) {
+    var targetDom = document.getElementById('burger-content');
+    var socialLink = document.getElementById('social-link');
+    targetDom.appendChild(socialLink);
+  }
+
+  document.getElementById("burger-btn").onclick = function () {
+    open();
+  };
+
+  function open() {
+    document.getElementById("header-nav").classList.toggle("show");
+  }
+
+  ;
+};
+
+var _default = burgerMenu;
+exports.default = _default;
+},{}],"ZsWl":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var responsiveElementCarrier = function responsiveElementCarrier() {
+  var insertAfter = function insertAfter(referenceNode, newNode) {
+    referenceNode.parentNode.insertBefore(newNode, referenceNode.nextSibling);
+  };
+
+  var makeMagic = function makeMagic(node, targetNode, anchorNode) {
+    if (window.innerWidth < 991 && targetNode.nextSibling !== node) {
+      insertAfter(node, anchorNode);
+      insertAfter(targetNode, node);
+    } else if (window.innerWidth >= 991 && anchorNode.parentNode != null && node.previousSibling !== anchorNode) {
+      insertAfter(anchorNode, node);
+      node.parentNode.removeChild(anchorNode);
+    }
+  };
+
+  var smAfterNodes = document.querySelectorAll('[data-sm-after]');
+
+  if (smAfterNodes.length > 0) {
+    smAfterNodes.forEach(function (node) {
+      var targetId = node.dataset.smAfter;
+      console.log(node.dataset);
+      var target = document.getElementById(targetId);
+
+      if (target == null) {
+        console.warn("Target with id=".concat(targetId, " not found"));
+        return;
+      }
+
+      if (target.nextSibling === node) {
+        console.warn("Node is already after the target with id=".concat(targetId));
+        return;
+      }
+
+      var anchorNode = document.createComment(targetId);
+      makeMagic(node, target, anchorNode);
+      window.addEventListener('resize', function () {
+        return makeMagic(node, target, anchorNode);
+      }, {
+        passive: true
+      });
+    });
+  }
+};
+
+var _default = responsiveElementCarrier;
+exports.default = _default;
+},{}],"iFOF":[function(require,module,exports) {
 "use strict";
 
 require("bootstrap");
 
 var _bundle = _interopRequireDefault(require("swiper/bundle"));
 
+var _sliders = _interopRequireDefault(require("./sliders"));
+
+var _burgerMenu = _interopRequireDefault(require("./burgerMenu"));
+
+var _responsiveElementCarrier = _interopRequireDefault(require("./responsiveElementCarrier"));
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var mySwiper = new _bundle.default('.swiper-container', {
-  // Optional parameters
-  direction: 'vertical',
-  spaceBetween: 30,
-  loop: true,
-  effect: 'fade',
-  fadeEffect: {
-    crossFade: true
-  },
-  pagination: {
-    el: '.swiper-pagination',
-    clickable: true
-  }
-});
-var postSlider = new _bundle.default('.post-slider', {
-  slidesPerView: 1,
-  loop: true,
-  spaceBetween: 10,
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev'
-  },
-  breakpoints: {
-    640: {
-      slidesPerView: 2,
-      spaceBetween: 30
-    }
-  }
-}); // const mediaQuery = window.matchMedia('(max-width: 767px)');
-// if (mediaQuery.matches) {
-// 	let targetDom = document.getElementById('navbarNav');
-// 	let socialLink = document.getElementById('social-link');
-// 	targetDom.appendChild(socialLink);
-// }
-
-document.getElementById("burger-btn").onclick = function () {
-  open();
-};
-
-function open() {
-  document.getElementById("header-nav").classList.toggle("show");
-}
-
-;
-},{"bootstrap":"s7bG","swiper/bundle":"ydBv"}]},{},["iFOF"], null)
+(0, _sliders.default)();
+(0, _burgerMenu.default)();
+(0, _responsiveElementCarrier.default)();
+},{"bootstrap":"s7bG","swiper/bundle":"ydBv","./sliders":"GJqW","./burgerMenu":"y582","./responsiveElementCarrier":"ZsWl"}]},{},["iFOF"], null)
