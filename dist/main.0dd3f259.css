@@ -9786,6 +9786,10 @@ h1, .h1 {
   .dropdown-item {
     color: #54B869;
   }
+  .dropdown-item:hover {
+    color: #fff;
+    background: #54B869;
+  }
 }
 .dropdown-toggle::after {
   position: absolute;
@@ -9813,7 +9817,7 @@ h1, .h1 {
 @media (max-width: 991.98px) {
   .nav-item.dropdown.show .dropdown-toggle::after {
     transform-origin: center center;
-    transform: rotate(90deg);
+    transform: translateY(-50%) rotate(90deg);
     transition: transform 0.2s;
   }
 }
@@ -10580,6 +10584,8 @@ h1, .h1 {
   border-bottom: 1px solid rgba(207, 197, 197, 0.5);
 }
 .widget__title {
+  display: flex;
+  align-items: center;
   font-size: 1.25rem;
   font-weight: 700;
   color: #180706;
@@ -10986,24 +10992,22 @@ h1, .h1 {
   .navbar-main .navbar-links {
     justify-content: center;
   }
-}
-@media (max-width: 991.98px) {
   .navbar-main__collapse {
     display: none;
   }
+  .navbar-main.show .navbar-main__collapse {
+    display: block;
+    width: 100%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 100%;
+    z-index: 15;
+    background-color: #131213;
+    padding-bottom: 65px;
+  }
 }
-.navbar-main.show .navbar-main__collapse {
-  display: block;
-  width: 100%;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  top: 100%;
-  z-index: 15;
-  background-color: #131213;
-  padding-bottom: 65px;
-}
-@media (max-width: 991.98px) {
+@media (max-width: 991.98px) and (max-width: 991.98px) {
   .navbar-main.show .navbar-main__collapse {
     padding-bottom: 25px;
   }
