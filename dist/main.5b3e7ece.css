@@ -10999,7 +10999,7 @@ h1, .h1 {
   left: 50%;
   transform: translateX(-50%);
   top: 100%;
-  z-index: 10;
+  z-index: 15;
   background-color: #131213;
   padding-bottom: 65px;
 }
