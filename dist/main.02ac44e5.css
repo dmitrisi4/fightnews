@@ -10256,13 +10256,17 @@ h1, .h1 {
 }
 @media (max-width: 991.98px) {
   .slider-banner .post-preview__image {
-    width: 70%;
+    width: 100%;
+    max-width: 470px;
+    object-fit: cover;
     margin: 0 auto;
+    max-height: 275px;
   }
 }
 @media (max-width: 767.98px) {
   .slider-banner .post-preview__image {
     width: 100%;
+    height: 190px;
   }
 }
 

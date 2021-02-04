@@ -17,7 +17,7 @@ const Sliders = () => {
 			clickable: true,
 		},
 		breakpoints: {
-			640: {
+			991: {
 				direction: 'vertical',
 			},
 		}
