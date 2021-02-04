@@ -10294,12 +10294,6 @@ h1, .h1 {
 .post-slider .swiper-wrapper {
   justify-content: space-between;
 }
-@media screen and (max-width: 576px) {
-  .post-slider .post-preview__videos {
-    height: 200px;
-  }
-}
-
 .swiper-button-prev,
 .swiper-button-next {
   display: flex;
