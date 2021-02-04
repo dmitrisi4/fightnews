@@ -1,0 +1,48 @@
+@import "../theme-base";
+
+.fighter-card {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: 40px 58px minmax(170px, 1fr);
+  padding-bottom: 15px;
+  border-bottom: 1px solid rgba($blue-dark, $bth-light-alpha-2);
+  &__icon {
+    color: $red;
+  }
+  &__company {
+    font-size: $font-size-md;
+    font-weight: $font-weight-bold;
+    color: $blue-dark;
+  }
+  &__image {
+    border-radius: $border-radius-lg;
+  }
+  &__title {
+    font-size: $font-size-md;
+    font-weight: $font-weight-bold;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    @include media-breakpoint-down(lg) {
+      font-size: $font-size-base;
+    }
+  }
+  &__text {
+    display: grid;
+    grid-auto-flow: column;
+    grid-gap: 10px;
+    grid-template-columns: max-content;
+    font-size: $font-size-sm;
+    font-weight: $font-weight-medium;
+    color: $gray-600;
+  }
+}
+
+.fighter-list {
+  display: grid;
+  grid-gap: $spacer;
+  grid-template-columns: repeat(2, 1fr);
+  @include media-breakpoint-down(sm) {
+    grid-template-columns: auto;
+  }
+}

@@ -1,0 +1,36 @@
+@import "../theme-base";
+
+.section {
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include media-breakpoint-down(md) {
+      flex-wrap: wrap;
+    }
+  }
+  &_dark {
+    background-color: $blue-dark;
+    padding: 30px 15px 20px;
+  }
+}
+
+.section-video {
+  .preview-statistic__num {
+    color: $white;
+  }
+  @include media-breakpoint-down(md) {
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+  .video-nav {
+    @media screen and (max-width: 767px){
+      order: 2;
+      width: 100%;
+    }
+  }
+}
+
+.section-fighters {
+  //order: 1;
+}

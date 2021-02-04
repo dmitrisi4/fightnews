@@ -1,0 +1,3550 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="Description" content="Put your description here.">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Main</title>
+	<link rel="stylesheet" href="../styles/main.scss">
+</head>
+<body style="overflow-x:hidden;">
+
+<header class="header">
+	<div class="container-fluid container-md">
+		<nav class="navbar-main navbar-expand-lg" id="header-nav">
+			<div class="navbar-main__left">
+				<a class="navbar-brand" href="#">
+					<img src="../../public/images/logo.jpg" class="d-inline-block align-top" alt="" loading="lazy">
+				</a>
+				<ul class="navbar-links" id="social-link" data-lg-after="navbar-menu">
+					<li class="nav-item active">
+						<a class="nav-link-white" href="#">
+							<svg width="26" height="26" class="icon-insta" viewBox="0 0 20 20">
+								<use xlink:href="../../public/icons/icons.svg#icon-insta"/>
+							</svg>
+						</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link-white" href="#">
+							<svg width="26" height="26" class="icon-fb" viewBox="0 0 35 35">
+								<use xlink:href="../../public/icons/icons.svg#icon-fb"/>
+							</svg>
+						</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link-white" href="#">
+							<svg width="26" height="26" class="icon-tg" viewBox="0 0 35 35">
+								<use xlink:href="../../public/icons/icons.svg#icon-tg"/>
+							</svg>
+						</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link-white" href="#">
+							<svg width="26" height="26" class="icon-vk" viewBox="0 0 35 35">
+								<use xlink:href="../../public/icons/icons.svg#icon-vk"/>
+							</svg>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="navbar-main__auth-row">
+				<ul class="navbar-main__auth-col">
+					<li class=" active">
+						<a class="nav-link" href="#">
+							<svg width="21" height="21" class="icon-search" viewBox="0 0 35 35">
+								<use xlink:href="../../public/icons/icons.svg#icon-search"/>
+							</svg>
+						</a>
+					</li>
+					<li class="">
+						<a class="nav-link" href="#">Вход</a>
+					</li>
+					<span style="color: #5F5B5F;">/</span>
+					<li class="">
+						<a class="nav-link" href="#">Регистрация</a>
+					</li>
+				</ul>
+				<button class="burger-btn" type="button" data-toggle="collapse"
+								id="burger-btn" data-target="#navbarNav"
+								aria-controls="navbarNav" aria-label="Toggle navigation">
+					<div class="burger-btn__line"></div>
+					<div class="burger-btn__line"></div>
+				</button>
+				<div class="navbar-main__collapse" id="burger-content">
+					<ul class="navbar-main__nav-list navbar-menu" id="navbar-menu">
+						<li class="nav-item dropdown">
+							<a class="nav-btn dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
+								 aria-expanded="false">Бокс</a>
+							<div class="dropdown-menu">
+								<a class="dropdown-item" href="#">Трансляции Бокс</a>
+								<a class="dropdown-item" href="#">Публикации</a>
+							</div>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-btn dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
+								 aria-expanded="false">MMA</a>
+							<div class="dropdown-menu">
+								<a class="dropdown-item" href="#">Трансляции MMA</a>
+								<a class="dropdown-item" href="#">Публикации</a>
+							</div>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-btn dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
+								 aria-expanded="false">Рейтинги</a>
+							<div class="dropdown-menu">
+								<a class="dropdown-item" href="#">Рейтинги MMA</a>
+								<a class="dropdown-item" href="#">Рейтинги Бокс</a>
+								<a class="dropdown-item" href="#">Рейтинги прогнозистов</a>
+							</div>
+						</li>
+						<li class="nav-item">
+							<a class="nav-btn" href="#">Бойцы</a>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-btn dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
+								 aria-expanded="false">Видео</a>
+							<div class="dropdown-menu">
+								<a class="dropdown-item" href="#">Видео MMA</a>
+								<a class="dropdown-item" href="#">Видео Бокс</a>
+								<a class="dropdown-item" href="#">Бои на голых кулаках</a>
+							</div>
+						</li>
+						<li class="nav-item">
+							<a class="nav-btn" href="#">Фото</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-btn" href="#">Расписание</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-btn" href="#">Статьи</a>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-btn dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
+								 aria-expanded="false">Прочее</a>
+							<div class="dropdown-menu dropdown-menu-right">
+								<a class="dropdown-item" href="#">Аналитика</a>
+								<a class="dropdown-item" href="#">Биография</a>
+								<a class="dropdown-item" href="#">Интервью</a>
+								<a class="dropdown-item" href="#">Фото</a>
+							</div>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-btn dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
+								 aria-expanded="false">FAQ</a>
+							<div class="dropdown-menu dropdown-menu-right">
+								<a class="dropdown-item" href="#">Бан лист</a>
+								<a class="dropdown-item" href="#">Список модераторов</a>
+								<a class="dropdown-item" href="#">Контакты</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+
+			</div>
+		</nav>
+	</div>
+</header>
+
+<main class="main pt-0 pt-md-4" style="overflow-x: hidden">
+	<section class="banner">
+		<div class="container-fluid container-sm banner-container">
+			<div class="row no-gutters">
+				<!-- Slider main container -->
+				<div class="col-lg-8 col-md-12 px-0 px-md-2 ">
+					<div class="slider-banner swiper-container">
+						<!-- Additional required wrapper -->
+						<div class="swiper-wrapper">
+							<!-- Slides -->
+							<div class="swiper-slide">
+								<div class="post-preview post-preview_board">
+									<img src="../../public/images/konor.jpg" class="post-preview__image" alt="image konor makgregor">
+									<div class="post-preview__header">
+										<div class="label label_red label_text-white label_text-md-red">MMA</div>
+										<a href="#" class="post-preview__title">Конор Макгрегор - Дональд Серроне. Прогноз на главный бой
+											UFC 246</a>
+										<p class="post-preview__text">Первый крупный ивент UFC в новом десятилетии не заставил себя долго
+											ждать.</p>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="post-preview post-preview_board">
+									<img src="../../public/images/konor257.jpeg" class="post-preview__image" alt="image konor makgregor">
+									<div class="post-preview__header">
+										<div class="label label_red label_text-white label_text-md-red">MMA</div>
+										<a href="#" class="post-preview__title">Слова Дастина Порье после победы над Конором МакГрегором в
+											реванше на UFC 257</a>
+										<p class="post-preview__text">Бывший временный чемпион UFC в легком весе Дастин Порье
+											прокомментировал победу техническим нокаутом во втором раунде над Конором МакГрегором в главном
+											бою турнира UFC 257.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+
+
+					</div>
+					<!-- If we need pagination -->
+					<div class="swiper-pagination"></div>
+				</div>
+				<div class="col-lg-4 d-none d-md-none d-lg-block px-0 px-md-2 ">
+					<div class="ads">Рекламный банер</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<div class="container-fluid container-md">
+		<div class="row mt-5">
+			<div class="col-lg-8 d-flex flex-column">
+				<section class="" id="section-list">
+					<div class="badge-status active mb-1">live</div>
+					<div class="h1 font-weight-bold">Ближайшие трансляции</div>
+					<!--	post-list		-->
+					<div class="post-list mt-5">
+						<div class="post-preview">
+							<div class="post-preview__header">
+								<div class="label label_red">MMA</div>
+								<div class="post-preview__post-info post-info">
+									<div class="post-info__date">
+										<svg width="12" height="14" class="icon-calendar" viewBox="0 0 12 14">
+											<use xlink:href="../../public/icons/icons.svg#icon-calendar"/>
+										</svg>
+										<span class="ml-1">17.01.2020</span>
+									</div>
+									<span class="post-info__time">13:20</span>
+								</div>
+
+								<span class="badge-status active">live</span>
+							</div>
+							<a href="#" class="post-preview__title">Турнир по вольной борьбе Гран-при "Иван Ярыгин 2020"</a>
+						</div>
+						<div class="post-preview">
+							<div class="post-preview__header">
+								<div class="label label_green">БОКС</div>
+								<div class="post-preview__post-info post-info">
+									<div class="post-info__date">
+										<svg width="12" height="14" class="icon-calendar" viewBox="0 0 12 14">
+											<use xlink:href="../../public/icons/icons.svg#icon-calendar"/>
+										</svg>
+										<span class="ml-1">17.01.2020</span>
+									</div>
+									<span class="post-info__time">13:20</span>
+								</div>
+
+								<span class="badge-status">live</span>
+							</div>
+							<a href="#" class="post-preview__title">Турнир по вольной борьбе Гран-при "Иван Ярыгин 2020"</a>
+						</div>
+						<div class="post-preview">
+							<div class="post-preview__header">
+								<div class="label label_red">MMA</div>
+								<div class="post-preview__post-info post-info">
+									<div class="post-info__date">
+										<svg width="12" height="14" class="icon-calendar" viewBox="0 0 12 14">
+											<use xlink:href="../../public/icons/icons.svg#icon-calendar"/>
+										</svg>
+										<span class="ml-1">17.01.2020</span>
+									</div>
+									<span class="post-info__time">13:20</span>
+								</div>
+
+								<span class="badge-status">live</span>
+							</div>
+							<a href="#" class="post-preview__title">Турнир по вольной борьбе Гран-при "Иван Ярыгин 2020"</a>
+						</div>
+						<div class="post-preview">
+							<div class="post-preview__header">
+								<div class="label label_red">MMA</div>
+								<div class="post-preview__post-info post-info">
+									<div class="post-info__date">
+										<svg width="12" height="14" class="icon-calendar" viewBox="0 0 12 14">
+											<use xlink:href="../../public/icons/icons.svg#icon-calendar"/>
+										</svg>
+										<span class="ml-1">17.01.2020</span>
+									</div>
+									<span class="post-info__time">13:20</span>
+								</div>
+
+								<span class="badge-status">live</span>
+							</div>
+							<a href="#" class="post-preview__title">Турнир по вольной борьбе Гран-при "Иван Ярыгин 2020"</a>
+						</div>
+						<div class="post-preview">
+							<div class="post-preview__header">
+								<div class="label label_green">БОКС</div>
+								<div class="post-preview__post-info post-info">
+									<div class="post-info__date">
+										<svg width="12" height="14" class="icon-calendar" viewBox="0 0 12 14">
+											<use xlink:href="../../public/icons/icons.svg#icon-calendar"/>
+										</svg>
+										<span class="ml-1">17.01.2020</span>
+									</div>
+									<span class="post-info__time">13:20</span>
+								</div>
+
+								<span class="badge-status">live</span>
+							</div>
+							<a href="#" class="post-preview__title">Турнир по вольной борьбе Гран-при "Иван Ярыгин 2020"</a>
+						</div>
+						<div class="post-preview">
+							<div class="post-preview__header">
+								<div class="label label_red">MMA</div>
+								<div class="post-preview__post-info post-info">
+									<div class="post-info__date">
+										<svg width="12" height="14" class="icon-calendar" viewBox="0 0 12 14">
+											<use xlink:href="../../public/icons/icons.svg#icon-calendar"/>
+										</svg>
+										<span class="ml-1">17.01.2020</span>
+									</div>
+									<span class="post-info__time">13:20</span>
+								</div>
+
+								<span class="badge-status active">live</span>
+							</div>
+							<a href="#" class="post-preview__title">Турнир по вольной борьбе Гран-при "Иван Ярыгин 2020"</a>
+						</div>
+					</div>
+					<a href="#" class="btn btn-extra-light-green btn-md btn-block mt-4">Показать еще...</a>
+					<!--	end - post-list		-->
+				</section>
+				<section class="section mt-5 mt-md-big-2" id="section-discussions">
+					<div class="section__header">
+						<div class="h1 font-weight-bold">Обсуждения</div>
+						<a href="#" class="btn btn-extra-light-green btn-sm btn-arrow">Прямой эфир</a>
+					</div>
+
+					<nav class="nav nav-tabs tabs-menu mt-4" id="nav-tab" role="tablist">
+						<a class="tabs-menu__btn active" id="nav-home-tab" data-toggle="tab" href="#nav-last" role="tab"
+							 aria-controls="nav-home" aria-selected="true">Последние</a>
+						<a class="tabs-menu__btn" id="nav-profile-tab" data-toggle="tab" href="#nav-top" role="tab"
+							 aria-controls="nav-profile" aria-selected="false">ТОП</a>
+					</nav>
+
+					<div class="tab-content mt-4" id="nav-tabContent">
+						<div class="tab-pane fade show active" id="nav-last" role="tabpanel" aria-labelledby="list-last-list">
+							<div class="post-list post-list_sm">
+								<!--post-preview-->
+								<div class="post-preview">
+									<div class="post-preview__header">
+										<div class="label label_green label_sm">
+											<svg width="14" height="14" class="icon" viewBox="0 0 14 14">
+												<use xlink:href="../../public/icons/icons.svg#icon-glove"/>
+											</svg>
+										</div>
+										<div class="post-preview__post-info post-info">
+											<div class="post-info__date">
+												<svg width="12" height="14" class="icon-calendar" viewBox="0 0 12 14">
+													<use xlink:href="../../public/icons/icons.svg#icon-calendar"/>
+												</svg>
+												<span class="ml-1">17.01.2020</span>
+											</div>
+											<span class="post-info__time">13:20</span>
+										</div>
+									</div>
+									<a href="#" class="post-preview__title">Кормье: Чтобы побить Джонса, нужен нокаутер из тяжелого
+										веса...</a>
+									<div class="post-preview__footer">
+										<div class="post-preview__statistic  preview-statistic">
+											<div class="preview-statistic__posts-counter">
+												<svg width="14" height="14" class="icon" viewBox="0 0 14 14">
+													<use xlink:href="../../public/icons/icons.svg#icon-chat"/>
+												</svg>
+												<div class="preview-statistic__num">40</div>
+												<span class="preview-statistic__new-post">(+14)</span>
+											</div>
+											<div class="preview-statistic__posts-counter">
+
+												<svg width="14" height="14" class="icon" viewBox="0 0 14 12">
+													<use xlink:href="../../public/icons/icons.svg#icon-views"/>
+												</svg>
+												<div class="preview-statistic__num">694</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="post-preview">
+									<div class="post-preview__header">
+										<div class="label label_red label_sm">
+											<svg width="14" height="14" class="icon" viewBox="0 0 14 14">
+												<use xlink:href="../../public/icons/icons.svg#icon-glove-mma"/>
+											</svg>
+										</div>
+										<div class="post-preview__post-info post-info">
+											<div class="post-info__date">
+												<svg width="12" height="14" class="icon-calendar" viewBox="0 0 12 14">
+													<use xlink:href="../../public/icons/icons.svg#icon-calendar"/>
+												</svg>
+												<span class="ml-1">17.01.2020</span>
+											</div>
+											<span class="post-info__time">13:20</span>
+										</div>
+									</div>
+									<a href="#" class="post-preview__title">Кормье: Чтобы побить Джонса, нужен нокаутер из тяжелого
+										веса...</a>
+									<div class="post-preview__footer">
+										<div class="post-preview__statistic  preview-statistic">
+											<div class="preview-statistic__posts-counter">
+												<svg width="14" height="14" class="icon" viewBox="0 0 14 14">
+													<use xlink:href="../../public/icons/icons.svg#icon-chat"/>
+												</svg>
+												<div class="preview-statistic__num">40</div>
+												<span class="preview-statistic__new-post">(+14)</span>
+											</div>
+											<div class="preview-statistic__posts-counter">
+
+												<svg width="14" height="14" class="icon" viewBox="0 0 14 12">
+													<use xlink:href="../../public/icons/icons.svg#icon-views"/>
+												</svg>
+												<div class="preview-statistic__num">694</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="post-preview">
+									<div class="post-preview__header">
+										<div class="label label_green label_sm">
+											<svg width="14" height="14" class="icon" viewBox="0 0 14 14">
+												<use xlink:href="../../public/icons/icons.svg#icon-glove"/>
+											</svg>
+										</div>
+										<div class="post-preview__post-info post-info">
+											<div class="post-info__date">
+												<svg width="12" height="14" class="icon-calendar" viewBox="0 0 12 14">
+													<use xlink:href="../../public/icons/icons.svg#icon-calendar"/>
+												</svg>
+												<span class="ml-1">17.01.2020</span>
+											</div>
+											<span class="post-info__time">13:20</span>
+										</div>
+									</div>
+									<a href="#" class="post-preview__title">Кормье: Чтобы побить Джонса, нужен нокаутер из тяжелого
+										веса...</a>
+									<div class="post-preview__footer">
+										<div class="post-preview__statistic  preview-statistic">
+											<div class="preview-statistic__posts-counter">
+												<svg width="14" height="14" class="icon" viewBox="0 0 14 14">
+													<use xlink:href="../../public/icons/icons.svg#icon-chat"/>
+												</svg>
+												<div class="preview-statistic__num">40</div>
+												<span class="preview-statistic__new-post">(+14)</span>
+											</div>
+											<div class="preview-statistic__posts-counter">
+
+												<svg width="14" height="14" class="icon" viewBox="0 0 14 12">
+													<use xlink:href="../../public/icons/icons.svg#icon-views"/>
+												</svg>
+												<div class="preview-statistic__num">694</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="post-preview">
+									<div class="post-preview__header">
+										<div class="label label_green label_sm">
+											<svg width="14" height="14" class="icon" viewBox="0 0 14 14">
+												<use xlink:href="../../public/icons/icons.svg#icon-glove"/>
+											</svg>
+										</div>
+										<div class="post-preview__post-info post-info">
+											<div class="post-info__date">
+												<svg width="12" height="14" class="icon-calendar" viewBox="0 0 12 14">
+													<use xlink:href="../../public/icons/icons.svg#icon-calendar"/>
+												</svg>
+												<span class="ml-1">17.01.2020</span>
+											</div>
+											<span class="post-info__time">13:20</span>
+										</div>
+									</div>
+									<a href="#" class="post-preview__title">Кормье: Чтобы побить Джонса, нужен нокаутер из тяжелого
+										веса...</a>
+									<div class="post-preview__footer">
+										<div class="post-preview__statistic  preview-statistic">
+											<div class="preview-statistic__posts-counter">
+												<svg width="14" height="14" class="icon" viewBox="0 0 14 14">
+													<use xlink:href="../../public/icons/icons.svg#icon-chat"/>
+												</svg>
+												<div class="preview-statistic__num">40</div>
+												<span class="preview-statistic__new-post">(+14)</span>
+											</div>
+											<div class="preview-statistic__posts-counter">
+
+												<svg width="14" height="14" class="icon" viewBox="0 0 14 12">
+													<use xlink:href="../../public/icons/icons.svg#icon-views"/>
+												</svg>
+												<div class="preview-statistic__num">694</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="post-preview">
+									<div class="post-preview__header">
+										<div class="label label_green label_sm">
+											<svg width="14" height="14" class="icon" viewBox="0 0 14 14">
+												<use xlink:href="../../public/icons/icons.svg#icon-glove"/>
+											</svg>
+										</div>
+										<div class="post-preview__post-info post-info">
+											<div class="post-info__date">
+												<svg width="12" height="14" class="icon-calendar" viewBox="0 0 12 14">
+													<use xlink:href="../../public/icons/icons.svg#icon-calendar"/>
+												</svg>
+												<span class="ml-1">17.01.2020</span>
+											</div>
+											<span class="post-info__time">13:20</span>
+										</div>
+									</div>
+									<a href="#" class="post-preview__title">Кормье: Чтобы побить Джонса, нужен нокаутер из тяжелого
+										веса...</a>
+									<div class="post-preview__footer">
+										<div class="post-preview__statistic  preview-statistic">
+											<div class="preview-statistic__posts-counter">
+												<svg width="14" height="14" class="icon" viewBox="0 0 14 14">
+													<use xlink:href="../../public/icons/icons.svg#icon-chat"/>
+												</svg>
+												<div class="preview-statistic__num">40</div>
+												<span class="preview-statistic__new-post">(+14)</span>
+											</div>
+											<div class="preview-statistic__posts-counter">
+
+												<svg width="14" height="14" class="icon" viewBox="0 0 14 12">
+													<use xlink:href="../../public/icons/icons.svg#icon-views"/>
+												</svg>
+												<div class="preview-statistic__num">694</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="post-preview">
+									<div class="post-preview__header">
+										<div class="label label_green label_sm">
+											<svg width="14" height="14" class="icon" viewBox="0 0 14 14">
+												<use xlink:href="../../public/icons/icons.svg#icon-glove"/>
+											</svg>
+										</div>
+										<div class="post-preview__post-info post-info">
+											<div class="post-info__date">
+												<svg width="12" height="14" class="icon-calendar" viewBox="0 0 12 14">
+													<use xlink:href="../../public/icons/icons.svg#icon-calendar"/>
+												</svg>
+												<span class="ml-1">17.01.2020</span>
+											</div>
+											<span class="post-info__time">13:20</span>
+										</div>
+									</div>
+									<a href="#" class="post-preview__title">Кормье: Чтобы побить Джонса, нужен нокаутер из тяжелого
+										веса...</a>
+									<div class="post-preview__footer">
+										<div class="post-preview__statistic  preview-statistic">
+											<div class="preview-statistic__posts-counter">
+												<svg width="14" height="14" class="icon" viewBox="0 0 14 14">
+													<use xlink:href="../../public/icons/icons.svg#icon-chat"/>
+												</svg>
+												<div class="preview-statistic__num">40</div>
+												<span class="preview-statistic__new-post">(+14)</span>
+											</div>
+											<div class="preview-statistic__posts-counter">
+
+												<svg width="14" height="14" class="icon" viewBox="0 0 14 12">
+													<use xlink:href="../../public/icons/icons.svg#icon-views"/>
+												</svg>
+												<div class="preview-statistic__num">694</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="tab-pane fade" id="nav-top" role="tabpanel" aria-labelledby="list-last-list">
+							<div class="post-list post-list_sm">
+								<!--post-preview-->
+								<div class="post-preview">
+									<div class="post-preview__header">
+										<div class="label label_green label_sm">
+											<svg width="14" height="14" class="icon" viewBox="0 0 14 14">
+												<use xlink:href="../../public/icons/icons.svg#icon-glove"/>
+											</svg>
+										</div>
+										<div class="post-preview__post-info post-info">
+											<div class="post-info__date">
+												<svg width="12" height="14" class="icon-calendar" viewBox="0 0 12 14">
+													<use xlink:href="../../public/icons/icons.svg#icon-calendar"/>
+												</svg>
+												<span class="ml-1">17.01.2020</span>
+											</div>
+											<span class="post-info__time">13:20</span>
+										</div>
+									</div>
+									<a href="#" class="post-preview__title">Кормье: Чтобы побить Джонса, нужен нокаутер из тяжелого
+										веса...</a>
+									<div class="post-preview__footer">
+										<div class="post-preview__statistic  preview-statistic">
+											<div class="preview-statistic__posts-counter">
+												<svg width="14" height="14" class="icon" viewBox="0 0 14 14">
+													<use xlink:href="../../public/icons/icons.svg#icon-chat"/>
+												</svg>
+												<div class="preview-statistic__num">40</div>
+												<span class="preview-statistic__new-post">(+14)</span>
+											</div>
+											<div class="preview-statistic__posts-counter">
+
+												<svg width="14" height="14" class="icon" viewBox="0 0 14 12">
+													<use xlink:href="../../public/icons/icons.svg#icon-views"/>
+												</svg>
+												<div class="preview-statistic__num">694</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="post-preview">
+									<div class="post-preview__header">
+										<div class="label label_green label_sm">
+											<svg width="14" height="14" class="icon" viewBox="0 0 14 14">
+												<use xlink:href="../../public/icons/icons.svg#icon-glove"/>
+											</svg>
+										</div>
+										<div class="post-preview__post-info post-info">
+											<div class="post-info__date">
+												<svg width="12" height="14" class="icon-calendar" viewBox="0 0 12 14">
+													<use xlink:href="../../public/icons/icons.svg#icon-calendar"/>
+												</svg>
+												<span class="ml-1">17.01.2020</span>
+											</div>
+											<span class="post-info__time">13:20</span>
+										</div>
+									</div>
+									<a href="#" class="post-preview__title">Кормье: Чтобы побить Джонса, нужен нокаутер из тяжелого
+										веса...</a>
+									<div class="post-preview__footer">
+										<div class="post-preview__statistic  preview-statistic">
+											<div class="preview-statistic__posts-counter">
+												<svg width="14" height="14" class="icon" viewBox="0 0 14 14">
+													<use xlink:href="../../public/icons/icons.svg#icon-chat"/>
+												</svg>
+												<div class="preview-statistic__num">40</div>
+												<span class="preview-statistic__new-post">(+14)</span>
+											</div>
+											<div class="preview-statistic__posts-counter">
+
+												<svg width="14" height="14" class="icon" viewBox="0 0 14 12">
+													<use xlink:href="../../public/icons/icons.svg#icon-views"/>
+												</svg>
+												<div class="preview-statistic__num">694</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="post-preview">
+									<div class="post-preview__header">
+										<div class="label label_green label_sm">
+											<svg width="14" height="14" class="icon" viewBox="0 0 14 14">
+												<use xlink:href="../../public/icons/icons.svg#icon-glove"/>
+											</svg>
+										</div>
+										<div class="post-preview__post-info post-info">
+											<div class="post-info__date">
+												<svg width="12" height="14" class="icon-calendar" viewBox="0 0 12 14">
+													<use xlink:href="../../public/icons/icons.svg#icon-calendar"/>
+												</svg>
+												<span class="ml-1">17.01.2020</span>
+											</div>
+											<span class="post-info__time">13:20</span>
+										</div>
+									</div>
+									<a href="#" class="post-preview__title">Кормье: Чтобы побить Джонса, нужен нокаутер из тяжелого
+										веса...</a>
+									<div class="post-preview__footer">
+										<div class="post-preview__statistic  preview-statistic">
+											<div class="preview-statistic__posts-counter">
+												<svg width="14" height="14" class="icon" viewBox="0 0 14 14">
+													<use xlink:href="../../public/icons/icons.svg#icon-chat"/>
+												</svg>
+												<div class="preview-statistic__num">40</div>
+												<span class="preview-statistic__new-post">(+14)</span>
+											</div>
+											<div class="preview-statistic__posts-counter">
+
+												<svg width="14" height="14" class="icon" viewBox="0 0 14 12">
+													<use xlink:href="../../public/icons/icons.svg#icon-views"/>
+												</svg>
+												<div class="preview-statistic__num">694</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="post-preview">
+									<div class="post-preview__header">
+										<div class="label label_green label_sm">
+											<svg width="14" height="14" class="icon" viewBox="0 0 14 14">
+												<use xlink:href="../../public/icons/icons.svg#icon-glove"/>
+											</svg>
+										</div>
+										<div class="post-preview__post-info post-info">
+											<div class="post-info__date">
+												<svg width="12" height="14" class="icon-calendar" viewBox="0 0 12 14">
+													<use xlink:href="../../public/icons/icons.svg#icon-calendar"/>
+												</svg>
+												<span class="ml-1">17.01.2020</span>
+											</div>
+											<span class="post-info__time">13:20</span>
+										</div>
+									</div>
+									<a href="#" class="post-preview__title">Кормье: Чтобы побить Джонса, нужен нокаутер из тяжелого
+										веса...</a>
+									<div class="post-preview__footer">
+										<div class="post-preview__statistic  preview-statistic">
+											<div class="preview-statistic__posts-counter">
+												<svg width="14" height="14" class="icon" viewBox="0 0 14 14">
+													<use xlink:href="../../public/icons/icons.svg#icon-chat"/>
+												</svg>
+												<div class="preview-statistic__num">40</div>
+												<span class="preview-statistic__new-post">(+14)</span>
+											</div>
+											<div class="preview-statistic__posts-counter">
+
+												<svg width="14" height="14" class="icon" viewBox="0 0 14 12">
+													<use xlink:href="../../public/icons/icons.svg#icon-views"/>
+												</svg>
+												<div class="preview-statistic__num">694</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="post-preview">
+									<div class="post-preview__header">
+										<div class="label label_green label_sm">
+											<svg width="14" height="14" class="icon" viewBox="0 0 14 14">
+												<use xlink:href="../../public/icons/icons.svg#icon-glove"/>
+											</svg>
+										</div>
+										<div class="post-preview__post-info post-info">
+											<div class="post-info__date">
+												<svg width="12" height="14" class="icon-calendar" viewBox="0 0 12 14">
+													<use xlink:href="../../public/icons/icons.svg#icon-calendar"/>
+												</svg>
+												<span class="ml-1">17.01.2020</span>
+											</div>
+											<span class="post-info__time">13:20</span>
+										</div>
+									</div>
+									<a href="#" class="post-preview__title">Кормье: Чтобы побить Джонса, нужен нокаутер из тяжелого
+										веса...</a>
+									<div class="post-preview__footer">
+										<div class="post-preview__statistic  preview-statistic">
+											<div class="preview-statistic__posts-counter">
+												<svg width="14" height="14" class="icon" viewBox="0 0 14 14">
+													<use xlink:href="../../public/icons/icons.svg#icon-chat"/>
+												</svg>
+												<div class="preview-statistic__num">40</div>
+												<span class="preview-statistic__new-post">(+14)</span>
+											</div>
+											<div class="preview-statistic__posts-counter">
+
+												<svg width="14" height="14" class="icon" viewBox="0 0 14 12">
+													<use xlink:href="../../public/icons/icons.svg#icon-views"/>
+												</svg>
+												<div class="preview-statistic__num">694</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="post-preview">
+									<div class="post-preview__header">
+										<div class="label label_green label_sm">
+											<svg width="14" height="14" class="icon" viewBox="0 0 14 14">
+												<use xlink:href="../../public/icons/icons.svg#icon-glove"/>
+											</svg>
+										</div>
+										<div class="post-preview__post-info post-info">
+											<div class="post-info__date">
+												<svg width="12" height="14" class="icon-calendar" viewBox="0 0 12 14">
+													<use xlink:href="../../public/icons/icons.svg#icon-calendar"/>
+												</svg>
+												<span class="ml-1">17.01.2020</span>
+											</div>
+											<span class="post-info__time">13:20</span>
+										</div>
+									</div>
+									<a href="#" class="post-preview__title">Кормье: Чтобы побить Джонса, нужен нокаутер из тяжелого
+										веса...</a>
+									<div class="post-preview__footer">
+										<div class="post-preview__statistic  preview-statistic">
+											<div class="preview-statistic__posts-counter">
+												<svg width="14" height="14" class="icon" viewBox="0 0 14 14">
+													<use xlink:href="../../public/icons/icons.svg#icon-chat"/>
+												</svg>
+												<div class="preview-statistic__num">40</div>
+												<span class="preview-statistic__new-post">(+14)</span>
+											</div>
+											<div class="preview-statistic__posts-counter">
+
+												<svg width="14" height="14" class="icon" viewBox="0 0 14 12">
+													<use xlink:href="../../public/icons/icons.svg#icon-views"/>
+												</svg>
+												<div class="preview-statistic__num">694</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</section>
+				<section class="section mt-5" id="section-news">
+					<div class="section__header">
+						<div class="h1 font-weight-bold">Новости</div>
+						<a href="#" class="btn btn-extra-light-green btn-sm btn-arrow">Все новости</a>
+					</div>
+					<nav class="nav nav-tabs tabs-menu mt-4" id="nav-tab2" role="tablist">
+						<a class="tabs-menu__btn  active" id="nav-all-tab" data-toggle="tab" href="#nav-all-2" role="tab"
+							 aria-controls="nav-home" aria-selected="true">Последние</a>
+						<a class="tabs-menu__btn red " id="nav-mma-tab" data-toggle="tab" href="#nav-mma-2" role="tab"
+							 aria-controls="nav-profile" aria-selected="false">ММА</a>
+						<a class="tabs-menu__btn green" id="nav-box-tab" data-toggle="tab" href="#nav-box-2" role="tab"
+							 aria-controls="nav-profile" aria-selected="false">БОКС</a>
+					</nav>
+
+					<div class="tab-content mt-4" id="nav-tabContent2">
+						<div class="tab-pane fade show active" id="nav-all-2" role="tabpanel" aria-labelledby="list-all-list">
+							<div class="post-preview post-preview_board mx-n3 mx-sm-auto">
+								<img src="../../public/images/fighter.jpg" class="post-preview__image" alt="image fighter">
+								<div class="post-preview__header">
+									<div class="post-preview__row">
+										<div class="label label_red label_text-white label_text-md-red ">MMA</div>
+										<div class="post-preview__post-info post-info">
+											<span class="ml-1">Максим</span>
+											<span class="post-info__time">13:20</span>
+										</div>
+									</div>
+									<a href="#" class="post-preview__title">Шон Портер подробно разобрал реванш Деонтея Уалйдера и Тайсона
+										Фьюри</a>
+									<div class="preview-statistic">
+										<div class="preview-statistic__posts-counter">
+											<svg width="14" height="14" class="icon" viewBox="0 0 14 14">
+												<use xlink:href="../../public/icons/icons.svg#icon-chat"/>
+											</svg>
+											<div class="preview-statistic__num">40</div>
+											<span class="preview-statistic__new-post">(+14)</span>
+										</div>
+										<div class="preview-statistic__posts-counter">
+
+											<svg width="14" height="14" class="icon" viewBox="0 0 14 12">
+												<use xlink:href="../../public/icons/icons.svg#icon-views"/>
+											</svg>
+											<div class="preview-statistic__num">694</div>
+										</div>
+									</div>
+
+								</div>
+							</div>
+							<div class="post-list mt-3">
+								<div class="post-preview post-preview_column">
+									<img src="../../public/images/konor.jpg" alt="" class="post-preview__image">
+									<div class="post-preview__main">
+										<div class="post-preview__header">
+											<!--				text-mma-icon-label							-->
+											<div class="label label_red  label_icon">
+												<span class="label__text">MMA</span>
+												<svg width="14" height="14" class="label__icon" viewBox="0 0 14 14">
+													<use xlink:href="../../public/icons/icons.svg#icon-glove-mma"/>
+												</svg>
+											</div>
+											<!--											-->
+											<div class="post-preview__post-info post-info">
+												<div class="post-info__date">
+													<span class="ml-1">Максим</span>
+												</div>
+												<span class="post-info__time">13:20</span>
+											</div>
+										</div>
+										<a href="#" class="post-preview__title">Энтони Диррелл назвал трех лучших боксеров мира</a>
+										<p class="post-preview__text">Экс-чемпион во втором среднем весе (до 76.2 кг), американец Энтони
+											Диррелл назвал, по его мнению трех...</p>
+										<div class="post-preview__statistic  preview-statistic">
+											<div class="preview-statistic__posts-counter">
+												<svg width="14" height="14" class="icon" viewBox="0 0 14 14">
+													<use xlink:href="../../public/icons/icons.svg#icon-chat"/>
+												</svg>
+												<div class="preview-statistic__num">40</div>
+												<span class="preview-statistic__new-post">(+14)</span>
+											</div>
+											<div class="preview-statistic__posts-counter">
+
+												<svg width="14" height="14" class="icon" viewBox="0 0 14 12">
+													<use xlink:href="../../public/icons/icons.svg#icon-views"/>
+												</svg>
+												<div class="preview-statistic__num">694</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="post-preview post-preview_column">
+									<img src="../../public/images/konor.jpg" alt="" class="post-preview__image">
+									<div class="post-preview__main">
+										<div class="post-preview__header">
+											<!--				text-box-icon-label							-->
+											<div class="label label_green  label_icon">
+												<span class="label__text">БОКС</span>
+												<svg width="12" height="14" class="label__icon" viewBox="0 0 12 14">
+													<use xlink:href="../../public/icons/icons.svg#icon-glove"/>
+												</svg>
+											</div>
+											<!--											-->
+											<div class="post-preview__post-info post-info">
+												<div class="post-info__date">
+													<span class="ml-1">Максим</span>
+												</div>
+												<span class="post-info__time">13:20</span>
+											</div>
+										</div>
+										<a href="#" class="post-preview__title">Эдди Хирн: "Джошуа дал указание, что после боев в Нью-Йорке
+											и Саудовской Аравии...</a>
+										<div class="post-preview__statistic  preview-statistic">
+											<div class="preview-statistic__posts-counter">
+												<svg width="14" height="14" class="icon" viewBox="0 0 14 14">
+													<use xlink:href="../../public/icons/icons.svg#icon-chat"/>
+												</svg>
+												<div class="preview-statistic__num">40</div>
+												<span class="preview-statistic__new-post">(+14)</span>
+											</div>
+											<div class="preview-statistic__posts-counter">
+
+												<svg width="14" height="14" class="icon" viewBox="0 0 14 12">
+													<use xlink:href="../../public/icons/icons.svg#icon-views"/>
+												</svg>
+												<div class="preview-statistic__num">694</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<a href="#" class="btn btn-extra-light-green btn-md btn-block mt-4">Показать еще...</a>
+						</div>
+
+						<div class="tab-pane fade" id="nav-mma-2" role="tabpanel" aria-labelledby="list-mma-list">
+							<div class="post-preview post-preview_board mx-n3 mx-sm-auto">
+								<img src="../../public/images/konor.jpg" class="post-preview__image" alt="image fighter">
+								<div class="post-preview__header">
+									<div class="post-preview__row">
+										<div class="label label_red label_text-white label_text-md-red ">MMA</div>
+										<div class="post-preview__post-info post-info">
+											<span class="ml-1">Максим</span>
+											<span class="post-info__time">13:20</span>
+										</div>
+									</div>
+									<a href="#" class="post-preview__title">Шон Портер подробно разобрал реванш Деонтея Уалйдера и Тайсона
+										Фьюри</a>
+									<div class="preview-statistic">
+										<div class="preview-statistic__posts-counter">
+											<svg width="14" height="14" class="icon" viewBox="0 0 14 14">
+												<use xlink:href="../../public/icons/icons.svg#icon-chat"/>
+											</svg>
+											<div class="preview-statistic__num">40</div>
+											<span class="preview-statistic__new-post">(+14)</span>
+										</div>
+										<div class="preview-statistic__posts-counter">
+
+											<svg width="14" height="14" class="icon" viewBox="0 0 14 12">
+												<use xlink:href="../../public/icons/icons.svg#icon-views"/>
+											</svg>
+											<div class="preview-statistic__num">694</div>
+										</div>
+									</div>
+
+								</div>
+							</div>
+
+							<div class="post-list mt-3">
+								<div class="post-preview post-preview_column">
+									<img src="../../public/images/konor.jpg" alt="" class="post-preview__image">
+									<div class="post-preview__main">
+										<div class="post-preview__header">
+											<!--				text-mma-icon-label							-->
+											<div class="label label_red  label_icon">
+												<span class="label__text">ММА</span>
+												<svg width="14" height="14" class="label__icon" viewBox="0 0 14 14">
+													<use xlink:href="../../public/icons/icons.svg#icon-glove-mma"/>
+												</svg>
+											</div>
+											<!--											-->
+											<div class="post-preview__post-info post-info">
+												<div class="post-info__date">
+													<span class="ml-1">Максим</span>
+												</div>
+												<span class="post-info__time">13:20</span>
+											</div>
+										</div>
+										<a href="#" class="post-preview__title">Энтони Диррелл назвал трех лучших боксеров мира</a>
+										<p class="post-preview__text">Экс-чемпион во втором среднем весе (до 76.2 кг), американец Энтони
+											Диррелл назвал, по его мнению трех...</p>
+										<div class="post-preview__statistic  preview-statistic">
+											<div class="preview-statistic__posts-counter">
+												<div class="preview-statistic__num">40</div>
+												<span class="preview-statistic__new-post">(+14)</span>
+											</div>
+											<div class="preview-statistic__posts-counter">
+
+												<svg width="14" height="14" class="icon" viewBox="0 0 14 12">
+													<use xlink:href="../../public/icons/icons.svg#icon-views"/>
+												</svg>
+												<div class="preview-statistic__num">694</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="post-preview post-preview_column">
+									<img src="../../public/images/konor.jpg" alt="" class="post-preview__image">
+									<div class="post-preview__main">
+										<div class="post-preview__header">
+											<!--				text-mma-icon-label							-->
+											<div class="label label_red  label_icon">
+												<span class="label__text">ММА</span>
+												<svg width="14" height="14" class="label__icon" viewBox="0 0 14 14">
+													<use xlink:href="../../public/icons/icons.svg#icon-glove-mma"/>
+												</svg>
+											</div>
+											<!--											-->
+											<div class="post-preview__post-info post-info">
+												<div class="post-info__date">
+													<span class="ml-1">Максим</span>
+												</div>
+												<span class="post-info__time">13:20</span>
+											</div>
+										</div>
+										<a href="#" class="post-preview__title">Эдди Хирн: "Джошуа дал указание, что после боев в Нью-Йорке
+											и Саудовской Аравии...</a>
+										<div class="post-preview__statistic  preview-statistic">
+											<div class="preview-statistic__posts-counter">
+												<svg width="14" height="14" class="icon" viewBox="0 0 14 14">
+													<use xlink:href="../../public/icons/icons.svg#icon-chat"/>
+												</svg>
+												<div class="preview-statistic__num">40</div>
+												<span class="preview-statistic__new-post">(+14)</span>
+											</div>
+											<div class="preview-statistic__posts-counter">
+
+												<svg width="14" height="14" class="icon" viewBox="0 0 14 12">
+													<use xlink:href="../../public/icons/icons.svg#icon-views"/>
+												</svg>
+												<div class="preview-statistic__num">694</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<a href="#" class="btn btn-extra-light-green btn-md btn-block mt-4">Показать еще...</a>
+						</div>
+						<div class="tab-pane fade" id="nav-box-2" role="tabpanel" aria-labelledby="list-box-list">
+							<div class="post-preview post-preview_board mx-n3 mx-sm-auto">
+								<img src="../../public/images/fighter.jpg" class="post-preview__image" alt="image fighter">
+								<div class="post-preview__header">
+									<div class="post-preview__row">
+										<div class="label label_green label_text-white label_text-md-green ">БОКС</div>
+										<div class="post-preview__post-info post-info">
+											<span class="ml-1">Максим</span>
+											<span class="post-info__time">13:20</span>
+										</div>
+									</div>
+									<a href="#" class="post-preview__title">Шон Портер подробно разобрал реванш Деонтея Уалйдера и Тайсона
+										Фьюри</a>
+									<div class="preview-statistic">
+										<div class="preview-statistic__posts-counter">
+											<svg width="14" height="14" class="icon" viewBox="0 0 14 14">
+												<use xlink:href="../../public/icons/icons.svg#icon-chat"/>
+											</svg>
+											<div class="preview-statistic__num">40</div>
+											<span class="preview-statistic__new-post">(+14)</span>
+										</div>
+										<div class="preview-statistic__posts-counter">
+
+											<svg width="14" height="14" class="icon" viewBox="0 0 14 12">
+												<use xlink:href="../../public/icons/icons.svg#icon-views"/>
+											</svg>
+											<div class="preview-statistic__num">694</div>
+										</div>
+									</div>
+
+								</div>
+							</div>
+
+							<div class="post-list mt-3">
+								<div class="post-preview post-preview_column">
+									<img src="../../public/images/konor.jpg" alt="" class="post-preview__image">
+									<div class="post-preview__main">
+										<div class="post-preview__header">
+											<!--				text-box-icon-label							-->
+											<div class="label label_green  label_icon">
+												<span class="label__text">БОКС</span>
+												<svg width="12" height="14" class="label__icon" viewBox="0 0 12 14">
+													<use xlink:href="../../public/icons/icons.svg#icon-glove"/>
+												</svg>
+											</div>
+											<!--											-->
+											<div class="post-preview__post-info post-info">
+												<div class="post-info__date">
+													<span class="ml-1">Максим</span>
+												</div>
+												<span class="post-info__time">13:20</span>
+											</div>
+										</div>
+										<a href="#" class="post-preview__title">Энтони Диррелл назвал трех лучших боксеров мира</a>
+										<p class="post-preview__text">Экс-чемпион во втором среднем весе (до 76.2 кг), американец Энтони
+											Диррелл назвал, по его мнению трех...</p>
+										<div class="post-preview__statistic  preview-statistic">
+											<div class="preview-statistic__posts-counter">
+												<svg width="14" height="14" class="icon" viewBox="0 0 14 14">
+													<use xlink:href="../../public/icons/icons.svg#icon-chat"/>
+												</svg>
+												<div class="preview-statistic__num">40</div>
+												<span class="preview-statistic__new-post">(+14)</span>
+											</div>
+											<div class="preview-statistic__posts-counter">
+
+												<svg width="14" height="14" class="icon" viewBox="0 0 14 12">
+													<use xlink:href="../../public/icons/icons.svg#icon-views"/>
+												</svg>
+												<div class="preview-statistic__num">694</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="post-preview post-preview_column">
+									<img src="../../public/images/konor.jpg" alt="" class="post-preview__image">
+									<div class="post-preview__main">
+										<div class="post-preview__header">
+											<!--				text-box-icon-label							-->
+											<div class="label label_green  label_icon">
+												<span class="label__text">БОКС</span>
+												<svg width="12" height="14" class="label__icon" viewBox="0 0 12 14">
+													<use xlink:href="../../public/icons/icons.svg#icon-glove"/>
+												</svg>
+											</div>
+											<!--											-->
+											<div class="post-preview__post-info post-info">
+												<div class="post-info__date">
+													<span class="ml-1">Максим</span>
+												</div>
+												<span class="post-info__time">13:20</span>
+											</div>
+										</div>
+										<a href="#" class="post-preview__title">Эдди Хирн: "Джошуа дал указание, что после боев в Нью-Йорке
+											и Саудовской Аравии...</a>
+										<div class="post-preview__statistic  preview-statistic">
+											<div class="preview-statistic__posts-counter">
+												<svg width="14" height="14" class="icon" viewBox="0 0 14 14">
+													<use xlink:href="../../public/icons/icons.svg#icon-chat"/>
+												</svg>
+												<div class="preview-statistic__num">40</div>
+												<span class="preview-statistic__new-post">(+14)</span>
+											</div>
+											<div class="preview-statistic__posts-counter">
+
+												<svg width="14" height="14" class="icon" viewBox="0 0 14 12">
+													<use xlink:href="../../public/icons/icons.svg#icon-views"/>
+												</svg>
+												<div class="preview-statistic__num">694</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<a href="#" class="btn btn-extra-light-green btn-md btn-block mt-4">Показать еще...</a>
+						</div>
+
+					</div>
+				</section>
+				<section class="section section-video  section_dark mt-5 " id="section-video">
+					<div class="section__header">
+						<div class="h1 font-weight-bold text-white ml-3">Видео</div>
+						<nav class="nav border-radius-sm video-nav order-sm-2 mt-3 mt-md-auto" id="nav-tab-3" role="tablist">
+							<a class="btn-active-bg active" id="nav-last-tab" data-toggle="tab" href="#nav-last-1" role="tab"
+								 aria-controls="nav-last" aria-selected="true">Последние</a>
+							<a class="btn-active-bg " id="nav-popular-tab" data-toggle="tab" href="#nav-popular-1" role="tab"
+								 aria-controls="nav-popular" aria-selected="false">Популярные</a>
+						</nav>
+						<a href="#" class="btn btn-extra-light-green btn-sm btn-arrow">Все видео</a>
+					</div>
+
+					<div class="tab-content" id="myTabContentVideos">
+						<div class="tab-pane fade show active" id="nav-last-1" role="tabpanel" aria-labelledby="all-tab">
+							<div class="post-list mt-small-1">
+								<div class="post-preview post-preview_video post-preview_video-big">
+									<iframe class="post-preview__videos" src="https://www.youtube-nocookie.com/embed/5qap5aO4i9A"
+													frameborder="0"
+													allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+													allowfullscreen></iframe>
+									<div class="post-preview__main">
+										<div class="post-preview__header">
+											<!--				text-mma-icon-label							-->
+											<div class="label label_red label_text-white label_icon">
+												<span class="label__text">MMA</span>
+												<svg width="14" height="14" class="label__icon" viewBox="0 0 14 14">
+													<use xlink:href="../../public/icons/icons.svg#icon-glove-mma"/>
+												</svg>
+											</div>
+											<!--											-->
+											<div class="preview-statistic">
+												<div class="preview-statistic__posts-counter">
+													<svg width="14" height="14" class="icon" viewBox="0 0 14 14">
+														<use xlink:href="../../public/icons/icons.svg#icon-chat"/>
+													</svg>
+													<div class="preview-statistic__num">40</div>
+													<span class="preview-statistic__new-post">(+14)</span>
+												</div>
+												<div class="preview-statistic__posts-counter">
+
+													<svg width="14" height="14" class="icon" viewBox="0 0 14 12">
+														<use xlink:href="../../public/icons/icons.svg#icon-views"/>
+													</svg>
+													<div class="preview-statistic__num">694</div>
+												</div>
+											</div>
+										</div>
+										<a href="#" class="post-preview__title text-white">Энтони Диррелл назвал трех лучших боксеров
+											мира</a>
+									</div>
+								</div>
+								<!-- Swiper -->
+								<div class="post-preview__slider-wrapper">
+									<div class="post-slider">
+										<div class="swiper-wrapper">
+											<div class="swiper-slide">
+												<div class="post-preview post-preview_video post-preview_video-sm">
+													<iframe class="post-preview__videos" src="https://www.youtube-nocookie.com/embed/5qap5aO4i9A"
+																	frameborder="0"
+																	allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+																	allowfullscreen></iframe>
+													<div class="post-preview__main">
+														<div class="post-preview__header">
+															<!--											-->
+															<div class="label label_red label_text-white label_icon">
+																<span class="label__text">MMA</span>
+																<svg width="14" height="14" class="label__icon" viewBox="0 0 14 14">
+																	<use xlink:href="../../public/icons/icons.svg#icon-glove-mma"/>
+																</svg>
+															</div>
+															<!--											-->
+															<div class="preview-statistic">
+																<div class="preview-statistic__posts-counter">
+																	<svg width="14" height="14" class="icon" viewBox="0 0 14 14">
+																		<use xlink:href="../../public/icons/icons.svg#icon-chat"/>
+																	</svg>
+																	<div class="preview-statistic__num">40</div>
+																	<span class="preview-statistic__new-post">(+14)</span>
+																</div>
+																<div class="preview-statistic__posts-counter">
+
+																	<svg width="14" height="14" class="icon" viewBox="0 0 14 12">
+																		<use xlink:href="../../public/icons/icons.svg#icon-views"/>
+																	</svg>
+																	<div class="preview-statistic__num">694</div>
+																</div>
+															</div>
+														</div>
+														<a href="#" class="post-preview__title text-white">Энтони Диррелл назвал трех лучших
+															боксеров
+															мира</a>
+													</div>
+												</div>
+											</div>
+											<div class="swiper-slide">
+												<div class="post-preview post-preview_video post-preview_video-sm">
+													<iframe class="post-preview__videos" src="https://www.youtube-nocookie.com/embed/5qap5aO4i9A"
+																	frameborder="0"
+																	allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+																	allowfullscreen></iframe>
+													<div class="post-preview__main">
+														<div class="post-preview__header">
+															<!--											-->
+															<div class="label label_red label_text-white label_icon">
+																<span class="label__text">MMA</span>
+																<svg width="14" height="14" class="label__icon" viewBox="0 0 14 14">
+																	<use xlink:href="../../public/icons/icons.svg#icon-glove-mma"/>
+																</svg>
+															</div>
+															<!--											-->
+															<div class="preview-statistic">
+																<div class="preview-statistic__posts-counter">
+																	<svg width="14" height="14" class="icon" viewBox="0 0 14 14">
+																		<use xlink:href="../../public/icons/icons.svg#icon-chat"/>
+																	</svg>
+																	<div class="preview-statistic__num">40</div>
+																	<span class="preview-statistic__new-post">(+14)</span>
+																</div>
+																<div class="preview-statistic__posts-counter">
+
+																	<svg width="14" height="14" class="icon" viewBox="0 0 14 12">
+																		<use xlink:href="../../public/icons/icons.svg#icon-views"/>
+																	</svg>
+																	<div class="preview-statistic__num">694</div>
+																</div>
+															</div>
+														</div>
+														<a href="#" class="post-preview__title text-white">Энтони Диррелл назвал трех лучших
+															боксеров
+															мира</a>
+													</div>
+												</div>
+											</div>
+											<div class="swiper-slide">
+												<div class="post-preview post-preview_video post-preview_video-sm">
+													<iframe class="post-preview__videos" src="https://www.youtube-nocookie.com/embed/5qap5aO4i9A"
+																	frameborder="0"
+																	allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+																	allowfullscreen></iframe>
+													<div class="post-preview__main">
+														<div class="post-preview__header">
+															<!--						text-box-icon-label					-->
+															<div class="label label_green label_text-white label_icon">
+																<span class="label__text">БОКС</span>
+																<svg width="12" height="14" class="label__icon" viewBox="0 0 12 14">
+																	<use xlink:href="../../public/icons/icons.svg#icon-glove"/>
+																</svg>
+															</div>
+															<!--											-->
+															<div class="preview-statistic">
+																<div class="preview-statistic__posts-counter">
+																	<svg width="14" height="14" class="icon" viewBox="0 0 14 14">
+																		<use xlink:href="../../public/icons/icons.svg#icon-chat"/>
+																	</svg>
+																	<div class="preview-statistic__num">40</div>
+																	<span class="preview-statistic__new-post">(+14)</span>
+																</div>
+																<div class="preview-statistic__posts-counter">
+
+																	<svg width="14" height="14" class="icon" viewBox="0 0 14 12">
+																		<use xlink:href="../../public/icons/icons.svg#icon-views"/>
+																	</svg>
+																	<div class="preview-statistic__num">694</div>
+																</div>
+															</div>
+														</div>
+														<a href="#" class="post-preview__title text-white">Энтони Диррелл назвал трех лучших
+															боксеров
+															мира</a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="pagination-scroll"></div>
+										<!-- Add Arrows -->
+									<div class="swiper-button-next">
+										<svg width="8" height="12" class="icon" viewBox="0 0 8 12">
+											<use xlink:href="../../public/icons/icons.svg#icon-arrowRight"/>
+										</svg>
+									</div>
+									<div class="swiper-button-prev">
+										<svg width="8" height="12" class="icon" viewBox="0 0 8 12">
+											<use xlink:href="../../public/icons/icons.svg#icon-arrowRight"/>
+										</svg>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="tab-pane fade" id="nav-popular-1" role="tabpanel" aria-labelledby="mma-tab">
+							<div class="post-list mt-small-1">
+								<div class="post-preview post-preview_video post-preview_video-big">
+									<iframe class="post-preview__videos" src="https://www.youtube-nocookie.com/embed/5qap5aO4i9A"
+													frameborder="0"
+													allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+													allowfullscreen></iframe>
+									<div class="post-preview__main">
+										<div class="post-preview__header">
+											<!--						text-box-icon-label					-->
+											<div class="label label_green label_text-white label_icon">
+												<span class="label__text">БОКС</span>
+												<svg width="12" height="14" class="label__icon" viewBox="0 0 12 14">
+													<use xlink:href="../../public/icons/icons.svg#icon-glove"/>
+												</svg>
+											</div>
+											<!--											-->
+											<div class="preview-statistic">
+												<div class="preview-statistic__posts-counter">
+													<svg width="14" height="14" class="icon" viewBox="0 0 14 14">
+														<use xlink:href="../../public/icons/icons.svg#icon-chat"/>
+													</svg>
+													<div class="preview-statistic__num">40</div>
+													<span class="preview-statistic__new-post">(+14)</span>
+												</div>
+												<div class="preview-statistic__posts-counter">
+
+													<svg width="14" height="14" class="icon" viewBox="0 0 14 12">
+														<use xlink:href="../../public/icons/icons.svg#icon-views"/>
+													</svg>
+													<div class="preview-statistic__num">694</div>
+												</div>
+											</div>
+										</div>
+										<a href="#" class="post-preview__title text-white">Энтони Диррелл назвал трех лучших боксеров
+											мира</a>
+									</div>
+								</div>
+								<div class="post-preview post-preview_video post-preview_video-big">
+									<iframe class="post-preview__videos" src="https://www.youtube-nocookie.com/embed/5qap5aO4i9A"
+													frameborder="0"
+													allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+													allowfullscreen></iframe>
+									<div class="post-preview__main">
+										<div class="post-preview__header">
+											<!--						text-mma-icon-label					-->
+											<div class="label label_red label_text-white label_icon">
+												<span class="label__text">ММА</span>
+												<svg width="12" height="14" class="label__icon" viewBox="0 0 12 14">
+													<use xlink:href="../../public/icons/icons.svg#icon-glove"/>
+												</svg>
+											</div>
+											<!--											-->
+											<div class="preview-statistic">
+												<div class="preview-statistic__posts-counter">
+													<svg width="14" height="14" class="icon" viewBox="0 0 14 14">
+														<use xlink:href="../../public/icons/icons.svg#icon-chat"/>
+													</svg>
+													<div class="preview-statistic__num">40</div>
+													<span class="preview-statistic__new-post">(+14)</span>
+												</div>
+												<div class="preview-statistic__posts-counter">
+
+													<svg width="14" height="14" class="icon" viewBox="0 0 14 12">
+														<use xlink:href="../../public/icons/icons.svg#icon-views"/>
+													</svg>
+													<div class="preview-statistic__num">694</div>
+												</div>
+											</div>
+										</div>
+										<a href="#" class="post-preview__title text-white">Энтони Диррелл назвал трех лучших боксеров
+											мира</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</section>
+				<section class="section section-fighters mt-5" data-lg-after="section-news" id="section-fighters">
+					<div class="section__header">
+						<div class="h1 font-weight-bold">Бойцы</div>
+						<a href="#" class="btn btn-extra-light-green btn-sm btn-arrow">Все бойцы</a>
+					</div>
+					<nav class="nav nav-tabs tabs-menu mt-4" id="nav-tab-4" role="tablist">
+						<a class="tabs-menu__btn  active" id="nav-mma-tab-1" data-toggle="tab" href="#nav-mma-5" role="tab"
+							 aria-controls="nav-home" aria-selected="true">Последние</a>
+						<a class="tabs-menu__btn " id="nav-box-tab-1" data-toggle="tab" href="#nav-box-5" role="tab"
+							 aria-controls="nav-profile" aria-selected="false">ТОП</a>
+					</nav>
+					<div class="fighter-list mt-4">
+						<div class="fighter-card">
+							<div class="fighter-card__flag">
+								<svg width="37" height="37" class="icon" viewBox="0 0 37 37">
+									<use xlink:href="../../public/icons/flag.svg#flag-ireland"/>
+								</svg>
+								<div class="fighter-card__company">UFC</div>
+							</div>
+							<img src="../../public/images/konor-mini.png" class="fighter-card__image" alt="konor">
+							<div class="fighter-card__info">
+								<div class="fighter-card__title">Конор Макгрегор</div>
+								<div class="fighter-card__text">
+									<svg width="16" height="16" class="icon fighter-card__icon" viewBox="0 0 16 16">
+										<use xlink:href="../../public/icons/icons.svg#icon-biceps"/>
+									</svg>
+									<div>Lightweight</div>
+								</div>
+								<div class="fighter-card__text">
+									<svg width="16" height="16" class="icon fighter-card__icon" viewBox="0 0 16 16">
+										<use xlink:href="../../public/icons/icons.svg#icon-sword"/>
+									</svg>
+									<div>25 - 0 - 1</div>
+								</div>
+							</div>
+						</div>
+						<div class="fighter-card">
+							<div class="fighter-card__flag">
+								<svg width="37" height="37" class="icon" viewBox="0 0 37 37">
+									<use xlink:href="../../public/icons/flag.svg#flag-ireland"/>
+								</svg>
+								<div class="fighter-card__company">UFC</div>
+							</div>
+							<img src="../../public/images/konor-mini.png" class="fighter-card__image" alt="konor">
+							<div class="fighter-card__info">
+								<div class="fighter-card__title">Конор Макгрегор</div>
+								<div class="fighter-card__text">
+									<svg width="16" height="16" class="icon fighter-card__icon" viewBox="0 0 16 16">
+										<use xlink:href="../../public/icons/icons.svg#icon-biceps"/>
+									</svg>
+									<div>Lightweight</div>
+								</div>
+								<div class="fighter-card__text">
+									<svg width="16" height="16" class="icon fighter-card__icon" viewBox="0 0 16 16">
+										<use xlink:href="../../public/icons/icons.svg#icon-sword"/>
+									</svg>
+									<div>25 - 0 - 1</div>
+								</div>
+							</div>
+						</div>
+						<div class="fighter-card">
+							<div class="fighter-card__flag">
+								<svg width="37" height="37" class="icon" viewBox="0 0 37 37">
+									<use xlink:href="../../public/icons/flag.svg#flag-ireland"/>
+								</svg>
+								<div class="fighter-card__company">UFC</div>
+							</div>
+							<img src="../../public/images/konor-mini.png" class="fighter-card__image" alt="konor">
+							<div class="fighter-card__info">
+								<div class="fighter-card__title">Конор Макгрегор</div>
+								<div class="fighter-card__text">
+									<svg width="16" height="16" class="icon" viewBox="0 0 16 16">
+										<use xlink:href="../../public/icons/icons.svg#icon-biceps"/>
+									</svg>
+									<div>Lightweight</div>
+								</div>
+								<div class="fighter-card__text">
+									<svg width="16" height="16" class="icon fighter-card__icon" viewBox="0 0 16 16">
+										<use xlink:href="../../public/icons/icons.svg#icon-sword"/>
+									</svg>
+									<div>25 - 0 - 1</div>
+								</div>
+							</div>
+						</div>
+						<div class="fighter-card">
+							<div class="fighter-card__flag">
+								<svg width="37" height="37" class="icon" viewBox="0 0 37 37">
+									<use xlink:href="../../public/icons/flag.svg#flag-ireland"/>
+								</svg>
+								<div class="fighter-card__company">UFC</div>
+							</div>
+							<img src="../../public/images/konor-mini.png" class="fighter-card__image" alt="konor">
+							<div class="fighter-card__info">
+								<div class="fighter-card__title">Конор Макгрегор</div>
+								<div class="fighter-card__text">
+									<svg width="16" height="16" class="icon fighter-card__icon" viewBox="0 0 16 16">
+										<use xlink:href="../../public/icons/icons.svg#icon-biceps"/>
+									</svg>
+									<div>Lightweight</div>
+								</div>
+								<div class="fighter-card__text">
+									<svg width="16" height="16" class="icon fighter-card__icon" viewBox="0 0 16 16">
+										<use xlink:href="../../public/icons/icons.svg#icon-sword"/>
+									</svg>
+									<div>25 - 0 - 1</div>
+								</div>
+							</div>
+						</div>
+						<div class="fighter-card">
+							<div class="fighter-card__flag">
+								<svg width="37" height="37" class="icon" viewBox="0 0 37 37">
+									<use xlink:href="../../public/icons/flag.svg#flag-ireland"/>
+								</svg>
+								<div class="fighter-card__company">UFC</div>
+							</div>
+							<img src="../../public/images/konor-mini.png" class="fighter-card__image" alt="konor">
+							<div class="fighter-card__info">
+								<div class="fighter-card__title">Конор Макгрегор</div>
+								<div class="fighter-card__text">
+									<svg width="16" height="16" class="icon fighter-card__icon" viewBox="0 0 16 16">
+										<use xlink:href="../../public/icons/icons.svg#icon-biceps"/>
+									</svg>
+									<div>Lightweight</div>
+								</div>
+								<div class="fighter-card__text">
+									<svg width="16" height="16" class="icon fighter-card__icon" viewBox="0 0 16 16">
+										<use xlink:href="../../public/icons/icons.svg#icon-sword"/>
+									</svg>
+									<div>25 - 0 - 1</div>
+								</div>
+							</div>
+						</div>
+						<div class="fighter-card">
+							<div class="fighter-card__flag">
+								<svg width="37" height="37" class="icon" viewBox="0 0 37 37">
+									<use xlink:href="../../public/icons/flag.svg#flag-ireland"/>
+								</svg>
+								<div class="fighter-card__company">UFC</div>
+							</div>
+							<img src="../../public/images/konor-mini.png" class="fighter-card__image" alt="konor">
+							<div class="fighter-card__info">
+								<div class="fighter-card__title">Конор Макгрегор</div>
+								<div class="fighter-card__text">
+									<svg width="16" height="16" class="icon fighter-card__icon" viewBox="0 0 16 16">
+										<use xlink:href="../../public/icons/icons.svg#icon-biceps"/>
+									</svg>
+									<div>Lightweight</div>
+								</div>
+								<div class="fighter-card__text">
+									<svg width="16" height="16" class="icon fighter-card__icon" viewBox="0 0 16 16">
+										<use xlink:href="../../public/icons/icons.svg#icon-sword"/>
+									</svg>
+									<div>25 - 0 - 1</div>
+								</div>
+							</div>
+						</div>
+						<div class="fighter-card">
+							<div class="fighter-card__flag">
+								<svg width="37" height="37" class="icon" viewBox="0 0 37 37">
+									<use xlink:href="../../public/icons/flag.svg#flag-ireland"/>
+								</svg>
+								<div class="fighter-card__company">UFC</div>
+							</div>
+							<img src="../../public/images/konor-mini.png" class="fighter-card__image" alt="konor">
+							<div class="fighter-card__info">
+								<div class="fighter-card__title">Конор Макгрегор</div>
+								<div class="fighter-card__text">
+									<svg width="16" height="16" class="icon fighter-card__icon" viewBox="0 0 16 16">
+										<use xlink:href="../../public/icons/icons.svg#icon-biceps"/>
+									</svg>
+									<div>Lightweight</div>
+								</div>
+								<div class="fighter-card__text">
+									<svg width="16" height="16" class="icon fighter-card__icon" viewBox="0 0 16 16">
+										<use xlink:href="../../public/icons/icons.svg#icon-sword"/>
+									</svg>
+									<div>25 - 0 - 1</div>
+								</div>
+							</div>
+						</div>
+						<div class="fighter-card">
+							<div class="fighter-card__flag">
+								<svg width="37" height="37" class="icon" viewBox="0 0 37 37">
+									<use xlink:href="../../public/icons/flag.svg#flag-ireland"/>
+								</svg>
+								<div class="fighter-card__company">UFC</div>
+							</div>
+							<img src="../../public/images/konor-mini.png" class="fighter-card__image" alt="konor">
+							<div class="fighter-card__info">
+								<div class="fighter-card__title">Конор Макгрегор</div>
+								<div class="fighter-card__text">
+									<svg width="16" height="16" class="icon fighter-card__icon" viewBox="0 0 16 16">
+										<use xlink:href="../../public/icons/icons.svg#icon-biceps"/>
+									</svg>
+									<div>Lightweight</div>
+								</div>
+								<div class="fighter-card__text">
+									<svg width="16" height="16" class="icon fighter-card__icon" viewBox="0 0 16 16">
+										<use xlink:href="../../public/icons/icons.svg#icon-sword"/>
+									</svg>
+									<div>25 - 0 - 1</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</section>
+				<section class="section mt-5" id="section-news-2">
+					<div class="section__header">
+						<div class="h1 font-weight-bold">Больше новостей</div>
+						<a href="#" class="btn btn-extra-light-green btn-sm btn-arrow">Все новости</a>
+					</div>
+					<nav class="nav nav-tabs tabs-menu mt-4" id="nav-tab-news-7" role="tablist">
+						<a class="tabs-menu__btn  active" data-toggle="tab" href="#nav-last-7" role="tab"
+							 aria-controls="nav-home" aria-selected="true">Последние</a>
+						<a class="tabs-menu__btn red " data-toggle="tab" href="#nav-mma-7" role="tab"
+							 aria-controls="nav-profile" aria-selected="false">ММА</a>
+						<a class="tabs-menu__btn green" data-toggle="tab" href="#nav-box-7" role="tab"
+							 aria-controls="nav-profile" aria-selected="false">БОКС</a>
+					</nav>
+					<div class="tab-content mt-4" id="myTabContentNews-7">
+						<div class="tab-pane fade show active" id="nav-last-7" role="tabpanel" aria-labelledby="list-all-list">
+							<div class="post-preview post-preview_board mx-n3 mx-sm-auto">
+								<img src="../../public/images/fighter.jpg" class="post-preview__image" alt="image fighter">
+								<div class="post-preview__header">
+									<div class="post-preview__row">
+										<div class="label label_red label_text-white label_text-md-red ">MMA</div>
+										<div class="post-preview__post-info post-info">
+											<span class="ml-1">Максим</span>
+											<span class="post-info__time">13:20</span>
+										</div>
+									</div>
+									<a href="#" class="post-preview__title">Шон Портер подробно разобрал реванш Деонтея Уалйдера и Тайсона
+										Фьюри</a>
+									<div class="preview-statistic">
+										<div class="preview-statistic__posts-counter">
+											<svg width="14" height="14" class="icon" viewBox="0 0 14 14">
+												<use xlink:href="../../public/icons/icons.svg#icon-chat"/>
+											</svg>
+											<div class="preview-statistic__num">40</div>
+											<span class="preview-statistic__new-post">(+14)</span>
+										</div>
+										<div class="preview-statistic__posts-counter">
+
+											<svg width="14" height="14" class="icon" viewBox="0 0 14 12">
+												<use xlink:href="../../public/icons/icons.svg#icon-views"/>
+											</svg>
+											<div class="preview-statistic__num">694</div>
+										</div>
+									</div>
+
+								</div>
+							</div>
+							<div class="post-list mt-3">
+
+								<div class="post-preview post-preview_column">
+									<img src="../../public/images/konor.jpg" alt="" class="post-preview__image">
+									<div class="post-preview__main">
+										<div class="post-preview__header">
+											<!--				text-mma-icon-label							-->
+											<div class="label label_red  label_icon">
+												<span class="label__text">MMA</span>
+												<svg width="14" height="14" class="label__icon" viewBox="0 0 14 14">
+													<use xlink:href="../../public/icons/icons.svg#icon-glove-mma"/>
+												</svg>
+											</div>
+											<!--											-->
+											<div class="post-preview__post-info post-info">
+												<div class="post-info__date">
+													<span class="ml-1">Максим</span>
+												</div>
+												<span class="post-info__time">13:20</span>
+											</div>
+										</div>
+										<a href="#" class="post-preview__title">Энтони Диррелл назвал трех лучших боксеров мира</a>
+										<p class="post-preview__text">Экс-чемпион во втором среднем весе (до 76.2 кг), американец Энтони
+											Диррелл назвал, по его мнению трех...</p>
+										<div class="post-preview__statistic  preview-statistic">
+											<div class="preview-statistic__posts-counter">
+												<svg width="14" height="14" class="icon" viewBox="0 0 14 14">
+													<use xlink:href="../../public/icons/icons.svg#icon-chat"/>
+												</svg>
+												<div class="preview-statistic__num">40</div>
+												<span class="preview-statistic__new-post">(+14)</span>
+											</div>
+											<div class="preview-statistic__posts-counter">
+
+												<svg width="14" height="14" class="icon" viewBox="0 0 14 12">
+													<use xlink:href="../../public/icons/icons.svg#icon-views"/>
+												</svg>
+												<div class="preview-statistic__num">694</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="post-preview post-preview_column">
+									<img src="../../public/images/konor.jpg" alt="" class="post-preview__image">
+									<div class="post-preview__main">
+										<div class="post-preview__header">
+											<!--				text-mma-icon-label							-->
+											<div class="label label_red  label_icon">
+												<span class="label__text">MMA</span>
+												<svg width="14" height="14" class="label__icon" viewBox="0 0 14 14">
+													<use xlink:href="../../public/icons/icons.svg#icon-glove-mma"/>
+												</svg>
+											</div>
+											<!--											-->
+											<div class="post-preview__post-info post-info">
+												<div class="post-info__date">
+													<span class="ml-1">Максим</span>
+												</div>
+												<span class="post-info__time">13:20</span>
+											</div>
+										</div>
+										<a href="#" class="post-preview__title">Энтони Диррелл назвал трех лучших боксеров мира</a>
+										<p class="post-preview__text">Экс-чемпион во втором среднем весе (до 76.2 кг), американец Энтони
+											Диррелл назвал, по его мнению трех...</p>
+										<div class="post-preview__statistic  preview-statistic">
+											<div class="preview-statistic__posts-counter">
+												<svg width="14" height="14" class="icon" viewBox="0 0 14 14">
+													<use xlink:href="../../public/icons/icons.svg#icon-chat"/>
+												</svg>
+												<div class="preview-statistic__num">40</div>
+												<span class="preview-statistic__new-post">(+14)</span>
+											</div>
+											<div class="preview-statistic__posts-counter">
+
+												<svg width="14" height="14" class="icon" viewBox="0 0 14 12">
+													<use xlink:href="../../public/icons/icons.svg#icon-views"/>
+												</svg>
+												<div class="preview-statistic__num">694</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<a href="#" class="btn btn-extra-light-green btn-md btn-block mt-4">Показать еще...</a>
+						</div>
+
+						<div class="tab-pane fade" id="nav-mma-7" role="tabpanel" aria-labelledby="list-mma-list">
+							<div class="post-preview post-preview_board mx-n3 mx-sm-auto">
+								<img src="../../public/images/fighter.jpg" class="post-preview__image" alt="image fighter">
+								<div class="post-preview__header">
+									<div class="post-preview__row">
+										<div class="label label_red label_text-white label_text-md-red ">MMA</div>
+										<div class="post-preview__post-info post-info">
+											<span class="ml-1">Максим</span>
+											<span class="post-info__time">13:20</span>
+										</div>
+									</div>
+									<a href="#" class="post-preview__title">Шон Портер подробно разобрал реванш Деонтея Уалйдера и Тайсона
+										Фьюри</a>
+									<div class="preview-statistic">
+										<div class="preview-statistic__posts-counter">
+											<svg width="14" height="14" class="icon" viewBox="0 0 14 14">
+												<use xlink:href="../../public/icons/icons.svg#icon-chat"/>
+											</svg>
+											<div class="preview-statistic__num">40</div>
+											<span class="preview-statistic__new-post">(+14)</span>
+										</div>
+										<div class="preview-statistic__posts-counter">
+
+											<svg width="14" height="14" class="icon" viewBox="0 0 14 12">
+												<use xlink:href="../../public/icons/icons.svg#icon-views"/>
+											</svg>
+											<div class="preview-statistic__num">694</div>
+										</div>
+									</div>
+
+								</div>
+							</div>
+							<div class="post-list mt-3">
+								<div class="post-preview post-preview_column">
+									<img src="../../public/images/konor.jpg" alt="" class="post-preview__image">
+									<div class="post-preview__main">
+										<div class="post-preview__header">
+											<!--				text-mma-icon-label							-->
+											<div class="label label_red  label_icon">
+												<span class="label__text">MMA</span>
+												<svg width="14" height="14" class="label__icon" viewBox="0 0 14 14">
+													<use xlink:href="../../public/icons/icons.svg#icon-glove-mma"/>
+												</svg>
+											</div>
+											<!--											-->
+											<div class="post-preview__post-info post-info">
+												<div class="post-info__date">
+													<span class="ml-1">Максим</span>
+												</div>
+												<span class="post-info__time">13:20</span>
+											</div>
+										</div>
+										<a href="#" class="post-preview__title">Энтони Диррелл назвал трех лучших боксеров мира</a>
+										<p class="post-preview__text">Экс-чемпион во втором среднем весе (до 76.2 кг), американец Энтони
+											Диррелл назвал, по его мнению трех...</p>
+										<div class="post-preview__statistic  preview-statistic">
+											<div class="preview-statistic__posts-counter">
+												<svg width="14" height="14" class="icon" viewBox="0 0 14 14">
+													<use xlink:href="../../public/icons/icons.svg#icon-chat"/>
+												</svg>
+												<div class="preview-statistic__num">40</div>
+												<span class="preview-statistic__new-post">(+14)</span>
+											</div>
+											<div class="preview-statistic__posts-counter">
+
+												<svg width="14" height="14" class="icon" viewBox="0 0 14 12">
+													<use xlink:href="../../public/icons/icons.svg#icon-views"/>
+												</svg>
+												<div class="preview-statistic__num">694</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="post-preview post-preview_column">
+									<img src="../../public/images/konor.jpg" alt="" class="post-preview__image">
+									<div class="post-preview__main">
+										<div class="post-preview__header">
+											<!--				text-mma-icon-label							-->
+											<div class="label label_red  label_icon">
+												<span class="label__text">MMA</span>
+												<svg width="14" height="14" class="label__icon" viewBox="0 0 14 14">
+													<use xlink:href="../../public/icons/icons.svg#icon-glove-mma"/>
+												</svg>
+											</div>
+											<!--											-->
+											<div class="post-preview__post-info post-info">
+												<div class="post-info__date">
+													<span class="ml-1">Максим</span>
+												</div>
+												<span class="post-info__time">13:20</span>
+											</div>
+										</div>
+										<a href="#" class="post-preview__title">Энтони Диррелл назвал трех лучших боксеров мира</a>
+										<p class="post-preview__text">Экс-чемпион во втором среднем весе (до 76.2 кг), американец Энтони
+											Диррелл назвал, по его мнению трех...</p>
+										<div class="post-preview__statistic  preview-statistic">
+											<div class="preview-statistic__posts-counter">
+												<svg width="14" height="14" class="icon" viewBox="0 0 14 14">
+													<use xlink:href="../../public/icons/icons.svg#icon-chat"/>
+												</svg>
+												<div class="preview-statistic__num">40</div>
+												<span class="preview-statistic__new-post">(+14)</span>
+											</div>
+											<div class="preview-statistic__posts-counter">
+
+												<svg width="14" height="14" class="icon" viewBox="0 0 14 12">
+													<use xlink:href="../../public/icons/icons.svg#icon-views"/>
+												</svg>
+												<div class="preview-statistic__num">694</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<a href="#" class="btn btn-extra-light-green btn-md btn-block mt-4">Показать еще...</a>
+						</div>
+						<div class="tab-pane fade" id="nav-box-7" role="tabpanel" aria-labelledby="list-box-list">
+							<div class="post-preview post-preview_board mx-n3 mx-sm-auto">
+								<img src="../../public/images/fighter.jpg" class="post-preview__image" alt="image fighter">
+								<div class="post-preview__header">
+									<div class="post-preview__row">
+										<div class="label label_green label_text-white label_text-md-green ">БОКС</div>
+										<div class="post-preview__post-info post-info">
+											<span class="ml-1">Максим</span>
+											<span class="post-info__time">13:20</span>
+										</div>
+									</div>
+									<a href="#" class="post-preview__title">Шон Портер подробно разобрал реванш Деонтея Уалйдера и Тайсона
+										Фьюри</a>
+									<div class="preview-statistic">
+										<div class="preview-statistic__posts-counter">
+											<svg width="14" height="14" class="icon" viewBox="0 0 14 14">
+												<use xlink:href="../../public/icons/icons.svg#icon-chat"/>
+											</svg>
+											<div class="preview-statistic__num">40</div>
+											<span class="preview-statistic__new-post">(+14)</span>
+										</div>
+										<div class="preview-statistic__posts-counter">
+
+											<svg width="14" height="14" class="icon" viewBox="0 0 14 12">
+												<use xlink:href="../../public/icons/icons.svg#icon-views"/>
+											</svg>
+											<div class="preview-statistic__num">694</div>
+										</div>
+									</div>
+
+								</div>
+							</div>
+							<div class="post-list mt-3">
+								<div class="post-preview post-preview_column">
+									<img src="../../public/images/konor.jpg" alt="" class="post-preview__image">
+									<div class="post-preview__main">
+										<div class="post-preview__header">
+											<!--				text-mma-icon-label							-->
+											<div class="label label_red  label_icon">
+												<span class="label__text">MMA</span>
+												<svg width="14" height="14" class="label__icon" viewBox="0 0 14 14">
+													<use xlink:href="../../public/icons/icons.svg#icon-glove-mma"/>
+												</svg>
+											</div>
+											<!--											-->
+											<div class="post-preview__post-info post-info">
+												<div class="post-info__date">
+													<span class="ml-1">Максим</span>
+												</div>
+												<span class="post-info__time">13:20</span>
+											</div>
+										</div>
+										<a href="#" class="post-preview__title">Энтони Диррелл назвал трех лучших боксеров мира</a>
+										<p class="post-preview__text">Экс-чемпион во втором среднем весе (до 76.2 кг), американец Энтони
+											Диррелл назвал, по его мнению трех...</p>
+										<div class="post-preview__statistic  preview-statistic">
+											<div class="preview-statistic__posts-counter">
+												<svg width="14" height="14" class="icon" viewBox="0 0 14 14">
+													<use xlink:href="../../public/icons/icons.svg#icon-chat"/>
+												</svg>
+												<div class="preview-statistic__num">40</div>
+												<span class="preview-statistic__new-post">(+14)</span>
+											</div>
+											<div class="preview-statistic__posts-counter">
+
+												<svg width="14" height="14" class="icon" viewBox="0 0 14 12">
+													<use xlink:href="../../public/icons/icons.svg#icon-views"/>
+												</svg>
+												<div class="preview-statistic__num">694</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="post-preview post-preview_column">
+									<img src="../../public/images/konor.jpg" alt="" class="post-preview__image">
+									<div class="post-preview__main">
+										<div class="post-preview__header">
+											<!--				text-mma-icon-label							-->
+											<div class="label label_red  label_icon">
+												<span class="label__text">MMA</span>
+												<svg width="14" height="14" class="label__icon" viewBox="0 0 14 14">
+													<use xlink:href="../../public/icons/icons.svg#icon-glove-mma"/>
+												</svg>
+											</div>
+											<!--											-->
+											<div class="post-preview__post-info post-info">
+												<div class="post-info__date">
+													<span class="ml-1">Максим</span>
+												</div>
+												<span class="post-info__time">13:20</span>
+											</div>
+										</div>
+										<a href="#" class="post-preview__title">Энтони Диррелл назвал трех лучших боксеров мира</a>
+										<p class="post-preview__text">Экс-чемпион во втором среднем весе (до 76.2 кг), американец Энтони
+											Диррелл назвал, по его мнению трех...</p>
+										<div class="post-preview__statistic  preview-statistic">
+											<div class="preview-statistic__posts-counter">
+												<svg width="14" height="14" class="icon" viewBox="0 0 14 14">
+													<use xlink:href="../../public/icons/icons.svg#icon-chat"/>
+												</svg>
+												<div class="preview-statistic__num">40</div>
+												<span class="preview-statistic__new-post">(+14)</span>
+											</div>
+											<div class="preview-statistic__posts-counter">
+
+												<svg width="14" height="14" class="icon" viewBox="0 0 14 12">
+													<use xlink:href="../../public/icons/icons.svg#icon-views"/>
+												</svg>
+												<div class="preview-statistic__num">694</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<a href="#" class="btn btn-extra-light-green btn-md btn-block mt-4">Показать еще...</a>
+						</div>
+
+					</div>
+				</section>
+			</div>
+			<div class="col-lg-4 sidebar mt-4 mt-md-big-1 d-flex flex-column">
+				<div class="widget" id="section-interview">
+					<div class="widget__header">
+						<div class="widget__title">
+							<svg width="18" height="18" class="widget__icon" viewBox="0 0 18 18">
+								<use xlink:href="../../public/icons/icons.svg#icon-chart"/>
+							</svg>
+							<span>Опрос</span>
+						</div>
+						<a href="#" class="btn btn-extra-light-green btn-sm btn-arrow">Все опросы</a>
+					</div>
+					<div class="polls-app mt-3">
+						<div class="polls-app__header">
+							<div class="post-info">
+								<div class="post-info__date"><span>Максим</span></div>
+								<span class="post-info__time">13:20</span>
+							</div>
+							<div class="polls-app__title">Рей Мерсер vs Деонтей Уайлдер?</div>
+						</div>
+
+						<div class="polls-app__body">
+
+							<div class="polls-app__item">
+								<div class="custom-control custom-radio">
+									<input type="radio" id="customRadio1" name="polls" class="custom-control-input" checked>
+									<label class="custom-control-label" for="customRadio1">Мерсер решением</label>
+								</div>
+								<div class="polls-app__progress">
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="100"
+												 aria-valuemin="0"
+												 aria-valuemax="100"></div>
+									</div>
+									<span class="progress__rate">100%</span>
+								</div>
+							</div>
+
+							<div class="polls-app__item">
+								<div class="custom-control custom-radio">
+									<input type="radio" id="customRadio2" name="polls" class="custom-control-input">
+									<label class="custom-control-label" for="customRadio2">Мерсер нокаутом</label>
+								</div>
+								<div class="polls-app__progress">
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 45%" aria-valuenow="45"
+												 aria-valuemin="0"
+												 aria-valuemax="100"></div>
+									</div>
+									<span class="progress__rate">45%</span>
+								</div>
+							</div>
+
+							<div class="polls-app__item">
+								<div class="custom-control custom-radio">
+									<input type="radio" id="customRadio3" name="polls" class="custom-control-input">
+									<label class="custom-control-label" for="customRadio3">Уайлдер решением</label>
+								</div>
+								<div class="polls-app__progress">
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 3%" aria-valuenow="3" aria-valuemin="0"
+												 aria-valuemax="100"></div>
+									</div>
+									<span class="progress__rate">3%</span>
+								</div>
+							</div>
+
+
+							<div class="polls-app__item">
+								<div class="custom-control custom-radio">
+
+									<input type="radio" id="customRadio4" name="polls" class="custom-control-input">
+									<label class="custom-control-label" for="customRadio4">Уайлдер нокаутом</label>
+								</div>
+								<div class="polls-app__progress">
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 30%" aria-valuenow="30"
+												 aria-valuemin="0"
+												 aria-valuemax="100"></div>
+									</div>
+									<span class="progress__rate">30%</span>
+								</div>
+							</div>
+
+							<div class="polls-app__item">
+								<div class="custom-control custom-radio">
+
+									<input type="radio" id="customRadio5" name="polls" class="custom-control-input">
+									<label class="custom-control-label" for="customRadio5">Ничья</label>
+								</div>
+								<div class="polls-app__progress">
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 2%" aria-valuenow="2" aria-valuemin="0"
+												 aria-valuemax="100"></div>
+									</div>
+									<span class="progress__rate">2%</span>
+								</div>
+							</div>
+
+							<div class="polls-app__item">
+								<div class="custom-control custom-radio">
+									<input type="radio" id="customRadio6" name="polls" class="custom-control-input">
+									<label class="custom-control-label" for="customRadio6">Затрудняюсь ответить</label>
+								</div>
+								<div class="polls-app__progress">
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 9%" aria-valuenow="9" aria-valuemin="0"
+												 aria-valuemax="100"></div>
+									</div>
+									<span class="progress__rate">9%</span>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+				<div class="widget mt-4 mt-md-big-4" id="section-forecasters">
+					<div class="widget__header">
+						<div class="widget__title">
+							<svg width="18" height="18" class="widget__icon" viewBox="0 0 18 18">
+								<use xlink:href="../../public/icons/icons.svg#icon-activiti"/>
+							</svg>
+							<span>Топ прогнозистов</span>
+						</div>
+						<a href="#" class="btn btn-extra-light-green btn-sm btn-arrow">Подробнее</a>
+					</div>
+
+					<div class="rating-app mt-4">
+						<nav>
+							<div class="nav nav-tabs tabs-menu" role="tablist">
+								<a class="tabs-menu__btn  active" data-toggle="tab" href="#nav-all" role="tab"
+									 aria-controls="nav-home" aria-selected="true">Все</a>
+								<a class="tabs-menu__btn red" data-toggle="tab" href="#nav-mma" role="tab" aria-controls="nav-profile"
+									 aria-selected="false">MMA</a>
+								<a class="tabs-menu__btn green" data-toggle="tab" href="#nav-box" role="tab" aria-controls="nav-profile"
+									 aria-selected="false">Бокс</a>
+							</div>
+						</nav>
+						<div class="tab-content" id="myTabContent">
+							<div class="tab-pane fade show active" id="nav-all" role="tabpanel" aria-labelledby="all-tab">
+								<ol class="rating-list">
+									<li class="rating-list__item">
+										<span>Stafford</span>
+										<div><span>24 (15) - 3</span> <span class="rating-list__plus">+21</span></div>
+
+									</li>
+									<li class="rating-list__item">
+										<span>Canelo</span>
+										<div><span>24 (15) - 3</span> <span class="rating-list__plus">+21</span></div>
+									</li>
+									<li class="rating-list__item">
+										<div class="rating-list__badge">
+											<svg width="12" height="12" class="rating-list__icon" viewBox="0 0 12 12">
+												<use xlink:href="../../public/icons/icons.svg#icon-cup"/>
+											</svg>
+											2019
+										</div>
+										<span>NoMas</span>
+										<div><span>24 (15) - 3</span> <span class="rating-list__plus">+21</span></div>
+									</li>
+									<li class="rating-list__item">
+										<span>Stafford</span>
+										<div><span>24 (15) - 3</span> <span class="rating-list__plus">+21</span></div>
+									</li>
+									<li class="rating-list__item">
+										<div class="rating-list__badge">
+											<svg width="12" height="12" class="rating-list__icon" viewBox="0 0 12 12">
+												<use xlink:href="../../public/icons/icons.svg#icon-cup"/>
+											</svg>
+											2016
+										</div>
+										<span>Stafford</span>
+										<div><span>24 (15) - 3</span> <span class="rating-list__plus">+21</span></div>
+									</li>
+								</ol>
+							</div>
+							<div class="tab-pane fade" id="nav-mma" role="tabpanel" aria-labelledby="mma-tab">
+								<ol class="rating-list">
+									<li class="rating-list__item">
+										<span>Stafford</span>
+										<div><span>24 (15) - 3</span> <span class="rating-list__plus">+21</span></div>
+
+									</li>
+									<li class="rating-list__item">
+										<span>Canelo</span>
+										<div><span>24 (15) - 3</span> <span class="rating-list__plus">+21</span></div>
+									</li>
+									<li class="rating-list__item">
+										<div class="rating-list__badge">
+											<svg width="12" height="12" class="rating-list__icon" viewBox="0 0 12 12">
+												<use xlink:href="../../public/icons/icons.svg#icon-cup"/>
+											</svg>
+											2019
+										</div>
+										<span>NoMas</span>
+										<div><span>24 (15) - 3</span> <span class="rating-list__plus">+21</span></div>
+									</li>
+									<li class="rating-list__item">
+										<span>Stafford</span>
+										<div><span>24 (15) - 3</span> <span class="rating-list__plus">+21</span></div>
+									</li>
+									<li class="rating-list__item">
+										<div class="rating-list__badge">
+											<svg width="12" height="12" class="rating-list__icon" viewBox="0 0 12 12">
+												<use xlink:href="../../public/icons/icons.svg#icon-cup"/>
+											</svg>
+											2016
+										</div>
+										<span>Stafford</span>
+										<div><span>24 (15) - 3</span> <span class="rating-list__plus">+21</span></div>
+									</li>
+								</ol>
+							</div>
+							<div class="tab-pane fade" id="nav-box" role="tabpanel" aria-labelledby="contact-tab">
+								<ol class="rating-list">
+									<li class="rating-list__item">
+										<span>Stafford</span>
+										<div><span>24 (15) - 3</span> <span class="rating-list__plus">+21</span></div>
+
+									</li>
+									<li class="rating-list__item">
+										<span>Canelo</span>
+										<div><span>24 (15) - 3</span> <span class="rating-list__plus">+21</span></div>
+									</li>
+									<li class="rating-list__item">
+										<div class="rating-list__badge">
+											<svg width="12" height="12" class="rating-list__icon" viewBox="0 0 12 12">
+												<use xlink:href="../../public/icons/icons.svg#icon-cup"/>
+											</svg>
+											2019
+										</div>
+										<span>NoMas</span>
+										<div><span>24 (15) - 3</span> <span class="rating-list__plus">+21</span></div>
+									</li>
+									<li class="rating-list__item">
+										<span>Stafford</span>
+										<div><span>24 (15) - 3</span> <span class="rating-list__plus">+21</span></div>
+									</li>
+									<li class="rating-list__item">
+										<div class="rating-list__badge">
+											<svg width="12" height="12" class="rating-list__icon" viewBox="0 0 12 12">
+												<use xlink:href="../../public/icons/icons.svg#icon-cup"/>
+											</svg>
+											2016
+										</div>
+										<span>Stafford</span>
+										<div><span>24 (15) - 3</span> <span class="rating-list__plus">+21</span></div>
+									</li>
+								</ol>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="widget mt-5" data-lg-after="section-timetable" id="section-accordion">
+					<!--					-->
+					<div class="accordion-app mt-md-big-3" id="accordionExample">
+						<div class="accordion-app__card">
+							<h2 class="mb-0" id="headingOne">
+								<button class="btn-accordion" type="button" data-toggle="collapse"
+												data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+									<svg width="20" height="20" class="widget__icon" viewBox="0 0 20 20">
+										<use xlink:href="../../public/icons/icons.svg#icon-star"/>
+									</svg>
+									<span>Актуальные новости</span>
+								</button>
+							</h2>
+
+							<div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+								<div class="card-body">
+									<nav>
+										<div class="nav nav-tabs tabs-menu" role="tablist">
+											<a class="tabs-menu__btn  active" data-toggle="tab" href="#nav-all-3" role="tab"
+												 aria-controls="nav-home" aria-selected="true">Все</a>
+											<a class="tabs-menu__btn red" data-toggle="tab" href="#nav-mma-3" role="tab"
+												 aria-controls="nav-profile"
+												 aria-selected="false">MMA</a>
+											<a class="tabs-menu__btn green" data-toggle="tab" href="#nav-box-3" role="tab"
+												 aria-controls="nav-profile"
+												 aria-selected="false">Бокс</a>
+										</div>
+									</nav>
+									<div class="tab-content" id="myTabContentNews">
+										<div class="tab-pane fade show active" id="nav-all-3" role="tabpanel" aria-labelledby="all-tab">
+											<div class="post-list mt-small-1">
+												<div class="post-preview">
+													<div class="post-preview__header">
+														<div class="label label_red">MMA</div>
+														<div class="post-preview__post-info post-info">
+															<div class="post-info__date">
+																<span class="ml-1">Максим</span>
+															</div>
+															<span class="post-info__time">13:20</span>
+														</div>
+													</div>
+													<a href="#" class="post-preview__title">Деонтей Уайлдер: "В первом бою
+														с Фьюри я показал 50 процентов своих возможностей или даже меньше"</a>
+													<div class="post-preview__footer">
+														<div class="post-preview__statistic  preview-statistic">
+															<div class="preview-statistic__posts-counter">
+																<svg width="14" height="14" class="icon" viewBox="0 0 14 14">
+																	<use xlink:href="../../public/icons/icons.svg#icon-chat"/>
+																</svg>
+																<div class="preview-statistic__num">40</div>
+																<span class="preview-statistic__new-post">(+14)</span>
+															</div>
+															<div class="preview-statistic__posts-counter">
+
+																<svg width="14" height="14" class="icon" viewBox="0 0 14 12">
+																	<use xlink:href="../../public/icons/icons.svg#icon-views"/>
+																</svg>
+																<div class="preview-statistic__num">694</div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="post-preview">
+													<div class="post-preview__header">
+														<div class="label label_red">MMA</div>
+														<div class="post-preview__post-info post-info">
+															<div class="post-info__date">
+																<span class="ml-1">Максим</span>
+															</div>
+															<span class="post-info__time">13:20</span>
+														</div>
+													</div>
+													<a href="#" class="post-preview__title">Деонтей Уайлдер: "В первом бою
+														с Фьюри я показал 50 процентов своих возможностей или даже меньше"</a>
+													<div class="post-preview__footer">
+														<div class="post-preview__statistic  preview-statistic">
+															<div class="preview-statistic__posts-counter">
+																<svg width="14" height="14" class="icon" viewBox="0 0 14 14">
+																	<use xlink:href="../../public/icons/icons.svg#icon-chat"/>
+																</svg>
+																<div class="preview-statistic__num">40</div>
+																<span class="preview-statistic__new-post">(+14)</span>
+															</div>
+															<div class="preview-statistic__posts-counter">
+
+																<svg width="14" height="14" class="icon" viewBox="0 0 14 12">
+																	<use xlink:href="../../public/icons/icons.svg#icon-views"/>
+																</svg>
+																<div class="preview-statistic__num">694</div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="post-preview">
+													<div class="post-preview__header">
+														<div class="label label_green">БОКС</div>
+														<div class="post-preview__post-info post-info">
+															<div class="post-info__date">
+																<span class="ml-1">Максим</span>
+															</div>
+															<span class="post-info__time">13:20</span>
+														</div>
+													</div>
+													<a href="#" class="post-preview__title">Деонтей Уайлдер: "В первом бою
+														с Фьюри я показал 50 процентов своих возможностей или даже меньше"</a>
+													<div class="post-preview__footer">
+														<div class="post-preview__statistic  preview-statistic">
+															<div class="preview-statistic__posts-counter">
+																<svg width="14" height="14" class="icon" viewBox="0 0 14 14">
+																	<use xlink:href="../../public/icons/icons.svg#icon-chat"/>
+																</svg>
+																<div class="preview-statistic__num">40</div>
+																<span class="preview-statistic__new-post">(+14)</span>
+															</div>
+															<div class="preview-statistic__posts-counter">
+
+																<svg width="14" height="14" class="icon" viewBox="0 0 14 12">
+																	<use xlink:href="../../public/icons/icons.svg#icon-views"/>
+																</svg>
+																<div class="preview-statistic__num">694</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<a href="#" class="btn btn-outline-gray--green btn-block mt-4">Показать еще...</a>
+										</div>
+										<div class="tab-pane fade" id="nav-mma-3" role="tabpanel" aria-labelledby="mma-tab">
+											<div class="post-list mt-small-1">
+												<div class="post-preview">
+													<div class="post-preview__header">
+														<div class="label label_red">MMA</div>
+														<div class="post-preview__post-info post-info">
+															<div class="post-info__date">
+																<span class="ml-1">Максим</span>
+															</div>
+															<span class="post-info__time">13:20</span>
+														</div>
+													</div>
+													<a href="#" class="post-preview__title">Деонтей Уайлдер: "В первом бою
+														с Фьюри я показал 50 процентов своих возможностей или даже меньше"</a>
+													<div class="post-preview__footer">
+														<div class="post-preview__statistic  preview-statistic">
+															<div class="preview-statistic__posts-counter">
+																<svg width="14" height="14" class="icon" viewBox="0 0 14 14">
+																	<use xlink:href="../../public/icons/icons.svg#icon-chat"/>
+																</svg>
+																<div class="preview-statistic__num">40</div>
+																<span class="preview-statistic__new-post">(+14)</span>
+															</div>
+															<div class="preview-statistic__posts-counter">
+
+																<svg width="14" height="14" class="icon" viewBox="0 0 14 12">
+																	<use xlink:href="../../public/icons/icons.svg#icon-views"/>
+																</svg>
+																<div class="preview-statistic__num">694</div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="post-preview">
+													<div class="post-preview__header">
+														<div class="label label_red">MMA</div>
+														<div class="post-preview__post-info post-info">
+															<div class="post-info__date">
+																<span class="ml-1">Максим</span>
+															</div>
+															<span class="post-info__time">13:20</span>
+														</div>
+													</div>
+													<a href="#" class="post-preview__title">Деонтей Уайлдер: "В первом бою
+														с Фьюри я показал 50 процентов своих возможностей или даже меньше"</a>
+													<div class="post-preview__footer">
+														<div class="post-preview__statistic  preview-statistic">
+															<div class="preview-statistic__posts-counter">
+																<svg width="14" height="14" class="icon" viewBox="0 0 14 14">
+																	<use xlink:href="../../public/icons/icons.svg#icon-chat"/>
+																</svg>
+																<div class="preview-statistic__num">40</div>
+																<span class="preview-statistic__new-post">(+14)</span>
+															</div>
+															<div class="preview-statistic__posts-counter">
+
+																<svg width="14" height="14" class="icon" viewBox="0 0 14 12">
+																	<use xlink:href="../../public/icons/icons.svg#icon-views"/>
+																</svg>
+																<div class="preview-statistic__num">694</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<a href="#" class="btn btn-outline-gray--green btn-block mt-4">Показать еще...</a>
+										</div>
+										<div class="tab-pane fade" id="nav-box-3" role="tabpanel" aria-labelledby="box-tab">
+											<div class="post-list mt-small-1">
+												<div class="post-preview">
+													<div class="post-preview__header">
+														<div class="label label_green">БОКС</div>
+														<div class="post-preview__post-info post-info">
+															<div class="post-info__date">
+																<span class="ml-1">Максим</span>
+															</div>
+															<span class="post-info__time">13:20</span>
+														</div>
+													</div>
+													<a href="#" class="post-preview__title">Деонтей Уайлдер: "В первом бою
+														с Фьюри я показал 50 процентов своих возможностей или даже меньше"</a>
+													<div class="post-preview__footer">
+														<div class="post-preview__statistic  preview-statistic">
+															<div class="preview-statistic__posts-counter">
+																<svg width="14" height="14" class="icon" viewBox="0 0 14 14">
+																	<use xlink:href="../../public/icons/icons.svg#icon-chat"/>
+																</svg>
+																<div class="preview-statistic__num">40</div>
+																<span class="preview-statistic__new-post">(+14)</span>
+															</div>
+															<div class="preview-statistic__posts-counter">
+
+																<svg width="14" height="14" class="icon" viewBox="0 0 14 12">
+																	<use xlink:href="../../public/icons/icons.svg#icon-views"/>
+																</svg>
+																<div class="preview-statistic__num">694</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<a href="#" class="btn btn-outline-gray--green btn-block mt-4">Показать еще...</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="accordion-app__card">
+							<h2 class="mb-0" id="headingTwo">
+								<button class="btn-accordion" type="button" data-toggle="collapse"
+												data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+									<svg width="20" height="20" class="widget__icon" viewBox="0 0 20 20">
+										<use xlink:href="../../public/icons/icons.svg#icon-views"/>
+									</svg>
+									<span>Больше просмотров</span>
+								</button>
+							</h2>
+
+							<div id="collapseTwo" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+								<div class="card-body">
+									<nav>
+										<div class="nav nav-tabs tabs-menu" role="tablist">
+											<a class="tabs-menu__btn  active" data-toggle="tab" href="#nav-all-3" role="tab"
+												 aria-controls="nav-home" aria-selected="true">Все</a>
+											<a class="tabs-menu__btn red" data-toggle="tab" href="#nav-mma-3" role="tab"
+												 aria-controls="nav-profile"
+												 aria-selected="false">MMA</a>
+											<a class="tabs-menu__btn green" data-toggle="tab" href="#nav-box-3" role="tab"
+												 aria-controls="nav-profile"
+												 aria-selected="false">Бокс</a>
+										</div>
+									</nav>
+									<div class="tab-content" id="myTabContentNews-2">
+										<div class="tab-pane fade show active" id="nav-all-4" role="tabpanel" aria-labelledby="all-tab">
+											<div class="post-list mt-small-1">
+												<div class="post-preview">
+													<div class="post-preview__header">
+														<div class="label label_red">MMA</div>
+														<div class="post-preview__post-info post-info">
+															<div class="post-info__date">
+																<span class="ml-1">Максим</span>
+															</div>
+															<span class="post-info__time">13:20</span>
+														</div>
+													</div>
+													<a href="#" class="post-preview__title">Деонтей Уайлдер: "В первом бою
+														с Фьюри я показал 50 процентов своих возможностей или даже меньше"</a>
+													<div class="post-preview__footer">
+														<div class="post-preview__statistic  preview-statistic">
+															<div class="preview-statistic__posts-counter">
+																<svg width="14" height="14" class="icon" viewBox="0 0 14 14">
+																	<use xlink:href="../../public/icons/icons.svg#icon-chat"/>
+																</svg>
+																<div class="preview-statistic__num">40</div>
+																<span class="preview-statistic__new-post">(+14)</span>
+															</div>
+															<div class="preview-statistic__posts-counter">
+
+																<svg width="14" height="14" class="icon" viewBox="0 0 14 12">
+																	<use xlink:href="../../public/icons/icons.svg#icon-views"/>
+																</svg>
+																<div class="preview-statistic__num">694</div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="post-preview">
+													<div class="post-preview__header">
+														<div class="label label_red">MMA</div>
+														<div class="post-preview__post-info post-info">
+															<div class="post-info__date">
+																<span class="ml-1">Максим</span>
+															</div>
+															<span class="post-info__time">13:20</span>
+														</div>
+													</div>
+													<a href="#" class="post-preview__title">Деонтей Уайлдер: "В первом бою
+														с Фьюри я показал 50 процентов своих возможностей или даже меньше"</a>
+													<div class="post-preview__footer">
+														<div class="post-preview__statistic  preview-statistic">
+															<div class="preview-statistic__posts-counter">
+																<svg width="14" height="14" class="icon" viewBox="0 0 14 14">
+																	<use xlink:href="../../public/icons/icons.svg#icon-chat"/>
+																</svg>
+																<div class="preview-statistic__num">40</div>
+																<span class="preview-statistic__new-post">(+14)</span>
+															</div>
+															<div class="preview-statistic__posts-counter">
+
+																<svg width="14" height="14" class="icon" viewBox="0 0 14 12">
+																	<use xlink:href="../../public/icons/icons.svg#icon-views"/>
+																</svg>
+																<div class="preview-statistic__num">694</div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="post-preview">
+													<div class="post-preview__header">
+														<div class="label label_green">БОКС</div>
+														<div class="post-preview__post-info post-info">
+															<div class="post-info__date">
+																<span class="ml-1">Максим</span>
+															</div>
+															<span class="post-info__time">13:20</span>
+														</div>
+													</div>
+													<a href="#" class="post-preview__title">Деонтей Уайлдер: "В первом бою
+														с Фьюри я показал 50 процентов своих возможностей или даже меньше"</a>
+													<div class="post-preview__footer">
+														<div class="post-preview__statistic  preview-statistic">
+															<div class="preview-statistic__posts-counter">
+																<svg width="14" height="14" class="icon" viewBox="0 0 14 14">
+																	<use xlink:href="../../public/icons/icons.svg#icon-chat"/>
+																</svg>
+																<div class="preview-statistic__num">40</div>
+																<span class="preview-statistic__new-post">(+14)</span>
+															</div>
+															<div class="preview-statistic__posts-counter">
+
+																<svg width="14" height="14" class="icon" viewBox="0 0 14 12">
+																	<use xlink:href="../../public/icons/icons.svg#icon-views"/>
+																</svg>
+																<div class="preview-statistic__num">694</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<a href="#" class="btn btn-outline-gray--green btn-block mt-4">Показать еще...</a>
+										</div>
+										<div class="tab-pane fade" id="nav-mma-4" role="tabpanel" aria-labelledby="mma-tab">
+											<div class="post-list mt-small-1">
+												<div class="post-preview">
+													<div class="post-preview__header">
+														<div class="label label_red">MMA</div>
+														<div class="post-preview__post-info post-info">
+															<div class="post-info__date">
+																<span class="ml-1">Максим</span>
+															</div>
+															<span class="post-info__time">13:20</span>
+														</div>
+													</div>
+													<a href="#" class="post-preview__title">Деонтей Уайлдер: "В первом бою
+														с Фьюри я показал 50 процентов своих возможностей или даже меньше"</a>
+													<div class="post-preview__footer">
+														<div class="post-preview__statistic  preview-statistic">
+															<div class="preview-statistic__posts-counter">
+																<svg width="14" height="14" class="icon" viewBox="0 0 14 14">
+																	<use xlink:href="../../public/icons/icons.svg#icon-chat"/>
+																</svg>
+																<div class="preview-statistic__num">40</div>
+																<span class="preview-statistic__new-post">(+14)</span>
+															</div>
+															<div class="preview-statistic__posts-counter">
+
+																<svg width="14" height="14" class="icon" viewBox="0 0 14 12">
+																	<use xlink:href="../../public/icons/icons.svg#icon-views"/>
+																</svg>
+																<div class="preview-statistic__num">694</div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="post-preview">
+													<div class="post-preview__header">
+														<div class="label label_red">MMA</div>
+														<div class="post-preview__post-info post-info">
+															<div class="post-info__date">
+																<span class="ml-1">Максим</span>
+															</div>
+															<span class="post-info__time">13:20</span>
+														</div>
+													</div>
+													<a href="#" class="post-preview__title">Деонтей Уайлдер: "В первом бою
+														с Фьюри я показал 50 процентов своих возможностей или даже меньше"</a>
+													<div class="post-preview__footer">
+														<div class="post-preview__statistic  preview-statistic">
+															<div class="preview-statistic__posts-counter">
+																<svg width="14" height="14" class="icon" viewBox="0 0 14 14">
+																	<use xlink:href="../../public/icons/icons.svg#icon-chat"/>
+																</svg>
+																<div class="preview-statistic__num">40</div>
+																<span class="preview-statistic__new-post">(+14)</span>
+															</div>
+															<div class="preview-statistic__posts-counter">
+
+																<svg width="14" height="14" class="icon" viewBox="0 0 14 12">
+																	<use xlink:href="../../public/icons/icons.svg#icon-views"/>
+																</svg>
+																<div class="preview-statistic__num">694</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<a href="#" class="btn btn-outline-gray--green btn-block mt-4">Показать еще...</a>
+										</div>
+										<div class="tab-pane fade" id="nav-box-4" role="tabpanel" aria-labelledby="box-tab">
+											<div class="post-list mt-small-1">
+												<div class="post-preview">
+													<div class="post-preview__header">
+														<div class="label label_green">БОКС</div>
+														<div class="post-preview__post-info post-info">
+															<div class="post-info__date">
+																<span class="ml-1">Максим</span>
+															</div>
+															<span class="post-info__time">13:20</span>
+														</div>
+													</div>
+													<a href="#" class="post-preview__title">Деонтей Уайлдер: "В первом бою
+														с Фьюри я показал 50 процентов своих возможностей или даже меньше"</a>
+													<div class="post-preview__footer">
+														<div class="post-preview__statistic  preview-statistic">
+															<div class="preview-statistic__posts-counter">
+																<svg width="14" height="14" class="icon" viewBox="0 0 14 14">
+																	<use xlink:href="../../public/icons/icons.svg#icon-chat"/>
+																</svg>
+																<div class="preview-statistic__num">40</div>
+																<span class="preview-statistic__new-post">(+14)</span>
+															</div>
+															<div class="preview-statistic__posts-counter">
+
+																<svg width="14" height="14" class="icon" viewBox="0 0 14 12">
+																	<use xlink:href="../../public/icons/icons.svg#icon-views"/>
+																</svg>
+																<div class="preview-statistic__num">694</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<a href="#" class="btn btn-outline-gray--green btn-block mt-4">Показать еще...</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="accordion-app__card">
+							<h2 class="mb-0" id="headingThree">
+								<button class="btn-accordion" type="button" data-toggle="collapse"
+												data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+									<svg width="20" height="20" class="widget__icon" viewBox="0 0 20 20">
+										<use xlink:href="../../public/icons/icons.svg#icon-star"/>
+									</svg>
+									<span>Больше обсуждений</span>
+								</button>
+							</h2>
+							<div id="collapseThree" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+								<div class="card-body">
+									<nav>
+										<div class="nav nav-tabs tabs-menu" role="tablist">
+											<a class="tabs-menu__btn  active" data-toggle="tab" href="#nav-all-3" role="tab"
+												 aria-controls="nav-home" aria-selected="true">Все</a>
+											<a class="tabs-menu__btn red" data-toggle="tab" href="#nav-mma-3" role="tab"
+												 aria-controls="nav-profile"
+												 aria-selected="false">MMA</a>
+											<a class="tabs-menu__btn green" data-toggle="tab" href="#nav-box-3" role="tab"
+												 aria-controls="nav-profile"
+												 aria-selected="false">Бокс</a>
+										</div>
+									</nav>
+									<div class="tab-content" id="myTabContentNews3">
+										<div class="tab-pane fade show active" id="nav-all-5" role="tabpanel" aria-labelledby="all-tab">
+											<div class="post-list mt-small-1">
+												<div class="post-preview">
+													<div class="post-preview__header">
+														<div class="label label_red">MMA</div>
+														<div class="post-preview__post-info post-info">
+															<div class="post-info__date">
+																<span class="ml-1">Максим</span>
+															</div>
+															<span class="post-info__time">13:20</span>
+														</div>
+													</div>
+													<a href="#" class="post-preview__title">Деонтей Уайлдер: "В первом бою
+														с Фьюри я показал 50 процентов своих возможностей или даже меньше"</a>
+													<div class="post-preview__footer">
+														<div class="post-preview__statistic  preview-statistic">
+															<div class="preview-statistic__posts-counter">
+																<svg width="14" height="14" class="icon" viewBox="0 0 14 14">
+																	<use xlink:href="../../public/icons/icons.svg#icon-chat"/>
+																</svg>
+																<div class="preview-statistic__num">40</div>
+																<span class="preview-statistic__new-post">(+14)</span>
+															</div>
+															<div class="preview-statistic__posts-counter">
+
+																<svg width="14" height="14" class="icon" viewBox="0 0 14 12">
+																	<use xlink:href="../../public/icons/icons.svg#icon-views"/>
+																</svg>
+																<div class="preview-statistic__num">694</div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="post-preview">
+													<div class="post-preview__header">
+														<div class="label label_red">MMA</div>
+														<div class="post-preview__post-info post-info">
+															<div class="post-info__date">
+																<span class="ml-1">Максим</span>
+															</div>
+															<span class="post-info__time">13:20</span>
+														</div>
+													</div>
+													<a href="#" class="post-preview__title">Деонтей Уайлдер: "В первом бою
+														с Фьюри я показал 50 процентов своих возможностей или даже меньше"</a>
+													<div class="post-preview__footer">
+														<div class="post-preview__statistic  preview-statistic">
+															<div class="preview-statistic__posts-counter">
+																<svg width="14" height="14" class="icon" viewBox="0 0 14 14">
+																	<use xlink:href="../../public/icons/icons.svg#icon-chat"/>
+																</svg>
+																<div class="preview-statistic__num">40</div>
+																<span class="preview-statistic__new-post">(+14)</span>
+															</div>
+															<div class="preview-statistic__posts-counter">
+
+																<svg width="14" height="14" class="icon" viewBox="0 0 14 12">
+																	<use xlink:href="../../public/icons/icons.svg#icon-views"/>
+																</svg>
+																<div class="preview-statistic__num">694</div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="post-preview">
+													<div class="post-preview__header">
+														<div class="label label_green">БОКС</div>
+														<div class="post-preview__post-info post-info">
+															<div class="post-info__date">
+																<span class="ml-1">Максим</span>
+															</div>
+															<span class="post-info__time">13:20</span>
+														</div>
+													</div>
+													<a href="#" class="post-preview__title">Деонтей Уайлдер: "В первом бою
+														с Фьюри я показал 50 процентов своих возможностей или даже меньше"</a>
+													<div class="post-preview__footer">
+														<div class="post-preview__statistic  preview-statistic">
+															<div class="preview-statistic__posts-counter">
+																<svg width="14" height="14" class="icon" viewBox="0 0 14 14">
+																	<use xlink:href="../../public/icons/icons.svg#icon-chat"/>
+																</svg>
+																<div class="preview-statistic__num">40</div>
+																<span class="preview-statistic__new-post">(+14)</span>
+															</div>
+															<div class="preview-statistic__posts-counter">
+
+																<svg width="14" height="14" class="icon" viewBox="0 0 14 12">
+																	<use xlink:href="../../public/icons/icons.svg#icon-views"/>
+																</svg>
+																<div class="preview-statistic__num">694</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<a href="#" class="btn btn-outline-gray--green btn-block mt-4">Показать еще...</a>
+										</div>
+										<div class="tab-pane fade" id="nav-mma-5" role="tabpanel" aria-labelledby="mma-tab">
+											<div class="post-list mt-small-1">
+												<div class="post-preview">
+													<div class="post-preview__header">
+														<div class="label label_red">MMA</div>
+														<div class="post-preview__post-info post-info">
+															<div class="post-info__date">
+																<span class="ml-1">Максим</span>
+															</div>
+															<span class="post-info__time">13:20</span>
+														</div>
+													</div>
+													<a href="#" class="post-preview__title">Деонтей Уайлдер: "В первом бою
+														с Фьюри я показал 50 процентов своих возможностей или даже меньше"</a>
+													<div class="post-preview__footer">
+														<div class="post-preview__statistic  preview-statistic">
+															<div class="preview-statistic__posts-counter">
+																<svg width="14" height="14" class="icon" viewBox="0 0 14 14">
+																	<use xlink:href="../../public/icons/icons.svg#icon-chat"/>
+																</svg>
+																<div class="preview-statistic__num">40</div>
+																<span class="preview-statistic__new-post">(+14)</span>
+															</div>
+															<div class="preview-statistic__posts-counter">
+
+																<svg width="14" height="14" class="icon" viewBox="0 0 14 12">
+																	<use xlink:href="../../public/icons/icons.svg#icon-views"/>
+																</svg>
+																<div class="preview-statistic__num">694</div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="post-preview">
+													<div class="post-preview__header">
+														<div class="label label_red">MMA</div>
+														<div class="post-preview__post-info post-info">
+															<div class="post-info__date">
+																<span class="ml-1">Максим</span>
+															</div>
+															<span class="post-info__time">13:20</span>
+														</div>
+													</div>
+													<a href="#" class="post-preview__title">Деонтей Уайлдер: "В первом бою
+														с Фьюри я показал 50 процентов своих возможностей или даже меньше"</a>
+													<div class="post-preview__footer">
+														<div class="post-preview__statistic  preview-statistic">
+															<div class="preview-statistic__posts-counter">
+																<svg width="14" height="14" class="icon" viewBox="0 0 14 14">
+																	<use xlink:href="../../public/icons/icons.svg#icon-chat"/>
+																</svg>
+																<div class="preview-statistic__num">40</div>
+																<span class="preview-statistic__new-post">(+14)</span>
+															</div>
+															<div class="preview-statistic__posts-counter">
+
+																<svg width="14" height="14" class="icon" viewBox="0 0 14 12">
+																	<use xlink:href="../../public/icons/icons.svg#icon-views"/>
+																</svg>
+																<div class="preview-statistic__num">694</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<a href="#" class="btn btn-outline-gray--green btn-block mt-4">Показать еще...</a>
+										</div>
+										<div class="tab-pane fade" id="nav-box-5" role="tabpanel" aria-labelledby="box-tab">
+											<div class="post-list mt-small-1">
+												<div class="post-preview">
+													<div class="post-preview__header">
+														<div class="label label_green">БОКС</div>
+														<div class="post-preview__post-info post-info">
+															<div class="post-info__date">
+																<span class="ml-1">Максим</span>
+															</div>
+															<span class="post-info__time">13:20</span>
+														</div>
+													</div>
+													<a href="#" class="post-preview__title">Деонтей Уайлдер: "В первом бою
+														с Фьюри я показал 50 процентов своих возможностей или даже меньше"</a>
+													<div class="post-preview__footer">
+														<div class="post-preview__statistic  preview-statistic">
+															<div class="preview-statistic__posts-counter">
+																<svg width="14" height="14" class="icon" viewBox="0 0 14 14">
+																	<use xlink:href="../../public/icons/icons.svg#icon-chat"/>
+																</svg>
+																<div class="preview-statistic__num">40</div>
+																<span class="preview-statistic__new-post">(+14)</span>
+															</div>
+															<div class="preview-statistic__posts-counter">
+
+																<svg width="14" height="14" class="icon" viewBox="0 0 14 12">
+																	<use xlink:href="../../public/icons/icons.svg#icon-views"/>
+																</svg>
+																<div class="preview-statistic__num">694</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<a href="#" class="btn btn-outline-gray--green btn-block mt-4">Показать еще...</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--					-->
+				</div>
+				<div class="widget mt-4 mt-md-big-2" data-lg-after="section-fighters" id="section-timetable">
+					<div class="widget__header">
+						<div class="widget__title">
+							<svg width="15" height="16" class="widget__icon" viewBox="0 0 15 16">
+								<use xlink:href="../../public/icons/icons.svg#icon-calendar"/>
+							</svg>
+							<span>Расписание</span>
+						</div>
+						<a href="#" class="btn btn-extra-light-green btn-sm btn-arrow">Подробнее</a>
+					</div>
+					<nav class="mt-4">
+						<div class="nav nav-tabs tabs-menu" id="timetable" role="tablist">
+							<a class="tabs-menu__btn  active red" id="timetable-btn-1" data-toggle="tab" href="#timetable-mma"
+								 role="tab"
+								 aria-controls="nav-mma" aria-selected="true">ММА</a>
+							<a class="tabs-menu__btn green" id="timetable-btn-2" data-toggle="tab" href="#timetable-box" role="tab"
+								 aria-controls="nav-box" aria-selected="false">БОКС</a>
+						</div>
+					</nav>
+					<div class="tab-content mt-4" id="timetable-tabContent">
+						<div class="tab-pane fade show active" id="timetable-mma" role="tabpanel" aria-labelledby="list-last-list">
+							<div class="event-list">
+								<div class="event-preview">
+									<div class="event-preview__left">
+										<div class="event-preview__date date-label">
+											<span class="date-label__number">22</span>
+											<span class="date-label__month">Янв</span>
+										</div>
+										<svg width="30" height="20" class="event-preview__icon" viewBox="0 0 30 20">
+											<use xlink:href="../../public/icons/flag.svg#flag-ireland"/>
+										</svg>
+									</div>
+									<div class="event-preview__titles">
+										<a href="#" class="event-preview__title">Ultimate Battle Grounds 3 Showdown</a>
+										<p class="event-preview__text">Crystal Gardens, Southgate, Michigan, United States</p>
+									</div>
+								</div>
+								<div class="event-preview">
+									<div class="event-preview__left">
+										<div class="event-preview__date date-label">
+											<span class="date-label__number">22</span>
+											<span class="date-label__month">Янв</span>
+										</div>
+										<svg width="30" height="20" class="event-preview__icon" viewBox="0 0 30 20">
+											<use xlink:href="../../public/icons/flag.svg#flag-ireland"/>
+										</svg>
+									</div>
+									<div class="event-preview__titles">
+										<a href="#" class="event-preview__title">Ultimate Battle Grounds 3 Showdown</a>
+										<p class="event-preview__text">Crystal Gardens, Southgate, Michigan, United States</p>
+									</div>
+								</div>
+								<div class="event-preview">
+									<div class="event-preview__left">
+										<div class="event-preview__date date-label">
+											<span class="date-label__number">22</span>
+											<span class="date-label__month">Янв</span>
+										</div>
+										<svg width="30" height="20" class="event-preview__icon" viewBox="0 0 30 20">
+											<use xlink:href="../../public/icons/flag.svg#flag-ireland"/>
+										</svg>
+									</div>
+									<div class="event-preview__titles">
+										<a href="#" class="event-preview__title">Ultimate Battle Grounds 3 Showdown</a>
+										<p class="event-preview__text">Crystal Gardens, Southgate, Michigan, United States</p>
+									</div>
+								</div>
+								<div class="event-preview">
+									<div class="event-preview__left">
+										<div class="event-preview__date date-label">
+											<span class="date-label__number">22</span>
+											<span class="date-label__month">Янв</span>
+										</div>
+										<svg width="30" height="20" class="event-preview__icon" viewBox="0 0 30 20">
+											<use xlink:href="../../public/icons/flag.svg#flag-ireland"/>
+										</svg>
+									</div>
+									<div class="event-preview__titles">
+										<a href="#" class="event-preview__title">Ultimate Battle Grounds 3 Showdown</a>
+										<p class="event-preview__text">Crystal Gardens, Southgate, Michigan, United States</p>
+									</div>
+								</div>
+
+							</div>
+						</div>
+						<div class="tab-pane fade" id="timetable-box" role="tabpanel" aria-labelledby="list-last-list">
+							<div class="event-list">
+								<div class="event-preview">
+									<div class="event-preview__left">
+										<div class="event-preview__date date-label">
+											<span class="date-label__number">22</span>
+											<span class="date-label__month">Янв</span>
+										</div>
+										<svg width="30" height="20" class="event-preview__icon" viewBox="0 0 30 20">
+											<use xlink:href="../../public/icons/flag.svg#flag-ireland"/>
+										</svg>
+									</div>
+									<div class="event-preview__titles">
+										<a href="#" class="event-preview__title">Ultimate Battle Grounds 3 Showdown</a>
+										<p class="event-preview__text">Crystal Gardens, Southgate, Michigan, United States</p>
+									</div>
+								</div>
+								<div class="event-preview">
+									<div class="event-preview__left">
+										<div class="event-preview__date date-label">
+											<span class="date-label__number">22</span>
+											<span class="date-label__month">Янв</span>
+										</div>
+										<svg width="30" height="20" class="event-preview__icon" viewBox="0 0 30 20">
+											<use xlink:href="../../public/icons/flag.svg#flag-ireland"/>
+										</svg>
+									</div>
+									<div class="event-preview__titles">
+										<a href="#" class="event-preview__title">Ultimate Battle Grounds 3 Showdown</a>
+										<p class="event-preview__text">Crystal Gardens, Southgate, Michigan, United States</p>
+									</div>
+								</div>
+								<div class="event-preview">
+									<div class="event-preview__left">
+										<div class="event-preview__date date-label">
+											<span class="date-label__number">22</span>
+											<span class="date-label__month">Янв</span>
+										</div>
+										<svg width="30" height="20" class="event-preview__icon" viewBox="0 0 30 20">
+											<use xlink:href="../../public/icons/flag.svg#flag-ireland"/>
+										</svg>
+									</div>
+									<div class="event-preview__titles">
+										<a href="#" class="event-preview__title">Ultimate Battle Grounds 3 Showdown</a>
+										<p class="event-preview__text">Crystal Gardens, Southgate, Michigan, United States</p>
+									</div>
+								</div>
+								<div class="event-preview">
+									<div class="event-preview__left">
+										<div class="event-preview__date date-label">
+											<span class="date-label__number">22</span>
+											<span class="date-label__month">Янв</span>
+										</div>
+										<svg width="30" height="20" class="event-preview__icon" viewBox="0 0 30 20">
+											<use xlink:href="../../public/icons/flag.svg#flag-ireland"/>
+										</svg>
+									</div>
+									<div class="event-preview__titles">
+										<a href="#" class="event-preview__title">Ultimate Battle Grounds 3 Showdown</a>
+										<p class="event-preview__text">Crystal Gardens, Southgate, Michigan, United States</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="widget mt-5 mt-md-big-2" id="section-popular-comments">
+					<div class="widget__title">
+						<svg width="18" height="16" class="widget__icon" viewBox="0 0 18 16">
+							<use xlink:href="../../public/icons/icons.svg#icon-chat"/>
+						</svg>
+						<span>Популярные комментарии</span>
+					</div>
+					<div class="comments-list mt-4">
+						<div class="comments-item">
+							<div class="post-info">
+								<span class="post-info__name post-info__name_strong">Stafford</span>
+								<span class="post-info__time">20:34</span>
+							</div>
+							<div class="comments-item__content">
+								<p class="comments-item__comment">Вам унитазы вернули?</p>
+								<div class="comments-item__likes">
+									<svg width="14" height="14" class="comments-item__icon" viewBox="0 0 14 14">
+										<use xlink:href="../../public/icons/icons.svg#icon-like"/>
+									</svg>
+									<span>58</span>
+								</div>
+							</div>
+							<div class="comments-item__text-title mt-2">Дэнни Гарсиа деклассировал кусающегося Ивана Редкача</div>
+						</div>
+						<div class="comments-item">
+							<div class="post-info">
+								<span class="post-info__name post-info__name_strong">Stafford</span>
+								<span class="post-info__time">20:34</span>
+							</div>
+							<div class="comments-item__content">
+								<p class="comments-item__comment">Вам унитазы вернули?</p>
+								<div class="comments-item__likes">
+									<svg width="14" height="14" class="comments-item__icon" viewBox="0 0 14 14">
+										<use xlink:href="../../public/icons/icons.svg#icon-like"/>
+									</svg>
+									<span>58</span>
+								</div>
+							</div>
+							<div class="comments-item__text-title mt-2">Дэнни Гарсиа деклассировал кусающегося Ивана Редкача</div>
+						</div>
+						<div class="comments-item">
+							<div class="post-info">
+								<span class="post-info__name post-info__name_strong">Stafford</span>
+								<span class="post-info__time">20:34</span>
+							</div>
+							<div class="comments-item__content">
+								<p class="comments-item__comment">Вам унитазы вернули?</p>
+								<div class="comments-item__likes">
+									<svg width="14" height="14" class="comments-item__icon" viewBox="0 0 14 14">
+										<use xlink:href="../../public/icons/icons.svg#icon-like"/>
+									</svg>
+									<span>58</span>
+								</div>
+							</div>
+							<div class="comments-item__text-title mt-2">Дэнни Гарсиа деклассировал кусающегося Ивана Редкача</div>
+						</div>
+						<div class="comments-item">
+							<div class="post-info">
+								<span class="post-info__name post-info__name_strong">Stafford</span>
+								<span class="post-info__time">20:34</span>
+							</div>
+							<div class="comments-item__content">
+								<p class="comments-item__comment">Вам унитазы вернули?</p>
+								<div class="comments-item__likes">
+									<svg width="14" height="14" class="comments-item__icon" viewBox="0 0 14 14">
+										<use xlink:href="../../public/icons/icons.svg#icon-like"/>
+									</svg>
+									<span>58</span>
+								</div>
+							</div>
+							<div class="comments-item__text-title mt-2">Дэнни Гарсиа деклассировал кусающегося Ивана Редкача</div>
+						</div>
+					</div>
+					<a href="#" class="btn btn-outline-gray--green btn-block mt-4">Показать еще...</a>
+				</div>
+				<div class="widget mt-5 mt-md-big-2" id="section-battle-results">
+					<div class="widget__title">
+						<svg width="18" height="16" class="widget__icon" viewBox="0 0 18 16">
+							<use xlink:href="../../public/icons/icons.svg#icon-sword"/>
+						</svg>
+						<span>Результаты боев</span>
+					</div>
+
+					<nav class="mt-small-1">
+						<div class="nav nav-tabs tabs-menu" role="tablist">
+							<a class="tabs-menu__btn  active" data-toggle="tab" href="#nav-all-6" role="tab"
+								 aria-controls="nav-home" aria-selected="true">Все</a>
+							<a class="tabs-menu__btn red" data-toggle="tab" href="#nav-mma-6" role="tab"
+								 aria-controls="nav-profile"
+								 aria-selected="false">MMA</a>
+							<a class="tabs-menu__btn green" data-toggle="tab" href="#nav-box-6" role="tab"
+								 aria-controls="nav-profile"
+								 aria-selected="false">Бокс</a>
+						</div>
+					</nav>
+
+					<div class="tab-content" id="myTabBattleResults">
+						<div class="tab-pane fade show active" id="nav-all-6" role="tabpanel" aria-labelledby="all-tab">
+							<div class="post-list mt-small-1">
+								<div class="post-preview">
+									<div class="post-preview__header">
+										<div class="label label_red">MMA</div>
+										<div class="post-preview__post-info post-info">
+											<div class="post-info__date">
+												<span class="ml-1">Максим</span>
+											</div>
+											<span class="post-info__time">13:20</span>
+										</div>
+									</div>
+									<a href="#" class="post-preview__title">Деонтей Уайлдер: "В первом бою
+										с Фьюри я показал 50 процентов своих возможностей или даже меньше"</a>
+									<div class="post-preview__footer">
+										<div class="post-preview__statistic  preview-statistic">
+											<div class="preview-statistic__posts-counter">
+												<svg width="14" height="14" class="icon" viewBox="0 0 14 14">
+													<use xlink:href="../../public/icons/icons.svg#icon-chat"/>
+												</svg>
+												<div class="preview-statistic__num">40</div>
+												<span class="preview-statistic__new-post">(+14)</span>
+											</div>
+											<div class="preview-statistic__posts-counter">
+
+												<svg width="14" height="14" class="icon" viewBox="0 0 14 12">
+													<use xlink:href="../../public/icons/icons.svg#icon-views"/>
+												</svg>
+												<div class="preview-statistic__num">694</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="post-preview">
+									<div class="post-preview__header">
+										<div class="label label_red">MMA</div>
+										<div class="post-preview__post-info post-info">
+											<div class="post-info__date">
+												<span class="ml-1">Максим</span>
+											</div>
+											<span class="post-info__time">13:20</span>
+										</div>
+									</div>
+									<a href="#" class="post-preview__title">Деонтей Уайлдер: "В первом бою
+										с Фьюри я показал 50 процентов своих возможностей или даже меньше"</a>
+									<div class="post-preview__footer">
+										<div class="post-preview__statistic  preview-statistic">
+											<div class="preview-statistic__posts-counter">
+												<svg width="14" height="14" class="icon" viewBox="0 0 14 14">
+													<use xlink:href="../../public/icons/icons.svg#icon-chat"/>
+												</svg>
+												<div class="preview-statistic__num">40</div>
+												<span class="preview-statistic__new-post">(+14)</span>
+											</div>
+											<div class="preview-statistic__posts-counter">
+
+												<svg width="14" height="14" class="icon" viewBox="0 0 14 12">
+													<use xlink:href="../../public/icons/icons.svg#icon-views"/>
+												</svg>
+												<div class="preview-statistic__num">694</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="post-preview">
+									<div class="post-preview__header">
+										<div class="label label_green">БОКС</div>
+										<div class="post-preview__post-info post-info">
+											<div class="post-info__date">
+												<span class="ml-1">Максим</span>
+											</div>
+											<span class="post-info__time">13:20</span>
+										</div>
+									</div>
+									<a href="#" class="post-preview__title">Деонтей Уайлдер: "В первом бою
+										с Фьюри я показал 50 процентов своих возможностей или даже меньше"</a>
+									<div class="post-preview__footer">
+										<div class="post-preview__statistic  preview-statistic">
+											<div class="preview-statistic__posts-counter">
+												<svg width="14" height="14" class="icon" viewBox="0 0 14 14">
+													<use xlink:href="../../public/icons/icons.svg#icon-chat"/>
+												</svg>
+												<div class="preview-statistic__num">40</div>
+												<span class="preview-statistic__new-post">(+14)</span>
+											</div>
+											<div class="preview-statistic__posts-counter">
+
+												<svg width="14" height="14" class="icon" viewBox="0 0 14 12">
+													<use xlink:href="../../public/icons/icons.svg#icon-views"/>
+												</svg>
+												<div class="preview-statistic__num">694</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<a href="#" class="btn btn-outline-gray--green btn-block mt-4">Показать еще...</a>
+						</div>
+						<div class="tab-pane fade" id="nav-mma-6" role="tabpanel" aria-labelledby="mma-tab">
+							<div class="post-list mt-small-1">
+								<div class="post-preview">
+									<div class="post-preview__header">
+										<div class="label label_red">MMA</div>
+										<div class="post-preview__post-info post-info">
+											<div class="post-info__date">
+												<span class="ml-1">Максим</span>
+											</div>
+											<span class="post-info__time">13:20</span>
+										</div>
+									</div>
+									<a href="#" class="post-preview__title">Деонтей Уайлдер: "В первом бою
+										с Фьюри я показал 50 процентов своих возможностей или даже меньше"</a>
+									<div class="post-preview__footer">
+										<div class="post-preview__statistic  preview-statistic">
+											<div class="preview-statistic__posts-counter">
+												<svg width="14" height="14" class="icon" viewBox="0 0 14 14">
+													<use xlink:href="../../public/icons/icons.svg#icon-chat"/>
+												</svg>
+												<div class="preview-statistic__num">40</div>
+												<span class="preview-statistic__new-post">(+14)</span>
+											</div>
+											<div class="preview-statistic__posts-counter">
+												<svg width="14" height="14" class="icon" viewBox="0 0 14 12">
+													<use xlink:href="../../public/icons/icons.svg#icon-views"/>
+												</svg>
+												<div class="preview-statistic__num">694</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="post-preview">
+									<div class="post-preview__header">
+										<div class="label label_red">MMA</div>
+										<div class="post-preview__post-info post-info">
+											<div class="post-info__date">
+												<span class="ml-1">Максим</span>
+											</div>
+											<span class="post-info__time">13:20</span>
+										</div>
+									</div>
+									<a href="#" class="post-preview__title">Деонтей Уайлдер: "В первом бою
+										с Фьюри я показал 50 процентов своих возможностей или даже меньше"</a>
+									<div class="post-preview__footer">
+										<div class="post-preview__statistic  preview-statistic">
+											<div class="preview-statistic__posts-counter">
+												<svg width="14" height="14" class="icon" viewBox="0 0 14 14">
+													<use xlink:href="../../public/icons/icons.svg#icon-chat"/>
+												</svg>
+												<div class="preview-statistic__num">40</div>
+												<span class="preview-statistic__new-post">(+14)</span>
+											</div>
+											<div class="preview-statistic__posts-counter">
+												<svg width="14" height="14" class="icon" viewBox="0 0 14 12">
+													<use xlink:href="../../public/icons/icons.svg#icon-views"/>
+												</svg>
+												<div class="preview-statistic__num">694</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<a href="#" class="btn btn-outline-gray--green btn-block mt-4">Показать еще...</a>
+						</div>
+						<div class="tab-pane fade" id="nav-box-6" role="tabpanel" aria-labelledby="box-tab">
+							<div class="post-list mt-small-1">
+								<div class="post-preview">
+									<div class="post-preview__header">
+										<div class="label label_green">БОКС</div>
+										<div class="post-preview__post-info post-info">
+											<div class="post-info__date">
+												<span class="ml-1">Максим</span>
+											</div>
+											<span class="post-info__time">13:20</span>
+										</div>
+									</div>
+									<a href="#" class="post-preview__title">Деонтей Уайлдер: "В первом бою
+										с Фьюри я показал 50 процентов своих возможностей или даже меньше"</a>
+									<div class="post-preview__footer">
+										<div class="post-preview__statistic  preview-statistic">
+											<div class="preview-statistic__posts-counter">
+												<svg width="14" height="14" class="icon" viewBox="0 0 14 14">
+													<use xlink:href="../../public/icons/icons.svg#icon-chat"/>
+												</svg>
+												<div class="preview-statistic__num">40</div>
+												<span class="preview-statistic__new-post">(+14)</span>
+											</div>
+											<div class="preview-statistic__posts-counter">
+
+												<svg width="14" height="14" class="icon" viewBox="0 0 14 12">
+													<use xlink:href="../../public/icons/icons.svg#icon-views"/>
+												</svg>
+												<div class="preview-statistic__num">694</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<a href="#" class="btn btn-outline-gray--green btn-block mt-4">Показать еще...</a>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+</main>
+
+<footer class="footer navbar-fixed-bottom mt-5" style="overflow-x: hidden">
+	<nav class="footer-nav navbar-black bg-black pt-4 pb-2 pb-sm-0">
+		<div class="container-fluid container-md">
+			<div class="row">
+				<div
+					class="col-lg-2 d-flex flex-row flex-wrap flex-md-row flex-lg-column justify-content-center justify-content-sm-between justify-content-lg-start">
+					<a class="navbar-brand mb-3" href="#">
+						<img src="../../public/images/logo.jpg" class="d-inline-block align-top" alt="" loading="lazy">
+					</a>
+					<div class="footer-nav__conf d-inline-block d-md-none order-sm-2">
+						<div class="footer-nav__cop">&copy; FightNews 2020</div>
+						<a href="#" class="footer-nav__conf-link">Политика конфеденциальности</a>
+					</div>
+					<ul class="navbar-links">
+						<li class="nav-item active">
+							<a class="nav-link-white" href="#">
+								<svg width="26" height="26" class="icon" viewBox="0 0 20 20">
+									<use xlink:href="../../public/icons/icons.svg#icon-insta"/>
+								</svg>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link-white" href="#">
+								<svg width="26" height="26" class="icon" viewBox="0 0 35 35">
+									<use xlink:href="../../public/icons/icons.svg#icon-fb"/>
+								</svg>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link-white" href="#">
+								<svg width="26" height="26" class="icon" viewBox="0 0 35 35">
+									<use xlink:href="../../public/icons/icons.svg#icon-tg"/>
+								</svg>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link-white" href="#">
+								<svg width="26" height="26" class="icon" viewBox="0 0 35 35">
+									<use xlink:href="../../public/icons/icons.svg#icon-vk"/>
+								</svg>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="justify-content-between d-none d-md-flex col-lg-10">
+					<ul class="footer-nav footer-nav_light list-inline">
+						<li class="nav-item">
+							<a class="footer-nav__link" href="#">Фото</a>
+						</li>
+						<li class="nav-item">
+							<a class="footer-nav__link" href="#">Расписание</a>
+						</li>
+						<li class="nav-item">
+							<a class="footer-nav__link" href="#">Статьи</a>
+						</li>
+						<li class="nav-item">
+							<a class="footer-nav__link" href="#">Бойцы</a>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="footer-nav__link footer-nav__link__pr-30 dropdown-toggle" data-toggle="dropdown" href="#"
+								 role="button" aria-haspopup="true"
+								 aria-expanded="false">FAQ</a>
+							<div class="dropdown-menu">
+								<a class="dropdown-item" href="#">Бан лист</a>
+								<a class="dropdown-item" href="#">Список модераторов</a>
+								<a class="dropdown-item" href="#">Контакты</a>
+							</div>
+						</li>
+					</ul>
+
+					<ul class="footer-nav">
+						<li class="nav-item">
+							<a class="footer-nav__link" href="#">Бокс</a>
+						</li>
+						<li class="nav-item">
+							<a class="footer-nav__link" href="#">Трансляции</a>
+						</li>
+						<li class="nav-item">
+							<a class="footer-nav__link" href="#">Публикации</a>
+						</li>
+					</ul>
+
+					<ul class="footer-nav">
+						<li class="nav-item">
+							<a class="footer-nav__link" href="#">MMA</a>
+						</li>
+						<li class="nav-item">
+							<a class="footer-nav__link" href="#">Трансляции MMA</a>
+						</li>
+						<li class="nav-item">
+							<a class="footer-nav__link" href="#">Публикации</a>
+						</li>
+					</ul>
+
+					<ul class="footer-nav">
+						<li class="nav-item">
+							<a class="footer-nav__link" href="#">Рейтинги</a>
+						</li>
+						<li class="nav-item">
+							<a class="footer-nav__link" href="#">Рейтинги MMA</a>
+						</li>
+						<li class="nav-item">
+							<a class="footer-nav__link" href="#">Рейтинги Бокс</a>
+						</li>
+						<li class="nav-item">
+							<a class="footer-nav__link" href="#">Рейтинги прогнозистов</a>
+						</li>
+					</ul>
+
+					<ul class="footer-nav">
+						<li class="nav-item">
+							<a class="footer-nav__link" href="#">Видео</a>
+						</li>
+						<li class="nav-item">
+							<a class="footer-nav__link" href="#">Видео Бокс</a>
+						</li>
+						<li class="nav-item">
+							<a class="footer-nav__link" href="#">Видео MMA</a>
+						</li>
+					</ul>
+
+					<ul class="footer-nav">
+						<li class="nav-item">
+							<a class="footer-nav__link" href="#">Прочее</a>
+						</li>
+						<li class="nav-item">
+							<a class="footer-nav__link" href="#">Аналитика</a>
+						</li>
+						<li class="nav-item">
+							<a class="footer-nav__link" href="#">Биография</a>
+						</li>
+						<li class="nav-item">
+							<a class="footer-nav__link" href="#">Интервью</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+		</div>
+	</nav>
+
+</footer>
+<script src="../scripts/main.js"></script>
+</body>
+</html>

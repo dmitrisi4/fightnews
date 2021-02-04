@@ -1,0 +1,189 @@
+@import "../theme-base";
+
+.widget {
+  //background-color: rgba($gray, $bg-alpha);
+  &__icon {
+    color: $gray;
+    margin-right: 10px;
+  }
+  &__header {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 15px;
+    border-bottom: 1px solid rgba($gray, $border-alpha);
+  }
+  &__title {
+    display: flex;
+    align-items: center;
+    font-size: $font-size-md;
+    font-weight: 700;
+    color: $black;
+    @include media-breakpoint-down(lg) {
+      font-size: $font-size-lg;
+    }
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+.polls-app {
+  &__title {
+    font-size: $font-size-base;
+    font-weight: $font-weight-medium;
+  }
+  &__body {
+    margin-top: 15px;
+  }
+  &__progress {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .progress {
+    width: 100%;
+    max-width: 80%;
+    @include media-breakpoint-down(sm) {
+    }
+    &__rate {
+      font-size: $font-size-md;
+      font-weight: $font-weight-medium;
+      @include media-breakpoint-down(lg) {
+        font-size: $font-size-base;
+      }
+
+      }
+  }
+}
+
+//.rating-app {
+//
+//}
+
+.rating-list {
+  padding-top: 30px;
+  padding-left: 0;
+  counter-reset: myCounter;
+  display: grid;
+  grid-auto-flow: row;
+  grid-gap: 15px;
+  margin: 0;
+  &__icon {
+    margin-right: 2px;
+  }
+  &__plus {
+    color: $green;
+  }
+  &__item {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: flex-start;
+    list-style: none;
+    line-height: 20px;
+    grid-gap: 20px;
+    font-size: $font-size-base;
+    padding-bottom: 15px;
+    border-bottom: 1px solid rgba($gray, $border-alpha);
+    @include media-breakpoint-down(lg) {
+      font-size: $font-size-sm;
+    }
+    &::before {
+      counter-increment: myCounter;
+      content:  "0" counter(myCounter);
+      color: $gray;
+      font-size: $font-size-md;
+      display: inline-block;
+      text-align: center;
+      line-height: normal;
+      height: auto;
+      width: auto;
+      @include media-breakpoint-down(lg) {
+        font-size: $font-size-base;
+      }
+    }
+    &:nth-child(n + 10) {
+      &:before {
+        content:  counter(myCounter);
+      }
+    }
+  }
+}
+
+
+.accordion-app {
+  display: grid;
+  grid-gap: 15px;
+}
+
+.event-list {
+  display: grid;
+  grid-auto-flow: row;
+  grid-gap: $spacer;
+}
+
+.event-preview {
+  display: grid;
+  grid-template-columns: 54px 1fr;
+  grid-gap: 15px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid rgba($gray, $bth-light-alpha-md);
+  &__left {
+    display: grid;
+    grid-gap: 15px;
+    justify-items: center;
+    align-items: flex-start;
+    align-content: flex-start;
+    @include media-breakpoint-down(sm) {
+      grid-gap: 5px;
+    }
+  }
+  &__title {
+    font-size: $font-size-md;
+    font-weight: $font-weight-medium;
+    color: $black-200;
+    @include media-breakpoint-down(lg) {
+      font-size: $font-size-base;
+    }
+    @include hover-focus() {
+      text-decoration: none;
+      color: $red;
+    }
+  }
+  &__text {
+    font-size: $font-size-sm;
+    margin: 0;
+  }
+}
+
+.comments-list {
+  display: grid;
+  grid-gap: 20px;
+}
+.comments-item {
+  display: grid;
+  grid-gap: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid $gray;
+  &__content {
+    display: grid;
+    grid-auto-flow: column;
+  }
+  &__likes {
+    display: inline-flex;
+    align-items: center;
+    font-size: $font-size-sm;
+    color: $gray-600;
+  }
+  &__icon {
+    margin-right: 10px;
+  }
+  &__comment {
+    margin: 0;
+  }
+  &__text-title {
+    font-weight: 700;
+    margin: 0;
+  }
+}

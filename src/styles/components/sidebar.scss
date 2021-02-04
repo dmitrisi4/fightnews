@@ -1,0 +1,9 @@
+@import "../theme-base";
+
+.sidebar {
+  background-color: $bg-gray-alpha;
+  padding: 20px;
+  @include media-breakpoint-down(md) {
+    background-color: transparent;
+  }
+}

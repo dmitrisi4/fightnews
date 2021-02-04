@@ -1,0 +1,51 @@
+@import "../theme-base";
+.tabs-menu {
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: flex-start;
+  grid-gap: 50px;
+  border-bottom: 1px solid rgba($gray, $bth-light-alpha-md);
+  &__btn {
+    position: relative;
+    text-transform: uppercase;
+    color: $blue-dark;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 9px;
+    transition: all .2s;
+    &.active {
+      &:before {
+        background-color: $gray-600;
+        transition: all .2s;
+      }
+      &.red {
+        &:before {
+          background-color: $red;
+        }
+      }
+      &.green {
+        &:before {
+          background-color: $green;
+        }
+      }
+    }
+    &:hover {
+      text-decoration: none;
+      color: $red;
+      transition: all .2s;
+    }
+    &:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: -1px;
+      height: 2px;
+      width: 100%;
+      background-color: transparent;
+      border-radius: 2px;
+      transition: all .2s;
+
+    }
+  }
+}
+

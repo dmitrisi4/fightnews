@@ -1,0 +1,217 @@
+@import "../theme-base";
+
+.header {
+  background-color: $black-2;
+  @include media-breakpoint-down(sm) {
+    position: relative;
+  }
+}
+
+.navbar-main {
+  //position: relative;
+  margin-bottom: 60px;
+  background: $black-2;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.625rem 1.25rem;
+  @include media-breakpoint-down(md) {
+    margin-bottom: 0;
+  }
+  @include media-breakpoint-up(sm) {
+    position: relative;
+   .navbar-brand {
+      order: -1;
+    }
+  }
+
+  &__left {
+    display: flex;
+    align-items: center;
+  }
+  &__nav-list {
+    position: relative;
+    display: grid;
+    grid-gap: 10px;
+    grid-auto-flow: column;
+    padding: 0 1.25rem;
+    list-style: none;
+    justify-content: space-between;
+    &::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 1px;
+      opacity: .12;
+      background-color: $black;
+    }
+
+    @include media-breakpoint-up('lg', $grid-breakpoints) {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 100%;
+    }
+    @include media-breakpoint-down('md', $grid-breakpoints) {
+      grid-auto-flow: row;
+      width: 100%;
+      padding-left: 0;
+      padding-right: 0;
+      text-align: left;
+      grid-template-columns: minmax(200px, 1fr);
+
+      .container {
+        padding-left: 0;
+        padding-right: 0;
+      }
+    }
+  }
+
+  &__auth-row {
+    display: flex;
+    align-items: center;
+    @include media-breakpoint-down(md) {
+    }
+  }
+
+  &__auth-col {
+    display: grid;
+    align-items: center;
+    grid-auto-flow: column;
+    padding-left: 0;
+    margin-bottom: 0;
+    @include media-breakpoint-down('sm', $grid-breakpoints) {
+      display: none;
+    }
+    }
+
+  .nav-link {
+    color: $white;
+  }
+}
+
+
+.navbar-main {
+  @include media-breakpoint-down(md) {
+    .navbar-links {
+      justify-content: center;
+    }
+    &__collapse {
+      display: none;
+    }
+    &.show {
+      .navbar-main__collapse {
+        display: block;
+        width: 100%;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 100%;
+        z-index: 15;
+        background-color: $black-2;
+        padding-bottom: 65px;
+        @include media-breakpoint-down(md) {
+          padding-bottom: 25px;
+        }
+
+      }
+    }
+  }
+
+}
+
+//burger style
+.burger-btn {
+  display: none;
+  position: relative;
+  width: 34px;
+  height: 30px;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  @include media-breakpoint-down(md) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  &__line {
+    width: 100%;
+    height: 2px;
+    background-color: $white;
+  }
+}
+.navbar-main {
+  .burger-btn {
+    //transition: all .2s;
+    transition-property: transform, justify-content;
+    transition-duration: .2s;
+    will-change: transform;
+    &__line {
+      transition-property: width;
+      transition-duration: .2s;
+    }
+  }
+  &.show {
+    .burger-btn {
+      justify-content: center;
+      &__line {
+        transition-property: width;
+        transition-duration: .2s;
+        &:last-child {
+          transform: rotate(90deg) translateX(-2px);
+        }
+        width: 80%;
+      }
+      transform: rotate(47deg);
+    }
+  }
+}
+//
+
+.nav-link-white {
+  display: flex;
+  justify-content: center;
+  color: $white;
+  text-decoration: none;
+  border: 1px solid $blue-dark;
+  border-radius: 5px;
+
+  @include hover-focus() {
+    color: $white;
+  }
+}
+
+.navbar-links {
+  display: grid;
+  grid-gap: 10px;
+  grid-auto-flow: column;
+  margin: 0;
+  padding: 0;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.menu {
+  width: 90%;
+  height: 2px;
+  border-radius: 10px;
+  background: var(--menu-color);
+
+  transform: translateX(0);
+  transform: rotate(0);
+  transform-origin: 0% 50%;
+  opacity: 1;
+  transition: .3s all;
+}
+
+
+
+

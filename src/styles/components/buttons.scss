@@ -1,0 +1,79 @@
+@import "../theme-base";
+
+.btn {
+  border-radius: $border-radius;
+}
+
+.btn-accordion {
+  display: flex;
+  width: 100%;
+  font-size: $font-size-md;
+  font-weight: 700;
+  color: $black;
+  position: relative;
+  padding: 0 0 10px;
+  margin: 0;
+  border: none;
+  border-bottom: 1px solid rgba($gray, $border-alpha);
+  background-color: transparent;
+  @include media-breakpoint-down(lg) {
+    font-size: $font-size-base;
+  }
+
+  //padding-right:;
+  &::before {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 8px;
+    height: 6px;
+    background-image: url('../../public/icons/arrowDown.svg');
+    background-repeat: no-repeat;
+    transition: transform .2s;
+  }
+}
+
+.btn-accordion.collapsed {
+  &::before {
+    transition: transform .2s;
+    transform: translateY(-50%)  rotate(-90deg);
+  }
+}
+
+
+
+
+.btn-outline-gray--green {
+  border-radius: $border-radius-sm;
+  border: 1px solid $gray-600;
+  color: $green;
+
+  @include hover-focus() {
+    color: $white;
+    background-color: $green;
+    border-color: $green;
+    box-shadow: 0 0 0 $btn-focus-width rgba($gray-600, .5);
+  }
+}
+
+.btn-active-bg {
+  color: $gray-600;
+  font-weight: $font-weight-bold;
+  text-transform: uppercase;
+  padding: $input-btn-padding-y-xs $input-btn-padding-x-md;
+  border-radius: $border-radius-lg;
+  &.active {
+    background-color: rgba($white, $bth-light-alpha);
+    color: $white;
+  }
+  @include hover() {
+    outline: none;
+    border: none;
+    text-decoration: none;
+    color: $red;
+    transition: all .2s;
+  }
+}
+

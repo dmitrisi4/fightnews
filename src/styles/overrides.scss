@@ -1,0 +1,226 @@
+@import "theme-base";
+
+h1, .h1 {
+  margin-bottom: 0;
+  @include media-breakpoint-down(lg) {
+    font-size: $font-size-lg;
+  }
+}
+
+
+
+@mixin button-light($color, $value, $alpha) {
+  $lightValue: rgba($value, $alpha);
+  @include button-variant($lightValue, $lightValue);
+  color: $value;
+
+  @include hover() {
+    color: $value;
+    @include gradient-bg(darken($lightValue, 10%));
+    border-color: darken($lightValue, 10%);
+  }
+}
+
+
+@each $color, $value in $theme-colors {
+  .btn-light-#{$color} {
+    @include button-light($color, $value, $bth-light-alpha);
+  }
+  .btn-extra-light-#{$color} {
+    @include button-light($color, $value, $bth-light-alpha-2);
+  }
+  .btn-outline-light--#{$color} {
+    $value: rgba($value, $bth-light-alpha);
+    @include button-outline-variant($value);
+  }
+
+}
+
+.btn-sm {
+  @include button-size($input-btn-padding-y-xs, $input-btn-padding-x-md, $btn-font-size-sm, $line-height-base, $btn-border-radius-stupid);
+}
+
+.btn-md {
+  @include button-size($input-btn-padding-y-sm, $btn-padding-x-lg, $btn-font-size, $btn-line-height-lg, $btn-border-radius);
+}
+
+
+.btn {
+  font-weight: $font-weight-medium;
+}
+
+.btn-arrow {
+  @include media-breakpoint-down(sm) {
+    @include plain-hover-focus() {
+      width: 22px;
+      height: 17px;
+      font-size: 0;
+      background-color: transparent;
+      background-image: url(../../public/icons/arrowRighGreen.svg);
+      background-size: cover;
+      border: none;
+      box-shadow: none;
+    }
+  }
+}
+
+
+@include media-breakpoint-down(md) {
+  .dropdown-menu {
+    transform: none !important;
+  }
+  .dropdown-menu.show {
+    position: relative !important;
+    width: 100%;
+    background-color: $black-2;
+  }
+  .dropdown-item {
+    color: $green;
+
+    @include hover() {
+      color: $white;
+      background: $green;
+    }
+  }
+}
+
+.dropdown-toggle {
+  &::after {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    width: 8px;
+    height: 6px;
+    border: 0;
+    background-image: url(../../public/icons/arrowDown.svg);
+    background-repeat: no-repeat;
+    @include media-breakpoint-down(md) {
+      width: 7px;
+      height: 12px;
+      right: 5%;
+      color: $white;
+      background-image: url(../../public/icons/arrowRight.svg);
+      background-size: cover;
+      transition: transform .2s;
+    }
+  }
+}
+.nav-item.dropdown.show {
+  .dropdown-toggle {
+    @include media-breakpoint-down(md) {
+      &::after {
+        transform-origin: center center;
+        transform: translateY(-50%) rotate(90deg);
+        transition: transform .2s;
+      }
+    }
+  }
+}
+
+.nav-item {
+  position: relative;
+  @include media-breakpoint-down(md) {
+    &::before {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 1px;
+      background-color: rgba($blue-dark, $bth-light-alpha-md);
+    }
+  }
+}
+
+.nav-btn {
+  display: block;
+  padding: $nav-btn-padding-y 20px $nav-btn-padding-y 0;
+  position: relative;
+  color: $black;
+  &::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 2px;
+    background-color: transparent;
+    border-radius: 2px;
+  }
+
+  @include hover-focus() {
+    text-decoration: none;
+    color: $black;
+    &::before {
+      background-color: $red;
+    }
+  }
+
+  @include media-breakpoint-down(md) {
+
+    @include hover-focus() {
+      &::before {
+        background-color: $green;
+      }
+    }
+  }
+  @include media-breakpoint-down(md) {
+    color: $white;
+    text-decoration: none;
+    padding-right: 20px;
+    padding-left: 20px;
+    font-size: $font-size-sm;
+    @include plain-hover-focus {
+      color: $white;
+    }
+  }
+
+  // Disabled state lightens text
+  &.disabled {
+    color: $nav-link-disabled-color;
+    pointer-events: none;
+    cursor: default;
+  }
+}
+
+.swiper-pagination-bullet {
+  width: 5px;
+  height: 5px;
+  background-color: $white;
+  opacity: .35;
+  @include media-breakpoint-down(md) {
+    width: 9px;
+    height: 9px;
+    background-color: $gray-400;
+  }
+
+  &-active {
+    opacity: 1;
+    @include media-breakpoint-down(md) {
+      background-color: $red;
+    }
+  }
+}
+
+.card-img-overlay {
+  padding: calc(30rem / 16);
+}
+
+.progress-bar {
+  border-radius: $border-radius-es;
+}
+
+.swiper-pagination-bullets {
+  @include media-breakpoint-down(md) {
+    bottom: 0;
+    display: inline-grid;
+    grid-auto-flow: column;
+    grid-template-columns: max-content max-content;
+    justify-content: center;
+    grid-gap: 5px;
+    width: 100%;
+
+  }
+}

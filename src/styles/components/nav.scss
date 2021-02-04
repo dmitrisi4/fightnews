@@ -1,0 +1,13 @@
+@import "../theme-base";
+
+.video-nav {
+  padding-left: 0;
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: center;
+  @media screen and ( max-width: 576px ) {
+    grid-auto-flow: column;
+  }
+}
+
+

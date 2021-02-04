@@ -1,0 +1,118 @@
+$red: #D44E49;
+$black: #180706;
+$black-2: #131213;
+$black-200: #2C2C2C;
+$green: #54B869;
+$gray: #CFC5C5;
+$gray-200: #ECECEC;
+$gray-400: #E6E7EA;
+$gray-600: #B4B7BD;
+$white: #fff;
+$blue-dark: #2A3042;
+
+
+$font-weight-medium: 500;
+$font-weight-bold: 700;
+
+
+
+$font-size-value: 16; // Assumes the browser default, typically `16px`
+$font-size-base: 1rem;
+
+$font-size-xl: 35rem / $font-size-value;
+$font-size-lg: 25rem / $font-size-value;
+$font-size-md: 20rem / $font-size-value;
+$font-size-sm: 14rem / $font-size-value;
+$font-size-ms: 12rem / $font-size-value;
+$font-size-xs: 10rem / $font-size-value;
+
+$h1-font-size: $font-size-xl;
+$h2-font-size: $font-size-lg;
+$h3-font-size: $font-size-md;
+$h4-font-size: $font-size-sm;
+$h5-font-size: $font-size-xs;
+
+
+$date-label-month-sm: 12rem / $font-size-value;
+$date-label-month-md: 20rem / $font-size-value;
+
+$font-family-sans-serif: Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif;
+
+
+$border-radius:               10rem / $font-size-value;
+$border-radius-lg:            15rem / $font-size-value;
+$border-radius-sm:            5rem / $font-size-value;
+$border-radius-es:            3rem / $font-size-value;
+
+
+$btn-border-radius:           $border-radius !default;
+$btn-border-radius-lg:        $border-radius-lg !default;
+$btn-border-radius-sm:        $border-radius-sm !default;
+
+$bth-light-alpha: .27;
+$bth-light-alpha-2: .15;
+$bth-light-alpha-md: .5;
+
+$bg-alpha: 0.1;
+$border-alpha: 0.5;
+
+$bg-gray-alpha: rgba($gray, $bg-alpha);
+
+
+
+
+$border-radius: 0.625rem;
+
+$input-btn-font-size: $font-size-base;
+$input-btn-font-size-sm: $font-size-sm;
+
+$input-btn-padding-y-xs: calc(10em / 14);
+$input-btn-padding-y-sm: 15em / $font-size-value;
+$input-btn-padding-x-md:  calc(25em / 14);
+$input-btn-padding-x-lg:  40em / $font-size-value;
+
+$btn-font-size-sm: $input-btn-font-size-sm;
+$btn-border-radius-stupid: 0.625rem;
+
+
+$nav-btn-padding-y:                1rem;
+$nav-bth-padding-x:                0;
+
+$theme-colors: (
+        "red": $red,
+        "green": $green,
+        "black": $black,
+        "gray": $gray,
+        "white": $white,
+);
+
+$gutter-width: 10rem / $font-size-value;
+//$grid-gutter-width: $gutter-width;
+$spacer: 20rem / $font-size-value;
+
+@function theme-color($key: "primary") {
+  @return map-get($theme-colors, $key);
+}
+$progress-bar-bg: theme-color("red");
+$progress-height: 3px;
+$progress-border-radius: $border-radius-es;
+
+$component-active-color: theme-color("red");
+$component-active-bg: theme-color("white");
+$custom-control-indicator-checked-border-color: $component-active-color;
+
+$spacers: (
+        0: 0,
+        1: ($spacer * .25),
+        2: ($spacer * .5),
+        3: $spacer,
+        4: ($spacer * 1.5),
+        5: ($spacer * 3),
+        "small-1" : (15rem / $font-size-value),
+        "big-1": (50rem / $font-size-value),
+        "big-2": (120rem / $font-size-value),
+        "big-3": (180rem / $font-size-value),
+        "big-4": (260rem / $font-size-value),
+)
+
+
