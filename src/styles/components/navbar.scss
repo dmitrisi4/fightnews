@@ -195,8 +195,11 @@
   &__link {
     display: flex;
     border: 1px solid transparent;
-    border-radius: $border-radius;
-    padding: calc(10rem / 16);
+    border-radius: $border-radius-sm;
+    padding: calc(5rem / 16);
+    @include media-breakpoint-down(md) {
+      padding: calc(10rem / 16);
+    }
   }
 }
 @each $color, $value in $theme-colors {

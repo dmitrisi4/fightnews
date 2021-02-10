@@ -14479,8 +14479,13 @@ h1, .h1 {
 .social-links__link {
   display: flex;
   border: 1px solid transparent;
-  border-radius: 0.625rem;
-  padding: calc(10rem / 16);
+  border-radius: 0.3125rem;
+  padding: calc(5rem / 16);
+}
+@media (max-width: 991.98px) {
+  .social-links__link {
+    padding: calc(10rem / 16);
+  }
 }
 
 .social-links_red .social-links__link {
