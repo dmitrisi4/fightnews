@@ -58,7 +58,7 @@
 
 @include media-breakpoint-down(md) {
   .tabs-menu {
-    justify-content: center;
+    justify-content: space-between;
     grid-gap: 5px;
     border-bottom: none;
     &__btn {
