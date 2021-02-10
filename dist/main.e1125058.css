@@ -11591,7 +11591,7 @@ h1, .h1 {
   width: 8px;
   height: 6px;
   border: 0;
-  background-image: url("/arrowDown.43b988b9.svg");
+  background-image: url("arrowDown.5b134a3d.svg");
   background-repeat: no-repeat;
 }
 @media (max-width: 991.98px) {
@@ -11600,7 +11600,7 @@ h1, .h1 {
     height: 12px;
     right: 5%;
     color: #fff;
-    background-image: url("/arrowRight.580d3000.svg");
+    background-image: url("arrowRight.2bc6fe18.svg");
     background-size: cover;
     transition: transform 0.2s;
   }
@@ -12359,7 +12359,7 @@ h1, .h1 {
   left: 0;
   top: 50%;
   transform: translateY(-50%);
-  background: url(/icons.a2aebca7.svg#icon-arrowRight2) no-repeat;
+  background: url(icons.437a8dd7.svg#icon-arrowRight2) no-repeat;
 }
 .article-nav-item__title {
   display: block;
@@ -13047,7 +13047,7 @@ h1, .h1 {
   transform: translateY(-50%);
   width: 8px;
   height: 6px;
-  background-image: url("/arrowDown.43b988b9.svg");
+  background-image: url("arrowDown.5b134a3d.svg");
   background-repeat: no-repeat;
   transition: transform 0.2s;
 }
@@ -13796,7 +13796,7 @@ h1, .h1 {
     height: 17px;
     font-size: 0;
     background-color: transparent;
-    background-image: url("/arrowRighGreen.7e893f2e.svg");
+    background-image: url("arrowRighGreen.c4465a21.svg");
     background-size: cover;
     border: none;
     box-shadow: none;
@@ -14712,5 +14712,3 @@ body {
   font-family: Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif;
   color: #180706;
 }
-
-/*# sourceMappingURL=/main.b6459537.css.map */
