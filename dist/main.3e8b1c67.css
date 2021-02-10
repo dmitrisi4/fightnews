@@ -14172,8 +14172,8 @@ h1, .h1 {
 
 @media (max-width: 991.98px) {
   .tabs-menu {
-    justify-content: space-between;
-    grid-gap: 5px;
+    justify-content: center;
+    grid-gap: 10px;
     border-bottom: none;
   }
   .tabs-menu__btn {

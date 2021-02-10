@@ -58,8 +58,8 @@
 
 @include media-breakpoint-down(md) {
   .tabs-menu {
-    justify-content: space-between;
-    grid-gap: 5px;
+    justify-content: center;
+    grid-gap: 10px;
     border-bottom: none;
     &__btn {
       font-weight: $font-weight-bold;
