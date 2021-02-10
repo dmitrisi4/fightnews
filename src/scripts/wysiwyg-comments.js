@@ -1,6 +1,9 @@
 import QuillSrc from "quill/core/quill";
 import Quill from "quill/dist/quill";
 
+import * as Emoji from "quill-emoji";
+Quill.register("modules/emoji", Emoji);
+
 	let container = document.getElementById('editor-comments');
 	let toolbarContainer = [
 	['bold', 'italic', 'underline', 'strike'],        // toggled buttons
@@ -20,6 +23,7 @@ import Quill from "quill/dist/quill";
 	[{ 'align': [] }],
 
 	['clean', 'undo', 'redo'],                               // remove formatting button
+		[{"emoji-toolbar": true}, {"emoji-textarea": true}, {"emoji-shortname": true}],
 ];
 	let options = {
 		modules: {
@@ -31,9 +35,12 @@ import Quill from "quill/dist/quill";
 					},
 					redo: function() {
 						this.quill.history.redo();
-					}
-				}
+					},
+
+				},
+
 			},
+
 		},
 		theme: 'snow',
 	};
