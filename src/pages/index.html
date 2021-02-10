@@ -17,31 +17,31 @@
 				<a class="navbar-brand" href="#">
 					<img src="../../public/images/logo.jpg" class="d-inline-block align-top" alt="" loading="lazy">
 				</a>
-				<ul class="navbar-links" id="social-link" data-lg-after="navbar-menu">
-					<li class="nav-item active">
-						<a class="nav-link-white" href="#">
-							<svg width="26" height="26" class="icon-insta" viewBox="0 0 20 20">
+				<ul class="social-links social-links_white social-links_border-blue-dark" id="social-link" data-lg-after="navbar-menu" >
+					<li class="social-links__item active">
+						<a class="social-links__link" href="#">
+							<svg width="14" height="14" class="icon" viewBox="0 0 20 20">
 								<use xlink:href="../../public/icons/icons.svg#icon-insta"/>
 							</svg>
 						</a>
 					</li>
-					<li class="nav-item">
-						<a class="nav-link-white" href="#">
-							<svg width="26" height="26" class="icon-fb" viewBox="0 0 35 35">
+					<li class="social-links__item">
+						<a class="social-links__link" href="#">
+							<svg width="14" height="14" class="icon" viewBox="0 0 20 20">
 								<use xlink:href="../../public/icons/icons.svg#icon-fb"/>
 							</svg>
 						</a>
 					</li>
-					<li class="nav-item">
-						<a class="nav-link-white" href="#">
-							<svg width="26" height="26" class="icon-tg" viewBox="0 0 35 35">
+					<li class="social-links__item">
+						<a class="social-links__link" href="#">
+							<svg width="14" height="14" class="icon" viewBox="0 0 20 20">
 								<use xlink:href="../../public/icons/icons.svg#icon-tg"/>
 							</svg>
 						</a>
 					</li>
-					<li class="nav-item">
-						<a class="nav-link-white" href="#">
-							<svg width="26" height="26" class="icon-vk" viewBox="0 0 35 35">
+					<li class="social-links__item">
+						<a class="social-links__link" href="#">
+							<svg width="14" height="14" class="icon" viewBox="0 0 20 20">
 								<use xlink:href="../../public/icons/icons.svg#icon-vk"/>
 							</svg>
 						</a>
@@ -151,33 +151,37 @@
 		<div class="container-fluid container-sm banner-container">
 			<div class="row no-gutters">
 				<!-- Slider main container -->
-				<div class="col-lg-8 col-md-12 px-0 px-md-2 ">
+				<div class="col-lg-8 col-md-12 px-0">
 					<div class="slider-banner swiper-container">
 						<!-- Additional required wrapper -->
 						<div class="swiper-wrapper">
 							<!-- Slides -->
-							<div class="swiper-slide">
+							<div class="swiper-slide" >
 								<div class="post-preview post-preview_board">
 									<img src="../../public/images/konor.jpg" class="post-preview__image" alt="image konor makgregor">
 									<div class="post-preview__header">
 										<div class="label label_red label_text-white label_text-md-red">MMA</div>
 										<a href="#" class="post-preview__title">Конор Макгрегор - Дональд Серроне. Прогноз на главный бой
 											UFC 246</a>
-										<p class="post-preview__text">Первый крупный ивент UFC в новом десятилетии не заставил себя долго
-											ждать.</p>
+										<div class="text-ellipsis">
+											<p class="post-preview__text ">Первый крупный ивент UFC в новом десятилетии не заставил себя долго
+												ждать.</p>
+										</div>
 									</div>
 								</div>
 							</div>
-							<div class="swiper-slide">
+							<div class="swiper-slide" >
 								<div class="post-preview post-preview_board">
 									<img src="../../public/images/konor257.jpeg" class="post-preview__image" alt="image konor makgregor">
 									<div class="post-preview__header">
 										<div class="label label_red label_text-white label_text-md-red">MMA</div>
 										<a href="#" class="post-preview__title">Слова Дастина Порье после победы над Конором МакГрегором в
 											реванше на UFC 257</a>
-										<p class="post-preview__text">Бывший временный чемпион UFC в легком весе Дастин Порье
-											прокомментировал победу техническим нокаутом во втором раунде над Конором МакГрегором в главном
-											бою турнира UFC 257.</p>
+										<div class="text-ellipsis">
+											<p class="post-preview__text">Бывший временный чемпион UFC в легком весе Дастин Порье
+												прокомментировал победу техническим нокаутом во втором раунде над Конором МакГрегором в главном
+												бою турнира UFC 257.</p>
+										</div>
 									</div>
 								</div>
 							</div>
@@ -554,6 +558,7 @@
 									</div>
 								</div>
 							</div>
+							<a href="#" class="btn btn-outline-gray--green btn-md btn-block mt-4">Показать еще...</a>
 						</div>
 
 						<div class="tab-pane fade" id="nav-top" role="tabpanel" aria-labelledby="list-last-list">
@@ -788,6 +793,7 @@
 									</div>
 								</div>
 							</div>
+							<a href="#" class="btn btn-outline-gray--green btn-md btn-block mt-4">Показать еще...</a>
 						</div>
 
 					</div>
@@ -920,7 +926,7 @@
 									</div>
 								</div>
 							</div>
-							<a href="#" class="btn btn-extra-light-green btn-md btn-block mt-4">Показать еще...</a>
+							<a href="#" class="btn btn-outline-gray--green btn-md btn-block mt-4">Показать еще...</a>
 						</div>
 
 						<div class="tab-pane fade" id="nav-mma-2" role="tabpanel" aria-labelledby="list-mma-list">
@@ -1034,7 +1040,7 @@
 									</div>
 								</div>
 							</div>
-							<a href="#" class="btn btn-extra-light-green btn-md btn-block mt-4">Показать еще...</a>
+							<a href="#" class="btn btn-outline-gray--green btn-md btn-block mt-4">Показать еще...</a>
 						</div>
 						<div class="tab-pane fade" id="nav-box-2" role="tabpanel" aria-labelledby="list-box-list">
 							<div class="post-preview post-preview_board mx-n3 mx-sm-auto">
@@ -1150,7 +1156,7 @@
 									</div>
 								</div>
 							</div>
-							<a href="#" class="btn btn-extra-light-green btn-md btn-block mt-4">Показать еще...</a>
+							<a href="#" class="btn btn-outline-gray--green  btn-md btn-block mt-4">Показать еще...</a>
 						</div>
 
 					</div>
@@ -1158,7 +1164,7 @@
 				<section class="section section-video  section_dark mt-5 " id="section-video">
 					<div class="section__header">
 						<div class="h1 font-weight-bold text-white ml-3">Видео</div>
-						<nav class="nav border-radius-sm video-nav order-sm-2 mt-3 mt-md-auto" id="nav-tab-3" role="tablist">
+						<nav class="nav border-radius-sm video-nav mt-3 mt-md-auto" id="nav-tab-3" role="tablist">
 							<a class="btn-active-bg active" id="nav-last-tab" data-toggle="tab" href="#nav-last-1" role="tab"
 								 aria-controls="nav-last" aria-selected="true">Последние</a>
 							<a class="btn-active-bg " id="nav-popular-tab" data-toggle="tab" href="#nav-popular-1" role="tab"
@@ -2113,7 +2119,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="widget mt-4 mt-md-big-4" id="section-forecasters">
+				<div class="widget mt-5" id="section-forecasters">
 					<div class="widget__header">
 						<div class="widget__title">
 							<svg width="18" height="18" class="widget__icon" viewBox="0 0 18 18">
@@ -2252,7 +2258,7 @@
 				</div>
 				<div class="widget mt-5" data-lg-after="section-timetable" id="section-accordion">
 					<!--					-->
-					<div class="accordion-app mt-md-big-3" id="accordionExample">
+					<div class="accordion-app" id="accordionExample">
 						<div class="accordion-app__card">
 							<h2 class="mb-0" id="headingOne">
 								<button class="btn-accordion" type="button" data-toggle="collapse"
@@ -2265,7 +2271,7 @@
 							</h2>
 
 							<div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
-								<div class="card-body">
+								<div class="accordion-app__card-body">
 									<nav>
 										<div class="nav nav-tabs tabs-menu" role="tablist">
 											<a class="tabs-menu__btn  active" data-toggle="tab" href="#nav-all-3" role="tab"
@@ -2496,7 +2502,7 @@
 							</h2>
 
 							<div id="collapseTwo" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
-								<div class="card-body">
+								<div class="accordion-app__card-body">
 									<nav>
 										<div class="nav nav-tabs tabs-menu" role="tablist">
 											<a class="tabs-menu__btn  active" data-toggle="tab" href="#nav-all-3" role="tab"
@@ -2726,7 +2732,7 @@
 								</button>
 							</h2>
 							<div id="collapseThree" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
-								<div class="card-body">
+								<div class="accordion-app__card-body">
 									<nav>
 										<div class="nav nav-tabs tabs-menu" role="tablist">
 											<a class="tabs-menu__btn  active" data-toggle="tab" href="#nav-all-3" role="tab"
@@ -2948,7 +2954,7 @@
 					</div>
 					<!--					-->
 				</div>
-				<div class="widget mt-4 mt-md-big-2" data-lg-after="section-fighters" id="section-timetable">
+				<div class="widget mt-5" data-lg-after="section-fighters" id="section-timetable">
 					<div class="widget__header">
 						<div class="widget__title">
 							<svg width="15" height="16" class="widget__icon" viewBox="0 0 15 16">
@@ -3099,82 +3105,82 @@
 						</div>
 					</div>
 				</div>
-				<div class="widget mt-5 mt-md-big-2" id="section-popular-comments">
+				<div class="widget mt-5" id="section-popular-comments">
 					<div class="widget__title">
 						<svg width="18" height="16" class="widget__icon" viewBox="0 0 18 16">
 							<use xlink:href="../../public/icons/icons.svg#icon-chat"/>
 						</svg>
 						<span>Популярные комментарии</span>
 					</div>
-					<div class="comments-list mt-4">
-						<div class="comments-item">
+					<div class="comments-widget mt-4">
+						<div class="comments-el">
 							<div class="post-info">
 								<span class="post-info__name post-info__name_strong">Stafford</span>
 								<span class="post-info__time">20:34</span>
 							</div>
-							<div class="comments-item__content">
-								<p class="comments-item__comment">Вам унитазы вернули?</p>
-								<div class="comments-item__likes">
-									<svg width="14" height="14" class="comments-item__icon" viewBox="0 0 14 14">
+							<div class="comments-el__content">
+								<p class="comments-el__comment">Вам унитазы вернули?</p>
+								<div class="comments-el__likes">
+									<svg width="14" height="14" class="comments-el__icon" viewBox="0 0 14 14">
 										<use xlink:href="../../public/icons/icons.svg#icon-like"/>
 									</svg>
 									<span>58</span>
 								</div>
 							</div>
-							<div class="comments-item__text-title mt-2">Дэнни Гарсиа деклассировал кусающегося Ивана Редкача</div>
+							<div class="comments-el__text-title mt-2">Дэнни Гарсиа деклассировал кусающегося Ивана Редкача</div>
 						</div>
-						<div class="comments-item">
+						<div class="comments-el">
 							<div class="post-info">
 								<span class="post-info__name post-info__name_strong">Stafford</span>
 								<span class="post-info__time">20:34</span>
 							</div>
-							<div class="comments-item__content">
-								<p class="comments-item__comment">Вам унитазы вернули?</p>
-								<div class="comments-item__likes">
-									<svg width="14" height="14" class="comments-item__icon" viewBox="0 0 14 14">
+							<div class="comments-el__content">
+								<p class="comments-el__comment">Вам унитазы вернули?</p>
+								<div class="comments-el__likes">
+									<svg width="14" height="14" class="comments-el__icon" viewBox="0 0 14 14">
 										<use xlink:href="../../public/icons/icons.svg#icon-like"/>
 									</svg>
 									<span>58</span>
 								</div>
 							</div>
-							<div class="comments-item__text-title mt-2">Дэнни Гарсиа деклассировал кусающегося Ивана Редкача</div>
+							<div class="comments-el__text-title mt-2">Дэнни Гарсиа деклассировал кусающегося Ивана Редкача</div>
 						</div>
-						<div class="comments-item">
+						<div class="comments-el">
 							<div class="post-info">
 								<span class="post-info__name post-info__name_strong">Stafford</span>
 								<span class="post-info__time">20:34</span>
 							</div>
-							<div class="comments-item__content">
-								<p class="comments-item__comment">Вам унитазы вернули?</p>
-								<div class="comments-item__likes">
-									<svg width="14" height="14" class="comments-item__icon" viewBox="0 0 14 14">
+							<div class="comments-el__content">
+								<p class="comments-el__comment">Вам унитазы вернули?</p>
+								<div class="comments-el__likes">
+									<svg width="14" height="14" class="comments-el__icon" viewBox="0 0 14 14">
 										<use xlink:href="../../public/icons/icons.svg#icon-like"/>
 									</svg>
 									<span>58</span>
 								</div>
 							</div>
-							<div class="comments-item__text-title mt-2">Дэнни Гарсиа деклассировал кусающегося Ивана Редкача</div>
+							<div class="comments-el__text-title mt-2">Дэнни Гарсиа деклассировал кусающегося Ивана Редкача</div>
 						</div>
-						<div class="comments-item">
+						<div class="comments-el">
 							<div class="post-info">
 								<span class="post-info__name post-info__name_strong">Stafford</span>
 								<span class="post-info__time">20:34</span>
 							</div>
-							<div class="comments-item__content">
-								<p class="comments-item__comment">Вам унитазы вернули?</p>
-								<div class="comments-item__likes">
-									<svg width="14" height="14" class="comments-item__icon" viewBox="0 0 14 14">
+							<div class="comments-el__content">
+								<p class="comments-el__comment">Вам унитазы вернули?</p>
+								<div class="comments-el__likes">
+									<svg width="14" height="14" class="comments-el__icon" viewBox="0 0 14 14">
 										<use xlink:href="../../public/icons/icons.svg#icon-like"/>
 									</svg>
 									<span>58</span>
 								</div>
 							</div>
-							<div class="comments-item__text-title mt-2">Дэнни Гарсиа деклассировал кусающегося Ивана Редкача</div>
+							<div class="comments-el__text-title mt-2">Дэнни Гарсиа деклассировал кусающегося Ивана Редкача</div>
 						</div>
 					</div>
 					<a href="#" class="btn btn-outline-gray--green btn-block mt-4">Показать еще...</a>
 				</div>
-				<div class="widget mt-5 mt-md-big-2" id="section-battle-results">
+				<div class="widget mt-5" id="section-battle-results">
 					<div class="widget__title">
 						<svg width="18" height="16" class="widget__icon" viewBox="0 0 18 16">
 							<use xlink:href="../../public/icons/icons.svg#icon-sword"/>
@@ -3416,31 +3422,31 @@
 						<div class="footer-nav__cop">&copy; FightNews 2020</div>
 						<a href="#" class="footer-nav__conf-link">Политика конфеденциальности</a>
 					</div>
-					<ul class="navbar-links">
-						<li class="nav-item active">
-							<a class="nav-link-white" href="#">
-								<svg width="26" height="26" class="icon" viewBox="0 0 20 20">
+					<ul class="social-links social-links_gray  social-links-sm_border-blue-dark mt-3 mt-sm-0">
+						<li class="social-links__item active">
+							<a class="social-links__link" href="#">
+								<svg width="20" height="20" class="icon" viewBox="0 0 20 20">
 									<use xlink:href="../../public/icons/icons.svg#icon-insta"/>
 								</svg>
 							</a>
 						</li>
-						<li class="nav-item">
-							<a class="nav-link-white" href="#">
-								<svg width="26" height="26" class="icon" viewBox="0 0 35 35">
+						<li class="social-links__item">
+							<a class="social-links__link" href="#">
+								<svg width="20" height="20" class="icon" viewBox="0 0 20 20">
 									<use xlink:href="../../public/icons/icons.svg#icon-fb"/>
 								</svg>
 							</a>
 						</li>
-						<li class="nav-item">
-							<a class="nav-link-white" href="#">
-								<svg width="26" height="26" class="icon" viewBox="0 0 35 35">
+						<li class="social-links__item">
+							<a class="social-links__link" href="#">
+								<svg width="20" height="20" class="icon" viewBox="0 0 20 20">
 									<use xlink:href="../../public/icons/icons.svg#icon-tg"/>
 								</svg>
 							</a>
 						</li>
-						<li class="nav-item">
-							<a class="nav-link-white" href="#">
-								<svg width="26" height="26" class="icon" viewBox="0 0 35 35">
+						<li class="social-links__item">
+							<a class="social-links__link" href="#">
+								<svg width="20" height="20" class="icon" viewBox="0 0 20 20">
 									<use xlink:href="../../public/icons/icons.svg#icon-vk"/>
 								</svg>
 							</a>

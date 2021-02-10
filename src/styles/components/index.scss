@@ -1,10 +1,19 @@
 @import "icons";
 @import "nav";
-@import "post-preview";
+@import "posts/post-preview";
+@import "posts/post-header";
+@import "posts/post-content";
+@import "posts/article-footer";
+@import "posts/posts-base";
 @import "slider";
 @import "ads";
-@import "badges";
-@import "buttons";
+@import "labels/tag";
+@import "labels/badges";
+@import "labels/label";
+@import "buttons/buttons";
+@import "buttons/btn-icon";
+@import "comments/comments-base";
+@import "comments/comments-item";
 @import "widget";
 @import "tabs.menu";
 @import "section";
@@ -13,4 +22,3 @@
 @import "navbar";
 @import "container";
 @import "footer";
-

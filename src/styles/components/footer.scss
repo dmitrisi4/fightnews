@@ -81,9 +81,12 @@
       font-style: $font-size-base;
     }
     }
-  .navbar-links {
+  .social-links {
     display: inline-grid;
     justify-content: left;
+    &__link {
+      padding: 5px;
+    }
     @include media-breakpoint-down(lg) {
       //grid-auto-flow: row;
       //grid-gap: 5px;

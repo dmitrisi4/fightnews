@@ -1,0 +1,7 @@
+@import "../theme-base";
+
+@include media-breakpoint-up(sm) {
+  .w-sm-auto {
+    width: auto;
+  }
+}

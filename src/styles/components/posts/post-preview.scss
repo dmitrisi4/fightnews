@@ -1,4 +1,4 @@
-@import "../theme-base";
+@import "../../theme-base";
 
 .post-list {
   display: grid;
@@ -24,6 +24,13 @@
     grid-gap: $spacer;
     @include media-breakpoint-down(sm) {
       grid-gap: $spacer / 2;
+    }
+
+    & .text-ellipsis {
+      @include media-breakpoint-down(md) {
+        height: 72px;
+        overflow: hidden;
+      }
     }
   }
   &__statistic {
@@ -232,7 +239,7 @@
 
 .post-info {
   display: inline-flex;
-  font-size: 14px;
+  font-size: $font-size-sm;
   color: $gray;
   &__date {
     display: flex;
@@ -260,7 +267,37 @@
       border-radius: 50%;
     }
   }
-
+  &__author {
+    color: $blue-dark;
+    font-weight: $font-weight-medium;
+    padding-left: 15px;
+    padding-right: 10px;
+    position: relative;
+    &:before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 0;
+      width: 1px;
+      height: 27px;
+      background-color: $gray-200;
+    }
+    @include media-breakpoint-down(sm) {
+      padding-left: 0;
+      &::before {
+        display: none;
+      }
+    }
+  }
+}
+@each $color, $value in $theme-colors {
+  .post-info_#{$color} {
+    color: $value;
+    .post-info__time::before {
+      background-color: $value;
+    }
+  }
 }
 
 .preview-statistic {

@@ -115,6 +115,9 @@
 .accordion-app {
   display: grid;
   grid-gap: 15px;
+  &__card-body {
+    padding-top: 30px;
+  }
 }
 
 .event-list {
@@ -157,11 +160,11 @@
   }
 }
 
-.comments-list {
+.comments-widget {
   display: grid;
   grid-gap: 20px;
 }
-.comments-item {
+.comments-el {
   display: grid;
   grid-gap: 10px;
   padding-bottom: 10px;

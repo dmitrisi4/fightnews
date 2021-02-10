@@ -1,10 +1,12 @@
 @import "../theme-base";
+
 .tabs-menu {
   display: grid;
   grid-auto-flow: column;
   justify-content: flex-start;
   grid-gap: 50px;
   border-bottom: 1px solid rgba($gray, $bth-light-alpha-md);
+
   &__btn {
     position: relative;
     text-transform: uppercase;
@@ -13,27 +15,32 @@
     padding-right: 0;
     padding-bottom: 9px;
     transition: all .2s;
+
     &.active {
       &:before {
         background-color: $gray-600;
         transition: all .2s;
       }
+
       &.red {
         &:before {
           background-color: $red;
         }
       }
+
       &.green {
         &:before {
           background-color: $green;
         }
       }
     }
+
     &:hover {
       text-decoration: none;
       color: $red;
       transition: all .2s;
     }
+
     &:before {
       content: '';
       position: absolute;
@@ -45,6 +52,41 @@
       border-radius: 2px;
       transition: all .2s;
 
+    }
+  }
+}
+
+@include media-breakpoint-down(md) {
+  .tabs-menu {
+    justify-content: center;
+    grid-gap: 5px;
+    border-bottom: none;
+    &__btn {
+      font-weight: $font-weight-bold;
+      color: $gray;
+      padding: 10px 15px;
+      border-radius: $border-radius;
+
+      &::before {
+        display: none;
+      }
+
+      &.active {
+        color: $black;
+        background-color: $gray;
+      }
+      &.green {
+        &.active {
+          background-color: rgb($green, $bth-light-alpha);
+          color: $green;
+        }
+      }
+      &.red {
+        &.active {
+          background-color: rgb($red, $bth-light-alpha);
+          color: $red;
+        }
+      }
     }
   }
 }

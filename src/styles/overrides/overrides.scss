@@ -1,4 +1,4 @@
-@import "theme-base";
+@import "src/styles/theme-base";
 
 h1, .h1 {
   margin-bottom: 0;
@@ -8,59 +8,9 @@ h1, .h1 {
 }
 
 
-
-@mixin button-light($color, $value, $alpha) {
-  $lightValue: rgba($value, $alpha);
-  @include button-variant($lightValue, $lightValue);
-  color: $value;
-
-  @include hover() {
-    color: $value;
-    @include gradient-bg(darken($lightValue, 10%));
-    border-color: darken($lightValue, 10%);
-  }
-}
-
-
-@each $color, $value in $theme-colors {
-  .btn-light-#{$color} {
-    @include button-light($color, $value, $bth-light-alpha);
-  }
-  .btn-extra-light-#{$color} {
-    @include button-light($color, $value, $bth-light-alpha-2);
-  }
-  .btn-outline-light--#{$color} {
-    $value: rgba($value, $bth-light-alpha);
-    @include button-outline-variant($value);
-  }
-
-}
-
-.btn-sm {
-  @include button-size($input-btn-padding-y-xs, $input-btn-padding-x-md, $btn-font-size-sm, $line-height-base, $btn-border-radius-stupid);
-}
-
-.btn-md {
-  @include button-size($input-btn-padding-y-sm, $btn-padding-x-lg, $btn-font-size, $btn-line-height-lg, $btn-border-radius);
-}
-
-
-.btn {
-  font-weight: $font-weight-medium;
-}
-
-.btn-arrow {
-  @include media-breakpoint-down(sm) {
-    @include plain-hover-focus() {
-      width: 22px;
-      height: 17px;
-      font-size: 0;
-      background-color: transparent;
-      background-image: url(../../public/icons/arrowRighGreen.svg);
-      background-size: cover;
-      border: none;
-      box-shadow: none;
-    }
+@include media-breakpoint-up(sm) {
+  .w-sm-auto {
+    width: auto !important
   }
 }
 
@@ -93,19 +43,20 @@ h1, .h1 {
     width: 8px;
     height: 6px;
     border: 0;
-    background-image: url(../../public/icons/arrowDown.svg);
+    background-image: url('../../public/icons/arrowDown.svg');
     background-repeat: no-repeat;
     @include media-breakpoint-down(md) {
       width: 7px;
       height: 12px;
       right: 5%;
       color: $white;
-      background-image: url(../../public/icons/arrowRight.svg);
+      background-image: url('../../public/icons/arrowRight.svg');
       background-size: cover;
       transition: transform .2s;
     }
   }
 }
+
 .nav-item.dropdown.show {
   .dropdown-toggle {
     @include media-breakpoint-down(md) {
@@ -138,6 +89,7 @@ h1, .h1 {
   padding: $nav-btn-padding-y 20px $nav-btn-padding-y 0;
   position: relative;
   color: $black;
+
   &::before {
     content: '';
     position: absolute;
@@ -185,24 +137,7 @@ h1, .h1 {
   }
 }
 
-.swiper-pagination-bullet {
-  width: 5px;
-  height: 5px;
-  background-color: $white;
-  opacity: .35;
-  @include media-breakpoint-down(md) {
-    width: 9px;
-    height: 9px;
-    background-color: $gray-400;
-  }
 
-  &-active {
-    opacity: 1;
-    @include media-breakpoint-down(md) {
-      background-color: $red;
-    }
-  }
-}
 
 .card-img-overlay {
   padding: calc(30rem / 16);
@@ -212,15 +147,87 @@ h1, .h1 {
   border-radius: $border-radius-es;
 }
 
-.swiper-pagination-bullets {
-  @include media-breakpoint-down(md) {
-    bottom: 0;
-    display: inline-grid;
-    grid-auto-flow: column;
-    grid-template-columns: max-content max-content;
-    justify-content: center;
-    grid-gap: 5px;
-    width: 100%;
+.breadcrumb {
+  background-color: transparent;
+  padding-left: 0;
 
+  .breadcrumb-item {
+    font-size: $font-size-sm;
+
+    a {
+      color: $gray-600;
+    }
+
+    &.active {
+      color: $red;
+    }
+
+  }
+}
+
+.blockquote {
+  font-size: $font-size-sm;
+  padding-left: 20px;
+  position: relative;
+  display: grid;
+  grid-gap: $spacer;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    width: 3px;
+    height: 100%;
+    background-color: $red;
+  }
+
+  @include media-breakpoint-down(sm) {
+    font-size: $font-size-ms;
+  }
+}
+
+
+
+
+.page-link {
+  width: 30px;
+  height: 30px;
+  padding: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $blue-dark;
+  font-size: $font-size-ms;
+  font-weight: $font-weight-bold;
+  border: 1px solid $gray-600;
+  border-radius: $border-radius-sm;
+  @include hover-focus() {
+    color: $red;
+    .icon {
+      color: $red;
+    }
+  }
+}
+
+.page-item.active {
+  .page-link {
+    background-color: $red;
+    color: $white;
+  }
+}
+
+.page-link {
+  &_arrow {
+    background-color: $white-200;
+    border: 0;
+
+    .icon {
+      color: $gray-600;
+    }
+  }
+  &_prev {
+    transform: scale(-1, 1);
   }
 }

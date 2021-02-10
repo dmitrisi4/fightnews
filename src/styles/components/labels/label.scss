@@ -1,4 +1,4 @@
-@import "../theme-base";
+@import "../../theme-base";
 
 .label {
   height: calc(26rem / 16);
@@ -11,6 +11,7 @@
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 2px;
+  white-space: nowrap;
   padding: 0 10px;
   @each $color, $value in $theme-colors {
     &_#{$color} {
@@ -59,6 +60,19 @@
   }
 }
 
+.label-fill {
+  font-size: $font-size-sm;
+  padding: 15px 19px;
+  letter-spacing: normal;
+  border-radius: $border-radius;
+  @each $color, $value in $theme-colors {
+    &_#{$color} {
+      background-color: rgba($value, $bth-light-alpha);
+      border: none;
+    }
+  }
+}
+
 .date-label {
   display: flex;
   flex-direction: column;
@@ -83,30 +97,3 @@
   }
 }
 
-.badge-status {
-  font-size: 11px;
-  font-weight: 700;
-  color: $black;
-  text-transform: uppercase;
-  position: relative;
-  padding-left: 14px;
-  letter-spacing: 2px;
-
-  &:before {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 8px;
-    height: 8px;
-    background-color: $gray;
-    border-radius: 50%;
-  }
-
-  &.active {
-    &:before {
-      background-color: $red;
-    }
-  }
-}

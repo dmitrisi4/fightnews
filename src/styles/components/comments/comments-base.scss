@@ -1,0 +1,42 @@
+@import "../../theme-base";
+
+.comments-list {
+  display: grid;
+  grid-auto-flow: row;
+  grid-gap: $spacer / 2;
+}
+
+.notice-authorization {
+  font-size: $font-size-sm;
+  color: $blue-dark;
+  &__link {
+    color: $red;
+    @include hover-focus() {
+      color: $red;
+
+    }
+  }
+}
+
+.warning-message {
+  &__btn {
+    background-color: transparent;
+    padding: 0;
+    font-weight: $font-weight-medium;
+    font-size: $font-size-base;
+    color: $red;
+    border: none;
+    @include hover-focus() {
+      text-decoration: underline;
+    }
+  }
+  &__text {
+    font-width: $font-weight-medium;
+    color: $blue-dark;
+  }
+  &__value {
+    @include plain-hover-focus() {
+      color: $red;
+    }
+  }
+}

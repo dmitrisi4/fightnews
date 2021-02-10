@@ -1,0 +1,131 @@
+@import "../../theme-base";
+
+//@mixin tag($color, $value, $alpha) {
+//  $lightValue: rgba($value, $alpha);
+//  @include button-variant($lightValue, $lightValue);
+//  color: $value;
+//
+//  @include hover() {
+//    color: $value;
+//    @include gradient-bg(darken($lightValue, 10%));
+//    border-color: darken($lightValue, 10%);
+//  }
+//}
+//
+//
+
+.tag-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: flex-start;
+  grid-gap: 5px;
+  &__list-item {
+    margin: 5px;
+  }
+}
+
+.tag {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid transparent;
+  border-top-right-radius: $tag-border-radius;
+  border-bottom-right-radius: $tag-border-radius;
+  border-left: 0;
+  text-transform: uppercase;
+  white-space: nowrap;
+  font-weight: $font-weight-bold;
+  font-size: $font-size-xs;
+  line-height: calc(16em / 10);
+  padding: 6px 10px  4px;
+  margin-left: 13px;
+  position: relative;
+  &::before {
+    content: '';
+    position: absolute;
+    left: -13px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 14px;
+    height: 28px;
+    background-repeat: no-repeat;
+  }
+}
+
+@function str-replace($string, $search, $replace: '') {
+  $index: str-index($string, $search);
+
+  @if $index {
+    @return str-slice($string, 1, $index - 1) + $replace + str-replace(str-slice($string, $index + str-length($search)), $search, $replace);
+  }
+  @return $string;
+}
+
+// Encode symbols
+@function url-encode($string) {
+  $map: (
+          "%": "%25",
+          "<": "%3C",
+          ">": "%3E",
+          //" ": "%20",
+          "!": "%21",
+          "*": "%2A",
+          //"'": "%27",
+          '"': "%22",
+          "(": "%28",
+          ")": "%29",
+          ";": "%3B",
+          //":": "%3A",
+          "@": "%40",
+          "&": "%26",
+          //"=": "%3D",
+          "+": "%2B",
+          "$": "%24",
+          ",": "%2C",
+          //"/": "%2F",
+          "?": "%3F",
+          "#": "%23",
+          "[": "%5B",
+          "]": "%5D"
+  );
+
+  $new: $string;
+
+  @each $search, $replace in $map {
+    $new: str-replace($new, $search, $replace);
+  }
+
+  @return $new;
+}
+
+@function inline-svg($string) {
+  @return url('data:image/svg+xml;charset=UTF-8,#{url-encode($string)}');
+}
+
+@mixin tagLeft($color) {
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='14' height='28' viewBox='0 0 14 28' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M8.77102 2.67369C10.0043 1.2908 11.7692 0.5 13.6221 0.5H112C115.59 0.5 118.5 3.41015 118.5 7V21C118.5 24.5899 115.59 27.5 112 27.5H13.6221C11.7692 27.5 10.0043 26.7092 8.77103 25.3263L2.52826 18.3263C0.329708 15.8611 0.329707 12.1389 2.52826 9.67369L8.77102 2.67369Z' stroke='#{url-encode("#{$color}")}'/%3e%3c/svg%3e ");
+}
+
+@each $color, $value in $theme-colors {
+  .tag-#{$color} {
+      @include button-outline-variant($value);
+
+    &::before {
+      @include tagLeft($value);
+    }
+    @include hover-focus-active {
+      text-decoration: none;
+      background-color: $value;
+      color: $white;
+      &::before {
+        background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='14' height='28' viewBox='0 0 14 28' fill='#{url-encode("#{$value}")}' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M8.77102 2.67369C10.0043 1.2908 11.7692 0.5 13.6221 0.5H112C115.59 0.5 118.5 3.41015 118.5 7V21C118.5 24.5899 115.59 27.5 112 27.5H13.6221C11.7692 27.5 10.0043 26.7092 8.77103 25.3263L2.52826 18.3263C0.329708 15.8611 0.329707 12.1389 2.52826 9.67369L8.77102 2.67369Z' stroke='#{url-encode("#{$value}")}'/%3e%3c/svg%3e ");
+      }
+    }
+  }
+}
+
+

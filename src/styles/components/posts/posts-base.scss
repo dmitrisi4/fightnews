@@ -1,0 +1,8 @@
+@import "../../theme-base";
+
+.similar-news {
+  &__wrapper {
+    display: grid;
+    grid-gap: 20px;
+  }
+}
