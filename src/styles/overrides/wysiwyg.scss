@@ -1,0 +1,64 @@
+@import "../theme-base";
+
+.wysiwyg {
+  border-radius: $border-radius-sm;
+}
+.ql-toolbar.ql-snow {
+  border: 1px solid $gray-300;
+  background-color: $white-200;
+  border-radius: 5px 5px 0px 0px;
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: start;
+  padding: 0;
+}
+.ql-toolbar.ql-snow .ql-formats {
+  padding: 13px 7.5px;
+  display: grid;
+  grid-auto-flow: column;
+  grid-gap: 10px;
+  margin: 0;
+  align-items: center;
+  &:not(&:first-child) {
+    border-left: 1px solid $gray-300;
+  }
+}
+.ql-snow.ql-toolbar button, .ql-snow .ql-toolbar button {
+}
+
+.ql-container.ql-snow {
+  border: 1px solid $gray-300;
+  max-height: 185px;
+  height: 100vh;
+}
+
+.ql-formats * {
+  color: $blue-dark !important;
+}
+.ql-formats {
+  &> span, &> button, .ql-picker-label{
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.ql-undo {
+  transform: scale(-1, 1);
+}
+.ql-bold {
+  font-size: $font-size-md;
+  font-weight: $font-weight-bold;
+  font-family: Roboto;
+  display: flex!important;
+  justify-content: center;
+  align-items: center;
+}
+
+.ql-list {
+  display: flex!important;
+  padding: 0!important;
+  width: auto!important;
+  svg {
+    margin: 0 5px;
+  }
+}

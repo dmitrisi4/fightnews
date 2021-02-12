@@ -1,6 +1,7 @@
 @import "../../theme-base";
 
-.btn {
+.btn-radius-sm {
+
 }
 
 .btn-accordion {
@@ -40,9 +41,6 @@
     transform: translateY(-50%)  rotate(-90deg);
   }
 }
-
-
-
 
 .btn-outline-gray--green {
   border-radius: $border-radius-sm;

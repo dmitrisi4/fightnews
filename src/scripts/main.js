@@ -1,4 +1,5 @@
 import 'bootstrap';
+
 import Swiper from 'swiper/bundle';
 import Sliders from './sliders';
 import burgerMenu from "./burgerMenu";

@@ -1,10 +1,6 @@
 @import "../../theme-base";
 
-.comments-list {
-  display: grid;
-  grid-auto-flow: row;
-  grid-gap: $spacer / 2;
-}
+
 
 .notice-authorization {
   font-size: $font-size-sm;
@@ -26,13 +22,19 @@
     font-size: $font-size-base;
     color: $red;
     border: none;
+    @include media-breakpoint-down(sm) {
+      font-size: $font-size-sm;
+    }
     @include hover-focus() {
       text-decoration: underline;
     }
   }
   &__text {
-    font-width: $font-weight-medium;
+    font-weight: $font-weight-medium;
     color: $blue-dark;
+    @include media-breakpoint-down(sm) {
+      font-size: $font-size-sm;
+    }
   }
   &__value {
     @include plain-hover-focus() {

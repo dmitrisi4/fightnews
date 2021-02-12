@@ -13,6 +13,11 @@
     background-color: $blue-dark;
     padding: 30px 15px 20px;
   }
+  &__labels {
+    display: grid;
+    grid-auto-flow: column;
+    grid-gap: $spacer / 2;
+  }
 }
 
 .section-video {
@@ -34,3 +39,4 @@
 .section-fighters {
   //order: 1;
 }
+

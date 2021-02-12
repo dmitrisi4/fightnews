@@ -18,6 +18,7 @@
 @import "node_modules/bootstrap/scss/card";
 @import "node_modules/bootstrap/scss/progress";
 @import "node_modules/bootstrap/scss/custom-forms";
+@import "node_modules/bootstrap/scss/forms";
 
 // Swiper
 @import "node_modules/swiper/swiper";
@@ -26,9 +27,10 @@
 //Editor quilljs
 @import "node_modules/quill/dist/quill.core";
 @import "node_modules/quill/dist/quill.snow";
-//@import "node_modules/quill-emoji/dist/quill-emoji";
+
+@import "node_modules/quill-emoji/dist/quill-emoji";
 @import "overrides/index";
 @import "components";
 
 // другие стили писать тут
-@import "styles";
+@import "common";

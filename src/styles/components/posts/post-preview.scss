@@ -241,6 +241,11 @@
   display: inline-flex;
   font-size: $font-size-sm;
   color: $gray;
+  &_sm {
+    @include media-breakpoint-down(sm) {
+      font-size: $font-size-ms;
+    }
+  }
   &__date {
     display: flex;
     align-items: center;

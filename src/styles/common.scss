@@ -1,0 +1,12 @@
+@import "theme-base";
+
+body {
+  font-family: $font-family-sans-serif;
+  color: $black;
+}
+
+@include media-breakpoint-up(sm) {
+  .d-sm-grid {
+    display: grid !important;
+  }
+}
