@@ -1,0 +1,14 @@
+@import "../../theme-base";
+.fighter-card {
+  display: flex;
+  justify-content: space-between;
+  &__avatar {
+    max-width: 143px;
+    border-radius: $border-radius-sm;
+    overflow: hidden;
+  }
+  &__image {
+    width: 100%;
+  }
+
+}
