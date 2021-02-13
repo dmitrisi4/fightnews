@@ -1,6 +1,6 @@
-@import "../theme-base";
+@import "../../theme-base";
 
-.fighter-card {
+.fighter-category {
   display: grid;
   grid-gap: 20px;
   grid-template-columns: 40px 58px minmax(170px, 1fr);

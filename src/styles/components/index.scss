@@ -1,6 +1,7 @@
 @import "icons";
 @import "nav";
 @import "posts/post-preview";
+//@import "f";
 @import "posts/post-header";
 @import "posts/post-content";
 @import "posts/article-footer";
@@ -18,7 +19,8 @@
 @import "tabs.menu";
 @import "section";
 @import "sidebar";
-@import "fighter-card";
+@import "fighter-card/fighter-card";
+@import "fighter-card/fighter-info";
 @import "navbar";
 @import "container";
 @import "footer";

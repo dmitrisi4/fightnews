@@ -1,7 +1,14 @@
 @import "../../theme-base";
-.fighter-card {
-  display: flex;
+.fighter-page {
+  width: 100%;
+  display: grid;
+  grid-auto-flow: column;
   justify-content: space-between;
+  grid-gap: 40px;
+  @include media-breakpoint-down(sm) {
+    grid-auto-flow: row;
+
+  }
   &__avatar {
     max-width: 143px;
     border-radius: $border-radius-sm;
@@ -10,5 +17,42 @@
   &__image {
     width: 100%;
   }
-
 }
+
+.fighter-info {
+  display: grid;
+  grid-auto-flow: row;
+  width: 100%;
+  grid-gap: 15px;
+
+  &__row {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(2, minmax(auto, max-content));
+    grid-column-gap: 30px;
+    grid-row-gap: 15px;
+    @include media-breakpoint-down(lg) {
+      grid-auto-flow: row;
+      grid-template-columns: auto;
+    }
+  }
+
+  .info-item {
+    display: flex;
+    padding-bottom: 13px;
+    border-bottom: 1px solid $gray-200;
+    border-radius: $border-radius-es;
+    @include media-breakpoint-down(sm) {
+      justify-content: space-between;
+    }
+    &__key {
+      color: $gray-600;
+      margin-right: 15px;
+    }
+    &__value {
+      font-weight: $font-weight-medium;
+      color: $blue-dark;
+    }
+  }
+}
+

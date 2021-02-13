@@ -13,6 +13,9 @@
     align-items: center;
     padding-bottom: 15px;
     border-bottom: 1px solid rgba($gray, $border-alpha);
+    &.no-border {
+      border: none;
+    }
   }
   &__title {
     display: flex;

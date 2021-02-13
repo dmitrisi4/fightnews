@@ -14,7 +14,6 @@
     max-height: 420px;
   }
   &__text {
-    font-weight: $font-weight-medium;
     margin-bottom: 0;
     @include media-breakpoint-down(sm) {
       font-size: $font-size-sm;

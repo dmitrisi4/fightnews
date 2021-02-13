@@ -17,7 +17,8 @@
 				<a class="navbar-brand" href="#">
 					<img src="../../public/images/logo.jpg" class="d-inline-block align-top" alt="" loading="lazy">
 				</a>
-				<ul class="social-links social-links_white social-links_border-blue-dark" id="social-link" data-lg-after="navbar-menu" >
+				<ul class="social-links social-links_white social-links_border-blue-dark" id="social-link"
+						data-lg-after="navbar-menu">
 					<li class="social-links__item active">
 						<a class="social-links__link" href="#">
 							<svg width="14" height="14" class="icon" viewBox="0 0 20 20">
@@ -104,11 +105,23 @@
 						<li class="nav-item dropdown">
 							<a class="nav-btn dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
 								 aria-expanded="false">Видео</a>
-							<div class="dropdown-menu">
-								<a class="dropdown-item" href="#">Видео MMA</a>
-								<a class="dropdown-item" href="#">Видео Бокс</a>
-								<a class="dropdown-item" href="#">Бои на голых кулаках</a>
-							</div>
+							<ul class="dropdown-menu">
+								<li>
+									<a class="dropdown-item" href="#">Видео MMA</a>
+									<div class="submenu dropdown-menu">
+										<a class="dropdown-item" href="#">Видео UFC</a>
+										<a class="dropdown-item" href="#">Видео Bellator</a>
+										<a class="dropdown-item" href="#">Видео PFL</a>
+										<a class="dropdown-item" href="#">Другое</a>
+									</div>
+								</li>
+								<li>
+									<a class="dropdown-item" href="#">Видео Бокс</a>
+								</li>
+								<li>
+									<a class="dropdown-item" href="#">Бои на голых кулаках</a>
+								</li>
+							</ul>
 						</li>
 						<li class="nav-item">
 							<a class="nav-btn" href="#">Фото</a>
@@ -156,7 +169,7 @@
 						<!-- Additional required wrapper -->
 						<div class="swiper-wrapper">
 							<!-- Slides -->
-							<div class="swiper-slide" >
+							<div class="swiper-slide">
 								<div class="post-preview post-preview_board">
 									<img src="../../public/images/konor.jpg" class="post-preview__image" alt="image konor makgregor">
 									<div class="post-preview__header">
@@ -170,7 +183,7 @@
 									</div>
 								</div>
 							</div>
-							<div class="swiper-slide" >
+							<div class="swiper-slide">
 								<div class="post-preview post-preview_board">
 									<img src="../../public/images/konor257.jpeg" class="post-preview__image" alt="image konor makgregor">
 									<div class="post-preview__header">
@@ -319,9 +332,9 @@
 					</div>
 
 					<nav class="nav nav-tabs tabs-menu mt-4" id="nav-tab" role="tablist">
-						<a class="tabs-menu__btn active" id="nav-home-tab" data-toggle="tab" href="#nav-last" role="tab"
+						<a class="tabs-menu__btn md-green active radius-lg" id="nav-home-tab" data-toggle="tab" href="#nav-last" role="tab"
 							 aria-controls="nav-home" aria-selected="true">Последние</a>
-						<a class="tabs-menu__btn" id="nav-profile-tab" data-toggle="tab" href="#nav-top" role="tab"
+						<a class="tabs-menu__btn md-red radius-lg" id="nav-profile-tab" data-toggle="tab" href="#nav-top" role="tab"
 							 aria-controls="nav-profile" aria-selected="false">ТОП</a>
 					</nav>
 
@@ -805,7 +818,7 @@
 					</div>
 					<nav class="nav nav-tabs tabs-menu mt-4" id="nav-tab2" role="tablist">
 						<a class="tabs-menu__btn  active" id="nav-all-tab" data-toggle="tab" href="#nav-all-2" role="tab"
-							 aria-controls="nav-home" aria-selected="true">Последние</a>
+							 aria-controls="nav-home" aria-selected="true">ВСЕ</a>
 						<a class="tabs-menu__btn red " id="nav-mma-tab" data-toggle="tab" href="#nav-mma-2" role="tab"
 							 aria-controls="nav-profile" aria-selected="false">ММА</a>
 						<a class="tabs-menu__btn green" id="nav-box-tab" data-toggle="tab" href="#nav-box-2" role="tab"
@@ -1336,7 +1349,7 @@
 										</div>
 									</div>
 									<div class="pagination-scroll"></div>
-										<!-- Add Arrows -->
+									<!-- Add Arrows -->
 									<div class="swiper-button-next">
 										<svg width="8" height="12" class="icon" viewBox="0 0 8 12">
 											<use xlink:href="../../public/icons/icons.svg#icon-arrowRight"/>
@@ -1441,192 +1454,192 @@
 							 aria-controls="nav-profile" aria-selected="false">ТОП</a>
 					</nav>
 					<div class="fighter-list mt-4">
-						<div class="fighter-card">
-							<div class="fighter-card__flag">
+						<div class="fighter-category">
+							<div class="fighter-category__flag">
 								<svg width="37" height="37" class="icon" viewBox="0 0 37 37">
 									<use xlink:href="../../public/icons/flag.svg#flag-ireland"/>
 								</svg>
-								<div class="fighter-card__company">UFC</div>
+								<div class="fighter-category__company">UFC</div>
 							</div>
-							<img src="../../public/images/konor-mini.png" class="fighter-card__image" alt="konor">
-							<div class="fighter-card__info">
-								<div class="fighter-card__title">Конор Макгрегор</div>
-								<div class="fighter-card__text">
-									<svg width="16" height="16" class="icon fighter-card__icon" viewBox="0 0 16 16">
+							<img src="../../public/images/konor-mini.png" class="fighter-category__image" alt="konor">
+							<div class="fighter-category__info">
+								<div class="fighter-category__title">Конор Макгрегор</div>
+								<div class="fighter-category__text">
+									<svg width="16" height="16" class="icon fighter-category__icon" viewBox="0 0 16 16">
 										<use xlink:href="../../public/icons/icons.svg#icon-biceps"/>
 									</svg>
 									<div>Lightweight</div>
 								</div>
-								<div class="fighter-card__text">
-									<svg width="16" height="16" class="icon fighter-card__icon" viewBox="0 0 16 16">
+								<div class="fighter-category__text">
+									<svg width="16" height="16" class="icon fighter-category__icon" viewBox="0 0 16 16">
 										<use xlink:href="../../public/icons/icons.svg#icon-sword"/>
 									</svg>
 									<div>25 - 0 - 1</div>
 								</div>
 							</div>
 						</div>
-						<div class="fighter-card">
-							<div class="fighter-card__flag">
+						<div class="fighter-category">
+							<div class="fighter-category__flag">
 								<svg width="37" height="37" class="icon" viewBox="0 0 37 37">
 									<use xlink:href="../../public/icons/flag.svg#flag-ireland"/>
 								</svg>
-								<div class="fighter-card__company">UFC</div>
+								<div class="fighter-category__company">UFC</div>
 							</div>
-							<img src="../../public/images/konor-mini.png" class="fighter-card__image" alt="konor">
-							<div class="fighter-card__info">
-								<div class="fighter-card__title">Конор Макгрегор</div>
-								<div class="fighter-card__text">
-									<svg width="16" height="16" class="icon fighter-card__icon" viewBox="0 0 16 16">
+							<img src="../../public/images/konor-mini.png" class="fighter-category__image" alt="konor">
+							<div class="fighter-category__info">
+								<div class="fighter-category__title">Конор Макгрегор</div>
+								<div class="fighter-category__text">
+									<svg width="16" height="16" class="icon fighter-category__icon" viewBox="0 0 16 16">
 										<use xlink:href="../../public/icons/icons.svg#icon-biceps"/>
 									</svg>
 									<div>Lightweight</div>
 								</div>
-								<div class="fighter-card__text">
-									<svg width="16" height="16" class="icon fighter-card__icon" viewBox="0 0 16 16">
+								<div class="fighter-category__text">
+									<svg width="16" height="16" class="icon fighter-category__icon" viewBox="0 0 16 16">
 										<use xlink:href="../../public/icons/icons.svg#icon-sword"/>
 									</svg>
 									<div>25 - 0 - 1</div>
 								</div>
 							</div>
 						</div>
-						<div class="fighter-card">
-							<div class="fighter-card__flag">
+						<div class="fighter-category">
+							<div class="fighter-category__flag">
 								<svg width="37" height="37" class="icon" viewBox="0 0 37 37">
 									<use xlink:href="../../public/icons/flag.svg#flag-ireland"/>
 								</svg>
-								<div class="fighter-card__company">UFC</div>
+								<div class="fighter-category__company">UFC</div>
 							</div>
-							<img src="../../public/images/konor-mini.png" class="fighter-card__image" alt="konor">
-							<div class="fighter-card__info">
-								<div class="fighter-card__title">Конор Макгрегор</div>
-								<div class="fighter-card__text">
+							<img src="../../public/images/konor-mini.png" class="fighter-category__image" alt="konor">
+							<div class="fighter-category__info">
+								<div class="fighter-category__title">Конор Макгрегор</div>
+								<div class="fighter-category__text">
 									<svg width="16" height="16" class="icon" viewBox="0 0 16 16">
 										<use xlink:href="../../public/icons/icons.svg#icon-biceps"/>
 									</svg>
 									<div>Lightweight</div>
 								</div>
-								<div class="fighter-card__text">
-									<svg width="16" height="16" class="icon fighter-card__icon" viewBox="0 0 16 16">
+								<div class="fighter-category__text">
+									<svg width="16" height="16" class="icon fighter-category__icon" viewBox="0 0 16 16">
 										<use xlink:href="../../public/icons/icons.svg#icon-sword"/>
 									</svg>
 									<div>25 - 0 - 1</div>
 								</div>
 							</div>
 						</div>
-						<div class="fighter-card">
-							<div class="fighter-card__flag">
+						<div class="fighter-category">
+							<div class="fighter-category__flag">
 								<svg width="37" height="37" class="icon" viewBox="0 0 37 37">
 									<use xlink:href="../../public/icons/flag.svg#flag-ireland"/>
 								</svg>
-								<div class="fighter-card__company">UFC</div>
+								<div class="fighter-category__company">UFC</div>
 							</div>
-							<img src="../../public/images/konor-mini.png" class="fighter-card__image" alt="konor">
-							<div class="fighter-card__info">
-								<div class="fighter-card__title">Конор Макгрегор</div>
-								<div class="fighter-card__text">
-									<svg width="16" height="16" class="icon fighter-card__icon" viewBox="0 0 16 16">
+							<img src="../../public/images/konor-mini.png" class="fighter-category__image" alt="konor">
+							<div class="fighter-category__info">
+								<div class="fighter-category__title">Конор Макгрегор</div>
+								<div class="fighter-category__text">
+									<svg width="16" height="16" class="icon fighter-category__icon" viewBox="0 0 16 16">
 										<use xlink:href="../../public/icons/icons.svg#icon-biceps"/>
 									</svg>
 									<div>Lightweight</div>
 								</div>
-								<div class="fighter-card__text">
-									<svg width="16" height="16" class="icon fighter-card__icon" viewBox="0 0 16 16">
+								<div class="fighter-category__text">
+									<svg width="16" height="16" class="icon fighter-category__icon" viewBox="0 0 16 16">
 										<use xlink:href="../../public/icons/icons.svg#icon-sword"/>
 									</svg>
 									<div>25 - 0 - 1</div>
 								</div>
 							</div>
 						</div>
-						<div class="fighter-card">
-							<div class="fighter-card__flag">
+						<div class="fighter-category">
+							<div class="fighter-category__flag">
 								<svg width="37" height="37" class="icon" viewBox="0 0 37 37">
 									<use xlink:href="../../public/icons/flag.svg#flag-ireland"/>
 								</svg>
-								<div class="fighter-card__company">UFC</div>
+								<div class="fighter-category__company">UFC</div>
 							</div>
-							<img src="../../public/images/konor-mini.png" class="fighter-card__image" alt="konor">
-							<div class="fighter-card__info">
-								<div class="fighter-card__title">Конор Макгрегор</div>
-								<div class="fighter-card__text">
-									<svg width="16" height="16" class="icon fighter-card__icon" viewBox="0 0 16 16">
+							<img src="../../public/images/konor-mini.png" class="fighter-category__image" alt="konor">
+							<div class="fighter-category__info">
+								<div class="fighter-category__title">Конор Макгрегор</div>
+								<div class="fighter-category__text">
+									<svg width="16" height="16" class="icon fighter-category__icon" viewBox="0 0 16 16">
 										<use xlink:href="../../public/icons/icons.svg#icon-biceps"/>
 									</svg>
 									<div>Lightweight</div>
 								</div>
-								<div class="fighter-card__text">
-									<svg width="16" height="16" class="icon fighter-card__icon" viewBox="0 0 16 16">
+								<div class="fighter-category__text">
+									<svg width="16" height="16" class="icon fighter-category__icon" viewBox="0 0 16 16">
 										<use xlink:href="../../public/icons/icons.svg#icon-sword"/>
 									</svg>
 									<div>25 - 0 - 1</div>
 								</div>
 							</div>
 						</div>
-						<div class="fighter-card">
-							<div class="fighter-card__flag">
+						<div class="fighter-category">
+							<div class="fighter-category__flag">
 								<svg width="37" height="37" class="icon" viewBox="0 0 37 37">
 									<use xlink:href="../../public/icons/flag.svg#flag-ireland"/>
 								</svg>
-								<div class="fighter-card__company">UFC</div>
+								<div class="fighter-category__company">UFC</div>
 							</div>
-							<img src="../../public/images/konor-mini.png" class="fighter-card__image" alt="konor">
-							<div class="fighter-card__info">
-								<div class="fighter-card__title">Конор Макгрегор</div>
-								<div class="fighter-card__text">
-									<svg width="16" height="16" class="icon fighter-card__icon" viewBox="0 0 16 16">
+							<img src="../../public/images/konor-mini.png" class="fighter-category__image" alt="konor">
+							<div class="fighter-category__info">
+								<div class="fighter-category__title">Конор Макгрегор</div>
+								<div class="fighter-category__text">
+									<svg width="16" height="16" class="icon fighter-category__icon" viewBox="0 0 16 16">
 										<use xlink:href="../../public/icons/icons.svg#icon-biceps"/>
 									</svg>
 									<div>Lightweight</div>
 								</div>
-								<div class="fighter-card__text">
-									<svg width="16" height="16" class="icon fighter-card__icon" viewBox="0 0 16 16">
+								<div class="fighter-category__text">
+									<svg width="16" height="16" class="icon fighter-category__icon" viewBox="0 0 16 16">
 										<use xlink:href="../../public/icons/icons.svg#icon-sword"/>
 									</svg>
 									<div>25 - 0 - 1</div>
 								</div>
 							</div>
 						</div>
-						<div class="fighter-card">
-							<div class="fighter-card__flag">
+						<div class="fighter-category">
+							<div class="fighter-category__flag">
 								<svg width="37" height="37" class="icon" viewBox="0 0 37 37">
 									<use xlink:href="../../public/icons/flag.svg#flag-ireland"/>
 								</svg>
-								<div class="fighter-card__company">UFC</div>
+								<div class="fighter-category__company">UFC</div>
 							</div>
-							<img src="../../public/images/konor-mini.png" class="fighter-card__image" alt="konor">
-							<div class="fighter-card__info">
-								<div class="fighter-card__title">Конор Макгрегор</div>
-								<div class="fighter-card__text">
-									<svg width="16" height="16" class="icon fighter-card__icon" viewBox="0 0 16 16">
+							<img src="../../public/images/konor-mini.png" class="fighter-category__image" alt="konor">
+							<div class="fighter-category__info">
+								<div class="fighter-category__title">Конор Макгрегор</div>
+								<div class="fighter-category__text">
+									<svg width="16" height="16" class="icon fighter-category__icon" viewBox="0 0 16 16">
 										<use xlink:href="../../public/icons/icons.svg#icon-biceps"/>
 									</svg>
 									<div>Lightweight</div>
 								</div>
-								<div class="fighter-card__text">
-									<svg width="16" height="16" class="icon fighter-card__icon" viewBox="0 0 16 16">
+								<div class="fighter-category__text">
+									<svg width="16" height="16" class="icon fighter-category__icon" viewBox="0 0 16 16">
 										<use xlink:href="../../public/icons/icons.svg#icon-sword"/>
 									</svg>
 									<div>25 - 0 - 1</div>
 								</div>
 							</div>
 						</div>
-						<div class="fighter-card">
-							<div class="fighter-card__flag">
+						<div class="fighter-category">
+							<div class="fighter-category__flag">
 								<svg width="37" height="37" class="icon" viewBox="0 0 37 37">
 									<use xlink:href="../../public/icons/flag.svg#flag-ireland"/>
 								</svg>
-								<div class="fighter-card__company">UFC</div>
+								<div class="fighter-category__company">UFC</div>
 							</div>
-							<img src="../../public/images/konor-mini.png" class="fighter-card__image" alt="konor">
-							<div class="fighter-card__info">
-								<div class="fighter-card__title">Конор Макгрегор</div>
-								<div class="fighter-card__text">
-									<svg width="16" height="16" class="icon fighter-card__icon" viewBox="0 0 16 16">
+							<img src="../../public/images/konor-mini.png" class="fighter-category__image" alt="konor">
+							<div class="fighter-category__info">
+								<div class="fighter-category__title">Конор Макгрегор</div>
+								<div class="fighter-category__text">
+									<svg width="16" height="16" class="icon fighter-category__icon" viewBox="0 0 16 16">
 										<use xlink:href="../../public/icons/icons.svg#icon-biceps"/>
 									</svg>
 									<div>Lightweight</div>
 								</div>
-								<div class="fighter-card__text">
-									<svg width="16" height="16" class="icon fighter-card__icon" viewBox="0 0 16 16">
+								<div class="fighter-category__text">
+									<svg width="16" height="16" class="icon fighter-category__icon" viewBox="0 0 16 16">
 										<use xlink:href="../../public/icons/icons.svg#icon-sword"/>
 									</svg>
 									<div>25 - 0 - 1</div>
@@ -1643,16 +1656,20 @@
 					</div>
 
 					<nav class="nav nav-tabs tabs-menu mt-4" id="nav-article-2" role="tablist">
-						<a class="tabs-menu__btn active" id="nav-article-2-all" data-toggle="tab" href="#nav-article-2-tab-all" role="tab"
+						<a class="tabs-menu__btn active" id="nav-article-2-all" data-toggle="tab" href="#nav-article-2-tab-all"
+							 role="tab"
 							 aria-controls="nav-home" aria-selected="true">ВСЕ</a>
-						<a class="tabs-menu__btn red" id="nav-article-2-mma" data-toggle="tab" href="#nav-article-2-tab-mma" role="tab"
+						<a class="tabs-menu__btn red" id="nav-article-2-mma" data-toggle="tab" href="#nav-article-2-tab-mma"
+							 role="tab"
 							 aria-controls="nav-profile" aria-selected="false">ММА</a>
-						<a class="tabs-menu__btn green" id="nav-article-2-box" data-toggle="tab" href="#nav-article-2-tab-box" role="tab"
+						<a class="tabs-menu__btn green" id="nav-article-2-box" data-toggle="tab" href="#nav-article-2-tab-box"
+							 role="tab"
 							 aria-controls="nav-profile" aria-selected="false">БОКС</a>
 					</nav>
 
 					<div class="tab-content mt-4" id="nav-article-2-content">
-						<div class="tab-pane fade show active" id="nav-article-2-tab-all" role="tabpanel" aria-labelledby="list-last-list">
+						<div class="tab-pane fade show active" id="nav-article-2-tab-all" role="tabpanel"
+								 aria-labelledby="list-last-list">
 							<div class="post-list post-list_sm">
 								<!--post-preview-->
 								<div class="post-preview">
@@ -3030,7 +3047,7 @@
 													</div>
 												</div>
 											</div>
-											<a href="#" class="btn btn-outline-gray--green btn-block mt-4">Показать еще...</a>
+											<a href="#" class="btn btn-extra-light-green btn-md btn-block mt-4">Показать еще...</a>
 										</div>
 										<div class="tab-pane fade" id="nav-mma-3" role="tabpanel" aria-labelledby="mma-tab">
 											<div class="post-list mt-small-1">
@@ -3604,7 +3621,7 @@
 					<!--					-->
 				</div>
 				<div class="widget mt-5" data-lg-after="section-fighters" id="section-timetable">
-					<div class="widget__header">
+					<div class="widget__header no-border">
 						<div class="widget__title">
 							<svg width="15" height="16" class="widget__icon" viewBox="0 0 15 16">
 								<use xlink:href="../../public/icons/icons.svg#icon-calendar"/>

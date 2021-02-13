@@ -1,7 +1,9 @@
 @import "../../theme-base";
 
-.btn-radius-sm {
-
+.btn {
+  @include hover-focus-active() {
+    transform: scale(0.998);
+  }
 }
 
 .btn-accordion {
@@ -48,10 +50,9 @@
   color: $green;
 
   @include hover-focus() {
-    color: $white;
-    background-color: $green;
-    border-color: $green;
-    box-shadow: 0 0 0 $btn-focus-width rgba($gray-600, .5);
+    color: $green;
+    background-color: rgba($green, $bth-light-alpha-2);
+    border-color: rgba($green, $bth-light-alpha-2);
   }
 }
 
@@ -94,6 +95,9 @@
   }
   .btn-extra-light-#{$color} {
     @include button-light($color, $value, $bth-light-alpha-2);
+    @include hover-focus-active {
+      color: $value!important;
+    }
   }
   .btn-outline-light--#{$color} {
     $value: rgba($value, $bth-light-alpha);

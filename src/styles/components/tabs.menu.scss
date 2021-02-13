@@ -33,6 +33,7 @@
           background-color: $green;
         }
       }
+
     }
 
     &:hover {
@@ -75,16 +76,23 @@
         color: $black;
         background-color: $gray;
       }
-      &.green {
-        &.active {
-          background-color: rgb($green, $bth-light-alpha);
-          color: $green;
-        }
+      &.radius-lg {
+        border-radius: $border-radius-lg;
       }
-      &.red {
-        &.active {
-          background-color: rgb($red, $bth-light-alpha);
-          color: $red;
+      @each $color, $value in $theme-colors {
+        &.#{$color} {
+          &.active {
+            background-color: rgb($value, $bth-light-alpha);
+            color: $value;
+          }
+        }
+        @include media-breakpoint-down(md) {
+          &.md-#{$color} {
+            &.active {
+              background-color: rgb($value, $bth-light-alpha);
+              color: $value;
+            }
+          }
         }
       }
     }
