@@ -6,6 +6,9 @@
   justify-content: space-between;
   &__text {
     font-weight: $font-weight-bold;
+    @include media-breakpoint-down(sm) {
+      font-size: $font-size-md;
+    }
   }
   &__links {
     display: grid;

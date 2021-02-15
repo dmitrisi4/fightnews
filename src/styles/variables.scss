@@ -43,9 +43,12 @@ $font-family-sans-serif: Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberati
 
 $border-radius:               10rem / $font-size-value;
 $border-radius-lg:            15rem / $font-size-value;
+$border-radius-md:            12rem / $font-size-value;
 $border-radius-sm:            5rem / $font-size-value;
 $border-radius-es:            3rem / $font-size-value;
 $tag-border-radius: 7rem / $font-size-value;
+$avatar-radius: 7rem / $font-size-value;
+
 
 
 $btn-border-radius:           $border-radius !default;
@@ -70,7 +73,8 @@ $input-btn-font-size: $font-size-base;
 $input-btn-font-size-sm: $font-size-sm;
 $input-btn-padding-y-small: 7em / $font-size-value;
 $input-btn-padding-y-xs: calc(10em / 14);
-$input-btn-padding-y-sm: 15em / $font-size-value;
+$input-btn-padding-y-sm: 14em / $font-size-value;
+$input-btn-padding-y-sm-mobile: 12em / $font-size-value;
 $input-btn-padding-x-md:  calc(25em / 14);
 $input-btn-padding-x-lg:  40em / $font-size-value;
 

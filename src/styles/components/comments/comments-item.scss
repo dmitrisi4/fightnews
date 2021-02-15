@@ -57,9 +57,9 @@
   &__text {
     font-weight: $font-weight-medium;
     color: $blue-dark;
-    @include media-breakpoint-down(sm) {
-      font-size: $font-size-sm;
-    }
+  }
+  &__nav {
+    display: flex;
   }
 }
 

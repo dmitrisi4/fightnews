@@ -238,6 +238,12 @@ h1, .h1 {
     top: -7px;
   }
 }
+.custom-select {
+  font-size: $font-size-sm;
+  font-weight: $font-weight-bold;
+  background: #fff url("data:image/svg+xml,%3Csvg width='14' height='8' viewBox='0 0 14 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7.00486 7.6834C6.76652 7.6834 6.54985 7.59674 6.37652 7.4234L0.959852 1.79007C0.634852 1.4434 0.634847 0.90174 0.981513 0.555073C1.32818 0.230073 1.86986 0.230075 2.21653 0.576741L7.00486 5.56007L11.7932 0.576741C12.1182 0.230075 12.6815 0.230073 13.0282 0.555073C13.3749 0.880073 13.3748 1.4434 13.0498 1.79007L7.6332 7.4234C7.45986 7.59674 7.24319 7.6834 7.00486 7.6834Z' fill='%232A3042'/%3E%3C/svg%3E%0A") right 0.75rem center no-repeat;
+  padding-left: 15px;
+}
 
 
 

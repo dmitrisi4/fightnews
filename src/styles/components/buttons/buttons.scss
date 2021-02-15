@@ -117,6 +117,14 @@
 
 .btn-md {
   @include button-size($input-btn-padding-y-sm, $btn-padding-x-lg, $btn-font-size, $btn-line-height-lg, $btn-border-radius);
+  @include media-breakpoint-down(md) {
+    padding: $input-btn-padding-y-sm-mobile $btn-padding-x-lg;
+  }
+}
+.btn-md-mobile {
+  @include media-breakpoint-down(md) {
+    padding: $input-btn-padding-y-sm-mobile $btn-padding-x-lg;
+  }
 }
 
 

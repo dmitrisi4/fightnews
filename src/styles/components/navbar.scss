@@ -21,7 +21,7 @@
   }
   @include media-breakpoint-up(sm) {
     position: relative;
-   .navbar-brand {
+    .navbar-brand {
       order: -1;
     }
   }
@@ -30,6 +30,7 @@
     display: flex;
     align-items: center;
   }
+
   &__nav-list {
     position: relative;
     display: grid;
@@ -38,6 +39,7 @@
     padding: 0 1.25rem;
     list-style: none;
     justify-content: space-between;
+
     &::after {
       content: '';
       position: absolute;
@@ -86,7 +88,7 @@
     @include media-breakpoint-down('sm', $grid-breakpoints) {
       display: none;
     }
-    }
+  }
 
   .nav-link {
     color: $white;
@@ -137,38 +139,47 @@
     flex-direction: column;
     justify-content: space-evenly;
   }
+
   &__line {
     width: 100%;
     height: 2px;
     background-color: $white;
   }
 }
+
 .navbar-main {
   .burger-btn {
     //transition: all .2s;
     transition-property: transform, justify-content;
     transition-duration: .2s;
     will-change: transform;
+
     &__line {
       transition-property: width;
       transition-duration: .2s;
     }
   }
+
   &.show {
     .burger-btn {
       justify-content: center;
+
       &__line {
         transition-property: width;
         transition-duration: .2s;
+
         &:last-child {
           transform: rotate(90deg) translateX(-2px);
         }
+
         width: 80%;
       }
+
       transform: rotate(47deg);
     }
   }
 }
+
 //
 
 .nav-link-white {
@@ -192,8 +203,11 @@
   margin: 0;
   padding: 0;
   grid-auto-columns: min-content;
+
   &__link {
     display: flex;
+    justify-content: center;
+    align-items: center;
     border: 1px solid transparent;
     border-radius: $border-radius-sm;
     padding: calc(5rem / 16);
@@ -202,22 +216,42 @@
     }
   }
 }
-@each $color, $value in $theme-colors {
-  .social-links_#{$color} {
+
+.social-links {
+  &.radius-md {
     .social-links__link {
-      color: $value;
+      border-radius: $border-radius-md;
     }
   }
-  .social-links_border-#{$color} {
+  &.big {
     .social-links__link {
-      border-color: $value;
+      width: 40px;
+      height: 41px;
+      @include media-breakpoint-down(sm) {
+        padding: calc(7rem / 16);
+        width: 36px;
+        height: 37px;
+      }
     }
   }
-  @include media-breakpoint-down(sm) {
-    .social-links-sm_border-#{$color} {
+
+  @each $color, $value in $theme-colors {
+    &.#{$color} {
+      .social-links__link {
+        color: $value;
+      }
+    }
+    &.border-#{$color} {
       .social-links__link {
         border-color: $value;
-        color: $white;
+      }
+    }
+    @include media-breakpoint-down(sm) {
+      &.sm-#{$color} {
+        .social-links__link {
+          border-color: $value;
+          color: $white;
+        }
       }
     }
   }
@@ -234,7 +268,6 @@
 
   }
 }
-
 
 
 .flex {
