@@ -34,11 +34,10 @@
   &__nav-list {
     position: relative;
     display: grid;
-    grid-gap: 10px;
     grid-auto-flow: column;
-    padding: 0 1.25rem;
+    padding: 0;
     list-style: none;
-    justify-content: space-between;
+    justify-content: left;
 
     &::after {
       content: '';

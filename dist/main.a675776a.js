@@ -30398,7 +30398,68 @@ ellipsisElements.forEach(function (element) {
   ellipsis.calc();
   ellipsis.set();
 });
-},{"ftellipsis/build/ftellipsis.min":"BTyw"}],"iFOF":[function(require,module,exports) {
+},{"ftellipsis/build/ftellipsis.min":"BTyw"}],"apO8":[function(require,module,exports) {
+"use strict";
+
+var _jquery = _interopRequireDefault(require("jquery"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread(); }
+
+function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+
+function _iterableToArray(iter) { if (typeof Symbol !== "undefined" && Symbol.iterator in Object(iter)) return Array.from(iter); }
+
+function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) return _arrayLikeToArray(arr); }
+
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
+
+//
+// jq('.dropdown-menu .dropdown-toggle').on('click', function (e) {
+// 	if (!jq(this).next().hasClass('show')) {
+// 		jq(this).parents('.dropdown-menu').first().find('.show').removeClass('show');
+// 	}
+// 	let $subMenu = jq(this).next('.dropdown-menu');
+// 	$subMenu.toggleClass('show');
+//
+// 	jq(this).parents('li.nav-item.dropdown.show').on('hidden.bs.dropdown', function (e) {
+// 		jq('.dropdown-submenu .show').removeClass('show');
+// 	});
+//
+// 	return false;
+// });
+var togglesBtns = document.querySelectorAll('.dropdown-menu .dropdown-toggle');
+togglesBtns.forEach(function (el) {
+  var btnClickListener = function btnClickListener(event) {
+    event.stopPropagation();
+    var submenu = el.nextElementSibling;
+
+    if (!submenu.classList.contains('show')) {
+      var openedMenu = _toConsumableArray(el.closest('.dropdown-menu').childNodes).find(function (node) {
+        return node instanceof Element && node.querySelector('.dropdown-menu.show');
+      });
+
+      openedMenu === null || openedMenu === void 0 ? void 0 : openedMenu.querySelector('.dropdown-menu').classList.remove('show');
+    }
+
+    submenu.classList.toggle('show');
+    (0, _jquery.default)(el).parents('li.nav-item.dropdown.show').on('hidden.bs.dropdown', function (e) {
+      document.querySelectorAll('.dropdown-submenu .show').forEach(function (el) {
+        return el.classList.remove('show');
+      });
+    }); // el.closest('li.dropdown.show').addEventListener('hidden.bs.dropdown', function (e) {
+    // 	document.querySelectorAll('.dropdown-submenu .show').forEach(el => {
+    // 		el.classList.remove('show');
+    // 	});
+    // });
+  };
+
+  el.addEventListener('click', btnClickListener);
+});
+},{"jquery":"eeO1"}],"iFOF":[function(require,module,exports) {
 "use strict";
 
 require("bootstrap");
@@ -30413,9 +30474,11 @@ var _responsiveElementCarrier = _interopRequireDefault(require("./responsiveElem
 
 require("./overflowEllipsis");
 
+require("./submenu");
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 (0, _sliders.default)();
 (0, _burgerMenu.default)();
 (0, _responsiveElementCarrier.default)();
-},{"bootstrap":"s7bG","swiper/bundle":"ydBv","./sliders":"GJqW","./burgerMenu":"y582","./responsiveElementCarrier":"ZsWl","./overflowEllipsis":"eiH9"}]},{},["iFOF"], null)
+},{"bootstrap":"s7bG","swiper/bundle":"ydBv","./sliders":"GJqW","./burgerMenu":"y582","./responsiveElementCarrier":"ZsWl","./overflowEllipsis":"eiH9","./submenu":"apO8"}]},{},["iFOF"], null)

@@ -1,0 +1,206 @@
+@import "../theme-base";
+
+
+
+.dropdown-menu {
+  padding-top: 0;
+  padding-bottom: 0;
+  border: none;
+  top: 0;
+}
+.dropdown-item {
+  border-top-left-radius: $border-radius;
+}
+
+@include media-breakpoint-down(md) {
+   .dropdown-menu {
+    transform: none !important;
+    grid-column: 1 / 3;
+     border-radius: $border-radius-zero;
+  }
+  .dropdown-menu.show {
+    position: relative !important;
+    width: 100%;
+    background-color: rgba($gray, $bth-light-alpha-2)
+
+  }
+  .dropdown-item {
+    color: $green;
+
+    @include hover() {
+      color: $white;
+      background: $green;
+      box-shadow: 0px 0px 1px 0px #131213;
+    }
+  }
+}
+
+.dropdown-toggle {
+  &::after {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    width: 8px;
+    height: 6px;
+    border: 0;
+    background-image: url('../../public/icons/arrowDown.svg');
+    background-repeat: no-repeat;
+    @include media-breakpoint-down(md) {
+      width: 7px;
+      height: 12px;
+      right: 5%;
+      color: $white;
+      background-image: url('../../public/icons/arrowRight.svg');
+      background-size: cover;
+      transition: transform .2s;
+    }
+  }
+}
+.nav-item.dropdown {
+  display: grid;
+  grid-template-columns: 1fr max-content;
+  .btn-split {
+    @include hover-focus-active {
+      box-shadow: inset 0px 0px 1px 0px $black-2;
+    }
+  }
+}
+
+.nav-item.dropdown.show {
+  .dropdown-toggle {
+    @include media-breakpoint-down(md) {
+      &::after {
+        transform-origin: center center;
+        transform: translateY(-50%) rotate(90deg);
+        transition: transform .2s;
+      }
+    }
+  }
+}
+
+.nav-item {
+  position: relative;
+  @include media-breakpoint-down(md) {
+    &::before {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 1px;
+      background-color: rgba($blue-dark, $bth-light-alpha-md);
+    }
+  }
+}
+
+.nav-btn {
+  display: flex;
+  padding: $nav-btn-padding-y 20px $nav-btn-padding-y 20px;
+  position: relative;
+  color: $black;
+  @include media-breakpoint-down(lg) {
+    padding: $nav-btn-padding-y 10px $nav-btn-padding-y 10px;
+    position: static;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 2px;
+    background-color: transparent;
+    border-radius: 2px;
+  }
+
+  &:hover {
+    text-decoration: none;
+    color: $black;
+    box-shadow: 0px 0px 1px 0px #131213;
+    &::before {
+      background-color: $red;
+    }
+  }
+
+  @include media-breakpoint-down(md) {
+
+    @include hover-focus() {
+      &::before {
+        background-color: $green;
+      }
+    }
+  }
+  @include media-breakpoint-down(md) {
+    color: $white;
+    text-decoration: none;
+    padding-right: 20px;
+    padding-left: 20px;
+    font-size: $font-size-sm;
+    @include plain-hover-focus {
+      color: $white;
+    }
+  }
+
+  // Disabled state lightens text
+  &.disabled {
+    color: $nav-link-disabled-color;
+    pointer-events: none;
+    cursor: default;
+  }
+}
+
+
+
+@include media-breakpoint-up(lg) {
+  .nav-item .submenu {
+    position: absolute;
+    left: 100%;
+    top: -7px;
+  }
+}
+
+
+.dropdown-submenu {
+  display: flex;
+  position: relative;
+  @include media-breakpoint-down(lg) {
+    display: grid;
+    grid-template-columns: 1fr 50px;
+    grid-template-rows: min-content;
+    position: relative;
+    width: 100%;
+  }
+}
+
+.btn-split  {
+  display: block;
+  width: 30px;
+  position: relative;
+  padding: 0 5px;
+  background-color: transparent;
+  border: none;
+  border-left: 1px solid rgba($gray, $bth-light-alpha-2);
+  &_inner {
+    border-top-right-radius: $border-radius;
+  }
+  &.dropdown-toggle {
+    &::after {
+      right: auto;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      margin: 0;
+    }
+  }
+}
+
+@include media-breakpoint-down(md) {
+  .btn-split {
+    width: 50px;
+  }
+  .dropdown-submenu {
+    flex-wrap: wrap;
+  }
+}
