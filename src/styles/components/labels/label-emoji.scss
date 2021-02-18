@@ -1,0 +1,23 @@
+@import "../../theme-base";
+.label-emoji {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+  width: max-content;
+  border-radius: $tag-border-radius;
+  @each $color, $value in $theme-colors {
+    &.#{$color} {
+      color: $value;
+      background-color: rgba($value, $bth-light-alpha-2);
+    }
+  }
+  @include media-breakpoint-down(sm) {
+    padding: 10px;
+    .icon-victories {
+      width: 31px;
+      height: 31px;
+    }
+  }
+
+}

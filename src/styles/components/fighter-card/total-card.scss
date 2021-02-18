@@ -1,0 +1,32 @@
+@import "../../theme-base";
+
+.total-card {
+  padding: $spacer 50px 10px $spacer;
+  border-radius: $border-radius;
+  background-color: $blue-dark;
+  display: grid;
+  grid-template-columns: min-content;
+  @include media-breakpoint-down(sm) {
+    grid-template-columns: min-content min-content 1fr;
+    grid-auto-flow: column;
+    align-items: center;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  &__el-small {
+    font-size: $font-size-sm;
+    color: $gray-500;
+    width: min-content;
+  }
+  &__el-big {
+    font-size: $font-size-lg;
+    font-weight: $font-weight-bold;
+    color: $white-100;
+  }
+  &__image {
+    color: #575F78;
+    @include media-breakpoint-down(sm) {
+      order: -1;
+    }
+  }
+}

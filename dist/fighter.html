@@ -6,62 +6,374 @@
 	<meta name="Description" content="Put your description here.">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Main</title>
-	<link rel="stylesheet" href="main.9159643e.css">
+	<link rel="stylesheet" href="main.12135b48.css">
 </head>
 <body>
 <main class="main pt-0 pt-md-4" style="overflow-x: hidden">
 	<div class="container-fluid container-md">
-		<div class="col-lg-8 d-flex flex-column pb-1">
-			<nav aria-label="breadcrumb">
-				<ol class="breadcrumb">
-					<li class="breadcrumb-item"><a href="#">Главная</a></li>
-					<li class="breadcrumb-item"><a href="#">Новости</a></li>
-					<li class="breadcrumb-item active" aria-current="page">Новость</li>
-				</ol>
-			</nav>
-			<section class="section-fighter">
-				<div class="post-title">Александр Отсука</div>
-				<div class="ads ads_sm mt-space-md d-none d-sm-flex">Рекламный банер</div>
-				<div class="fighter-page mt-small-1">
-					<div class="fighter-page__avatar">
-						<img src="fighter-5.3c3ea1c0.jpg" alt="avatar" class="fighter-page__image">
+		<div class="row">
+			<div class="col-lg-8 d-flex flex-column pb-1">
+				<nav aria-label="breadcrumb">
+					<ol class="breadcrumb">
+						<li class="breadcrumb-item"><a href="#">Главная</a></li>
+						<li class="breadcrumb-item"><a href="#">Новости</a></li>
+						<li class="breadcrumb-item active" aria-current="page">Новость</li>
+					</ol>
+				</nav>
+				<section class="section-fighter">
+					<div class="fighter-data">
+						<div class="fighter-data__title post-title">Александр Отсука</div>
+						<div class="ads ads_sm mt-space-md mt-sm-3">Рекламный банер</div>
+						<div class="fighter-data__row mt-small-1">
+							<div class="fighter-data__avatar">
+								<img src="fighter-5.3c3ea1c0.jpg" alt="avatar" class="fighter-data__image">
+							</div>
+							<div class="fighter-data__info fighter-info">
+								<div class="fighter-info__item info-item">
+									<div class="info-item__key">Страна:</div>
+									<div class="info-item__value">
+										<svg width="24" height="24" class="label__icon" viewBox="0 0 24 24">
+											<use xlink:href="flag.9e9c26b4.svg#flag-japan"></use>
+										</svg>
+										<span>Япония</span></div>
+								</div>
+								<div class="fighter-info__row">
+									<div class="fighter-info__item info-item">
+										<div class="info-item__key">Прозвище:</div>
+										<div class="info-item__value">The Diet Butcher</div>
+									</div>
+									<div class="fighter-info__item info-item">
+										<div class="info-item__key">Рост:</div>
+										<div class="info-item__value">185.42 см / 6'1</div>
+									</div>
+									<div class="fighter-info__item info-item">
+										<div class="info-item__key">Дата рождения:</div>
+										<div class="info-item__value">17.07.1971 (49 лет)</div>
+									</div>
+									<div class="fighter-info__item info-item">
+										<div class="info-item__key">Вес:</div>
+										<div class="info-item__value">92.08 кг / 203 фунта</div>
+									</div>
+								</div>
+								<div class="fighter-info__item info-item">
+									<div class="info-item__key">Весовая категория:</div>
+									<div class="info-item__value">light heavyweight / Light heavyweight</div>
+								</div>
+							</div>
+						</div>
 					</div>
-					<div class="fighter-page__info fighter-info">
-						<div class="fighter-info__item info-item">
-							<div class="info-item__key">Страна:</div>
-							<div class="info-item__value">
-								<svg width="24" height="24" class="label__icon" viewBox="0 0 24 24">
-									<use xlink:href="flag.9e9c26b4.svg#flag-japan"></use>
-								</svg>
-								<span>Япония</span></div>
-						</div>
-						<div class="fighter-info__row">
-							<div class="fighter-info__item info-item">
-								<div class="info-item__key">Прозвище:</div>
-								<div class="info-item__value">The Diet Butcher</div>
+
+					<div class="statistic-content mt-indent-25">
+						<div class="statistic-content__title post-title">Статистика поединков</div>
+						<div class="statistic-content__row mt-indent-25">
+							<div class="statistic-content__total total-card">
+								<div class="total-card__el-small">Всего поединков</div>
+								<div class="total-card__image mt-sm-2 mr-indent-15 mr-sm-0">
+									<svg width="70" height="64" class="label__icon" viewBox="0 0 70 64">
+										<use xlink:href="icons.4a983847.svg#icon-fist"></use>
+									</svg>
+								</div>
+								<div class="total-card__el-big mt-sm-indent-45 text-right text-sm-left">123</div>
 							</div>
-							<div class="fighter-info__item info-item">
-								<div class="info-item__key">Рост:</div>
-								<div class="info-item__value">185.42 см / 6'1</div>
+
+							<div class="statistic-content__wrap statistic-card">
+								<div class="statistic-card__progress statistic-progress">
+									<div class="statistic-progress__header">
+										<div class="statistic-progress__left">
+											<div class="statistic-progress__icons green">
+												<svg width="18" height="18" viewBox="0 0 18 18">
+													<use xlink:href="icons.4a983847.svg#icon-victories"></use>
+												</svg>
+											</div>
+											<div class="statistic-progress__title">Победы</div>
+										</div>
+										<div class="statistic-progress__data">
+											<div class="statistic-progress__counter green">7</div>
+											<div class="statistic-progress__width-data">(<span>31%</span>)</div>
+
+										</div>
+									</div>
+									<div class="statistic-progress__progress progress mt-2">
+										<div class="progress-bar bg-green" style="width: 31%" role="progressbar" aria-valuenow="31" aria-valuemin="0" aria-valuemax="100">
+										</div>
+									</div>
+									<ul class="statistic-progress__list type-list mt-3">
+										<li class="type-list__list-item">
+											<div class="type-list__key">Нокаутом</div>
+											<div class="type-list__value">1</div>
+										</li>
+										<li class="type-list__list-item">
+											<div class="type-list__key">Приемом</div>
+											<div class="type-list__value">2</div>
+										</li>
+										<li class="type-list__list-item">
+											<div class="type-list__key">Решением</div>
+											<div class="type-list__value">1</div>
+										</li>
+									</ul>
+								</div>
+								<div class="statistic-card__progress statistic-progress">
+									<div class="statistic-progress__header">
+										<div class="statistic-progress__left">
+											<div class="statistic-progress__icons red">
+												<svg width="18" height="18" viewBox="0 0 18 18">
+													<use xlink:href="icons.4a983847.svg#icon-defeat"></use>
+												</svg>
+											</div>
+											<div class="statistic-progress__title">Поражения</div>
+										</div>
+										<div class="statistic-progress__data">
+											<div class="statistic-progress__counter red">13</div>
+											<div class="statistic-progress__width-data">(<span>69%</span>)</div>
+										</div>
+									</div>
+									<div class="statistic-progress__progress progress mt-2">
+										<div class="progress-bar bg-red" style="width: 69%" role="progressbar" aria-valuenow="69" aria-valuemin="0" aria-valuemax="100">
+										</div>
+									</div>
+									<ul class="statistic-progress__list type-list mt-3">
+										<li class="type-list__list-item">
+											<div class="type-list__key">Нокаутом</div>
+											<div class="type-list__value">1</div>
+										</li>
+										<li class="type-list__list-item">
+											<div class="type-list__key">Приемом</div>
+											<div class="type-list__value">2</div>
+										</li>
+										<li class="type-list__list-item">
+											<div class="type-list__key">Решением</div>
+											<div class="type-list__value">1</div>
+										</li>
+									</ul>
+								</div>
+								<div class="dashed d-none d-sm-block"></div>
+								<div class="statistic-card__progress statistic-progress">
+									<div class="statistic-progress__header">
+										<div class="statistic-progress__left">
+											<div class="statistic-progress__icons skyblue">
+												<svg width="18" height="18" viewBox="0 0 18 18">
+													<use xlink:href="icons.4a983847.svg#icon-draw"></use>
+												</svg>
+											</div>
+											<div class="statistic-progress__title">Ничьи</div>
+										</div>
+										<div class="statistic-progress__data">
+											<div class="statistic-progress__counter skyblue">1</div>
+											<div class="statistic-progress__width-data">(<span>2%</span>)</div>
+
+										</div>
+									</div>
+									<div class="statistic-progress__progress progress mt-2">
+										<div class="progress-bar bg-skyblue" style="width: 2%" role="progressbar" aria-valuenow="2" aria-valuemin="0" aria-valuemax="100">
+										</div>
+									</div>
+								</div>
+								<div class="statistic-card__progress statistic-progress">
+									<div class="statistic-progress__header">
+										<div class="statistic-progress__left">
+											<div class="statistic-progress__icons gray-700">
+												<svg width="18" height="18" viewBox="0 0 18 18">
+													<use xlink:href="icons.4a983847.svg#icon-canceled"></use>
+												</svg>
+											</div>
+											<div class="statistic-progress__title">Не состоялись</div>
+										</div>
+										<div class="statistic-progress__data">
+											<div class="statistic-progress__counter skyblue">1</div>
+											<div class="statistic-progress__width-data">(<span>2%</span>)</div>
+
+										</div>
+									</div>
+									<div class="statistic-progress__progress progress mt-2">
+										<div class="progress-bar bg-gray-700" style="width: 2%" role="progressbar" aria-valuenow="2" aria-valuemin="0" aria-valuemax="100">
+										</div>
+									</div>
+								</div>
+
 							</div>
-							<div class="fighter-info__item info-item">
-								<div class="info-item__key">Дата рождения:</div>
-								<div class="info-item__value">17.07.1971 (49 лет)</div>
-							</div>
-							<div class="fighter-info__item info-item">
-								<div class="info-item__key">Вес:</div>
-								<div class="info-item__value">92.08 кг / 203 фунта</div>
-							</div>
-						</div>
-						<div class="fighter-info__item info-item">
-							<div class="info-item__key">Весовая категория:</div>
-							<div class="info-item__value">light heavyweight / Light heavyweight</div>
 						</div>
 					</div>
-				</div>
-			</section>
+					<div class="table-fights mt-5">
+						<div class="table-fights__title post-title">Список боев</div>
+
+						<div class="table mt-3">
+							<div class="table__row table__row-header">
+								<div class="table__title">Итог</div>
+								<div class="table__title">Соперник</div>
+								<div class="table__title">Событие</div>
+								<div class="table__title">Способ</div>
+								<div class="table__title">Раунд</div>
+								<div class="table__title">Время</div>
+							</div>
+							<div class="table__row">
+								<div class="table__col">
+									<div class="label-emoji green">
+										<svg width="24" height="24" class="icon-victories" viewBox="0 0 24 24">
+											<use xlink:href="icons.4a983847.svg#icon-victories"></use>
+										</svg>
+									</div>
+								</div>
+								<div class="table__col table__col_rival">
+									<div class="table__text">Боб Сапп</div>
+									<div class="table__text gray fz-sm">12-19-0</div>
+								</div>
+								<div class="table__col table__col_event-mobile">
+									<div class="table__text">Accel Vol. 18: X'mas Seiya Matsuri
+										и еще одна строка, хуле
+									</div>
+									<div class="table__text gray fz-sm">25.12.2011</div>
+								</div>
+								<div class="table__col  table__col_way-mobile" data-way="Способ">
+									<div class="table__text">DQ (Illegal Slams)</div>
+								</div>
+								<div class="table__col table__col_round label-col label-col_round blue-dark-100" data-round="Р">
+									<div class="table__text">2</div>
+								</div>
+								<div class="table__col table__col_time label-col label-col_time blue-dark" data-time="В">
+									<div class="table__text">1:43</div>
+								</div>
+							</div>
+
+							<div class="table__row">
+								<div class="table__col">
+									<div class="label-emoji skyblue">
+										<svg width="24" height="24" class="icon-victories" viewBox="0 0 24 24">
+											<use xlink:href="icons.4a983847.svg#icon-draw"></use>
+										</svg>
+									</div>
+								</div>
+								<div class="table__col table__col_rival">
+									<div class="table__text">Masada Masada</div>
+									<div class="table__text gray fz-sm">12-19-0</div>
+								</div>
+								<div class="table__col table__col_event-mobile">
+									<div class="table__text">VFX Vale Tudo Fighters Mexico
+										и еще одна строка, хуле
+									</div>
+									<div class="table__text gray fz-sm">25.12.2011</div>
+								</div>
+								<div class="table__col  table__col_way-mobile" data-way="Способ">
+									<div class="table__text">DQ (Illegal Slams)</div>
+								</div>
+								<div class="table__col table__col_round label-col label-col_round blue-dark-100" data-round="Р">
+									<div class="table__text">2</div>
+								</div>
+								<div class="table__col table__col_time label-col label-col_time blue-dark" data-time="В">
+									<div class="table__text">1:43</div>
+								</div>
+							</div>
+							<div class="table__row">
+								<div class="table__col">
+									<div class="label-emoji red">
+										<svg width="24" height="24" class="icon-defeat" viewBox="0 0 24 24">
+											<use xlink:href="icons.4a983847.svg#icon-victories"></use>
+										</svg>
+									</div>
+								</div>
+								<div class="table__col table__col_rival">
+									<div class="table__text">Мурильо Хуа</div>
+									<div class="table__text gray fz-sm">12-19-0</div>
+								</div>
+								<div class="table__col table__col_event-mobile">
+									<div class="table__text">VFX Vale Tudo Fighters Mexico
+										и еще одна строка, хуле
+									</div>
+									<div class="table__text gray fz-sm">25.12.2011</div>
+								</div>
+								<div class="table__col  table__col_way-mobile" data-way="Способ">
+									<div class="table__text">DQ (Illegal Slams)</div>
+								</div>
+								<div class="table__col table__col_round label-col label-col_round blue-dark-100" data-round="Р">
+									<div class="table__text">2</div>
+								</div>
+								<div class="table__col table__col_time label-col label-col_time blue-dark" data-time="В">
+									<div class="table__text">1:43</div>
+								</div>
+							</div>
+							<div class="table__row">
+								<div class="table__col">
+									<div class="label-emoji gray-700">
+										<svg width="24" height="24" class="icon-victories" viewBox="0 0 24 24">
+											<use xlink:href="icons.4a983847.svg#icon-canceled"></use>
+										</svg>
+									</div>
+								</div>
+								<div class="table__col table__col_rival">
+									<div class="table__text">Кеничи Ямамото</div>
+									<div class="table__text gray fz-sm">12-19-0</div>
+								</div>
+								<div class="table__col table__col_event-mobile">
+									<div class="table__text">Accel Vol. 18: X'mas Seiya Matsuri
+										и еще одна строка, хуле
+									</div>
+									<div class="table__text gray fz-sm">25.12.2011</div>
+								</div>
+								<div class="table__col  table__col_way-mobile" data-way="Способ">
+									<div class="table__text">DQ (Illegal Slams)</div>
+								</div>
+								<div class="table__col table__col_round label-col label-col_round blue-dark-100" data-round="Р">
+									<div class="table__text">2</div>
+								</div>
+								<div class="table__col table__col_time label-col label-col_time blue-dark" data-time="В">
+									<div class="table__text">1:43</div>
+								</div>
+							</div>
+
+
+						</div>
+						<nav aria-label="Page navigation example">
+							<ul class="pagination mt-4">
+								<li class="page-item disabled">
+									<a class="page-link page-link_prev page-link_arrow" href="#" aria-label="Previous">
+										<div aria-hidden="true">
+											<svg width="13" height="12" class="icon" viewBox="0 0 13 12">
+												<use xlink:href="icons.4a983847.svg#icon-doubleRight"></use>
+											</svg>
+										</div>
+									</a>
+								</li>
+								<li class="page-item disabled">
+									<a class="page-link page-link_prev page-link_arrow" href="#" aria-label="Previous">
+										<div aria-hidden="true">
+											<svg width="6" height="10" class="icon" viewBox="0 0 6 10">
+												<use xlink:href="icons.4a983847.svg#icon-arrowRight"></use>
+											</svg>
+										</div>
+									</a>
+								</li>
+								<li class="page-item active"><a class="page-link" href="#">1</a></li>
+								<li class="page-item"><a class="page-link" href="#">2</a></li>
+								<li class="page-item"><a class="page-link" href="#">3</a></li>
+								<li class="page-item"><a class="page-link" href="#">4</a></li>
+								<li class="page-item"><a class="page-link" href="#">5</a></li>
+								<li class="page-item"><a class="page-link" href="#">6</a></li>
+								<li class="page-item">
+									<a class="page-link page-link_arrow" href="#" aria-label="Next">
+										<div aria-hidden="true">
+											<svg width="6" height="10" class="icon" viewBox="0 0 6 10">
+												<use xlink:href="icons.4a983847.svg#icon-arrowRight"></use>
+											</svg>
+										</div>
+									</a>
+								</li>
+								<li class="page-item">
+									<a class="page-link page-link_arrow" href="#" aria-label="Next">
+										<div aria-hidden="true">
+											<svg width="13" height="12" class="icon" viewBox="0 0 13 12">
+												<use xlink:href="icons.4a983847.svg#icon-doubleRight"></use>
+											</svg>
+										</div>
+									</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+
+					<div class="ads mt-sm-4">Рекламный банер</div>
+				</section>
+			</div>
+			<div class="col-lg-4 sidebar mt-4 mt-md-big-1 d-flex flex-column"></div>
 		</div>
-		<div class="col-lg-4 sidebar mt-4 mt-md-big-1 d-flex flex-column"></div>
 	</div>
 </main>
 </body>

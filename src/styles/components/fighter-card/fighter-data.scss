@@ -1,18 +1,22 @@
 @import "../../theme-base";
-.fighter-page {
+.fighter-data {
   width: 100%;
   display: grid;
-  grid-auto-flow: column;
-  justify-content: space-between;
-  grid-gap: 40px;
-  @include media-breakpoint-down(sm) {
-    grid-auto-flow: row;
-
+  &__row {
+    display: grid;
+    grid-auto-flow: column;
+    grid-gap: 40px;
+    @include media-breakpoint-down(sm) {
+      grid-auto-flow: row;
+    }
   }
   &__avatar {
     max-width: 143px;
     border-radius: $border-radius-sm;
     overflow: hidden;
+    @include media-breakpoint-down(sm) {
+      max-width: 100%;
+    }
   }
   &__image {
     width: 100%;
@@ -38,20 +42,37 @@
   }
 
   .info-item {
-    display: flex;
+    display: grid;
     padding-bottom: 13px;
+    grid-template-columns: auto auto;
+    justify-content: flex-start;
     border-bottom: 1px solid $gray-200;
     border-radius: $border-radius-es;
-    @include media-breakpoint-down(sm) {
+    @include media-breakpoint-down(lg) {
       justify-content: space-between;
     }
     &__key {
       color: $gray-600;
       margin-right: 15px;
+      @include media-breakpoint-down(md) {
+        width: 100%;
+      }
+      @include media-breakpoint-down(sm) {
+        margin-right: 5px;
+      }
     }
     &__value {
       font-weight: $font-weight-medium;
       color: $blue-dark;
+      text-align: right;
+      @include media-breakpoint-down(md) {
+        width: 100%;
+      }
+    }
+    @media screen and (max-width: 374px) {
+      &__key, &__value {
+        font-size: $font-size-sm;
+      }
     }
   }
 }

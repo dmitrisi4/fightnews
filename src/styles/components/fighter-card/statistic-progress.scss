@@ -1,0 +1,69 @@
+@import "../../theme-base";
+
+.statistic-progress {
+  &__header {
+    width: 100%;
+    display: grid;
+    grid-template-columns: max-content max-content;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__title {
+    font-size: $font-size-sm-big;
+    font-weight: $font-weight-bold;
+    color: $blue-dark;
+  }
+  &__left {
+    display: flex;
+  }
+  &__icons {
+    margin-right: 10px;
+    @each $color, $value in $theme-colors {
+      &.#{$color} {
+       color: $value;
+      }
+    }
+  }
+  &__data {
+    display: flex;
+    align-items: center;
+  }
+  &__counter {
+    margin-right: 3px;
+    font-size: $font-size-sm-big;
+    @each $color, $value in $theme-colors {
+      &.#{$color} {
+        color: $value;
+      }
+    }
+
+  }
+  &__width-data {
+    font-size: $font-size-sm;
+    color: $blue-dark;
+    font-weight: $font-weight-bold;
+  }
+  &__progress {
+  }
+}
+
+.type-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-gap: 15px;
+  &__list-item {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__key {
+    color: $gray-600;
+    font-size: $font-size-sm;
+  }
+  &__value {
+    color: $blue-dark;
+    font-size: $font-size-sm;
+    font-width: $font-weight-medium;
+  }
+}
