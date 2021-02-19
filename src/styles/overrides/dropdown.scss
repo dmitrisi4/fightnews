@@ -12,6 +12,7 @@
 @include media-breakpoint-up(md) {
   .dropdown-menu {
     box-shadow: inset 0px 0px 1px 0px $black-2;
+    margin-top: -1px;
   }
   .dropdown-item {
     @include hover-focus() {
@@ -47,6 +48,7 @@
   &::after {
     position: absolute;
     top: 50%;
+    transform-origin: center;
     transform: translateY(-50%);
     right: 0;
     width: 8px;
@@ -64,12 +66,66 @@
       transition: transform .2s;
     }
   }
+
+  .dropdown.show > &,
+  .dropdown-submenu.show > & {
+    &::after {
+      transform: translate(-50%, -50%) rotate(180deg);
+    }
+  }
 }
 
 .nav-item.dropdown {
   display: grid;
   grid-template-columns: 1fr max-content;
 }
+
+@include media-breakpoint-up(lg) {
+  .nav-item .submenu {
+    position: absolute;
+    left: 100%;
+    top: -2px;
+  }
+  .after-btn {
+    @include hover-focus() {
+      > .dropdown-menu {
+        display: block;
+        top: 100%;
+      }
+      > .submenu {
+        display: block;
+        top: 0;
+      }
+
+    }
+
+  }
+  .after-btn {
+    padding-right: 30px;
+    border: none;
+    border-right: 1px solid rgba(207, 197, 197, 0.15);
+
+    &::after {
+      content: '';
+      position: absolute;
+      right: 0;
+      width: 30px;
+      height: 100%;
+      padding: 0 5px;
+      background: url('../../public/icons/arrowDown.svg') center no-repeat;
+      cursor: pointer;
+    }
+
+    @include media-breakpoint-up(md) {
+      @include hover-focus() {
+        &::after {
+          box-shadow: inset 0px 0px 1px 0px $black-2;
+        }
+      }
+    }
+  }
+}
+
 
 .nav-item.dropdown.show {
   .dropdown-toggle {
@@ -158,15 +214,6 @@
 }
 
 
-@include media-breakpoint-up(lg) {
-  .nav-item .submenu {
-    position: absolute;
-    left: 100%;
-    top: -2px;
-  }
-}
-
-
 .dropdown-submenu {
   display: flex;
   position: relative;
@@ -180,16 +227,17 @@
 }
 
 .btn-split {
-  display: block;
+  display: none;
   width: 30px;
   position: relative;
   padding: 0 5px;
   background-color: transparent;
   border: none;
-  border-left: 1px solid rgba($gray, $bth-light-alpha-2);
+  border-right: 1px solid rgba($gray, $bth-light-alpha-2);
   @include hover-focus-active {
     box-shadow: inset 0px 0px 1px 0px $black-2;
   }
+
   &_inner {
     @include hover-focus() {
       border-bottom: 1px solid rgba($black-2, $bth-light-alpha-2);
@@ -211,6 +259,7 @@
 @include media-breakpoint-down(md) {
   .btn-split {
     width: 50px;
+    display: block;
   }
   .dropdown-submenu {
     flex-wrap: wrap;

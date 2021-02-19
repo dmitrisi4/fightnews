@@ -1,0 +1,26 @@
+@import "../../theme-base";
+
+.timetable-nav {
+  background-color: $blue-dark;
+  border-radius: $border-radius-lg;
+  padding: 25px 30px 28px;
+  width: 100%;
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: start;
+  grid-column-gap: 50px;
+  &__text {
+    font-size: $font-size-sm-big;
+    color: $white;
+  }
+  &__buttons {
+    margin-top: 20px;
+
+  }
+  @include media-breakpoint-down(sm) {
+    grid-auto-flow: row;
+    grid-row-gap: 30px;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+}

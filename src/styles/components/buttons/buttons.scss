@@ -4,7 +4,14 @@
   @include hover-focus-active() {
     transform: scale(0.998);
   }
+  @each $color, $value in $theme-colors {
+    &.btn-alpha-#{$color} {
+      background-color: rgba($value, $bth-light-alpha);
+    }
+  }
 }
+
+
 
 .btn-accordion {
   display: flex;

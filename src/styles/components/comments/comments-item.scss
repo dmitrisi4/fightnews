@@ -40,7 +40,14 @@
   &__name {
     font-weight: $font-weight-medium;
     display: inline-block;
-    color: $blue-dark;
+    color: $red;
+    transition: transform .2s;
+    @include hover-focus() {
+      color: $red;
+      text-decoration: none;
+      transform: scale(0.98);
+      transition: transform .2s;
+    }
   }
   &__date {
     display: flex;
@@ -55,7 +62,6 @@
     flex-wrap: wrap;
   }
   &__text {
-    font-weight: $font-weight-medium;
     color: $blue-dark;
   }
   &__nav {

@@ -1,0 +1,23 @@
+@import '../../theme-base';
+
+.timetable-btn {
+  color: rgba($gray-450, $bth-light-alpha-md);
+  @each $color, $value in $theme-colors {
+    &.#{$color} {
+      &:hover {
+        background-color: rgba($value, $bth-light-alpha);
+        color: $value;
+      }
+      &.active {
+        background-color: rgba($value, $bth-light-alpha);
+        color: $value;
+      }
+    }
+  }
+
+  &:focus {
+    box-shadow: none;
+  }
+
+
+}
