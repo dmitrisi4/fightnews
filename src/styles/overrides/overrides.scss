@@ -66,46 +66,7 @@ h1, .h1 {
   }
 }
 
-.page-link {
-  width: 30px;
-  height: 30px;
-  padding: 2px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: $blue-dark;
-  font-size: $font-size-ms;
-  font-weight: $font-weight-bold;
-  border: 1px solid $gray-600;
-  border-radius: $border-radius-sm;
-  @include hover-focus() {
-    color: $red;
-    .icon {
-      color: $red;
-    }
-  }
-}
 
-.page-item.active {
-  .page-link {
-    background-color: $red;
-    color: $white;
-  }
-}
-
-.page-link {
-  &_arrow {
-    background-color: $white-200;
-    border: 0;
-
-    .icon {
-      color: $gray-600;
-    }
-  }
-  &_prev {
-    transform: scale(-1, 1);
-  }
-}
 
 
 .custom-select {
