@@ -18980,8 +18980,7 @@ h1, .h1 {
 
 .page-item:first-child .page-link,
 .page-item:last-child .page-link {
-  border-top-left-radius: 0.3125rem;
-  border-bottom-left-radius: 0.3125rem;
+  border-radius: 0.3125rem;
 }
 
 .wysiwyg {

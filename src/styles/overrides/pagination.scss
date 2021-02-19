@@ -104,7 +104,6 @@
 
 .page-item:first-child .page-link,
 .page-item:last-child .page-link {
-  border-top-left-radius: $border-radius-sm;
-  border-bottom-left-radius: $border-radius-sm;
+  border-radius: $border-radius-sm;
 }
 
