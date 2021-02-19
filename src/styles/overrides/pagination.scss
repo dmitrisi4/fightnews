@@ -42,11 +42,22 @@
   }
 }
 
-
+.pagination-wrap {
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: center;
+  grid-column-gap: 10px;
+}
 .pagination {
   display: grid;
   grid-auto-flow: column;
   grid-auto-columns: min-content;
   grid-gap: 9px;
   justify-content: center;
+  @include media-breakpoint-down(sm) {
+    .page-item:nth-child(n + 4) {
+      display: none;
+    }
+  }
 }
+
