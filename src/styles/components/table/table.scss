@@ -34,7 +34,12 @@
     &.center {
       text-align: center;
     }
+    &.side-line {
+      border-right: 1px solid $gray-200;
+      padding-right: 15px;
+    }
   }
+
 
   &__title {
     font-size: $font-size-sm;
@@ -61,5 +66,14 @@
   }
   @include media-breakpoint-down(sm) {
 
+  }
+}
+
+.table.border-row {
+  .table__row {
+    &:not(:last-child) {
+        border-bottom: 1px solid $gray-200;
+        padding-bottom: 10px;
+    }
   }
 }
