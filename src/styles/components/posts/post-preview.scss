@@ -3,6 +3,11 @@
 .post-list {
   display: grid;
   grid-gap: 20px;
+  &_align-start {
+    .post-preview__header {
+      align-items: start;
+    }
+  }
   &_sm {
     grid-template: auto auto / auto auto;
     @include media-breakpoint-down(sm) {

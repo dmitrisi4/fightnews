@@ -14,10 +14,10 @@
       }
     }
   }
-
   &:focus {
     box-shadow: none;
   }
-
-
+  @include media-breakpoint-down(sm) {
+    font-size: $font-size-sm;
+  }
 }

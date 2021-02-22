@@ -1,19 +1,37 @@
 @import '../../theme-base';
-.table {
-}
 .table.timetable {
   .table__row {
     grid-template-columns: min-content min-content 2fr 2fr;
     grid-gap: 40px;
     @include media-breakpoint-down(sm) {
+      grid-gap: 20px;
       grid-template-columns: min-content min-content 1fr;
-      grid-template-rows: 1fr 1fr;
+      grid-template-rows: 1fr max-content;
       .table__col_event-mobile {
         grid-column: 1 / 4;
+        position: relative;
+        padding-top: 25px;
+        &::before {
+          content: attr(data-event) '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          font-size: $font-size-sm;
+          color: $gray-600;
+
+        }
       }
       .table__col_place {
         grid-column: 3;
         grid-row: 1;
+      }
+    }
+    @media screen and (max-width: 375px){
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr max-content max-content;
+      .table__col_place {
+        grid-row: 2;
+        grid-column: 1 / 4;
       }
     }
     svg {
