@@ -13596,7 +13596,7 @@ button.ql-table[value=append-col]:after {
 }
 
 .ap {
-  background-image: url(1e7b63404cd2fb8e6525b2fd4ee4d286.cc70e7cc.png);
+  background-image: url(/1e7b63404cd2fb8e6525b2fd4ee4d286.dc340950.png);
   background-repeat: no-repeat;
   background-size: 820px;
   box-sizing: border-box;
@@ -19095,7 +19095,7 @@ h1, .h1 {
   width: 8px;
   height: 6px;
   border: 0;
-  background-image: url("arrowDown.5b134a3d.svg");
+  background-image: url("/arrowDown.43b988b9.svg");
   background-repeat: no-repeat;
 }
 @media (max-width: 991.98px) {
@@ -19104,7 +19104,7 @@ h1, .h1 {
     height: 12px;
     right: 5%;
     color: #fff;
-    background-image: url("arrowRight.2bc6fe18.svg");
+    background-image: url("/arrowRight.580d3000.svg");
     background-size: cover;
     transition: transform 0.2s;
   }
@@ -19146,7 +19146,7 @@ h1, .h1 {
     width: 30px;
     height: 100%;
     padding: 0 5px;
-    background: url("arrowDown.5b134a3d.svg") center no-repeat;
+    background: url("/arrowDown.43b988b9.svg") center no-repeat;
     cursor: pointer;
   }
 }
@@ -19849,7 +19849,7 @@ h1, .h1 {
   left: 0;
   top: 50%;
   transform: translateY(-50%);
-  background: url(icons.4a983847.svg#icon-arrowRight2) no-repeat;
+  background: url(/icons.a2aebca7.svg#icon-arrowRight2) no-repeat;
 }
 .article-nav-item__title {
   display: block;
@@ -20144,7 +20144,7 @@ h1, .h1 {
   transform: translateY(-50%);
   width: 8px;
   height: 6px;
-  background-image: url("arrowDown.5b134a3d.svg");
+  background-image: url("/arrowDown.43b988b9.svg");
   background-repeat: no-repeat;
   transition: transform 0.2s;
 }
@@ -21224,7 +21224,7 @@ h1, .h1 {
     height: 17px;
     font-size: 0;
     background-color: transparent;
-    background-image: url("arrowRighGreen.c4465a21.svg");
+    background-image: url("/arrowRighGreen.7e893f2e.svg");
     background-size: cover;
     border: none;
     box-shadow: none;
@@ -22719,6 +22719,13 @@ h1, .h1 {
     grid-template-columns: min-content min-content 1fr;
     grid-template-rows: 1fr 1fr;
   }
+  .table.timetable .table__row .table__col_event-mobile {
+    grid-column: 1/4;
+  }
+  .table.timetable .table__row .table__col_place {
+    grid-column: 3;
+    grid-row: 1;
+  }
 }
 .table.timetable .table__row svg {
   max-width: 20px;
@@ -22803,7 +22810,7 @@ h1, .h1 {
     width: 18px;
     height: 22px;
     display: block;
-    background: url("icon-vs.bf13b564.svg") top left no-repeat;
+    background: url("/icon-vs.1584c451.svg") top left no-repeat;
   }
 }
 @media (max-width: 767.98px) {
@@ -23875,3 +23882,5 @@ body {
     display: grid !important;
   }
 }
+
+/*# sourceMappingURL=/main.b6459537.css.map */

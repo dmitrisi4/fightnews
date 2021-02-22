@@ -8,6 +8,13 @@
     @include media-breakpoint-down(sm) {
       grid-template-columns: min-content min-content 1fr;
       grid-template-rows: 1fr 1fr;
+      .table__col_event-mobile {
+        grid-column: 1 / 4;
+      }
+      .table__col_place {
+        grid-column: 3;
+        grid-row: 1;
+      }
     }
     svg {
       max-width: 20px;
