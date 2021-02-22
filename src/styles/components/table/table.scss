@@ -1,0 +1,65 @@
+@import "../../theme-base";
+
+.table {
+  display: grid;
+  grid-gap: 20px;
+  border: 1px solid $gray-200;
+  border-radius: $border-radius;
+  padding-bottom: 20px;
+  @include media-breakpoint-down(sm) {
+    padding-top: 30px;
+  }
+  &__row {
+    display: grid;
+    grid-gap: 20px;
+    padding-left: 25px;
+    padding-right: 25px;
+    @include media-breakpoint-down(sm) {
+      grid-template-columns: auto auto;
+    }
+    @include media-breakpoint-down(sm){
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+  }
+  &__row-header {
+    background-color: rgba(#EFEFEF, 0.21);
+    padding: 20px 25px 15px;
+    @include media-breakpoint-down(sm) {
+      display: none;
+    }
+  }
+  &__col {
+    color: $blue-dark;
+    &.center {
+      text-align: center;
+    }
+  }
+
+  &__title {
+    font-size: $font-size-sm;
+    color: rgba($black, 0.4);
+  }
+  &__text {
+    font-size: $font-size-sm;
+    font-weight: $font-weight-medium;
+    @include media-breakpoint-down(sm) {
+      font-weight: $font-weight-normal;
+    }
+    @each $color, $value in $theme-colors {
+      &.#{$color} {
+        color: $value;
+      }
+    }
+  }
+  &__text_big {
+    font-size: $font-size-md;
+    font-weight: $font-weight-bold;
+  }
+  &__text_small {
+    font-size: $font-size-ms;
+  }
+  @include media-breakpoint-down(sm) {
+
+  }
+}

@@ -1,1 +1,13 @@
 @import '../../theme-base';
+.table {
+}
+.table.timetable {
+  .table__row {
+    grid-template-columns: min-content min-content 2fr 2fr;
+    grid-gap: 40px;
+    svg {
+      width: 20px;
+      height: 20px;
+    }
+  }
+}
