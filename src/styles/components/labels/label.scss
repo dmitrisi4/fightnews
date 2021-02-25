@@ -63,6 +63,7 @@
   padding: 16.5px 19px;
   letter-spacing: normal;
   border-radius: $border-radius;
+
   @each $color, $value in $theme-colors {
     &_#{$color} {
       background-color: rgba($value, $bth-light-alpha-2);

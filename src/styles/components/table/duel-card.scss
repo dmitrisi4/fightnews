@@ -1,0 +1,306 @@
+@import "../../theme-base";
+
+.event-location {
+  display: flex;
+  align-items: center;
+
+  &__text {
+    font-size: $font-size-sm;
+    font-weight: $font-weight-medium;
+  }
+}
+
+.duel-wrap {
+  &__header {
+    position: relative;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: max-content max-content;
+    justify-content: center;
+    @include media-breakpoint-down(sm) {
+      grid-auto-flow: row;
+      grid-template-columns: max-content;
+      justify-content: start;
+    }
+  }
+
+  &__title {
+  }
+
+  &__post-info {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    @include media-breakpoint-down(sm) {
+      position: static;
+      transform: none;
+    }
+  }
+}
+
+.duel-card {
+  padding: 30px 40px 35px 65px;
+  background-color: $blue-dark;
+  border-radius: $border-radius;
+  @include media-breakpoint-down(lg) {
+    padding-left: 25px;
+  }
+  @include media-breakpoint-down(sm) {
+    padding: 30px 20px 20px;
+    border-radius: $border-radius-lg;
+  }
+
+  &__top {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: max-content min-content max-content;
+    grid-column-gap: 30px;
+    align-items: center;
+    justify-content: center;
+    @include media-breakpoint-down(lg) {
+      grid-column-gap: 20px;
+    }
+    @include media-breakpoint-down(sm) {
+      grid-auto-flow: row;
+      grid-template-columns: 1fr;
+      justify-items: center;
+      grid-row-gap: 20px;
+    }
+  }
+
+  &__bottom {
+    @include media-breakpoint-down(sm) {
+      position: relative;
+      padding-top: 20px;
+      margin-left: -20px;
+      margin-right: -20px;
+      padding-left: 20px;
+      padding-right: 20px;
+      &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 1px;
+        background-color: $blue-dark-100;
+      }
+    }
+  }
+
+  &__col {
+    display: grid;
+    grid-row-gap: 3px;
+    justify-items: end;
+    align-items: center;
+    grid-template-columns: max-content 1fr;
+    grid-column-gap: 20px;
+    @include media-breakpoint-down(sm) {
+      grid-template-columns: repeat(3, max-content);
+    }
+    @media screen and (max-width: 375px) {
+      grid-template-columns: 28px 56px max-content;
+    }
+
+    &.justify-start {
+      justify-items: start;
+    }
+
+    &.revert {
+      justify-items: start;
+
+      .duel-card__image {
+        grid-column: 1;
+        @include media-breakpoint-down(sm) {
+          grid-column: 2;
+        }
+      }
+    }
+  }
+
+  &__image {
+    max-width: 100px;
+    height: 100px;
+    overflow: hidden;
+    border-radius: $avatar-radius;
+    grid-row: 1 / 3;
+    grid-column: 2;
+    @include media-breakpoint-down(sm) {
+      grid-row: 1;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    @media screen and (max-width: 375px) {
+      height: auto;
+    }
+  }
+
+  &__label {
+    @include media-breakpoint-down(sm) {
+      grid-column: 1;
+      grid-row: 1;
+      width: 100%;
+    }
+  }
+
+  &__name {
+    color: $white;
+    font-weight: $font-weight-bold;
+    font-size: $font-size-md;
+    @media screen and (max-width: 375px) {
+      font-size: $font-size-base;
+    }
+  }
+
+  &__text-wrapper {
+    display: grid;
+    grid-gap: 5px;
+    @include media-breakpoint-down(sm) {
+      grid-auto-flow: column;
+      grid-column-gap: 10px;
+    }
+  }
+
+  &__text {
+    font-weight: $font-weight-medium;
+    color: rgba($white, $text-alpha);
+    @each $color, $value in $theme-colors {
+      &.#{$color} {
+        color: $value;
+      }
+    }
+  }
+
+  &__icon {
+    color: rgba($white, $text-alpha);
+
+    .icon {
+      width: 25px;
+      height: 25px;
+    }
+  }
+
+  .card-row {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: space-between;
+    @media screen and (max-width: 375px) {
+      grid-auto-flow: row;
+      .col-es-column {
+        grid-auto-flow: column;
+      }
+      .mt-es-25 {
+        margin-top: 25px;
+      }
+    }
+
+    &__col {
+      display: grid;
+      grid-auto-flow: column;
+      grid-template-columns: max-content max-content;
+      grid-column-gap: 20px;
+      align-items: center;
+      @include media-breakpoint-down(sm) {
+        grid-auto-flow: row;
+        grid-template-columns: auto;
+        grid-row-gap: 20px;
+        grid-column-gap: 10px;
+      }
+    }
+  }
+}
+
+.duel-inner {
+  grid-column-gap: 15px;
+  @include media-breakpoint-down(lg) {
+    grid-column-gap: 5px;
+  }
+  @include media-breakpoint-down(sm) {
+    grid-row-gap: 15px;
+  }
+
+  .duel-card {
+    &__col {
+      grid-column-gap: 10px;
+      grid-row-gap: 0;
+      align-items: start;
+
+      &.revert {
+        .duel-card__label {
+          grid-column: 1;
+        }
+
+        @include media-breakpoint-down(sm) {
+          .duel-card__image {
+            grid-column: 2;
+          }
+
+        }
+      }
+
+      @include media-breakpoint-down(lg) {
+        grid-template-columns: min-content min-content;
+      }
+      @include media-breakpoint-down(sm) {
+        grid-template-columns: repeat(3, auto);
+        align-items: center;
+        justify-items: left;
+      }
+    }
+
+    &__name {
+      color: $blue-dark;
+      font-size: $font-size-sm;
+      font-weight: $font-weight-medium;
+    }
+
+    &__icon {
+      color: $blue-dark;
+      @include media-breakpoint-down(lg) {
+        &.icon {
+          width: 15px;
+          height: 18px;
+        }
+      }
+    }
+
+    &__text-header {
+      width: min-content;
+      @include media-breakpoint-down(sm) {
+        width: max-content;
+      }
+    }
+
+    &__text {
+      color: $gray-600;
+      font-size: $font-size-sm;
+    }
+
+    &__image {
+      width: 35px;
+      height: 35px;
+      @include media-breakpoint-down(sm) {
+        width: 66px;
+        height: 66px;
+      }
+    }
+
+    &__label {
+      grid-column: 2;
+      grid-row: 1;
+      transform: translateY(95%);
+      height: max-content;
+      @include media-breakpoint-down(sm) {
+        grid-column: 1;
+        transform: none;
+      }
+    }
+  }
+
+}
+

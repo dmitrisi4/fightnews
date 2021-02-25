@@ -11,12 +11,33 @@
       color: $value;
       background-color: rgba($value, $bth-light-alpha-2);
     }
+    &.text-#{$color} {
+      color: $value;
+    }
+    @include media-breakpoint-down(sm) {
+      &.bg-sm-#{$color} {
+        color: $value;
+        background-color: rgba($value, $bth-light-alpha-2);
+      }
+    }
   }
   @include media-breakpoint-down(sm) {
     padding: 10px;
     .icon {
       width: 31px;
       height: 31px;
+    }
+  }
+
+  @media screen and (max-width: 375px){
+    &_sm {
+      width: 100%;
+      height: max-content;
+      padding: 7px 7px;
+      .icon {
+        width: 14px;
+        height: 14px;
+      }
     }
   }
 

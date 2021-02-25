@@ -1,0 +1,18 @@
+@import "../../theme-base";
+
+.table.duel-table {
+  .table__row {
+    grid-template-columns: 1fr 7fr 2fr 1fr 1fr 1fr;
+    @include media-breakpoint-down(lg) {
+      grid-template-columns: 1fr 5fr 2fr 1fr 1fr 1fr;
+      grid-gap: 15px;
+    }
+    @include media-breakpoint-down(sm) {
+      grid-template-columns: 1fr;
+      grid-gap: 30px;
+      .table__col:first-child {
+        display: none;
+      }
+    }
+  }
+}

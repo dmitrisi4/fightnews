@@ -1,0 +1,33 @@
+@import "../../theme-base";
+.input-group {
+  display: flex;
+  align-items: stretch;
+  flex-wrap: nowrap;
+  > .btn {
+    margin-left: -20px;
+  }
+}
+
+.input {
+  width: 100%;
+  border-radius: $border-radius;
+  border: none;
+  background-color: #F8F8F8;
+  border: 1px solid transparent;
+  &:focus {
+    outline: none;
+    border: 1px solid $red;
+  }
+  &_big {
+    padding: 14px 25px 14px 20px;
+  }
+  @each $color, $value in $theme-colors {
+    &.#{$color} {
+      color: $value;
+      &::placeholder {
+        color: $value;
+      }
+    }
+  }
+}
+

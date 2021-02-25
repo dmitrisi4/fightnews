@@ -14,6 +14,7 @@
     grid-gap: 20px;
     padding-left: 25px;
     padding-right: 25px;
+    align-items: start;
     @include media-breakpoint-down(sm) {
       grid-template-columns: auto auto;
     }
@@ -37,6 +38,23 @@
     &.side-line {
       border-right: 1px solid $gray-200;
       padding-right: 15px;
+    }
+  }
+  &__col.before-text {
+    @include media-breakpoint-down(sm) {
+      position: relative;
+      padding-top: 20px;
+      &::before {
+        content: attr(data-text) '';
+        width: auto;
+        height: auto;
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        font-size: $font-size-sm;
+        color: $gray-600;
+      }
     }
   }
 

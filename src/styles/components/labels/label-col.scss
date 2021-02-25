@@ -1,6 +1,6 @@
 @import "../../theme-base";
 @include media-breakpoint-down(sm) {
-  .label-col {
+  .label-col-sm {
     position: relative;
     width: 100px;
     color: $white;
@@ -45,4 +45,49 @@
       }
     }
   }
+}
+
+.label-col {
+  width: 125px;
+  position: relative;
+  color: $white;
+  font-size: $font-size-base;
+  height: 35px;
+  border-radius: $border-radius;
+  padding-left: 40px;
+  padding-right: 20px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  &::after {
+    content: '';
+    position: absolute;
+    left: 40px;
+    height: 100%;
+    width: 1px;
+    background-color: rgba($gray-500, $border-alpha);
+  }
+  &_round, &_time  {
+    &::before {
+      position: absolute;
+      left: 15px;
+      color: $gray-500;
+    }
+  }
+  &_time {
+    &::before {
+      content: attr(data-time) '';
+    }
+  }
+  &_round {
+    &::before {
+      content: attr(data-round) '';
+    }
+  }
+  @each $color, $value in $theme-colors {
+    &.#{$color} {
+      background-color: $value;
+    }
+  }
+  border: 1px solid #5C6375;
 }

@@ -68,7 +68,9 @@ $bth-light-alpha-2: .15;
 $bth-light-alpha-md: .5;
 
 $bg-alpha: 0.1;
+$text-alpha: 0.4;
 $border-alpha: 0.5;
+
 
 $bg-gray-alpha: rgba($gray, $bg-alpha);
 
@@ -131,6 +133,7 @@ $spacers: (
         "indent-15": ($spacer * 0.75),
         "indent-25": ($spacer * 1.25),
         "indent-45": ($spacer * 2.25),
+        "indent-80": ($spacer * 4),
         "small-1" : (15rem / $font-size-value),
         "big-1": (50rem / $font-size-value),
         "space-md": (75rem / $font-size-value),
