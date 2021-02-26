@@ -247,6 +247,15 @@
   font-size: $font-size-sm;
   color: $gray;
   align-items: center;
+  @each $color, $value in $theme-colors {
+    &.#{$color} {
+      color: $value;
+    }
+  }
+  &_before-line {
+    padding-left: 15px;
+    border-left: 1px solid $gray-200;
+  }
   &_sm {
     @include media-breakpoint-down(sm) {
       font-size: $font-size-ms;
@@ -281,18 +290,13 @@
   &__author {
     color: $gray;
     font-weight: $font-weight-medium;
-    padding-left: 15px;
     padding-right: 10px;
     position: relative;
-    &:before {
-      content: '';
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      left: 0;
-      width: 1px;
-      height: 27px;
-      background-color: $gray-200;
+
+    @each $color, $value in $theme-colors {
+      &.#{$color} {
+        color: $value;
+      }
     }
     @include media-breakpoint-down(sm) {
       padding-left: 0;
@@ -318,6 +322,11 @@
   grid-gap: 20px;
   font-size: $font-size-sm;
   color: $gray;
+  @each $color, $value in $theme-colors {
+    &.#{$color} {
+      color: $value;
+    }
+  }
   &__counter {
     display: flex;
     align-items: center;

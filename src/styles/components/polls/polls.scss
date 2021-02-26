@@ -1,0 +1,38 @@
+@import "../../theme-base";
+
+.polls-list {
+  display: grid;
+  grid-gap: 20px;
+}
+.polls-item {
+  border: 1px solid #EFEFEF;
+  border-radius: $border-radius;
+  padding-bottom: 20px;
+  &__header {
+    padding: 15px 15px 10px 20px;
+    background-color: rgba(#EFEFEF, 0.20);
+    border-bottom: 1px solid #EFEFEF;
+  }
+  &__title {
+    font-size: $font-size-sm-big;
+    font-weight: $font-weight-bold;
+    @media screen and (max-width: 375px) {
+      font-size: $font-size-base;
+    }
+  }
+  &__text {
+    @media screen and (max-width: 375px){
+      font-size: $font-size-sm;
+    }
+  }
+  &__body {
+    padding: 30px 20px 20px;
+    display: grid;
+    grid-gap: 15px;
+  }
+  &__footer {
+    padding-left: 20px;
+  }
+
+}
+

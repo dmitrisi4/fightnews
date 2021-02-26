@@ -1,0 +1,19 @@
+@import "../theme-base";
+.progress {
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: $border-radius;
+}
+.progress-bar {
+  border-radius: $border-radius-es;
+  font-size: $font-size-sm;
+  color: $blue-dark;
+  height: 100%;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+.progress-number {
+  position: absolute;
+  right: 15px;
+}
