@@ -8,18 +8,12 @@
       grid-template-columns: max-content 1fr 0.5fr;
       grid-template-rows: auto auto auto;
       grid-column-gap: 15px;
-      .table__text.text-sm-big {
-        font-size: $font-size-md;
-        font-weight: $font-weight-bold;
-        @media screen and (max-width: 375px){
-          font-size: $font-size-sm-big;
-        }
-      }
     }
     @media screen and (max-width: 375px){
       grid-template-columns: auto auto;
       align-items: start;
     }
+
     .table__image {
       max-width: 50px;
       width: 100%;
@@ -31,7 +25,16 @@
         height: 100%;
       }
     }
+
     @include media-breakpoint-down(sm) {
+
+      .table__text.text-sm-big {
+        font-size: $font-size-md;
+        font-weight: $font-weight-bold;
+        @media screen and (max-width: 375px){
+          font-size: $font-size-sm-big;
+        }
+      }
       .table__col_image {
           grid-column: 1;
       }

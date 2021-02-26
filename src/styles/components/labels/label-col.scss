@@ -20,24 +20,14 @@
       width: 1px;
       background-color: rgba($gray-500, $border-alpha);
     }
-    &_round, &_time  {
+    &.before-atr {
       &::before {
+        content: attr(data-before) '';
         position: absolute;
         left: 15px;
         color: $gray-500;
       }
     }
-    &_time {
-      &::before {
-        content: attr(data-time) '';
-      }
-    }
-    &_round {
-      &::before {
-        content: attr(data-round) '';
-      }
-    }
-
 
     @each $color, $value in $theme-colors {
       &.#{$color} {
@@ -48,7 +38,8 @@
 }
 
 .label-col {
-  width: 125px;
+  width: 100%;
+  max-width: 125px;
   position: relative;
   color: $white;
   font-size: $font-size-base;

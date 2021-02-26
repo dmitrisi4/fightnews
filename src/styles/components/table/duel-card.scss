@@ -161,7 +161,7 @@
     display: grid;
     grid-gap: 5px;
     @include media-breakpoint-down(sm) {
-      grid-auto-flow: column;
+      grid-auto-flow: row;
       grid-column-gap: 10px;
     }
   }
@@ -189,26 +189,23 @@
     display: grid;
     grid-auto-flow: column;
     justify-content: space-between;
-    @media screen and (max-width: 375px) {
-      grid-auto-flow: row;
-      .col-es-column {
-        grid-auto-flow: column;
-      }
-      .mt-es-25 {
-        margin-top: 25px;
-      }
+    @include media-breakpoint-down(sm) {
+      justify-content: center;
+      grid-gap: 20px;
     }
-
+    @media screen and (max-width: 375px) {
+      grid-template-columns: 100px max-content;
+      }
     &__col {
       display: grid;
       grid-auto-flow: column;
-      grid-template-columns: max-content max-content;
+      grid-template-columns: repeat(2, minmax(100px, 125px));
       grid-column-gap: 20px;
       align-items: center;
       @include media-breakpoint-down(sm) {
         grid-auto-flow: row;
-        grid-template-columns: auto;
-        grid-row-gap: 20px;
+        grid-template-columns: minmax(100px, 125px);
+        grid-row-gap: 10px;
         grid-column-gap: 10px;
       }
     }
@@ -298,6 +295,10 @@
       @include media-breakpoint-down(sm) {
         grid-column: 1;
         transform: none;
+        .icon {
+          width: 20px;
+          height: 20px;
+        }
       }
     }
   }

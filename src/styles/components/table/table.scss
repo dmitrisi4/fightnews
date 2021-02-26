@@ -43,7 +43,6 @@
   &__col.before-text {
     @include media-breakpoint-down(sm) {
       position: relative;
-      padding-top: 20px;
       &::before {
         content: attr(data-text) '';
         width: auto;
