@@ -2,12 +2,231 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport"
-				content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="Description" content="Put your description here.">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>profile</title>
+	<title>Опросы</title>
+	<link rel="stylesheet" href="../styles/main.scss">
 </head>
 <body>
-<h4>M!</h4>
+<main class="main pt-0 pt-md-4" style="overflow-x: hidden">
+	<div class="container-fluid container-md">
+		<div class="row">
+			<div class="col-lg-8 d-flex flex-column pb-1">
+				<nav aria-label="breadcrumb">
+					<ol class="breadcrumb">
+						<li class="breadcrumb-item"><a href="#">Главная</a></li>
+						<li class="breadcrumb-item active" aria-current="page">Профиль</li>
+					</ol>
+				</nav>
+				<section>
+					<div class="post-title">Личный кабинет</div>
+					<div class="ads ads_sm mt-3 mt-sm-indent-45">Рекламный банер</div>
+					<div class="user-profile mt-5">
+						<div class="user-profile__row-image">
+							<div class="user-profile__image-wrapper">
+								<img src="../../public/images/ava-3.jpg" alt="user avatar" class="user-profile__image">
+							</div>
+						</div>
+
+						<div class="user-profile__row">
+							<div class="badge-state active mb-1">hrost</div>
+							<div class="user-profile__text gray-600">Был на сайте: 19.09.2020</div>
+						</div>
+
+						<div class="user-profile__row row-sm-revert">
+							<div class="user-profile__text-wrapper">
+									<div class="user-profile__text gray-600">Город:</div>
+									<div class="user-profile__text blue-dark fw-medium">Название города</div>
+							</div>
+							<div class="user-profile__text gray-600">На сайте с 11 сентября 1999 года</div>
+						</div>
+						<div class="user-profile__row">
+
+							<div class="user-profile__text-wrapper">
+								<div class="user-profile__text gray-600">Подпись:</div>
+								<div class="user-profile__text blue-dark fw-medium">We're not here to take part — we're here to take
+									over
+								</div>
+							</div>
+						</div>
+					</div>
+					<nav class="nav profile-tabs mt-4" role="tablist">
+						<a class=" btn btn-profile active" href="#nav-posts"
+							 data-toggle="tab" role="tab" aria-controls="nav-posts" aria-selected="true">Посты (<span>5628</span>)</a>
+						<a class=" btn btn-profile" href="#nav-comments"
+							 data-toggle="tab" role="tab" aria-controls="nav-home" aria-selected="false">Комментарии
+							(<span>3452</span>)</a>
+						<a class=" btn btn-profile notice" href="#nav-message"
+							 data-toggle="tab" role="tab" aria-controls="nav-home" aria-selected="false">Сообщения</a>
+						<a class=" btn btn-profile" href="#nav-comments"
+							 data-toggle="tab" role="tab" aria-controls="nav-home" aria-selected="false">Закладки (<span>5</span>)</a>
+					</nav>
+					<div class="tab-content mt-4" id="nav-tabContent">
+						<div class="tab-pane fade show active" id="nav-posts" role="tabpanel" aria-labelledby="list-last-list">
+
+						</div>
+						<div class="tab-pane fade" id="nav-comments" role="tabpanel" aria-labelledby="list-last-list">
+						</div>
+						<div class="tab-pane fade show active" id="nav-message" role="tabpanel" aria-labelledby="list-last-list">
+							<div class="profile-message">
+								<div class="profile-message__header">
+									<div class="post-title post-title_md">Мои сообщения</div>
+									<div class="custom-control custom-checkbox">
+										<input type="checkbox" class="custom-control-input" id="customCheck1">
+										<label class="custom-control-label" for="customCheck1">Отметить все как непрочитанные</label>
+									</div>
+								</div>
+								<div class="profile-message__list mt-4">
+									<div class="message-item">
+										<div class="message-item__image notice">
+											<img src="../../public/images/ava-4.jpg" class="image" alt="user avatar">
+										</div>
+										<div class="message-item__left">
+											<div class="message-item__row">
+												<div class="message-item__user-name">Александр Франка</div>
+												<div class="post-info post-info_sm">
+													<div class="post-info__date">
+														<span class="ml-1">17.01.2020</span>
+													</div>
+													<span class="post-info__time">13:20</span>
+												</div>
+											</div>
+											<div class="message-item__row">
+												<a href="#" class="message-item__link-message">лвоыарлрвиалцвиа</a>
+												<div class="preview-statistic green">
+													<div class="preview-statistic__posts-counter">
+														<svg width="14" height="14" class="icon" viewBox="0 0 14 14">
+															<use xlink:href="../../public/icons/icons.svg#icon-chat"/>
+														</svg>
+														<div class="preview-statistic__num">40</div>
+														<span class="preview-statistic__new-post">(+1)</span>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="message-item">
+										<div class="message-item__image notice">
+											<img src="../../public/images/ava-4.jpg" class="image" alt="user avatar">
+										</div>
+										<div class="message-item__left">
+											<div class="message-item__row">
+												<div class="message-item__user-name">Александр Франка</div>
+												<div class="post-info post-info_sm">
+													<div class="post-info__date">
+														<span class="ml-1">17.01.2020</span>
+													</div>
+													<span class="post-info__time">13:20</span>
+												</div>
+											</div>
+											<div class="message-item__row">
+												<a href="#" class="message-item__link-message">Добрый день!
+													С другой стороны реализация намеченных плановых заданий позволяет выполнять важные задания по
+													разработке системы обучения кадров, соответствует насущным потребностям. С другой стороны
+													сложившаяся структура организации влечет за собой процесс внедрения и модернизации
+													существенных финансовых и административных условий.
+												</a>
+												<div class="preview-statistic">
+													<div class="preview-statistic__posts-counter">
+														<svg width="14" height="14" class="icon" viewBox="0 0 14 14">
+															<use xlink:href="../../public/icons/icons.svg#icon-chat"/>
+														</svg>
+														<div class="preview-statistic__num">40</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="message-item">
+										<div class="message-item__image notice">
+											<img src="../../public/images/ava-4.jpg" class="image" alt="user avatar">
+										</div>
+										<div class="message-item__left">
+											<div class="message-item__row">
+												<div class="message-item__user-name">Александр Франка</div>
+												<div class="post-info post-info_sm">
+													<div class="post-info__date">
+														<span class="ml-1">17.01.2020</span>
+													</div>
+													<span class="post-info__time">13:20</span>
+												</div>
+											</div>
+											<div class="message-item__row">
+												<a href="#" class="message-item__link-message">лвоыарлрвиалцвиа</a>
+												<div class="preview-statistic">
+													<div class="preview-statistic__posts-counter">
+														<svg width="14" height="14" class="icon" viewBox="0 0 14 14">
+															<use xlink:href="../../public/icons/icons.svg#icon-chat"/>
+														</svg>
+														<div class="preview-statistic__num">40</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="tab-pane fade" id="nav-bookmarks" role="tabpanel" aria-labelledby="list-last-list">
+						</div>
+					</div>
+
+					<nav aria-label="Page navigation example">
+						<div class="pagination-wrap mt-4">
+							<div class="page-item disabled">
+								<a class="page-link page-link_prev page-link_arrow" href="#" aria-label="Previous">
+									<div aria-hidden="true">
+										<svg width="13" height="12" class="icon" viewBox="0 0 13 12">
+											<use xlink:href="../../public/icons/icons.svg#icon-doubleRight"/>
+										</svg>
+									</div>
+								</a>
+							</div>
+							<div class="page-item disabled">
+								<a class="page-link page-link_prev page-link_arrow" href="#" aria-label="Previous">
+									<div aria-hidden="true">
+										<svg width="6" height="10" class="icon" viewBox="0 0 6 10">
+											<use xlink:href="../../public/icons/icons.svg#icon-arrowRight"/>
+										</svg>
+									</div>
+								</a>
+							</div>
+							<ul class="pagination">
+								<li class="page-item active"><a class="page-link" href="#">1</a></li>
+								<li class="page-item"><a class="page-link" href="#">2</a></li>
+								<li class="page-item"><a class="page-link" href="#">3</a></li>
+								<li class="page-item"><a class="page-link" href="#">4</a></li>
+								<li class="page-item"><a class="page-link" href="#">5</a></li>
+								<li class="page-item"><a class="page-link" href="#">6</a></li>
+							</ul>
+							<div class="page-item">
+								<a class="page-link page-link_arrow" href="#" aria-label="Next">
+									<div aria-hidden="true">
+										<svg width="6" height="10" class="icon" viewBox="0 0 6 10">
+											<use xlink:href="../../public/icons/icons.svg#icon-arrowRight"/>
+										</svg>
+									</div>
+								</a>
+							</div>
+							<div class="page-item">
+								<a class="page-link page-link_arrow" href="#" aria-label="Next">
+									<div aria-hidden="true">
+										<svg width="13" height="12" class="icon" viewBox="0 0 13 12">
+											<use xlink:href="../../public/icons/icons.svg#icon-doubleRight"/>
+										</svg>
+									</div>
+								</a>
+							</div>
+						</div>
+					</nav>
+				</section>
+				<div class="ads mt-4">Рекламный банер</div>
+			</div>
+			<div class="col-lg-4 sidebar mt-4 mt-md-big-1 d-flex flex-column"></div>
+		</div>
+	</div>
+</main>
+<script src="../scripts/main.js"></script>
 </body>
 </html>

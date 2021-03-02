@@ -2,10 +2,7 @@
 @import "nav";
 @import "posts/post-preview";
 //@import "f";
-@import "posts/post-header";
-@import "posts/post-content";
-@import "posts/article-footer";
-@import "posts/posts-base";
+@import "posts";
 @import "slider";
 @import "ads";
 @import "buttons";
@@ -20,5 +17,6 @@
 @import "table";
 @import "labels";
 @import "polls";
+@import "profile";
 @import "container";
 @import "footer";

@@ -1,0 +1,82 @@
+@import "../../theme-base";
+
+.profile-message {
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    @include media-breakpoint-down(sm) {
+      flex-direction: column;
+    }
+  }
+  &__list {
+    display: grid;
+    grid-gap: 20px;
+  }
+
+}
+.message-item {
+  display: grid;
+  grid-auto-flow: column;
+  grid-column-gap: 15px;
+  grid-template-columns: min-content 1fr;
+  padding-bottom: 20px;
+  border-bottom: 1px solid $gray-200;
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    @include media-breakpoint-down(sm) {
+      align-items: start;
+    }
+  }
+  &__image {
+    width: 50px;
+    height: 50px;
+    border-radius: $border-radius;
+    @include media-breakpoint-down(sm) {
+      width: 40px;
+      height: 40px;
+    }
+    .image {
+      border-radius: $border-radius;
+    }
+  }
+
+  &__user-name {
+    font-weight: $font-weight-medium;
+    @include media-breakpoint-down(sm) {
+      font-size: $font-size-ms;
+    }
+  }
+  &__link-message {
+    font-size: $font-size-sm;
+    color: $gray-800;
+    padding-left: 26px;
+    position: relative;
+    @include hover-focus {
+      color: $red;
+      text-decoration: none;
+    }
+    &::before {
+      content: '';
+      position: absolute;
+      top: 5px;
+      left: 0;
+      width: 16px;
+      height: 16px;
+      background-image: url('../../public/icons/arrowlink.svg');
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    @include media-breakpoint-down(sm) {
+      font-size: $font-size-xs;
+      padding-left: 16px;
+      &::before {
+        width: 10px;
+        height: 10px;
+        top: 4px;
+      }
+    }
+  }
+
+
+}

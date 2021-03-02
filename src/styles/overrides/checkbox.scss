@@ -1,0 +1,17 @@
+@import "../theme-base";
+
+.custom-control.custom-checkbox {
+  padding-left: 30px;
+}
+.custom-checkbox .custom-control-label {
+  &::before {
+    width: 19px;
+    height: 19px;
+    border-radius: 5px;
+    left: -2rem;
+  }
+  &::after {
+    top: 6px;
+    left: -31px;
+  }
+}

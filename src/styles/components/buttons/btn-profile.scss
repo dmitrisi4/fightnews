@@ -1,0 +1,19 @@
+@import "../../theme-base";
+
+.btn-profile {
+  padding: 8px 18px;
+  background-color: rgba($gray-450, $bth-light-alpha);
+  color: $gray-600;
+  transition: color .2s;
+  @include media-breakpoint-down(lg) {
+    padding: 8px 10px;
+  }
+  &:hover {
+    color: $red;
+    transition: color .4s;
+  }
+  &.active {
+    background-color:  rgba($red, $bth-light-alpha);
+    color: $red;
+  }
+}

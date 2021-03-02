@@ -38,6 +38,9 @@
   color: $blue-dark;
   display: flex;
   align-items: center;
+  &_md {
+    font-size: $font-size-md;
+  }
   @include media-breakpoint-down(sm) {
     &_sm {
       font-size: $font-size-base;
