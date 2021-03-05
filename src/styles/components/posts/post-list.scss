@@ -1,0 +1,8 @@
+@import "../../theme-base";
+
+.post-list {
+  &__wrapper {
+    display: grid;
+    grid-row-gap: 20px;
+  }
+}

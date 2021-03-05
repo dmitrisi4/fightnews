@@ -90,7 +90,7 @@
 
 .page-link {
   &_arrow {
-    background-color: $white-200;
+    background-color: darken($white, 4);
     border: 0;
 
     .icon {

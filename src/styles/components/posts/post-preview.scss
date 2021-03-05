@@ -14,6 +14,11 @@
       grid-template: auto / auto;
     }
   }
+  &.child-border-none {
+    .post-preview {
+      border-bottom: none;
+    }
+  }
 }
 
 .post-preview {
@@ -29,6 +34,9 @@
     grid-gap: $spacer;
     @include media-breakpoint-down(sm) {
       grid-gap: $spacer / 2;
+      &.row-sm {
+        grid-auto-flow: row;
+      }
     }
 
     & .text-ellipsis {
@@ -61,6 +69,19 @@
     width: 100%;
     min-width: 100%;
   }
+  &__image-wrapper {
+  }
+  &__text {
+    @each $color, $value in $theme-colors {
+      &.#{$color} {
+        color: $value;
+      }
+    }
+    &.text-sm {
+      font-size: $font-size-sm;
+    }
+  }
+
 }
 
 .post-preview {
@@ -141,8 +162,9 @@
     grid-template-rows: 1fr;
     border-bottom: none;
     @include media-breakpoint-down(sm) {
-      grid-template-rows: auto auto;
+      grid-template-rows: auto;
       grid-template-columns: minmax(80px, min-content) 1fr;
+      min-height: auto;
     }
     .post-preview__text {
       margin: 0;
@@ -164,24 +186,30 @@
       grid-row: 1;
       border-radius: $border-radius-sm;
       height: 100%;
-      max-width: 80px;
-      max-height: 80px;
+      max-width: 100%;
+      max-height: 166px;
       @include media-breakpoint-down(sm) {
         object-fit: cover;
+        max-width: 80px;
+        max-height: 80px;
       }
       @include media-breakpoint-up(sm) {
-        max-width: 100%;
-        height: 100vh;
-        max-height: 166px;
       }
     }
-
     .post-preview__main {
       padding-top: $gutter-width * 1.5;
       display: grid;
       grid-gap: 8px;
       grid-template-rows: auto auto 1fr auto;
       border-top: 1px solid $gray;
+      align-content: start;
+      grid-template-rows: auto;
+      @include media-breakpoint-down(sm) {
+        &.border-sm-none {
+          border-top: none;
+          padding-top: 0;
+        }
+      }
     }
     &:first-child {
       .post-preview__main {

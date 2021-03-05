@@ -1,0 +1,20 @@
+@import "../../theme-base";
+
+.textarea {
+  width: 100%;
+  border: 1px solid #EFEFEF;
+  border-radius: $border-radius;
+  padding: 20px;
+  resize: none;
+  min-height: 175px;
+   &::placeholder {
+    color: $gray-600;
+  }
+  &:focus {
+    outline-color: $green;
+    &::placeholder {
+      transform: scale(0);
+      transition: transform .2s;
+    }
+  }
+}

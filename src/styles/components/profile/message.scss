@@ -1,0 +1,54 @@
+@import "../../theme-base";
+
+
+.message-wrapper {
+  &__body {
+    display: grid;
+    grid-row-gap: 20px;
+    height: 589px;
+    overflow-y: scroll;
+  }
+  &__textarea {
+    display: block;
+  }
+  &__btn {
+    display: block;
+    margin: 0 0 0 auto;
+  }
+}
+
+.message-body {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: auto min-content;
+  grid-column-gap: 10px;
+  align-items: start;
+
+  &__cloud-text {
+    max-width: 455px;
+    padding: 10px 20px 10px 15px;
+  }
+
+  &__date {
+    margin-top: 15px;
+  }
+
+  &.received-el {
+    justify-self: start;
+    .message-body__cloud-text {
+      border-radius: 0px 10px 10px 10px;
+      background-color: rgba($gray-450, $bth-light-alpha);
+    }
+  }
+  &.sent-el {
+    grid-template-columns: min-content auto;
+    justify-self: end;
+    .message-body__cloud-text {
+      border-radius: 10px 10px 0px 10px;
+      background-color: rgba($green, $bth-light-alpha);
+    }
+    .message-body__date {
+      order: -1;
+    }
+  }
+}

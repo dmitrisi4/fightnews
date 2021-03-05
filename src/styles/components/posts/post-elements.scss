@@ -1,12 +1,5 @@
 @import "../../theme-base";
 
-.similar-news {
-  &__wrapper {
-    display: grid;
-    grid-gap: 20px;
-  }
-}
-
 .post-info {
   display: inline-flex;
   font-size: $font-size-sm;
@@ -15,6 +8,9 @@
   @each $color, $value in $theme-colors {
     &.#{$color} {
       color: $value;
+      .post-info__time::before {
+        background-color: $value;
+      }
     }
   }
   &_before-line {
