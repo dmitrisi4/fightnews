@@ -1,4 +1,4 @@
-@import "../theme-base";
+@import "../../theme-base";
 
 .header {
   background-color: $black-2;
@@ -7,12 +7,15 @@
   }
 }
 
+
 .navbar-main {
   //position: relative;
   margin-bottom: 60px;
   background: $black-2;
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: max-content 1fr max-content;
+  grid-column-gap: 20px;
   align-items: center;
   justify-content: space-between;
   padding: 0.625rem 1.25rem;
@@ -30,7 +33,13 @@
     display: flex;
     align-items: center;
   }
-
+  &__center {
+    width: 100%;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 1fr max-content;
+    align-items: center;
+  }
   &__nav-list {
     position: relative;
     display: grid;
@@ -71,7 +80,7 @@
     }
   }
 
-  &__auth-row {
+  &__right{
     display: flex;
     align-items: center;
     @include media-breakpoint-down(md) {
@@ -84,6 +93,7 @@
     grid-auto-flow: column;
     padding-left: 0;
     margin-bottom: 0;
+    list-style: none;
     @include media-breakpoint-down('sm', $grid-breakpoints) {
       display: none;
     }
@@ -91,6 +101,14 @@
 
   .nav-link {
     color: $white;
+    &_btn {
+      border: none;
+      background-color: transparent;
+      &.search-btn {
+        position: absolute;
+        right: 0;
+      }
+    }
   }
 }
 

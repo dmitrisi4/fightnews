@@ -1,0 +1,12 @@
+@import "../../theme-base";
+.nav-user {
+  display: grid;
+  grid-auto-flow: column;
+  grid-column-gap: 35px;
+  &__link {
+    color: $gray-250;
+    &:hover {
+      color: $red;
+    }
+  }
+}

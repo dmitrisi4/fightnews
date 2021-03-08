@@ -1,0 +1,22 @@
+@import "../theme-base";
+.scrollbar-custom {
+  margin-right: -15px;
+  padding-right: 15px;
+  overflow-y: scroll;
+}
+.scrollbar-custom::-webkit-scrollbar {
+  width: 5px;
+  &:hover {
+   cursor: pointer ;
+  }
+}
+
+.scrollbar-custom::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: $gray-450;
+}
+
+.scrollbar-custom::-webkit-scrollbar-thumb {
+  background-color: $red;
+  border-radius: $scrollbar-radius;
+}

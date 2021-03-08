@@ -9,8 +9,8 @@
 	<link rel="stylesheet" href="../styles/main.scss">
 </head>
 <body style="overflow-x:hidden;">
-
-<header class="header">
+<div class="pt-md-full">
+<header class="header fixed-md-top">
 	<div class="container-fluid container-md">
 		<nav class="navbar-main navbar-expand-lg" id="header-nav">
 			<div class="navbar-main__left">
@@ -49,15 +49,33 @@
 					</li>
 				</ul>
 			</div>
-			<div class="navbar-main__auth-row">
+			<div class="navbar-main__center">
+				<div>
+				<form class="form-inline search-group">
+					<input class="input input_sm input-radius_sm mr-sm-2" type="search" placeholder="Поиск..." aria-label="Search" style="width: 100%;">
+					<button class="nav-link nav-link_btn search-btn" type="submit">
+						<svg width="21" height="21" class="icon-search" viewBox="0 0 35 35">
+							<use xlink:href="../../public/icons/icons.svg#icon-search-2"/>
+						</svg>
+					</button>
+				</form>
+				</div>
+				<nav class="nav-user">
+					<a href="#" class="nav-user__link">
+						<svg width="16" height="20" class="icon" viewBox="0 0 16 20">
+							<use xlink:href="../../public/icons/icons.svg#icon-bell"/>
+						</svg>
+					</a>
+					<a href="#" class="nav-user__link">
+						<svg width="14" height="20" class="icon" viewBox="0 0 14 20">
+							<use xlink:href="../../public/icons/icons.svg#icon-bookmarks"/>
+						</svg>
+					</a>
+				</nav>
+			</div>
+			<div class="navbar-main__right">
 				<ul class="navbar-main__auth-col">
-					<li class=" active">
-						<a class="nav-link" href="#">
-							<svg width="21" height="21" class="icon-search" viewBox="0 0 35 35">
-								<use xlink:href="../../public/icons/icons.svg#icon-search"/>
-							</svg>
-						</a>
-					</li>
+
 					<li class="">
 						<a class="nav-link" href="#">Вход</a>
 					</li>
@@ -176,7 +194,7 @@
 		</nav>
 	</div>
 </header>
-
+</div>
 <main class="main pt-0 pt-md-4" style="overflow-x: hidden">
 	<section class="banner">
 		<div class="container-fluid container-sm banner-container">
@@ -360,7 +378,7 @@
 
 					<div class="tab-content mt-4" id="nav-tabContent">
 						<div class="tab-pane fade show active" id="nav-last" role="tabpanel" aria-labelledby="list-last-list">
-							<div class="post-list post-list_sm post-list_align-start">
+							<div class="post-list post-list_sm post-list_align-start scrollbar-custom" style="height: 345px;">
 								<!--post-preview-->
 								<div class="post-preview">
 									<div class="post-preview__header">
@@ -543,12 +561,223 @@
 									</div>
 								</div>
 
+								<div class="post-preview">
+									<div class="post-preview__header">
+										<div class="label label_red label_sm">
+											<svg width="14" height="14" class="icon" viewBox="0 0 14 14">
+												<use xlink:href="../../public/icons/icons.svg#icon-glove-mma"/>
+											</svg>
+										</div>
+										<a href="#" class="post-preview__title">Кормье: Чтобы побить Джонса, нужен нокаутер из тяжелого
+											веса...</a>
+									</div>
+
+									<div class="post-preview__footer">
+										<div class="post-preview__statistic  preview-statistic">
+											<div class="preview-statistic__posts-counter">
+												<svg width="14" height="14" class="icon" viewBox="0 0 14 14">
+													<use xlink:href="../../public/icons/icons.svg#icon-chat"/>
+												</svg>
+												<div class="preview-statistic__num">40</div>
+												<span class="preview-statistic__new-post">(+14)</span>
+											</div>
+											<div class="preview-statistic__posts-counter">
+
+												<svg width="14" height="14" class="icon" viewBox="0 0 14 12">
+													<use xlink:href="../../public/icons/icons.svg#icon-views"/>
+												</svg>
+												<div class="preview-statistic__num">694</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="post-preview">
+									<div class="post-preview__header">
+										<div class="label label_red label_sm">
+											<svg width="14" height="14" class="icon" viewBox="0 0 14 14">
+												<use xlink:href="../../public/icons/icons.svg#icon-glove-mma"/>
+											</svg>
+										</div>
+										<a href="#" class="post-preview__title">Кормье: Чтобы побить Джонса, нужен нокаутер из тяжелого
+											веса...</a>
+									</div>
+
+									<div class="post-preview__footer">
+										<div class="post-preview__statistic  preview-statistic">
+											<div class="preview-statistic__posts-counter">
+												<svg width="14" height="14" class="icon" viewBox="0 0 14 14">
+													<use xlink:href="../../public/icons/icons.svg#icon-chat"/>
+												</svg>
+												<div class="preview-statistic__num">40</div>
+												<span class="preview-statistic__new-post">(+14)</span>
+											</div>
+											<div class="preview-statistic__posts-counter">
+
+												<svg width="14" height="14" class="icon" viewBox="0 0 14 12">
+													<use xlink:href="../../public/icons/icons.svg#icon-views"/>
+												</svg>
+												<div class="preview-statistic__num">694</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="post-preview">
+									<div class="post-preview__header">
+										<div class="label label_red label_sm">
+											<svg width="14" height="14" class="icon" viewBox="0 0 14 14">
+												<use xlink:href="../../public/icons/icons.svg#icon-glove-mma"/>
+											</svg>
+										</div>
+										<a href="#" class="post-preview__title">Кормье: Чтобы побить Джонса, нужен нокаутер из тяжелого
+											веса...</a>
+									</div>
+
+									<div class="post-preview__footer">
+										<div class="post-preview__statistic  preview-statistic">
+											<div class="preview-statistic__posts-counter">
+												<svg width="14" height="14" class="icon" viewBox="0 0 14 14">
+													<use xlink:href="../../public/icons/icons.svg#icon-chat"/>
+												</svg>
+												<div class="preview-statistic__num">40</div>
+												<span class="preview-statistic__new-post">(+14)</span>
+											</div>
+											<div class="preview-statistic__posts-counter">
+
+												<svg width="14" height="14" class="icon" viewBox="0 0 14 12">
+													<use xlink:href="../../public/icons/icons.svg#icon-views"/>
+												</svg>
+												<div class="preview-statistic__num">694</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="post-preview">
+									<div class="post-preview__header">
+										<div class="label label_red label_sm">
+											<svg width="14" height="14" class="icon" viewBox="0 0 14 14">
+												<use xlink:href="../../public/icons/icons.svg#icon-glove-mma"/>
+											</svg>
+										</div>
+										<a href="#" class="post-preview__title">Кормье: Чтобы побить Джонса, нужен нокаутер из тяжелого
+											веса...</a>
+									</div>
+
+									<div class="post-preview__footer">
+										<div class="post-preview__statistic  preview-statistic">
+											<div class="preview-statistic__posts-counter">
+												<svg width="14" height="14" class="icon" viewBox="0 0 14 14">
+													<use xlink:href="../../public/icons/icons.svg#icon-chat"/>
+												</svg>
+												<div class="preview-statistic__num">40</div>
+												<span class="preview-statistic__new-post">(+14)</span>
+											</div>
+											<div class="preview-statistic__posts-counter">
+
+												<svg width="14" height="14" class="icon" viewBox="0 0 14 12">
+													<use xlink:href="../../public/icons/icons.svg#icon-views"/>
+												</svg>
+												<div class="preview-statistic__num">694</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="post-preview">
+									<div class="post-preview__header">
+										<div class="label label_red label_sm">
+											<svg width="14" height="14" class="icon" viewBox="0 0 14 14">
+												<use xlink:href="../../public/icons/icons.svg#icon-glove-mma"/>
+											</svg>
+										</div>
+										<a href="#" class="post-preview__title">Кормье: Чтобы побить Джонса, нужен нокаутер из тяжелого
+											веса...</a>
+									</div>
+
+									<div class="post-preview__footer">
+										<div class="post-preview__statistic  preview-statistic">
+											<div class="preview-statistic__posts-counter">
+												<svg width="14" height="14" class="icon" viewBox="0 0 14 14">
+													<use xlink:href="../../public/icons/icons.svg#icon-chat"/>
+												</svg>
+												<div class="preview-statistic__num">40</div>
+												<span class="preview-statistic__new-post">(+14)</span>
+											</div>
+											<div class="preview-statistic__posts-counter">
+
+												<svg width="14" height="14" class="icon" viewBox="0 0 14 12">
+													<use xlink:href="../../public/icons/icons.svg#icon-views"/>
+												</svg>
+												<div class="preview-statistic__num">694</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="post-preview">
+									<div class="post-preview__header">
+										<div class="label label_red label_sm">
+											<svg width="14" height="14" class="icon" viewBox="0 0 14 14">
+												<use xlink:href="../../public/icons/icons.svg#icon-glove-mma"/>
+											</svg>
+										</div>
+										<a href="#" class="post-preview__title">Кормье: Чтобы побить Джонса, нужен нокаутер из тяжелого
+											веса...</a>
+									</div>
+
+									<div class="post-preview__footer">
+										<div class="post-preview__statistic  preview-statistic">
+											<div class="preview-statistic__posts-counter">
+												<svg width="14" height="14" class="icon" viewBox="0 0 14 14">
+													<use xlink:href="../../public/icons/icons.svg#icon-chat"/>
+												</svg>
+												<div class="preview-statistic__num">40</div>
+												<span class="preview-statistic__new-post">(+14)</span>
+											</div>
+											<div class="preview-statistic__posts-counter">
+
+												<svg width="14" height="14" class="icon" viewBox="0 0 14 12">
+													<use xlink:href="../../public/icons/icons.svg#icon-views"/>
+												</svg>
+												<div class="preview-statistic__num">694</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="post-preview">
+									<div class="post-preview__header">
+										<div class="label label_red label_sm">
+											<svg width="14" height="14" class="icon" viewBox="0 0 14 14">
+												<use xlink:href="../../public/icons/icons.svg#icon-glove-mma"/>
+											</svg>
+										</div>
+										<a href="#" class="post-preview__title">Кормье: Чтобы побить Джонса, нужен нокаутер из тяжелого
+											веса...</a>
+									</div>
+
+									<div class="post-preview__footer">
+										<div class="post-preview__statistic  preview-statistic">
+											<div class="preview-statistic__posts-counter">
+												<svg width="14" height="14" class="icon" viewBox="0 0 14 14">
+													<use xlink:href="../../public/icons/icons.svg#icon-chat"/>
+												</svg>
+												<div class="preview-statistic__num">40</div>
+												<span class="preview-statistic__new-post">(+14)</span>
+											</div>
+											<div class="preview-statistic__posts-counter">
+
+												<svg width="14" height="14" class="icon" viewBox="0 0 14 12">
+													<use xlink:href="../../public/icons/icons.svg#icon-views"/>
+												</svg>
+												<div class="preview-statistic__num">694</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
 							</div>
 							<a href="#" class="btn btn-outline-gray--green btn-md btn-block mt-4">Показать еще...</a>
 						</div>
 
 						<div class="tab-pane fade" id="nav-top" role="tabpanel" aria-labelledby="list-last-list">
-							<div class="post-list post-list_sm">
+							<div class="post-list post-list_sm scrollbar-custom">
 								<!--post-preview-->
 								<div class="post-preview">
 									<div class="post-preview__header">

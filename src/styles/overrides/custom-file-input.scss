@@ -1,0 +1,17 @@
+@import "../theme-base";
+
+$custom-file-height: 54px;
+
+.custom-file, .custom-file-input, .custom-file-label {
+  height: $custom-file-height;
+}
+.custom-file-label {
+  &::after {
+    content: "" !important;
+    width: 55px;
+    height: 55px;
+    background-image: url("data:image/svg+xml,%3Csvg width='22' height='22' viewBox='0 0 22 22' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M20.4441 14.7579C20.4441 18.336 18.3356 20.4446 14.7574 20.4446H6.97124C3.38395 20.4446 1.27539 18.336 1.27539 14.7579V6.9626C1.27539 3.38444 2.58982 1.27588 6.16798 1.27588H8.167C8.88528 1.27588 9.56163 1.61406 9.99259 2.18868L10.9054 3.40269C11.3373 3.97618 12.013 4.31406 12.731 4.31549H15.5607C19.1479 4.31549 20.4715 6.14108 20.4715 9.79227L20.4441 14.7579Z' stroke='%23B4B7BD' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M6.05859 13.4891H15.6521' stroke='%23B4B7BD' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}

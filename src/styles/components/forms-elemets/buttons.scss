@@ -127,6 +127,10 @@
   @include media-breakpoint-down(md) {
     padding: $input-btn-padding-y-sm-mobile $btn-padding-x-lg;
   }
+  @include media-breakpoint-down(sm) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
 .btn-md-mobile {
   @include media-breakpoint-down(md) {

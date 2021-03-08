@@ -1,8 +1,25 @@
 @import "../../theme-base";
+
+.search-group {
+  position: relative;
+  > .input {
+    display: none;
+  }
+  &.active {
+
+    > .input {
+      display: block;
+    }
+    .search-btn {
+      color: $blue-dark;
+    }
+  }
+}
 .input-group {
   display: flex;
   align-items: stretch;
   flex-wrap: nowrap;
+
   > .btn {
     margin-left: -20px;
   }
@@ -14,16 +31,24 @@
   border: none;
   background-color: #F8F8F8;
   border: 1px solid transparent;
+
   &:focus {
     outline: none;
     border: 1px solid $red;
   }
+
   &_big {
     padding: 14px 25px 14px 20px;
   }
+  &_sm {
+    padding: 9px 10px 8px 18px;
+    line-height: 18px;
+  }
+
   @each $color, $value in $theme-colors {
     &.#{$color} {
       color: $value;
+
       &::placeholder {
         color: $value;
       }
@@ -31,3 +56,8 @@
   }
 }
 
+.input-radius {
+  &_sm {
+    border-radius: $border-radius-sm;
+  }
+}
