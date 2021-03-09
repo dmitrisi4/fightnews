@@ -30283,12 +30283,13 @@ exports.default = void 0;
 
 var burgerMenu = function burgerMenu() {
   function open() {
-    document.getElementById("header-nav").classList.toggle("show");
+    document.getElementById('header-nav').classList.toggle('show');
+    document.querySelector('body').classList.toggle('scroll-of');
   }
 
   ;
 
-  document.getElementById("burger-btn").onclick = function () {
+  document.getElementById('burger-btn').onclick = function () {
     open();
   };
 };

@@ -27809,6 +27809,10 @@ h1, .h1 {
     padding-top: 75px;
   }
 }
+.scroll-of {
+  overflow-y: hidden;
+}
+
 .scrollbar-custom {
   margin-right: -15px;
   padding-right: 15px;
