@@ -20558,6 +20558,7 @@ h1, .h1 {
   }
 }
 .nav-user__link {
+  position: relative;
   color: #EDE6E6;
 }
 .nav-user__link:hover {
@@ -20935,7 +20936,7 @@ h1, .h1 {
   left: 0;
   top: 50%;
   transform: translateY(-50%);
-  background: url(icons.7720a2ad.svg#icon-arrowRight2) no-repeat;
+  background: url(icons.a24dc5d6.svg#icon-arrowRight2) no-repeat;
 }
 .article-nav-item__title {
   display: block;
@@ -27440,20 +27441,6 @@ h1, .h1 {
   order: -1;
 }
 
-.notice {
-  position: relative;
-}
-.notice::before {
-  content: "";
-  position: absolute;
-  top: -3px;
-  right: -3px;
-  width: 10px;
-  height: 10px;
-  background-color: #FF4B55;
-  border-radius: 50%;
-}
-
 .user-profile {
   display: grid;
   grid-auto-flow: row;
@@ -27811,6 +27798,24 @@ h1, .h1 {
 }
 .scroll-of {
   overflow-y: hidden;
+}
+
+.notice {
+  position: relative;
+}
+.notice::before {
+  content: "";
+  position: absolute;
+  top: -3px;
+  right: -3px;
+  width: 10px;
+  height: 10px;
+  background-color: #FF4B55;
+  border-radius: 50%;
+}
+.notice_sm::before {
+  width: 6px;
+  height: 6px;
 }
 
 .scrollbar-custom {

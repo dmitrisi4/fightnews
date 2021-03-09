@@ -7,9 +7,11 @@
     grid-column-gap: 25px;
   }
   &__link {
+    position: relative;
     color: $gray-250;
     &:hover {
       color: $red;
     }
+
   }
 }

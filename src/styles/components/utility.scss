@@ -21,3 +21,23 @@
 .scroll-of {
   overflow-y: hidden;
 }
+
+.notice {
+  position: relative;
+  &::before {
+    content: '';
+    position: absolute;
+    top: -3px;
+    right: -3px;
+    width: 10px;
+    height: 10px;
+    background-color: $red-100;
+    border-radius: 50%;
+  }
+  &_sm {
+    &::before {
+      width: 6px;
+      height: 6px;
+    }
+  }
+}

@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="Description" content="Put your description here.">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Main</title>
+	<link rel="stylesheet" href="../styles/main.scss">
+</head>
+<body>
+<div class="pt-md-full">
+	<header class="header fixed-md-top">
+		<div class="container-fluid container-md">
+			<nav class="navbar-main navbar-expand-lg" id="header-nav">
+				<div class="navbar-main__left">
+					<a class="navbar-brand" href="#">
+						<img src="../../public/images/logo.jpg" class="d-inline-block align-top" alt="" loading="lazy">
+					</a>
+					<ul class="social-links white border-blue-dark" id="social-link"
+							data-lg-after="navbar-menu">
+						<li class="social-links__item active">
+							<a class="social-links__link" href="#">
+								<svg width="14" height="14" class="icon" viewBox="0 0 20 20">
+									<use xlink:href="../../public/icons/icons.svg#icon-insta"/>
+								</svg>
+							</a>
+						</li>
+						<li class="social-links__item">
+							<a class="social-links__link" href="#">
+								<svg width="14" height="14" class="icon" viewBox="0 0 20 20">
+									<use xlink:href="../../public/icons/icons.svg#icon-fb"/>
+								</svg>
+							</a>
+						</li>
+						<li class="social-links__item">
+							<a class="social-links__link" href="#">
+								<svg width="14" height="14" class="icon" viewBox="0 0 20 20">
+									<use xlink:href="../../public/icons/icons.svg#icon-tg"/>
+								</svg>
+							</a>
+						</li>
+						<li class="social-links__item">
+							<a class="social-links__link" href="#">
+								<svg width="14" height="14" class="icon" viewBox="0 0 20 20">
+									<use xlink:href="../../public/icons/icons.svg#icon-vk"/>
+								</svg>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="navbar-main__center">
+					<div>
+						<form class="form-inline search-group">
+							<input class="input input_sm input-radius_sm mr-sm-2" type="search" placeholder="Поиск..." aria-label="Search" style="width: 100%;">
+							<button class="nav-link nav-link_btn search-btn" type="submit">
+								<svg width="21" height="21" class="icon-search" viewBox="0 0 35 35">
+									<use xlink:href="../../public/icons/icons.svg#icon-search-2"/>
+								</svg>
+							</button>
+						</form>
+					</div>
+					<nav class="nav-user notice-position-right">
+						<a href="#" class="nav-user__link notice notice_sm">
+							<svg width="15" height="19" class="icon" viewBox="0 0 15 19">
+								<use xlink:href="../../public/icons/icons.svg#icon-user"/>
+							</svg>
+						</a>
+						<a href="#" class="nav-user__link notice notice_sm">
+							<svg width="19" height="19" class="icon" viewBox="0 0 19 19">
+								<use xlink:href="../../public/icons/icons.svg#icon-chat-dots"/>
+							</svg>
+						</a>
+						<a href="#" class="nav-user__link notice notice_sm">
+							<svg width="16" height="20" class="icon" viewBox="0 0 16 20">
+								<use xlink:href="../../public/icons/icons.svg#icon-bell"/>
+							</svg>
+						</a>
+						<a href="#" class="nav-user__link">
+							<svg width="14" height="20" class="icon" viewBox="0 0 14 20">
+								<use xlink:href="../../public/icons/icons.svg#icon-bookmarks"/>
+							</svg>
+						</a>
+						<a href="#" class="nav-user__link">
+							<svg width="19" height="19" class="icon" viewBox="0 0 19 19">
+								<use xlink:href="../../public/icons/icons.svg#icon-leave"/>
+							</svg>
+						</a>
+					</nav>
+				</div>
+				<div class="navbar-main__right">
+					<button class="burger-btn" type="button" data-toggle="collapse"
+									id="burger-btn" data-target="#navbarNav"
+									aria-controls="navbarNav" aria-label="Toggle navigation">
+						<div class="burger-btn__line"></div>
+						<div class="burger-btn__line"></div>
+					</button>
+					<div class="navbar-main__collapse" id="burger-content">
+						<ul class="navbar-main__nav-list navbar-menu" id="navbar-menu">
+							<li class="nav-item dropdown">
+								<a class="nav-btn" href="#">Бокс</a>
+								<button type="button" class="btn-split dropdown-toggle" role="button"
+												data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+								<div class="dropdown-menu">
+									<a class="dropdown-item" href="#">Трансляции Бокс</a>
+									<a class="dropdown-item" href="#">Публикации</a>
+								</div>
+							</li>
+							<li class="nav-item dropdown">
+								<a class="nav-btn" href="#">MMA</a>
+								<button type="button" class="btn-split dropdown-toggle" role="button"
+												data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+								<div class="dropdown-menu">
+									<a class="dropdown-item" href="#">Трансляции MMA</a>
+									<a class="dropdown-item" href="#">Публикации</a>
+								</div>
+							</li>
+							<li class="nav-item dropdown after-btn">
+								<a class="nav-btn" href="#">Рейтинги</a>
+								<button type="button" class="btn-split dropdown-toggle" role="button"
+												data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+								<div class="dropdown-menu">
+									<a class="dropdown-item" href="#">Рейтинги MMA</a>
+									<a class="dropdown-item" href="#">Рейтинги Бокс</a>
+									<a class="dropdown-item" href="#">Рейтинги прогнозистов</a>
+								</div>
+							</li>
+							<li class="nav-item">
+								<a class="nav-btn" href="#">Бойцы</a>
+							</li>
+							<li class="nav-item dropdown after-btn">
+								<a class="nav-btn" href="#">Видео</a>
+								<button type="button" class="btn-split dropdown-toggle" role="button"
+												data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+								<ul class="dropdown-menu">
+									<li class="dropdown-submenu after-btn">
+										<a class="dropdown-item" href="#">Видео MMA</a>
+										<button type="button" class="btn-split btn-split_inner dropdown-toggle"
+														data-toggle="dropdown-submenu" aria-haspopup="true" aria-expanded="false">
+										</button>
+										<div class="submenu dropdown-menu" aria-labelledby="dropdownMenu2">
+											<a class="dropdown-item" href="#">Видео UFC</a>
+											<a class="dropdown-item" href="#">Видео Bellator</a>
+											<a class="dropdown-item" href="#">Видео PFL</a>
+											<a class="dropdown-item" href="#">Другое</a>
+										</div>
+									</li>
+									<li>
+										<a class="dropdown-item" href="#">Видео Бокс</a>
+									</li>
+									<li class="dropdown-submenu after-btn">
+										<a class="dropdown-item" href="#">Бои на голых кулаках</a>
+										<button type="button" class="btn-split btn-split_inner dropdown-toggle"
+														data-toggle="dropdown-submenu" aria-haspopup="true" aria-expanded="false">
+										</button>
+										<div class="submenu dropdown-menu" aria-labelledby="dropdownMenu2">
+											<a class="dropdown-item" href="#">Бои на голых кулаках UFC</a>
+											<a class="dropdown-item" href="#">Бои на голых кулаках Bellator</a>
+											<a class="dropdown-item" href="#">Бои на голых кулаках PFL</a>
+											<a class="dropdown-item" href="#">Другое</a>
+										</div>
+									</li>
+								</ul>
+							</li>
+							<li class="nav-item">
+								<a class="nav-btn" href="#">Фото</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-btn" href="#">Расписание</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-btn" href="#">Статьи</a>
+							</li>
+							<li class="nav-item dropdown after-btn">
+								<a class="nav-btn" href="#">Прочее</a>
+								<button type="button" class="btn-split dropdown-toggle" role="button"
+												data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+								<div class="dropdown-menu dropdown-menu-right">
+									<a class="dropdown-item" href="#">Аналитика</a>
+									<a class="dropdown-item" href="#">Биография</a>
+									<a class="dropdown-item" href="#">Интервью</a>
+									<a class="dropdown-item" href="#">Фото</a>
+								</div>
+							</li>
+							<li class="nav-item dropdown after-btn">
+								<a class="nav-btn" href="#">FAQ</a>
+								<button type="button" class="btn-split dropdown-toggle" role="button"
+												data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+								<div class="dropdown-menu dropdown-menu-right">
+									<a class="dropdown-item" href="#">Бан лист</a>
+									<a class="dropdown-item" href="#">Список модераторов</a>
+									<a class="dropdown-item" href="#">Контакты</a>
+								</div>
+							</li>
+						</ul>
+					</div>
+
+				</div>
+			</nav>
+		</div>
+	</header>
+</div>
+<script src="../scripts/main.js"></script>
+</body>
+</html>
