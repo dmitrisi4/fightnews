@@ -1,2 +1,13 @@
 @import "../../theme-base";
 
+.profile-chats {
+  &__header {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: space-between;
+    @include media-breakpoint-down(sm) {
+      grid-auto-flow: row;
+      grid-row-gap: 40px;
+    }
+  }
+}

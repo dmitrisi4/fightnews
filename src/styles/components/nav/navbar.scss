@@ -9,24 +9,27 @@
 
 
 .navbar-main {
-  //position: relative;
   margin-bottom: 60px;
   background: $black-2;
   display: grid;
   grid-auto-flow: column;
   grid-template-columns: max-content 1fr max-content;
-  grid-column-gap: 20px;
   align-items: center;
   justify-content: space-between;
   padding: 0.625rem 1.25rem;
   @include media-breakpoint-down(md) {
     margin-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
   }
   @include media-breakpoint-up(sm) {
     position: relative;
     .navbar-brand {
       order: -1;
     }
+  }
+  @include media-breakpoint-down(sm) {
+    grid-template-columns: 1fr;
   }
 
   &__left {
@@ -39,6 +42,11 @@
     grid-auto-flow: column;
     grid-template-columns: 1fr max-content;
     align-items: center;
+    @include media-breakpoint-down(sm) {
+      grid-row: 2;
+      grid-column: 1 / end;
+      justify-items: center;
+    }
   }
   &__nav-list {
     position: relative;
@@ -83,7 +91,8 @@
   &__right{
     display: flex;
     align-items: center;
-    @include media-breakpoint-down(md) {
+    @include media-breakpoint-down(sm) {
+      grid-column: 2;
     }
   }
 

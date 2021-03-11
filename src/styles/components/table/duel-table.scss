@@ -10,6 +10,7 @@
     @include media-breakpoint-down(sm) {
       grid-template-columns: 1fr 1fr;
       grid-gap: 10px;
+      align-items: end;
 
       .table__col {
         &:first-child {

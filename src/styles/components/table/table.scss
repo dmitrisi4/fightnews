@@ -57,7 +57,6 @@
     }
   }
 
-
   &__title {
     font-size: $font-size-sm;
     color: rgba($black, 0.4);
@@ -67,7 +66,11 @@
     font-weight: $font-weight-medium;
     @include media-breakpoint-down(sm) {
       font-weight: $font-weight-normal;
+      &.bold {
+        font-weight: $font-weight-bold;
+      }
     }
+
     @each $color, $value in $theme-colors {
       &.#{$color} {
         color: $value;

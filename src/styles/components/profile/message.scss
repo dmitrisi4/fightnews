@@ -19,9 +19,8 @@
 
 .message-body {
   display: grid;
-  grid-auto-flow: column;
-  grid-template-columns: auto min-content;
-  grid-column-gap: 10px;
+  grid-auto-flow: row;
+  grid-row-gap: 5px;
   align-items: start;
 
   &__cloud-text {
@@ -41,7 +40,6 @@
     }
   }
   &.sent-el {
-    grid-template-columns: min-content auto;
     justify-self: end;
     .message-body__cloud-text {
       border-radius: 10px 10px 0px 10px;

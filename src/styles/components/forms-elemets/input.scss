@@ -1,17 +1,33 @@
 @import "../../theme-base";
 
 .search-group {
-  position: relative;
+  display: flex;
   > .input {
-    display: none;
+    &::-webkit-search-cancel-button {
+      -webkit-appearance: none;
+      width: 10px;
+      height: 10px;
+      background-color: red;
+    }
+    @include media-breakpoint-down(sm) {
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      transform: translateX(-50%);
+      box-shadow: 0px 0px 3px $blue-dark;
+      border-radius: 0;
+    }
   }
   &.active {
-
     > .input {
-      display: block;
+      visibility: inherit;
+      @include media-breakpoint-down(sm) {
+        border-bottom: 2px solid $blue-dark;
+        border-radius: 0;
+      }
     }
     .search-btn {
-      color: $blue-dark;
+      color: $red;
     }
   }
 }
@@ -31,6 +47,7 @@
   border: none;
   background-color: #F8F8F8;
   border: 1px solid transparent;
+  color: $blue-dark;
 
   &:focus {
     outline: none;
@@ -47,14 +64,13 @@
 
   @each $color, $value in $theme-colors {
     &.#{$color} {
-      color: $value;
-
       &::placeholder {
         color: $value;
       }
     }
   }
 }
+
 
 .input-radius {
   &_sm {
