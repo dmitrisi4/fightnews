@@ -1,0 +1,9 @@
+@import "../../theme-base";
+.clear-btn {
+  width: 30px;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  box-shadow: 0 0 2px $blue-dark;
+  color: rgba($blue-dark, 0.8)
+  }

@@ -19,6 +19,7 @@ document.querySelectorAll('[data-open-search]').forEach(btn => {
 
 		input.value = '';
 		input.dispatchEvent(event);
+		input.focus();
 	}
 
 	let clickListener = (e) => {
@@ -44,10 +45,3 @@ document.querySelectorAll('[data-open-search]').forEach(btn => {
 	clearBtn.addEventListener('click', clearListener);
 	document.addEventListener('click', documentClickListener);
 });
-
-
-let clearBtn = document.querySelectorAll('.clear-btn');
-
-clearBtn.forEach(btn => {
-
-})

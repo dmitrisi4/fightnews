@@ -336,9 +336,15 @@
 				      fill="currentColor"/>
 		</symbol>
 
-		<svg id="icon-checked" viewBox="0 0 10 8" fill="none">
+		<symbol id="icon-checked" viewBox="0 0 10 8" fill="none">
 				<path d="M1.69141 4.0002L4.06541 6.3732L8.81141 1.6272" stroke="currentColor" stroke-width="1.5"
 				      stroke-linecap="round" stroke-linejoin="round"/>
-		</svg>
+		</symbol>
+
+		<symbol id="icon-clear" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"
+		     stroke-linecap="round" stroke-linejoin="round">
+				<line x1="18" y1="6" x2="6" y2="18"></line>
+				<line x1="6" y1="6" x2="18" y2="18"></line>
+		</symbol>
 
 </svg>

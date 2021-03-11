@@ -20101,6 +20101,11 @@ h1, .h1 {
   background-position: center;
 }
 
+svg-icon {
+  display: inline-flex;
+  vertical-align: middle;
+}
+
 .video-nav {
   padding-left: 0;
   display: grid;
@@ -20581,7 +20586,7 @@ h1, .h1 {
 @media (max-width: 767.98px) {
   .nav-user {
     width: 100%;
-    justify-content: center;
+    justify-content: end;
     grid-column-gap: 30px;
   }
 }
@@ -20592,7 +20597,6 @@ h1, .h1 {
 .nav-user__link:hover {
   color: #D44E49;
 }
-
 .post-list {
   display: grid;
   grid-gap: 20px;
@@ -20976,7 +20980,7 @@ h1, .h1 {
   left: 0;
   top: 50%;
   transform: translateY(-50%);
-  background: url(icons.db54723c.svg#icon-arrowRight2) no-repeat;
+  background: url(icons.284d6b31.svg#icon-arrowRight2) no-repeat;
 }
 .article-nav-item__title {
   display: block;
@@ -23812,18 +23816,31 @@ h1, .h1 {
 .search-group {
   display: flex;
 }
-.search-group > .input::-webkit-search-cancel-button {
-  -webkit-appearance: none;
-  width: 10px;
-  height: 10px;
-  background-color: red;
+.search-group__input-wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.search-group__clear-btn {
+  grid-column: 2;
+  grid-row: 1;
+}
+.search-group__input {
+  grid-column: 1/3;
+  grid-row: 1;
 }
 @media (max-width: 767.98px) {
-  .search-group > .input {
+  .search-group__input-wrapper {
     position: absolute;
     top: 100%;
-    left: 50%;
-    transform: translateX(-50%);
+    width: 100%;
+    left: 0;
+  }
+}
+.search-group .input::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+}
+@media (max-width: 767.98px) {
+  .search-group .input {
     box-shadow: 0px 0px 3px #2A3042;
     border-radius: 0;
   }
@@ -23913,6 +23930,10 @@ h1, .h1 {
 }
 .input.gray-700::placeholder {
   color: #A4ABC1;
+}
+
+.input-search {
+  padding-right: 30px;
 }
 
 .input-radius_sm {
@@ -24005,6 +24026,15 @@ h1, .h1 {
 .btn-checkbox.active .icon {
   opacity: 1;
   transition: opacity 0.2s;
+}
+
+.clear-btn {
+  width: 30px;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  box-shadow: 0 0 2px #2A3042;
+  color: rgba(42, 48, 66, 0.8);
 }
 
 .comments-list {
@@ -27883,7 +27913,7 @@ h1, .h1 {
   }
 
   .pt-md-full {
-    padding-top: 75px;
+    padding-top: 111px;
   }
 }
 .scroll-of {

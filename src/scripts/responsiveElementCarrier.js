@@ -14,7 +14,6 @@ const moveNode = (node, targetNode, anchorNode, size) => {
 
 const processElement = (node, size) => {
 	const targetId = node.dataset[`${size.name}After`];
-	console.log(node.dataset)
 	const target = document.getElementById(targetId);
 
 	if (target == null) {
