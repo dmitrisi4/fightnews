@@ -80,6 +80,7 @@ h1, .h1 {
 
 
 .navbar-brand {
+  padding: 0;
   @include media-breakpoint-down(md) {
     margin-right: 0px;
   }

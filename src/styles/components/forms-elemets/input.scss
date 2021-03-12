@@ -1,28 +1,42 @@
 @import "../../theme-base";
 
 .search-group {
-  display: flex;
+  width: 200px;
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+  opacity: 1;
+  transition: all .2s;
+  visibility: visible;
+
   &__input-wrapper {
     display: grid;
     grid-template-columns: 1fr;
+    z-index: 16;
   }
   &__clear-btn {
     grid-column: 2;
     grid-row: 1;
   }
   &__input {
-    grid-column: 1 / 3;
-    grid-row: 1
+    grid-column: 1 / 4;
+    grid-row: 1;
+  }
+  &__search {
+    grid-column: 3;
+    grid-row: 1;
   }
   @include media-breakpoint-down(sm) {
-    &__input-wrapper {
-      position: absolute;
-      top: 100%;
-      width: 100%;
-      left: 0;
-    }
+    width: 100%;
+    position: absolute;
+    top: 100%;
+    left: 0;
   }
 
+  &.hidden {
+    visibility: hidden;
+    opacity: 0;
+    width: 42px;
+  }
   .input {
     &::-webkit-search-cancel-button {
       -webkit-appearance: none;
@@ -44,6 +58,10 @@
       color: $red;
     }
   }
+}
+.search-group.d-none {
+  opacity: 0;
+  transition: opacity .2s;
 }
 .input-group {
   display: flex;

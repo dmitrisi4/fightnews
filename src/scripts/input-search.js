@@ -23,20 +23,20 @@ document.querySelectorAll('[data-open-search]').forEach(btn => {
 	}
 
 	let clickListener = (e) => {
-		if (form.classList.contains('d-none')) {
-			form.classList.remove('d-none');
+		if (form.classList.contains('hidden')) {
+			form.classList.remove('hidden');
 			btn.classList.add('d-none');
 			input.addEventListener('input', inputListener);
 		} else {
-			form.classList.add('d-none');
+			form.classList.add('hidden');
 			btn.classList.remove('d-none');
 			input.removeEventListener('input', inputListener);
 		}
 	}
 
 	let documentClickListener = (e) => {
-		if (!form.classList.contains('d-none') && !form.contains(e.target) && !btn.contains(e.target)) {
-			form.classList.add('d-none');
+		if (!form.classList.contains('hidden') && !form.contains(e.target) && !btn.contains(e.target)) {
+			form.classList.add('hidden');
 			btn.classList.remove('d-none');
 		}
 	}

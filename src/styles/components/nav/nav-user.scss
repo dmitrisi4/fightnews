@@ -5,6 +5,10 @@
   grid-column-gap: 35px;
   justify-content: end;
   align-items: center;
+
+  @include media-breakpoint-down(md) {
+    grid-column-gap: 20px;
+  }
   @include media-breakpoint-down(sm) {
     width: 100%;
     justify-content: end;
@@ -19,5 +23,30 @@
 
   }
   &__search {
+  }
+  &__search-btn {
+    position: absolute;
+    right: 0;
+    @include media-breakpoint-down(sm) {
+      position: static;
+    }
+  }
+  &__search-group {
+    @include media-breakpoint-down(sm) {
+      position: absolute;
+      left: 0;
+      right: 0;
+      width: 100%;
+      transform: none;
+      top: 100%;
+    }
+  }
+  &__form {
+    display: flex;
+    align-items: center;
+    position: relative;
+    @include media-breakpoint-down(sm) {
+      position: static;
+    }
   }
 }

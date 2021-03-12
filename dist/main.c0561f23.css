@@ -19622,6 +19622,9 @@ h1, .h1 {
   left: 0;
 }
 
+.navbar-brand {
+  padding: 0;
+}
 @media (max-width: 991.98px) {
   .navbar-brand {
     margin-right: 0px;
@@ -20583,6 +20586,11 @@ svg-icon {
   justify-content: end;
   align-items: center;
 }
+@media (max-width: 991.98px) {
+  .nav-user {
+    grid-column-gap: 20px;
+  }
+}
 @media (max-width: 767.98px) {
   .nav-user {
     width: 100%;
@@ -20597,6 +20605,36 @@ svg-icon {
 .nav-user__link:hover {
   color: #D44E49;
 }
+.nav-user__search-btn {
+  position: absolute;
+  right: 0;
+}
+@media (max-width: 767.98px) {
+  .nav-user__search-btn {
+    position: static;
+  }
+}
+@media (max-width: 767.98px) {
+  .nav-user__search-group {
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+    transform: none;
+    top: 100%;
+  }
+}
+.nav-user__form {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+@media (max-width: 767.98px) {
+  .nav-user__form {
+    position: static;
+  }
+}
+
 .post-list {
   display: grid;
   grid-gap: 20px;
@@ -23814,27 +23852,42 @@ svg-icon {
 }
 
 .search-group {
-  display: flex;
+  width: 200px;
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+  opacity: 1;
+  transition: all 0.2s;
+  visibility: visible;
 }
 .search-group__input-wrapper {
   display: grid;
   grid-template-columns: 1fr;
+  z-index: 16;
 }
 .search-group__clear-btn {
   grid-column: 2;
   grid-row: 1;
 }
 .search-group__input {
-  grid-column: 1/3;
+  grid-column: 1/4;
+  grid-row: 1;
+}
+.search-group__search {
+  grid-column: 3;
   grid-row: 1;
 }
 @media (max-width: 767.98px) {
-  .search-group__input-wrapper {
+  .search-group {
+    width: 100%;
     position: absolute;
     top: 100%;
-    width: 100%;
     left: 0;
   }
+}
+.search-group.hidden {
+  visibility: hidden;
+  opacity: 0;
+  width: 42px;
 }
 .search-group .input::-webkit-search-cancel-button {
   -webkit-appearance: none;
@@ -23856,6 +23909,11 @@ svg-icon {
 }
 .search-group.active .search-btn {
   color: #D44E49;
+}
+
+.search-group.d-none {
+  opacity: 0;
+  transition: opacity 0.2s;
 }
 
 .input-group {
@@ -24004,6 +24062,11 @@ svg-icon {
   padding: 0;
   background-color: transparent;
   color: #fff;
+}
+.search-btn_dark {
+  color: rgba(42, 48, 66, 0.8);
+  padding: 0 10px;
+  border-left: 1px solid rgba(42, 48, 66, 0.8);
 }
 
 .btn-checkbox {
@@ -27913,7 +27976,7 @@ svg-icon {
   }
 
   .pt-md-full {
-    padding-top: 111px;
+    padding-top: 108px;
   }
 }
 .scroll-of {
