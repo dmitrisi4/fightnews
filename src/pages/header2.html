@@ -53,26 +53,18 @@
 
 				<div class="navbar-main__center mt-2 mt-sm-0">
 					<nav class="nav-user notice-position-right">
-						<div>
-							<button class="nav-user__search search-btn" type="button" data-open-search="top-search">
-								<svg width="21" height="21" class="icon-search" viewBox="0 0 35 35">
-									<use xlink:href="../../public/icons/icons.svg#icon-search-2"/>
-								</svg>
+						<div class="nav-user__form">
+							<button class="nav-user__search-btn search-btn" type="button" data-open-search="top-search">
+								<svg-icon type="search-2" height="21" width="21" viewBox="0 0 35 35"></svg-icon>
 							</button>
-							<form class="search-group d-none" id="top-search">
-								<div class="search-group__input-wrapper">
-									<input class="search-group__input input input-search input_sm input-radius_sm" type="search"
-												 placeholder="Поиск..." aria-label="Search" style="width: 100%;">
-									<button class="search-group__clear-btn clear-btn d-none">
-										<svg width="20" height="20" class="icon-search" viewBox="0 0 20 20">
-											<use xlink:href="../../public/icons/icons.svg#icon-clear"/>
-										</svg>
-									</button>
-								</div>
-								<button class="nav-user__search search-btn" type="submit">
-									<svg width="21" height="21" class="icon-search" viewBox="0 0 35 35">
-										<use xlink:href="../../public/icons/icons.svg#icon-search-2"/>
-									</svg>
+							<form class="nav-user__search-group search-group hidden" id="top-search">
+								<input class="search-group__input input input-search input_sm input-radius_sm" type="search"
+											 placeholder="Поиск..." aria-label="Search" style="width: 100%;">
+								<button class="search-group__search search-btn search-btn_dark" type="submit">
+									<svg-icon type="search-2" height="21" width="21" viewBox="0 0 35 35"></svg-icon>
+								</button>
+								<button type="button" class="search-group__clear-btn clear-btn d-none">
+									<svg-icon type="clear"></svg-icon>
 								</button>
 							</form>
 						</div>
