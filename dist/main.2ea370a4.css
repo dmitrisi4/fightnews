@@ -21010,10 +21010,19 @@ svg-icon {
 }
 @media (max-width: 767.98px) {
   .article-nav {
-    display: none;
+    grid-auto-flow: row;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
   }
 }
 
+@media (max-width: 767.98px) {
+  .article-nav-item__body {
+    display: grid;
+    grid-auto-flow: column;
+    grid-column-gap: 20px;
+  }
+}
 .article-nav-item__link {
   display: grid;
   grid-auto-flow: column;
@@ -21049,10 +21058,20 @@ svg-icon {
   text-decoration: none;
   color: #2C2C2C;
 }
+@media (max-width: 767.98px) {
+  .article-nav-item__title {
+    font-size: 0.875rem;
+  }
+}
 .article-nav-item__image {
   border-radius: 0.3125rem;
   max-width: 340px;
   width: 100%;
+}
+@media (max-width: 767.98px) {
+  .article-nav-item__image {
+    max-width: 100px;
+  }
 }
 .article-nav-item__link_prev {
   justify-content: start;

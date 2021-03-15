@@ -30,12 +30,21 @@
   grid-gap: 35px;
   justify-content: space-between;
   @include media-breakpoint-down(sm) {
-    display: none;
+    grid-auto-flow: row;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
   }
 
 }
 
 .article-nav-item {
+  &__body {
+    @include media-breakpoint-down(sm) {
+      display: grid;
+      grid-auto-flow: column;
+      grid-column-gap: 20px;
+    }
+  }
   &__link {
     display: grid;
     grid-auto-flow: column;
@@ -71,11 +80,17 @@
       text-decoration: none;
       color: $black-200;
     }
+    @include media-breakpoint-down(sm) {
+      font-size: $font-size-sm;
+    }
   }
   &__image {
     border-radius: $border-radius-sm;
     max-width: 340px;
     width: 100%;
+    @include media-breakpoint-down(sm) {
+      max-width: 100px;
+    }
   }
   &__link_prev {
     justify-content: start;
