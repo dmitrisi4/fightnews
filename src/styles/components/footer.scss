@@ -92,10 +92,5 @@
       //grid-gap: 5px;
     }
   }
-  .icon {
-    @include media-breakpoint-down(sm) {
-      width: 37px;
-      height: 37px;
-    }
-  }
+ 
 }

@@ -28015,13 +28015,6 @@ svg-icon {
 .footer-nav .social-links__link {
   padding: 5px;
 }
-@media (max-width: 767.98px) {
-  .footer-nav .icon {
-    width: 37px;
-    height: 37px;
-  }
-}
-
 .fz-sm {
   font-size: 0.875rem;
 }
