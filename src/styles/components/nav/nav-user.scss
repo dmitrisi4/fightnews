@@ -1,22 +1,24 @@
 @import "../../theme-base";
 .nav-user {
-  display: grid;
-  grid-auto-flow: column;
-  grid-column-gap: 35px;
-  justify-content: end;
-  align-items: center;
-
-  @include media-breakpoint-down(md) {
-    grid-column-gap: 20px;
-  }
-  @include media-breakpoint-down(sm) {
-    width: 100%;
+  &__list {
+    display: grid;
+    grid-auto-flow: column;
+    grid-column-gap: 35px;
     justify-content: end;
-    grid-column-gap: 30px;
+    align-items: center;
+    padding-left: 0;
+    margin-bottom: 0;
+    @include media-breakpoint-down(sm) {
+      width: 100%;
+      grid-column-gap: 20px;
+    }
   }
+
   &__link {
     position: relative;
     color: $gray-250;
+    border: none;
+    background-color: transparent;
     &:hover {
       color: $red;
     }

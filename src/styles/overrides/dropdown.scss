@@ -30,8 +30,18 @@
   .dropdown-menu.show {
     position: relative !important;
     width: 100%;
-    background-color: rgba($gray, $bth-light-alpha-2)
+    //background-color: rgba($gray, $bth-light-alpha-2)
+  }
+  .dropdown-menu.notification-bar {
+    position: absolute!important;
+    top: 100% !important;
+    width: max-content;
+    max-width: 390px;
+    @include media-breakpoint-down(sm) {
+      max-width: 100%;
+      width: 100%;
 
+    }
   }
   .dropdown-item {
     color: $green;
@@ -224,6 +234,11 @@
     position: relative;
     width: 100%;
   }
+}
+.dropdown-menu.notification-bar.show {
+  position: absolute;
+  display: grid;
+  grid-template-columns: 1fr;
 }
 
 .btn-split {

@@ -1,0 +1,27 @@
+@import "../theme-base";
+.notification-bar {
+  display: none;
+  padding: 20px 20px 25px;
+  justify-content: center;
+  position: absolute;
+  width: 390px;
+  z-index: 20;
+  background-color: $white;
+  box-shadow: 0px -1px 31px rgba(19, 18, 19, 0.07);
+  border-radius: $border-radius;
+  @include media-breakpoint-down(sm) {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+  &__list {
+    height: 213px;
+    overflow-y: scroll;
+    padding-right: 15px;
+    padding-top: 5px;
+  }
+}
+.list-notification {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}

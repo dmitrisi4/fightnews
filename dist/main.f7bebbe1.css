@@ -19833,9 +19833,22 @@ h1, .h1 {
   .dropdown-menu.show {
     position: relative !important;
     width: 100%;
-    background-color: rgba(207, 197, 197, 0.15);
   }
 
+  .dropdown-menu.notification-bar {
+    position: absolute !important;
+    top: 100% !important;
+    width: max-content;
+    max-width: 390px;
+  }
+}
+@media (max-width: 991.98px) and (max-width: 767.98px) {
+  .dropdown-menu.notification-bar {
+    max-width: 100%;
+    width: 100%;
+  }
+}
+@media (max-width: 991.98px) {
   .dropdown-item {
     color: #54B869;
   }
@@ -20003,6 +20016,12 @@ h1, .h1 {
     position: relative;
     width: 100%;
   }
+}
+
+.dropdown-menu.notification-bar.show {
+  position: absolute;
+  display: grid;
+  grid-template-columns: 1fr;
 }
 
 .btn-split {
@@ -20579,28 +20598,26 @@ svg-icon {
   transition: 0.3s all;
 }
 
-.nav-user {
+.nav-user__list {
   display: grid;
   grid-auto-flow: column;
   grid-column-gap: 35px;
   justify-content: end;
   align-items: center;
-}
-@media (max-width: 991.98px) {
-  .nav-user {
-    grid-column-gap: 20px;
-  }
+  padding-left: 0;
+  margin-bottom: 0;
 }
 @media (max-width: 767.98px) {
-  .nav-user {
+  .nav-user__list {
     width: 100%;
-    justify-content: end;
-    grid-column-gap: 30px;
+    grid-column-gap: 20px;
   }
 }
 .nav-user__link {
   position: relative;
   color: #EDE6E6;
+  border: none;
+  background-color: transparent;
 }
 .nav-user__link:hover {
   color: #D44E49;
@@ -20667,6 +20684,9 @@ svg-icon {
   .post-preview {
     border-bottom: 0;
   }
+}
+.post-preview__image {
+  width: 100%;
 }
 .post-preview__header {
   display: grid;
@@ -21532,6 +21552,9 @@ svg-icon {
   .post-preview {
     border-bottom: 0;
   }
+}
+.post-preview__image {
+  width: 100%;
 }
 .post-preview__header {
   display: grid;
@@ -27803,6 +27826,16 @@ svg-icon {
   padding-bottom: 20px;
   border-bottom: 1px solid #ECECEC;
 }
+.message-item_sm {
+  font-size: 0.75rem;
+}
+.message-item_sm .message-item__user-name {
+  font-size: 0.875rem;
+}
+.message-item_sm .message-item__post-info,
+.message-item_sm .message-item__link-message {
+  font-size: 0.75rem;
+}
 .message-item__row {
   display: flex;
   justify-content: space-between;
@@ -27828,6 +27861,13 @@ svg-icon {
 }
 .message-item__user-name {
   font-weight: 500;
+  color: #2A3042;
+  transition: color 0.3s;
+}
+.message-item__user-name:hover, .message-item__user-name:focus {
+  color: #D44E49;
+  text-decoration: none;
+  transform: scale(0.99);
 }
 @media (max-width: 767.98px) {
   .message-item__user-name {
@@ -27976,7 +28016,7 @@ svg-icon {
   }
 
   .pt-md-full {
-    padding-top: 108px;
+    padding-top: 110px;
   }
 }
 .scroll-of {
@@ -28022,6 +28062,36 @@ svg-icon {
 .scrollbar-custom::-webkit-scrollbar-thumb {
   background-color: #D44E49;
   border-radius: 4px;
+}
+
+.notification-bar {
+  display: none;
+  padding: 20px 20px 25px;
+  justify-content: center;
+  position: absolute;
+  width: 390px;
+  z-index: 20;
+  background-color: #fff;
+  box-shadow: 0px -1px 31px rgba(19, 18, 19, 0.07);
+  border-radius: 0.625rem;
+}
+@media (max-width: 767.98px) {
+  .notification-bar {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+}
+.notification-bar__list {
+  height: 213px;
+  overflow-y: scroll;
+  padding-right: 15px;
+  padding-top: 5px;
+}
+
+.list-notification {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
 }
 
 body {

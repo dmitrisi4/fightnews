@@ -30899,6 +30899,8 @@ document.querySelectorAll('[data-open-search]').forEach(function (btn) {
   clearBtn.addEventListener('click', clearListener);
   document.addEventListener('click', documentClickListener);
 });
+},{}],"V5Ck":[function(require,module,exports) {
+
 },{}],"uBCR":[function(require,module,exports) {
 module.exports = "icons.284d6b31.svg";
 },{}],"iFOF":[function(require,module,exports) {
@@ -30923,6 +30925,8 @@ require("./submenu");
 require("./btn-checkbox");
 
 require("./input-search");
+
+require("./notificationBar");
 
 var _icons = _interopRequireDefault(require("../../public/icons/icons.svg"));
 
@@ -31044,4 +31048,4 @@ var SvgIcon = /*#__PURE__*/function (_HTMLElement) {
 }( /*#__PURE__*/_wrapNativeSuper(HTMLElement));
 
 customElements.define('svg-icon', SvgIcon);
-},{"@webcomponents/webcomponentsjs":"RJOD","bootstrap":"s7bG","swiper/bundle":"ydBv","./sliders":"GJqW","./burgerMenu":"y582","./responsiveElementCarrier":"ZsWl","./overflowEllipsis":"eiH9","./submenu":"apO8","./btn-checkbox":"l9VZ","./input-search":"hubb","../../public/icons/icons.svg":"uBCR"}]},{},["iFOF"], null)
+},{"@webcomponents/webcomponentsjs":"RJOD","bootstrap":"s7bG","swiper/bundle":"ydBv","./sliders":"GJqW","./burgerMenu":"y582","./responsiveElementCarrier":"ZsWl","./overflowEllipsis":"eiH9","./submenu":"apO8","./btn-checkbox":"l9VZ","./input-search":"hubb","./notificationBar":"V5Ck","../../public/icons/icons.svg":"uBCR"}]},{},["iFOF"], null)

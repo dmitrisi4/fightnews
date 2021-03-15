@@ -12,8 +12,8 @@
     display: grid;
     grid-gap: 20px;
   }
-
 }
+
 .message-item {
   display: grid;
   grid-auto-flow: column;
@@ -21,6 +21,16 @@
   grid-template-columns: min-content 1fr;
   padding-bottom: 20px;
   border-bottom: 1px solid $gray-200;
+  &_sm {
+    font-size: $font-size-ms;
+    .message-item__user-name {
+      font-size: $font-size-sm;
+    }
+    .message-item__post-info,
+    .message-item__link-message {
+      font-size: $font-size-ms;
+    }
+  }
   &__row {
     display: flex;
     justify-content: space-between;
@@ -40,9 +50,15 @@
       border-radius: $border-radius;
     }
   }
-
   &__user-name {
     font-weight: $font-weight-medium;
+    color: $blue-dark;
+    transition: color .3s;
+    @include hover-focus() {
+      color: $red;
+      text-decoration: none;
+      transform: scale(0.99);
+    }
     @include media-breakpoint-down(sm) {
       font-size: $font-size-ms;
     }

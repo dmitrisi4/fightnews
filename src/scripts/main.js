@@ -9,6 +9,7 @@ import './overflowEllipsis';
 import './submenu';
 import './btn-checkbox';
 import './input-search';
+import './notificationBar';
 
 import icons from '../../public/icons/icons.svg';
 
