@@ -20194,7 +20194,7 @@ svg-icon {
   .navbar-main__center {
     grid-row: 2;
     grid-column: 1/end;
-    justify-items: center;
+    justify-items: end;
   }
 }
 .navbar-main__nav-list {
@@ -28086,6 +28086,7 @@ svg-icon {
 .notification-bar {
   display: none;
   padding: 20px 20px 25px;
+  margin-top: 0;
   justify-content: center;
   position: absolute;
   width: 390px;
