@@ -30664,10 +30664,9 @@ var burgerMenu = function burgerMenu() {
   }
 
   ;
-
-  document.getElementById('burger-btn').onclick = function () {
-    open();
-  };
+  document.querySelectorAll('#burger-btn').forEach(function (btn) {
+    btn.addEventListener('click', open);
+  });
 };
 
 var _default = burgerMenu;
@@ -30903,30 +30902,8 @@ document.querySelectorAll('[data-open-search]').forEach(function (btn) {
 
 },{}],"uBCR":[function(require,module,exports) {
 module.exports = "icons.284d6b31.svg";
-},{}],"iFOF":[function(require,module,exports) {
+},{}],"Rb8K":[function(require,module,exports) {
 "use strict";
-
-require("@webcomponents/webcomponentsjs");
-
-require("bootstrap");
-
-var _bundle = _interopRequireDefault(require("swiper/bundle"));
-
-var _sliders = _interopRequireDefault(require("./sliders"));
-
-var _burgerMenu = _interopRequireDefault(require("./burgerMenu"));
-
-var _responsiveElementCarrier = _interopRequireDefault(require("./responsiveElementCarrier"));
-
-require("./overflowEllipsis");
-
-require("./submenu");
-
-require("./btn-checkbox");
-
-require("./input-search");
-
-require("./notificationBar");
 
 var _icons = _interopRequireDefault(require("../../public/icons/icons.svg"));
 
@@ -30962,10 +30939,6 @@ function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.g
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
-(0, _sliders.default)();
-(0, _burgerMenu.default)();
-(0, _responsiveElementCarrier.default)();
-
 var SvgIcon = /*#__PURE__*/function (_HTMLElement) {
   _inherits(SvgIcon, _HTMLElement);
 
@@ -30993,28 +30966,7 @@ var SvgIcon = /*#__PURE__*/function (_HTMLElement) {
     _this._shadowRoot.appendChild(_this._template.content.cloneNode(true));
 
     return _this;
-  } //
-  // attributeChangedCallback() {
-  // 	this._updateView();
-  // }
-  //
-  // connectedCallback() {
-  // 	this._updateView();
-  // }
-  // _updateView() {
-  // 	if (this.type) {
-  // 		this._template.innerHTML = `
-  // 		  <svg width="${this.width}" height="${this.height}" class="icon" viewBox="${this.viewBox}">
-  // 				<use xlink:href="../../public/icons/icons.svg#icon-${this.type}"/>
-  // 			</svg>
-  // 		`;
-  // 	} else {
-  // 		this._template.innerHTML = '';
-  // 	}
-  //
-  // 	this._shadowRoot.appendChild(this._template.content.cloneNode(true));
-  // }
-
+  }
 
   _createClass(SvgIcon, [{
     key: "type",
@@ -31048,4 +31000,138 @@ var SvgIcon = /*#__PURE__*/function (_HTMLElement) {
 }( /*#__PURE__*/_wrapNativeSuper(HTMLElement));
 
 customElements.define('svg-icon', SvgIcon);
-},{"@webcomponents/webcomponentsjs":"RJOD","bootstrap":"s7bG","swiper/bundle":"ydBv","./sliders":"GJqW","./burgerMenu":"y582","./responsiveElementCarrier":"ZsWl","./overflowEllipsis":"eiH9","./submenu":"apO8","./btn-checkbox":"l9VZ","./input-search":"hubb","./notificationBar":"V5Ck","../../public/icons/icons.svg":"uBCR"}]},{},["iFOF"], null)
+},{"../../public/icons/icons.svg":"uBCR"}],"JpD6":[function(require,module,exports) {
+module.exports = "flag.b04d843c.svg";
+},{}],"MASH":[function(require,module,exports) {
+"use strict";
+
+var _flag = _interopRequireDefault(require("../../public/icons/flag.svg"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _wrapNativeSuper(Class) { var _cache = typeof Map === "function" ? new Map() : undefined; _wrapNativeSuper = function _wrapNativeSuper(Class) { if (Class === null || !_isNativeFunction(Class)) return Class; if (typeof Class !== "function") { throw new TypeError("Super expression must either be null or a function"); } if (typeof _cache !== "undefined") { if (_cache.has(Class)) return _cache.get(Class); _cache.set(Class, Wrapper); } function Wrapper() { return _construct(Class, arguments, _getPrototypeOf(this).constructor); } Wrapper.prototype = Object.create(Class.prototype, { constructor: { value: Wrapper, enumerable: false, writable: true, configurable: true } }); return _setPrototypeOf(Wrapper, Class); }; return _wrapNativeSuper(Class); }
+
+function _construct(Parent, args, Class) { if (_isNativeReflectConstruct()) { _construct = Reflect.construct; } else { _construct = function _construct(Parent, args, Class) { var a = [null]; a.push.apply(a, args); var Constructor = Function.bind.apply(Parent, a); var instance = new Constructor(); if (Class) _setPrototypeOf(instance, Class.prototype); return instance; }; } return _construct.apply(null, arguments); }
+
+function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
+
+function _isNativeFunction(fn) { return Function.toString.call(fn).indexOf("[native code]") !== -1; }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+var SvgFlag = /*#__PURE__*/function (_HTMLElement) {
+  _inherits(SvgFlag, _HTMLElement);
+
+  var _super = _createSuper(SvgFlag);
+
+  function SvgFlag() {
+    var _this;
+
+    _classCallCheck(this, SvgFlag);
+
+    _this = _super.call(this);
+
+    _defineProperty(_assertThisInitialized(_this), "_defaultHeight", 20);
+
+    _defineProperty(_assertThisInitialized(_this), "_defaultWidth", 20);
+
+    _defineProperty(_assertThisInitialized(_this), "_defaultViewBox", '0 0 20 20');
+
+    _this._shadowRoot = _this.attachShadow({
+      mode: 'open'
+    });
+    _this._template = document.createElement('template');
+    _this._template.innerHTML = "\n\t\t\t  <svg width=\"".concat(_this.width, "\" height=\"").concat(_this.height, "\" class=\"icon\" viewBox=\"").concat(_this.viewBox, "\">\n\t\t\t\t\t<use xlink:href=\"").concat(_flag.default, "#flag-").concat(_this.type, "\"/>\n\t\t\t\t</svg>\n\t\t\t");
+
+    _this._shadowRoot.appendChild(_this._template.content.cloneNode(true));
+
+    return _this;
+  }
+
+  _createClass(SvgFlag, [{
+    key: "type",
+    get: function get() {
+      return this.getAttribute('type');
+    }
+  }, {
+    key: "height",
+    get: function get() {
+      var _this$getAttribute;
+
+      return (_this$getAttribute = this.getAttribute('height')) !== null && _this$getAttribute !== void 0 ? _this$getAttribute : this._defaultHeight;
+    }
+  }, {
+    key: "width",
+    get: function get() {
+      var _this$getAttribute2;
+
+      return (_this$getAttribute2 = this.getAttribute('width')) !== null && _this$getAttribute2 !== void 0 ? _this$getAttribute2 : this._defaultWidth;
+    }
+  }, {
+    key: "viewBox",
+    get: function get() {
+      var _this$getAttribute3;
+
+      return (_this$getAttribute3 = this.getAttribute('viewBox')) !== null && _this$getAttribute3 !== void 0 ? _this$getAttribute3 : this._defaultViewBox;
+    }
+  }]);
+
+  return SvgFlag;
+}( /*#__PURE__*/_wrapNativeSuper(HTMLElement));
+
+customElements.define('svg-flag', SvgFlag);
+},{"../../public/icons/flag.svg":"JpD6"}],"iFOF":[function(require,module,exports) {
+"use strict";
+
+require("@webcomponents/webcomponentsjs");
+
+require("bootstrap");
+
+var _bundle = _interopRequireDefault(require("swiper/bundle"));
+
+var _sliders = _interopRequireDefault(require("./sliders"));
+
+var _burgerMenu = _interopRequireDefault(require("./burgerMenu"));
+
+var _responsiveElementCarrier = _interopRequireDefault(require("./responsiveElementCarrier"));
+
+require("./overflowEllipsis");
+
+require("./submenu");
+
+require("./btn-checkbox");
+
+require("./input-search");
+
+require("./notificationBar");
+
+require("./svgIconComponents");
+
+require("./svgFlagComponents");
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+(0, _sliders.default)();
+(0, _burgerMenu.default)();
+(0, _responsiveElementCarrier.default)();
+},{"@webcomponents/webcomponentsjs":"RJOD","bootstrap":"s7bG","swiper/bundle":"ydBv","./sliders":"GJqW","./burgerMenu":"y582","./responsiveElementCarrier":"ZsWl","./overflowEllipsis":"eiH9","./submenu":"apO8","./btn-checkbox":"l9VZ","./input-search":"hubb","./notificationBar":"V5Ck","./svgIconComponents":"Rb8K","./svgFlagComponents":"MASH"}]},{},["iFOF"], null)
