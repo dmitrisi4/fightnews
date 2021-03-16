@@ -37618,6 +37618,7 @@ require("./svgFlagComponents");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+//https://github.com/Grsmto/simplebar/tree/master/packages/simplebar
 (0, _sliders.default)();
 (0, _burgerMenu.default)();
 (0, _responsiveElementCarrier.default)();

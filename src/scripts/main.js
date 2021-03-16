@@ -1,6 +1,6 @@
 import '@webcomponents/webcomponentsjs';
 import 'bootstrap';
-import 'simplebar';
+import 'simplebar'; //https://github.com/Grsmto/simplebar/tree/master/packages/simplebar
 
 import Swiper from 'swiper/bundle';
 import Sliders from './sliders';

@@ -28455,13 +28455,6 @@ svg-icon {
   height: 6px;
 }
 
-.scrollbar-custom::-webkit-scrollbar {
-  width: 5px;
-}
-.scrollbar-custom::-webkit-scrollbar:hover {
-  cursor: pointer;
-}
-
 .simplebar-track.simplebar-vertical {
   box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
   background-color: #DFDCE8;
@@ -28476,8 +28469,8 @@ svg-icon {
   border-radius: 4px;
 }
 
-.simplebar-scrollbar.simplebar-visible:before {
-  opacity: 1;
+.simplebar-scrollbar.simplebar-visible::before {
+  opacity: 1 !important;
 }
 
 .notification-bar {
