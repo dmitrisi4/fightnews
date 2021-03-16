@@ -24,6 +24,9 @@
 @import "node_modules/swiper/swiper";
 @import "node_modules/swiper/components/pagination/pagination";
 
+// custom scrollbar https://github.com/Grsmto/simplebar/tree/master/packages/simplebar
+@import "node_modules/simplebar/dist/simplebar";
+
 //Editor quilljs
 @import "node_modules/quill/dist/quill.core";
 @import "node_modules/quill/dist/quill.snow";

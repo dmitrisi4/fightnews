@@ -1,5 +1,6 @@
 import '@webcomponents/webcomponentsjs';
 import 'bootstrap';
+import 'simplebar';
 
 import Swiper from 'swiper/bundle';
 import Sliders from './sliders';
