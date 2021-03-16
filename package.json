@@ -4,7 +4,7 @@
   "scripts": {
     "clear": "rimraf dist .parcel-cache .cache",
     "dev": "yarn clear && parcel src/pages/*.html",
-    "build": "yarn clear && parcel build src/pages/*.html --public-url . --no-source-maps --no-minify"
+    "build": "yarn clear && parcel build src/pages/*.html --public-url . --no-source-maps"
   },
   "dependencies": {
     "@webcomponents/webcomponentsjs": "^2.5.0",

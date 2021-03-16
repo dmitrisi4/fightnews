@@ -1,4 +1,3 @@
-import '@webcomponents/webcomponentsjs';
 import 'bootstrap';
 import 'simplebar'; //https://github.com/Grsmto/simplebar/tree/master/packages/simplebar
 
