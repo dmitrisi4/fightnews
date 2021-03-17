@@ -6,7 +6,7 @@
 	<meta name="Description" content="Put your description here.">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Main</title>
-<!--	<link as="style" rel="preload" href="../styles/main.scss">-->
+	<!--	<link as="style" rel="preload" href="../styles/main.scss">-->
 	<link rel="stylesheet" href="../styles/criticalcss.scss">
 </head>
 <body style="overflow-x:hidden;">
@@ -26,7 +26,8 @@
 			<nav class="navbar-main navbar-expand-lg pl-0" id="header-nav">
 				<div class="navbar-main__left">
 					<a class="navbar-brand" href="#">
-						<img loading="lazy" src="../../public/images/logo.jpg" class="d-inline-block align-top" alt="" loading="lazy">
+						<img loading="lazy" src="../../public/images/logo.jpg" class="d-inline-block align-top" alt=""
+								 loading="lazy">
 					</a>
 					<ul class="social-links white border-blue-dark" id="social-link"
 							data-lg-after="navbar-menu">
@@ -339,7 +340,8 @@
 							<!-- Slides -->
 							<div class="swiper-slide">
 								<div class="post-preview post-preview_board">
-									<img loading="lazy" src="../../public/images/konor.jpg" class="post-preview__image" alt="image konor makgregor">
+									<img loading="lazy" src="../../public/images/konor.jpg" class="post-preview__image"
+											 alt="image konor makgregor">
 									<div class="post-preview__header">
 										<div class="label label_red label_text-white label_text-md-red">MMA</div>
 										<a href="#" class="post-preview__title">Конор Макгрегор - Дональд Серроне. Прогноз на главный бой
@@ -353,7 +355,8 @@
 							</div>
 							<div class="swiper-slide">
 								<div class="post-preview post-preview_board">
-									<img loading="lazy" src="../../public/images/konor257.jpeg" class="post-preview__image" alt="image konor makgregor">
+									<img loading="lazy" src="../../public/images/konor257.jpeg" class="post-preview__image"
+											 alt="image konor makgregor">
 									<div class="post-preview__header">
 										<div class="label label_red label_text-white label_text-md-red">MMA</div>
 										<a href="#" class="post-preview__title">Слова Дастина Порье после победы над Конором МакГрегором в
@@ -1116,7 +1119,8 @@
 					<div class="tab-content mt-4" id="nav-tabContent2">
 						<div class="tab-pane fade show active" id="nav-all-2" role="tabpanel" aria-labelledby="list-all-list">
 							<div class="post-preview post-preview_board mx-n3 mx-sm-auto">
-								<img loading="lazy" src="../../public/images/fighter.jpg" class="post-preview__image" alt="image fighter">
+								<img loading="lazy" src="../../public/images/fighter.jpg" class="post-preview__image"
+										 alt="image fighter">
 								<div class="post-preview__header">
 									<div class="post-preview__row">
 										<div class="label label_red label_text-white label_text-md-red ">MMA</div>
@@ -1329,7 +1333,8 @@
 						</div>
 						<div class="tab-pane fade" id="nav-box-2" role="tabpanel" aria-labelledby="list-box-list">
 							<div class="post-preview post-preview_board mx-n3 mx-sm-auto">
-								<img loading="lazy" src="../../public/images/fighter.jpg" class="post-preview__image" alt="image fighter">
+								<img loading="lazy" src="../../public/images/fighter.jpg" class="post-preview__image"
+										 alt="image fighter">
 								<div class="post-preview__header">
 									<div class="post-preview__row">
 										<div class="label label_green label_text-white label_text-md-green ">БОКС</div>
@@ -1451,38 +1456,20 @@
 						<div class="tab-pane fade show active" id="nav-last-1" role="tabpanel" aria-labelledby="all-tab">
 							<div class="post-list mt-small-1">
 								<div class="post-preview post-preview_video post-preview_video-big">
-									<div id="player" class="post-preview__videos"></div>
-<!--									<iframe class="post-preview__videos" src="https://www.youtube-nocookie.com/embed/5qap5aO4i9A"-->
-<!--													frameborder="0"-->
-<!--													allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"-->
-<!--													allowfullscreen></iframe>-->
-									<script async>
-										setTimeout(() => {
-											// 2. This code loads the IFrame Player API code asynchronously.
-											var tag = document.createElement('script');
-											tag.src = "https://www.youtube.com/iframe_api";
-											var firstScriptTag = document.getElementsByTagName('script')[0];
-											firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-											// 3. This function creates an <iframe> (and YouTube player)
-											//    after the API code downloads.
-											var player;
-											function onYouTubeIframeAPIReady() {
-												player = new YT.Player('player', {
-													height: '360',
-													width: '640',
-													videoId: '5qap5aO4i9A',
-													// events: {
-													// 	'onReady': onPlayerReady,
-													// 	'onStateChange': onPlayerStateChange
-													// }
-												});
-											}
-											onYouTubeIframeAPIReady();
-										}, 6000)
-
-
-
-									</script>
+																		<iframe class="post-preview__videos"
+																						src="https://www.youtube.com/embed/5qap5aO4i9A"
+																						srcdoc="<style>*{padding:0;margin:0;overflow:hidden}
+									    html,body{height:100%}
+									    img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}
+									    span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black}
+									    </style>
+									    <a href=https://www.youtube.com/embed/5qap5aO4i9A?autoplay=1>
+									    <img loading=lazy src='https://a.espncdn.com/photo/2020/1024/official_mma_power_rankings_v1_1296x729.jpg' alt='Demo video'>
+									    <span>▶</span>
+									    </a>"
+																						frameborder="0"
+																						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+																						allowfullscreen></iframe>
 									<div class="post-preview__main">
 										<div class="post-preview__header">
 											<!--				text-mma-icon-label							-->
@@ -1648,72 +1635,72 @@
 							</div>
 						</div>
 						<div class="tab-pane fade" id="nav-popular-1" role="tabpanel" aria-labelledby="mma-tab">
-<!--							<div class="post-list mt-small-1">-->
-<!--								<div class="post-preview post-preview_video post-preview_video-big">-->
-<!--									<iframe class="post-preview__videos" src="https://www.youtube-nocookie.com/embed/5qap5aO4i9A"-->
-<!--													frameborder="0"-->
-<!--													allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"-->
-<!--													allowfullscreen></iframe>-->
-<!--									<div class="post-preview__main">-->
-<!--										<div class="post-preview__header">-->
-<!--											&lt;!&ndash;						text-box-icon-label					&ndash;&gt;-->
-<!--											<div class="label label_green label_text-white label_icon">-->
-<!--												<span class="label__text">БОКС</span>-->
-<!--												<svg-icon type="glove" class="icon" height="14" width="12" viewBox="0 0 12 14"></svg-icon>-->
-<!--											</div>-->
-<!--											&lt;!&ndash;											&ndash;&gt;-->
-<!--											<div class="preview-statistic">-->
-<!--												<div class="preview-statistic__posts-counter">-->
-<!--													<svg-icon type="chat" class="icon" height="14" width="14"-->
-<!--																		viewBox="0 0 14 14"></svg-icon>-->
-<!--													<div class="preview-statistic__num">40</div>-->
-<!--													<span class="preview-statistic__new-post">(+14)</span>-->
-<!--												</div>-->
-<!--												<div class="preview-statistic__posts-counter">-->
+							<!--							<div class="post-list mt-small-1">-->
+							<!--								<div class="post-preview post-preview_video post-preview_video-big">-->
+							<!--									<iframe class="post-preview__videos" src="https://www.youtube-nocookie.com/embed/5qap5aO4i9A"-->
+							<!--													frameborder="0"-->
+							<!--													allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"-->
+							<!--													allowfullscreen></iframe>-->
+							<!--									<div class="post-preview__main">-->
+							<!--										<div class="post-preview__header">-->
+							<!--											&lt;!&ndash;						text-box-icon-label					&ndash;&gt;-->
+							<!--											<div class="label label_green label_text-white label_icon">-->
+							<!--												<span class="label__text">БОКС</span>-->
+							<!--												<svg-icon type="glove" class="icon" height="14" width="12" viewBox="0 0 12 14"></svg-icon>-->
+							<!--											</div>-->
+							<!--											&lt;!&ndash;											&ndash;&gt;-->
+							<!--											<div class="preview-statistic">-->
+							<!--												<div class="preview-statistic__posts-counter">-->
+							<!--													<svg-icon type="chat" class="icon" height="14" width="14"-->
+							<!--																		viewBox="0 0 14 14"></svg-icon>-->
+							<!--													<div class="preview-statistic__num">40</div>-->
+							<!--													<span class="preview-statistic__new-post">(+14)</span>-->
+							<!--												</div>-->
+							<!--												<div class="preview-statistic__posts-counter">-->
 
-<!--													<svg-icon type="views" class="icon" height="14" width="14"-->
-<!--																		viewBox="0 0 14 12"></svg-icon>-->
+							<!--													<svg-icon type="views" class="icon" height="14" width="14"-->
+							<!--																		viewBox="0 0 14 12"></svg-icon>-->
 
-<!--													<div class="preview-statistic__num">694</div>-->
-<!--												</div>-->
-<!--											</div>-->
-<!--										</div>-->
-<!--										<a href="#" class="post-preview__title text-white">Энтони Диррелл назвал трех лучших боксеров-->
-<!--											мира</a>-->
-<!--									</div>-->
-<!--								</div>-->
-<!--								<div class="post-preview post-preview_video post-preview_video-big">-->
-<!--									<iframe class="post-preview__videos" src="https://www.youtube-nocookie.com/embed/5qap5aO4i9A"-->
-<!--													frameborder="0"-->
-<!--													allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"-->
-<!--													allowfullscreen></iframe>-->
-<!--									<div class="post-preview__main">-->
-<!--										<div class="post-preview__header">-->
-<!--											&lt;!&ndash;						text-mma-icon-label					&ndash;&gt;-->
-<!--											<div class="label label_red label_text-white label_icon">-->
-<!--												<span class="label__text">ММА</span>-->
-<!--												<svg-icon type="glove" class="icon" height="14" width="12" viewBox="0 0 12 14"></svg-icon>-->
-<!--											</div>-->
-<!--											&lt;!&ndash;											&ndash;&gt;-->
-<!--											<div class="preview-statistic">-->
-<!--												<div class="preview-statistic__posts-counter">-->
-<!--													<svg-icon type="chat" class="icon" height="14" width="14"-->
-<!--																		viewBox="0 0 14 14"></svg-icon>-->
-<!--													<div class="preview-statistic__num">40</div>-->
-<!--													<span class="preview-statistic__new-post">(+14)</span>-->
-<!--												</div>-->
-<!--												<div class="preview-statistic__posts-counter">-->
-<!--													<svg-icon type="views" class="icon" height="14" width="14"-->
-<!--																		viewBox="0 0 14 12"></svg-icon>-->
-<!--													<div class="preview-statistic__num">694</div>-->
-<!--												</div>-->
-<!--											</div>-->
-<!--										</div>-->
-<!--										<a href="#" class="post-preview__title text-white">Энтони Диррелл назвал трех лучших боксеров-->
-<!--											мира</a>-->
-<!--									</div>-->
-<!--								</div>-->
-<!--							</div>-->
+							<!--													<div class="preview-statistic__num">694</div>-->
+							<!--												</div>-->
+							<!--											</div>-->
+							<!--										</div>-->
+							<!--										<a href="#" class="post-preview__title text-white">Энтони Диррелл назвал трех лучших боксеров-->
+							<!--											мира</a>-->
+							<!--									</div>-->
+							<!--								</div>-->
+							<!--								<div class="post-preview post-preview_video post-preview_video-big">-->
+							<!--									<iframe class="post-preview__videos" src="https://www.youtube-nocookie.com/embed/5qap5aO4i9A"-->
+							<!--													frameborder="0"-->
+							<!--													allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"-->
+							<!--													allowfullscreen></iframe>-->
+							<!--									<div class="post-preview__main">-->
+							<!--										<div class="post-preview__header">-->
+							<!--											&lt;!&ndash;						text-mma-icon-label					&ndash;&gt;-->
+							<!--											<div class="label label_red label_text-white label_icon">-->
+							<!--												<span class="label__text">ММА</span>-->
+							<!--												<svg-icon type="glove" class="icon" height="14" width="12" viewBox="0 0 12 14"></svg-icon>-->
+							<!--											</div>-->
+							<!--											&lt;!&ndash;											&ndash;&gt;-->
+							<!--											<div class="preview-statistic">-->
+							<!--												<div class="preview-statistic__posts-counter">-->
+							<!--													<svg-icon type="chat" class="icon" height="14" width="14"-->
+							<!--																		viewBox="0 0 14 14"></svg-icon>-->
+							<!--													<div class="preview-statistic__num">40</div>-->
+							<!--													<span class="preview-statistic__new-post">(+14)</span>-->
+							<!--												</div>-->
+							<!--												<div class="preview-statistic__posts-counter">-->
+							<!--													<svg-icon type="views" class="icon" height="14" width="14"-->
+							<!--																		viewBox="0 0 14 12"></svg-icon>-->
+							<!--													<div class="preview-statistic__num">694</div>-->
+							<!--												</div>-->
+							<!--											</div>-->
+							<!--										</div>-->
+							<!--										<a href="#" class="post-preview__title text-white">Энтони Диррелл назвал трех лучших боксеров-->
+							<!--											мира</a>-->
+							<!--									</div>-->
+							<!--								</div>-->
+							<!--							</div>-->
 						</div>
 					</div>
 
@@ -1743,7 +1730,7 @@
 								<div class="fighter-category__text">
 									<svg-icon type="biceps" class="icon fighter-category__icon" height="16" width="16"
 														viewBox="0 0 16 16"></svg-icon>
-									
+
 									<div>Lightweight</div>
 								</div>
 								<div class="fighter-category__text">
@@ -1770,7 +1757,7 @@
 								<div class="fighter-category__text">
 									<svg-icon type="sword" class="icon fighter-category__icon" height="16" width="16"
 														viewBox="0 0 16 16"></svg-icon>
-									
+
 									<div>25 - 0 - 1</div>
 								</div>
 							</div>
@@ -1934,7 +1921,7 @@
 											<div class="post-info__date">
 												<svg-icon type="calendar" class="icon" height="14" width="12"
 																	viewBox="0 0 12 14"></svg-icon>
-												
+
 												<span class="ml-1">17.01.2020</span>
 											</div>
 											<span class="post-info__time">13:20</span>
@@ -2520,7 +2507,8 @@
 					<div class="tab-content mt-4 " id="myTabContentNews-7">
 						<div class="tab-pane fade show active" id="nav-last-7" role="tabpanel" aria-labelledby="list-all-list">
 							<div class="post-preview post-preview_board mx-n3 mx-sm-auto">
-								<img loading="lazy" src="../../public/images/fighter.jpg" class="post-preview__image" alt="image fighter">
+								<img loading="lazy" src="../../public/images/fighter.jpg" class="post-preview__image"
+										 alt="image fighter">
 								<div class="post-preview__header">
 									<div class="post-preview__row">
 										<div class="label label_red label_text-white label_text-md-red ">MMA</div>
@@ -2628,7 +2616,8 @@
 
 						<div class="tab-pane fade" id="nav-mma-7" role="tabpanel" aria-labelledby="list-mma-list">
 							<div class="post-preview post-preview_board mx-n3 mx-sm-auto">
-								<img loading="lazy" src="../../public/images/fighter.jpg" class="post-preview__image" alt="image fighter">
+								<img loading="lazy" src="../../public/images/fighter.jpg" class="post-preview__image"
+										 alt="image fighter">
 								<div class="post-preview__header">
 									<div class="post-preview__row">
 										<div class="label label_red label_text-white label_text-md-red ">MMA</div>
@@ -2734,7 +2723,8 @@
 						</div>
 						<div class="tab-pane fade" id="nav-box-7" role="tabpanel" aria-labelledby="list-box-list">
 							<div class="post-preview post-preview_board mx-n3 mx-sm-auto">
-								<img loading="lazy" src="../../public/images/fighter.jpg" class="post-preview__image" alt="image fighter">
+								<img loading="lazy" src="../../public/images/fighter.jpg" class="post-preview__image"
+										 alt="image fighter">
 								<div class="post-preview__header">
 									<div class="post-preview__row">
 										<div class="label label_green label_text-white label_text-md-green ">БОКС</div>
@@ -4202,7 +4192,8 @@
 				<div
 					class="col-lg-2 d-flex flex-row flex-wrap flex-md-row flex-lg-column justify-content-center justify-content-sm-between justify-content-lg-start">
 					<a class="navbar-brand mb-3" href="#">
-						<img loading="lazy" src="../../public/images/logo.jpg" class="d-inline-block align-top" alt="" loading="lazy">
+						<img loading="lazy" src="../../public/images/logo.jpg" class="d-inline-block align-top" alt=""
+								 loading="lazy">
 					</a>
 					<div class="footer-nav__conf d-inline-block d-md-none order-sm-2">
 						<div class="footer-nav__cop">&copy; FightNews 2020</div>
@@ -4334,7 +4325,7 @@
 
 </footer>
 
-<link  rel="stylesheet" href="../styles/main.scss">
+<link rel="stylesheet" href="../styles/main.scss">
 <script async src="../scripts/main.js"></script>
 
 </body>
