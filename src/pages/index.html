@@ -1451,10 +1451,38 @@
 						<div class="tab-pane fade show active" id="nav-last-1" role="tabpanel" aria-labelledby="all-tab">
 							<div class="post-list mt-small-1">
 								<div class="post-preview post-preview_video post-preview_video-big">
-									<iframe class="post-preview__videos" src="https://www.youtube-nocookie.com/embed/5qap5aO4i9A"
-													frameborder="0"
-													allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-													allowfullscreen></iframe>
+									<div id="player" class="post-preview__videos"></div>
+<!--									<iframe class="post-preview__videos" src="https://www.youtube-nocookie.com/embed/5qap5aO4i9A"-->
+<!--													frameborder="0"-->
+<!--													allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"-->
+<!--													allowfullscreen></iframe>-->
+									<script async>
+										setTimeout(() => {
+											// 2. This code loads the IFrame Player API code asynchronously.
+											var tag = document.createElement('script');
+											tag.src = "https://www.youtube.com/iframe_api";
+											var firstScriptTag = document.getElementsByTagName('script')[0];
+											firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+											// 3. This function creates an <iframe> (and YouTube player)
+											//    after the API code downloads.
+											var player;
+											function onYouTubeIframeAPIReady() {
+												player = new YT.Player('player', {
+													height: '360',
+													width: '640',
+													videoId: '5qap5aO4i9A',
+													// events: {
+													// 	'onReady': onPlayerReady,
+													// 	'onStateChange': onPlayerStateChange
+													// }
+												});
+											}
+											onYouTubeIframeAPIReady();
+										}, 6000)
+
+
+
+									</script>
 									<div class="post-preview__main">
 										<div class="post-preview__header">
 											<!--				text-mma-icon-label							-->
@@ -1620,72 +1648,72 @@
 							</div>
 						</div>
 						<div class="tab-pane fade" id="nav-popular-1" role="tabpanel" aria-labelledby="mma-tab">
-							<div class="post-list mt-small-1">
-								<div class="post-preview post-preview_video post-preview_video-big">
-									<iframe class="post-preview__videos" src="https://www.youtube-nocookie.com/embed/5qap5aO4i9A"
-													frameborder="0"
-													allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-													allowfullscreen></iframe>
-									<div class="post-preview__main">
-										<div class="post-preview__header">
-											<!--						text-box-icon-label					-->
-											<div class="label label_green label_text-white label_icon">
-												<span class="label__text">БОКС</span>
-												<svg-icon type="glove" class="icon" height="14" width="12" viewBox="0 0 12 14"></svg-icon>
-											</div>
-											<!--											-->
-											<div class="preview-statistic">
-												<div class="preview-statistic__posts-counter">
-													<svg-icon type="chat" class="icon" height="14" width="14"
-																		viewBox="0 0 14 14"></svg-icon>
-													<div class="preview-statistic__num">40</div>
-													<span class="preview-statistic__new-post">(+14)</span>
-												</div>
-												<div class="preview-statistic__posts-counter">
+<!--							<div class="post-list mt-small-1">-->
+<!--								<div class="post-preview post-preview_video post-preview_video-big">-->
+<!--									<iframe class="post-preview__videos" src="https://www.youtube-nocookie.com/embed/5qap5aO4i9A"-->
+<!--													frameborder="0"-->
+<!--													allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"-->
+<!--													allowfullscreen></iframe>-->
+<!--									<div class="post-preview__main">-->
+<!--										<div class="post-preview__header">-->
+<!--											&lt;!&ndash;						text-box-icon-label					&ndash;&gt;-->
+<!--											<div class="label label_green label_text-white label_icon">-->
+<!--												<span class="label__text">БОКС</span>-->
+<!--												<svg-icon type="glove" class="icon" height="14" width="12" viewBox="0 0 12 14"></svg-icon>-->
+<!--											</div>-->
+<!--											&lt;!&ndash;											&ndash;&gt;-->
+<!--											<div class="preview-statistic">-->
+<!--												<div class="preview-statistic__posts-counter">-->
+<!--													<svg-icon type="chat" class="icon" height="14" width="14"-->
+<!--																		viewBox="0 0 14 14"></svg-icon>-->
+<!--													<div class="preview-statistic__num">40</div>-->
+<!--													<span class="preview-statistic__new-post">(+14)</span>-->
+<!--												</div>-->
+<!--												<div class="preview-statistic__posts-counter">-->
 
-													<svg-icon type="views" class="icon" height="14" width="14"
-																		viewBox="0 0 14 12"></svg-icon>
+<!--													<svg-icon type="views" class="icon" height="14" width="14"-->
+<!--																		viewBox="0 0 14 12"></svg-icon>-->
 
-													<div class="preview-statistic__num">694</div>
-												</div>
-											</div>
-										</div>
-										<a href="#" class="post-preview__title text-white">Энтони Диррелл назвал трех лучших боксеров
-											мира</a>
-									</div>
-								</div>
-								<div class="post-preview post-preview_video post-preview_video-big">
-									<iframe class="post-preview__videos" src="https://www.youtube-nocookie.com/embed/5qap5aO4i9A"
-													frameborder="0"
-													allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-													allowfullscreen></iframe>
-									<div class="post-preview__main">
-										<div class="post-preview__header">
-											<!--						text-mma-icon-label					-->
-											<div class="label label_red label_text-white label_icon">
-												<span class="label__text">ММА</span>
-												<svg-icon type="glove" class="icon" height="14" width="12" viewBox="0 0 12 14"></svg-icon>
-											</div>
-											<!--											-->
-											<div class="preview-statistic">
-												<div class="preview-statistic__posts-counter">
-													<svg-icon type="chat" class="icon" height="14" width="14"
-																		viewBox="0 0 14 14"></svg-icon>
-													<div class="preview-statistic__num">40</div>
-													<span class="preview-statistic__new-post">(+14)</span>
-												</div>
-												<div class="preview-statistic__posts-counter">
-													<svg-icon type="views" class="icon" height="14" width="14"
-																		viewBox="0 0 14 12"></svg-icon>
-													<div class="preview-statistic__num">694</div>
-												</div>
-											</div>
-										</div>
-										<a href="#" class="post-preview__title text-white">Энтони Диррелл назвал трех лучших боксеров
-											мира</a>
-									</div>
-								</div>
-							</div>
+<!--													<div class="preview-statistic__num">694</div>-->
+<!--												</div>-->
+<!--											</div>-->
+<!--										</div>-->
+<!--										<a href="#" class="post-preview__title text-white">Энтони Диррелл назвал трех лучших боксеров-->
+<!--											мира</a>-->
+<!--									</div>-->
+<!--								</div>-->
+<!--								<div class="post-preview post-preview_video post-preview_video-big">-->
+<!--									<iframe class="post-preview__videos" src="https://www.youtube-nocookie.com/embed/5qap5aO4i9A"-->
+<!--													frameborder="0"-->
+<!--													allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"-->
+<!--													allowfullscreen></iframe>-->
+<!--									<div class="post-preview__main">-->
+<!--										<div class="post-preview__header">-->
+<!--											&lt;!&ndash;						text-mma-icon-label					&ndash;&gt;-->
+<!--											<div class="label label_red label_text-white label_icon">-->
+<!--												<span class="label__text">ММА</span>-->
+<!--												<svg-icon type="glove" class="icon" height="14" width="12" viewBox="0 0 12 14"></svg-icon>-->
+<!--											</div>-->
+<!--											&lt;!&ndash;											&ndash;&gt;-->
+<!--											<div class="preview-statistic">-->
+<!--												<div class="preview-statistic__posts-counter">-->
+<!--													<svg-icon type="chat" class="icon" height="14" width="14"-->
+<!--																		viewBox="0 0 14 14"></svg-icon>-->
+<!--													<div class="preview-statistic__num">40</div>-->
+<!--													<span class="preview-statistic__new-post">(+14)</span>-->
+<!--												</div>-->
+<!--												<div class="preview-statistic__posts-counter">-->
+<!--													<svg-icon type="views" class="icon" height="14" width="14"-->
+<!--																		viewBox="0 0 14 12"></svg-icon>-->
+<!--													<div class="preview-statistic__num">694</div>-->
+<!--												</div>-->
+<!--											</div>-->
+<!--										</div>-->
+<!--										<a href="#" class="post-preview__title text-white">Энтони Диррелл назвал трех лучших боксеров-->
+<!--											мира</a>-->
+<!--									</div>-->
+<!--								</div>-->
+<!--							</div>-->
 						</div>
 					</div>
 

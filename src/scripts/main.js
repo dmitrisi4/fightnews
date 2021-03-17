@@ -15,6 +15,7 @@ import './btn-checkbox';
 import './input-search';
 import './notificationBar';
 import './svgFlagComponents';
+import './player';
 Sliders();
 burgerMenu();
 
