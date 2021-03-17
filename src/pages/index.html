@@ -7,6 +7,7 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Main</title>
 <!--	<link as="style" rel="preload" href="../styles/main.scss">-->
+	<link rel="stylesheet" href="../styles/criticalcss.scss">
 </head>
 <body style="overflow-x:hidden;">
 <noscript>
@@ -16,8 +17,11 @@
 		}
 	</style>
 </noscript>
+<script async src="../scripts/criticaljs.js"></script>
+
 <div class="pt-md-full">
 	<header class="header fixed-md-top">
+		<div class="preload-box"></div>
 		<div class="container-fluid container-md">
 			<nav class="navbar-main navbar-expand-lg pl-0" id="header-nav">
 				<div class="navbar-main__left">
@@ -324,6 +328,7 @@
 </div>
 <main class="main pt-0 pt-md-4" style="overflow-x: hidden">
 	<section class="banner">
+		<div class="preload-box"></div>
 		<div class="container-fluid container-sm banner-container">
 			<div class="row no-gutters">
 				<!-- Slider main container -->
@@ -4303,5 +4308,6 @@
 
 <link  rel="stylesheet" href="../styles/main.scss">
 <script async src="../scripts/main.js"></script>
+
 </body>
 </html>

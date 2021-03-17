@@ -1,0 +1,24 @@
+@import "theme-base";
+html, body {
+  box-sizing: border-box;
+}
+.header {
+  position: relative;
+  padding-bottom: 1px;
+}
+
+.preload-box {
+  position: absolute;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  background-color: $blue-dark;
+}
+
+.banner {
+  position: relative;
+}
+@import "components/nav/navbar";
+@import "components/nav/nav-user";
+@import "components/forms-elemets/btn-search";
+@import "components/forms-elemets/input";
