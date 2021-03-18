@@ -8,8 +8,77 @@
 	<title>Main</title>
 	<!--	<link as="style" rel="preload" href="../styles/main.scss">-->
 	<link rel="stylesheet" href="../styles/criticalcss.scss">
+	<style>
+		html, body {
+			box-sizing: border-box;
+			margin: 0;
+			padding: 0;
+		}
+		.navbar-main {
+			position: relative;
+			display: grid;
+			grid-auto-flow: column;
+			grid-template-columns: max-content 1fr max-content;
+			align-items: center;
+			margin-bottom: 60px;
+		}
+		.navbar-main__left {
+			display: flex;
+			align-items: center;
+		}
+		.navbar-main__center {
+			width: 100%;
+			display: grid;
+			grid-auto-flow: column;
+			grid-template-columns: 1fr max-content;
+			align-items: center;
+		}
+		.navbar-main__collapse {
+			opacity: 0;
+		}
+
+		.notification-bar {
+			display: none;
+		}
+
+		.header {
+			/*padding-bottom: 1px;*/
+		}
+
+
+		.post-list {
+			display: grid;
+			grid-gap: 20px;
+		}
+
+		.fighter-list {
+			display: grid;
+			grid-gap: 1.25rem;
+			grid-template-columns: repeat(2, 1fr);
+		}
+		.post-preview, .fighter-category {
+			position: relative;
+		}
+		.post-preview::before,
+		.fighter-category::before,
+		.navbar-main::before {
+			content: '';
+			position: absolute;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			width: 100%;
+			background-color: #2A3042;
+			z-index: 100;
+		}
+
+	</style>
+
 </head>
+
 <body style="overflow-x:hidden;">
+
 <noscript>
 	<style>
 		[data-simplebar] {
@@ -21,11 +90,10 @@
 
 <div class="pt-md-full">
 	<header class="header fixed-md-top">
-		<div class="preload-box"></div>
 		<div class="container-fluid container-md">
 			<nav class="navbar-main navbar-expand-lg pl-0" id="header-nav">
 				<div class="navbar-main__left">
-					<a class="navbar-brand" href="#">
+					<a class="navbar-brand" style="height: 54px" href="#">
 						<img loading="lazy" src="../../public/images/logo.jpg" class="d-inline-block align-top" alt=""
 								 loading="lazy">
 					</a>
@@ -329,7 +397,6 @@
 </div>
 <main class="main pt-0 pt-md-4" style="overflow-x: hidden">
 	<section class="banner">
-		<div class="preload-box"></div>
 		<div class="container-fluid container-sm banner-container">
 			<div class="row no-gutters">
 				<!-- Slider main container -->
@@ -4323,7 +4390,9 @@
 	</nav>
 
 </footer>
-
+<!--<script>-->
+<!--	debugger-->
+<!--</script>-->
 <link rel="stylesheet" href="../styles/main.scss">
 <script async src="../scripts/main.js"></script>
 
