@@ -1,0 +1,145 @@
+@import "theme-base";
+.preloader {
+  user-select: none;
+  display: block;
+  opacity: 1;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  background-color: white;
+  &__wrapper {
+    background-color: lightgray;
+    display: grid;
+    grid-auto-flow: column;
+    grid-column-gap: 10px;
+    grid-template-columns: 5fr 2fr;
+    @include media-breakpoint-down(sm) {
+      grid-auto-flow: row;
+      grid-template-columns: 1fr;
+    }
+  }
+  &__preloader-list {
+    margin-top: 80px;
+  }
+  &__preloader-discussions {
+    margin-top: 120px;
+  }
+
+}
+
+
+.filler {
+  width: 100%;
+  height: 34px;
+  background-color: darkgray;
+  &_mt-30 {
+    margin-top: 30px;
+  }
+
+  &_medium {
+    height: 50px;
+  }
+  &_large {
+    height: 230px;
+  }
+}
+.filler-text {
+  max-width: 580px;
+  height: 28px;
+  &_sm {
+    max-width: 250px;
+  }
+}
+
+.preloader-discussions {
+  &__wrapper {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 20px;
+  }
+
+}
+
+.preloader-video {
+  background-color: lightgray;
+  display: grid;
+  grid-row-gap: 14px;
+  padding: 30px;
+  grid-template-rows: 1fr auto auto;
+  @include media-breakpoint-down(sm) {
+    padding: 5px;
+  }
+}
+.preloader-list {
+  &__title {
+    font-size: 25px;
+    color: darkgray;
+    background-color: darkgray;
+  }
+  &__post-list {
+    display: grid;
+    grid-gap: 20px;
+  }
+  &__btn {
+    margin-top: 30px;
+  }
+}
+
+.preloader-label {
+  width: 60px;
+  height: calc(26rem / 16);
+  border-radius: calc(6rem / 16);
+  background-color: darkgray;
+}
+.preloader-date {
+  width: 140px;
+  height: calc(26rem / 16);
+  background-color: darkgray;
+}
+.preloader-btn {
+  width: 100%;
+  background-color: darkgray;
+  height: 45px;
+  border-radius: 0.625rem;
+}
+.preloader-item {
+  display: grid;
+  grid-gap: $gutter-width;
+  padding-bottom: $gutter-width / 2;
+  border-bottom: 1px solid $gray;
+  @include media-breakpoint-down(sm) {
+    border-bottom: 0;
+  }
+
+  &__image {
+    width: 100%;
+  }
+
+  &__header {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: start;
+    align-items: center;
+    grid-gap: $spacer;
+    grid-row-gap: 10px;
+    @include media-breakpoint-down(sm) {
+      grid-gap: $spacer / 2;
+      &.row-sm {
+        grid-auto-flow: row;
+      }
+    }
+  }
+
+  &__title {
+    font-size: $font-size-base;
+    font-weight: $font-weight-medium;
+    color: darkgray;
+    background-color: darkgray;
+    line-height: 26em / $font-size-value;
+  }
+}

@@ -196,7 +196,6 @@
       }
     }
   }
-
   &_column {
     min-height: 166px;
     grid-template-columns: 238px 1fr;
@@ -265,7 +264,6 @@
       }
     }
   }
-
   &_video {
     width: 100%;
     border: none;
@@ -279,7 +277,6 @@
   ;
 
   }
-
   &_video-sm {
     @include media-breakpoint-down(sm) {
       grid-template-columns: 75px auto;

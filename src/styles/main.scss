@@ -36,7 +36,9 @@
 // другие стили писать тут
 @import "common";
 
-.navbar-main {
+.preloader {
+  opacity: 0;
+  display: none;
 }
 .header {
   padding-bottom: 0;

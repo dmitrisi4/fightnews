@@ -4,10 +4,15 @@ const Sliders = () => {
 	const mySwiper = new Swiper('.swiper-container', {
 		// Optional parameters
 		autoHeight: true,
-
 		spaceBetween: 30,
 		loop: true,
 		effect: 'fade',
+		grabCursor: true,
+		// autoplay: {
+		// 	delay: 1000,
+		// 	disableOnInteraction: false,
+		// 	reverseDirection: true,
+		// },
 		fadeEffect: {
 			crossFade: true
 		},

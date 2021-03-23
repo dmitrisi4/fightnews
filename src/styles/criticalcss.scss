@@ -1,3 +1,28 @@
+html, body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-main__collapse {
+  opacity: 0;
+}
+
+.notification-bar {
+  display: none;
+}
+
+.navbar-main::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: darkgray;
+  z-index: 100;
+}
 @import "theme-base";
 @import "node_modules/bootstrap/scss/grid";
 @import "node_modules/bootstrap/scss/utilities";
@@ -5,3 +30,4 @@
 @import "components/nav/nav-user";
 @import "components/forms-elemets/btn-search";
 @import "components/forms-elemets/input";
+

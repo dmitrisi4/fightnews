@@ -6,79 +6,13 @@
 	<meta name="Description" content="Put your description here.">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Main</title>
-	<!--	<link as="style" rel="preload" href="../styles/main.scss">-->
+	<link rel="stylesheet" href="../styles/preloader-components.scss">
 	<link rel="stylesheet" href="../styles/criticalcss.scss">
-	<style>
-		html, body {
-			box-sizing: border-box;
-			margin: 0;
-			padding: 0;
-		}
-		.navbar-main {
-			position: relative;
-			display: grid;
-			grid-auto-flow: column;
-			grid-template-columns: max-content 1fr max-content;
-			align-items: center;
-			margin-bottom: 60px;
-		}
-		.navbar-main__left {
-			display: flex;
-			align-items: center;
-		}
-		.navbar-main__center {
-			width: 100%;
-			display: grid;
-			grid-auto-flow: column;
-			grid-template-columns: 1fr max-content;
-			align-items: center;
-		}
-		.navbar-main__collapse {
-			opacity: 0;
-		}
 
-		.notification-bar {
-			display: none;
-		}
-
-		.header {
-			/*padding-bottom: 1px;*/
-		}
-
-
-		.post-list {
-			display: grid;
-			grid-gap: 20px;
-		}
-
-		.fighter-list {
-			display: grid;
-			grid-gap: 1.25rem;
-			grid-template-columns: repeat(2, 1fr);
-		}
-		.post-preview, .fighter-category {
-			position: relative;
-		}
-		.post-preview::before,
-		.fighter-category::before,
-		.navbar-main::before {
-			content: '';
-			position: absolute;
-			top: 0;
-			right: 0;
-			bottom: 0;
-			left: 0;
-			width: 100%;
-			background-color: #2A3042;
-			z-index: 100;
-		}
-
-	</style>
 
 </head>
 
 <body style="overflow-x:hidden;">
-
 <noscript>
 	<style>
 		[data-simplebar] {
@@ -395,7 +329,109 @@
 		</div>
 	</header>
 </div>
-<main class="main pt-0 pt-md-4" style="overflow-x: hidden">
+<main class="main pt-0 pt-md-4" style="overflow-x: hidden; position: relative;">
+	<!--	preloader-->
+	<div class="preloader">
+		<div class="container preloader__wrapper">
+			<div class="preloader-col">
+				<div class="preloader-video">
+					<div class="filler filler_large"></div>
+					<div class="filler filler-text"></div>
+					<div class="filler filler-text filler-text_sm"></div>
+					<span class="filler"></span>
+				</div>
+				<div class="preloader__preloader-list preloader-list">
+					<div class="filler filler_large"></div>
+					<!--	post-list		-->
+					<div class="preloader-list__post-list post-list mt-5">
+						<div class="preloader-item">
+							<div class="preloader-item__header">
+								<div class="preloader-label"></div>
+								<div class="preloader-date"></div>
+
+							</div>
+							<div class="preloader-item__title">Турнир по вольной борьбе Гран-при "Иван Ярыгин 2020"</div>
+						</div>
+						<div class="preloader-item">
+							<div class="preloader-item__header">
+								<div class="preloader-label"></div>
+								<div class="preloader-date"></div>
+
+							</div>
+							<div class="preloader-item__title">Турнир по вольной борьбе Гран-при "Иван Ярыгин 2020"</div>
+						</div>
+						<div class="preloader-item">
+							<div class="preloader-item__header">
+								<div class="preloader-label"></div>
+								<div class="preloader-date"></div>
+
+							</div>
+							<div class="preloader-item__title">Турнир по вольной борьбе Гран-при "Иван Ярыгин 2020"</div>
+						</div>
+						<div class="preloader-item">
+							<div class="preloader-item__header">
+								<div class="preloader-label"></div>
+								<div class="preloader-date"></div>
+
+							</div>
+							<div class="preloader-item__title">Турнир по вольной борьбе Гран-при "Иван Ярыгин 2020"</div>
+						</div>
+						<div class="preloader-item">
+							<div class="preloader-item__header">
+								<div class="preloader-label"></div>
+								<div class="preloader-date"></div>
+
+							</div>
+							<div class="preloader-item__title">Турнир по вольной борьбе Гран-при "Иван Ярыгин 2020"</div>
+						</div>
+						<div class="preloader-item">
+							<div class="preloader-item__header">
+								<div class="preloader-label"></div>
+								<div class="preloader-date"></div>
+
+							</div>
+							<div class="preloader-item__title">Турнир по вольной борьбе Гран-при "Иван Ярыгин 2020"</div>
+						</div>
+					</div>
+					<div class="preloader-list__btn  preloader-btn "></div>
+					<!--	end - post-list		-->
+				</div>
+				<div class="preloader__preloader-discussions preloader-discussions">
+					<div class="filler filler_large"></div>
+					<div class="filler filler_mt-30"></div>
+					<div class="preloader-discussions__wrapper">
+						<div class="preloader-item">
+							<div class="filler"></div>
+							<div class="filler filler_medium"></div>
+						</div>
+						<div class="preloader-item">
+							<div class="filler"></div>
+							<div class="filler filler_medium"></div>
+						</div>
+						<div class="preloader-item">
+							<div class="filler"></div>
+							<div class="filler filler_medium"></div>
+						</div>
+						<div class="preloader-item">
+							<div class="filler"></div>
+							<div class="filler filler_medium"></div>
+						</div>
+						<div class="preloader-item">
+							<div class="filler"></div>
+							<div class="filler filler_medium"></div>
+						</div>
+						<div class="preloader-item">
+							<div class="filler"></div>
+							<div class="filler filler_medium"></div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+			<div class="preloader-col" style="background-color: darkgray;"></div>
+		</div>
+	</div>
+
 	<section class="banner">
 		<div class="container-fluid container-sm banner-container">
 			<div class="row no-gutters">
@@ -1695,78 +1731,78 @@
 							</div>
 						</div>
 						<div class="tab-pane fade" id="nav-popular-1" role="tabpanel" aria-labelledby="mma-tab">
-														<div class="post-list mt-small-1">
-															<div class="post-preview post-preview_video post-preview_video-big">
-																<!-- Youtube player	-->
-																<iframe class="post-preview__videos" frameborder="0"
-																				allow="accelerometer; autoplay; clipboard-write;"
-																				data-async-frame
-																				data-src="https://www.youtube.com/embed/5qap5aO4i9A?autoplay=1&controls=0&origin=https://dmitrisi4.github.io"
-																				data-preview-src="https://a.espncdn.com/photo/2020/1024/official_mma_power_rankings_v1_1296x729.jpg">
-																</iframe>
-																<div class="post-preview__main">
-																	<div class="post-preview__header">
-																		<!--						text-box-icon-label					-->
-																		<div class="label label_green label_text-white label_icon">
-																			<span class="label__text">БОКС</span>
-																			<svg-icon type="glove" class="icon" height="14" width="12" viewBox="0 0 12 14"></svg-icon>
-																		</div>
-																		<!--											-->
-																		<div class="preview-statistic">
-																			<div class="preview-statistic__posts-counter">
-																				<svg-icon type="chat" class="icon" height="14" width="14"
-																									viewBox="0 0 14 14"></svg-icon>
-																				<div class="preview-statistic__num">40</div>
-																				<span class="preview-statistic__new-post">(+14)</span>
-																			</div>
-																			<div class="preview-statistic__posts-counter">
+							<div class="post-list mt-small-1">
+								<div class="post-preview post-preview_video post-preview_video-big">
+									<!-- Youtube player	-->
+									<iframe class="post-preview__videos" frameborder="0"
+													allow="accelerometer; autoplay; clipboard-write;"
+													data-async-frame
+													data-src="https://www.youtube.com/embed/5qap5aO4i9A?autoplay=1&controls=0&origin=https://dmitrisi4.github.io"
+													data-preview-src="https://a.espncdn.com/photo/2020/1024/official_mma_power_rankings_v1_1296x729.jpg">
+									</iframe>
+									<div class="post-preview__main">
+										<div class="post-preview__header">
+											<!--						text-box-icon-label					-->
+											<div class="label label_green label_text-white label_icon">
+												<span class="label__text">БОКС</span>
+												<svg-icon type="glove" class="icon" height="14" width="12" viewBox="0 0 12 14"></svg-icon>
+											</div>
+											<!--											-->
+											<div class="preview-statistic">
+												<div class="preview-statistic__posts-counter">
+													<svg-icon type="chat" class="icon" height="14" width="14"
+																		viewBox="0 0 14 14"></svg-icon>
+													<div class="preview-statistic__num">40</div>
+													<span class="preview-statistic__new-post">(+14)</span>
+												</div>
+												<div class="preview-statistic__posts-counter">
 
-																				<svg-icon type="views" class="icon" height="14" width="14"
-																									viewBox="0 0 14 12"></svg-icon>
+													<svg-icon type="views" class="icon" height="14" width="14"
+																		viewBox="0 0 14 12"></svg-icon>
 
-																				<div class="preview-statistic__num">694</div>
-																			</div>
-																		</div>
-																	</div>
-																	<a href="#" class="post-preview__title text-white">Энтони Диррелл назвал трех лучших боксеров
-																		мира</a>
-																</div>
-															</div>
-															<div class="post-preview post-preview_video post-preview_video-big">
-																<!-- Youtube player	-->
-																<iframe class="post-preview__videos" frameborder="0"
-																				allow="accelerometer; autoplay; clipboard-write;"
-																				data-async-frame
-																				data-src="https://www.youtube.com/embed/5qap5aO4i9A?autoplay=1&controls=0&origin=https://dmitrisi4.github.io"
-																				data-preview-src="https://a.espncdn.com/photo/2020/1024/official_mma_power_rankings_v1_1296x729.jpg">
-																</iframe>
-																<div class="post-preview__main">
-																	<div class="post-preview__header">
-																		<!--						text-mma-icon-label					-->
-																		<div class="label label_red label_text-white label_icon">
-																			<span class="label__text">ММА</span>
-																			<svg-icon type="glove" class="icon" height="14" width="12" viewBox="0 0 12 14"></svg-icon>
-																		</div>
-																		<!--											-->
-																		<div class="preview-statistic">
-																			<div class="preview-statistic__posts-counter">
-																				<svg-icon type="chat" class="icon" height="14" width="14"
-																									viewBox="0 0 14 14"></svg-icon>
-																				<div class="preview-statistic__num">40</div>
-																				<span class="preview-statistic__new-post">(+14)</span>
-																			</div>
-																			<div class="preview-statistic__posts-counter">
-																				<svg-icon type="views" class="icon" height="14" width="14"
-																									viewBox="0 0 14 12"></svg-icon>
-																				<div class="preview-statistic__num">694</div>
-																			</div>
-																		</div>
-																	</div>
-																	<a href="#" class="post-preview__title text-white">Энтони Диррелл назвал трех лучших боксеров
-																		мира</a>
-																</div>
-															</div>
-														</div>
+													<div class="preview-statistic__num">694</div>
+												</div>
+											</div>
+										</div>
+										<a href="#" class="post-preview__title text-white">Энтони Диррелл назвал трех лучших боксеров
+											мира</a>
+									</div>
+								</div>
+								<div class="post-preview post-preview_video post-preview_video-big">
+									<!-- Youtube player	-->
+									<iframe class="post-preview__videos" frameborder="0"
+													allow="accelerometer; autoplay; clipboard-write;"
+													data-async-frame
+													data-src="https://www.youtube.com/embed/5qap5aO4i9A?autoplay=1&controls=0&origin=https://dmitrisi4.github.io"
+													data-preview-src="https://a.espncdn.com/photo/2020/1024/official_mma_power_rankings_v1_1296x729.jpg">
+									</iframe>
+									<div class="post-preview__main">
+										<div class="post-preview__header">
+											<!--						text-mma-icon-label					-->
+											<div class="label label_red label_text-white label_icon">
+												<span class="label__text">ММА</span>
+												<svg-icon type="glove" class="icon" height="14" width="12" viewBox="0 0 12 14"></svg-icon>
+											</div>
+											<!--											-->
+											<div class="preview-statistic">
+												<div class="preview-statistic__posts-counter">
+													<svg-icon type="chat" class="icon" height="14" width="14"
+																		viewBox="0 0 14 14"></svg-icon>
+													<div class="preview-statistic__num">40</div>
+													<span class="preview-statistic__new-post">(+14)</span>
+												</div>
+												<div class="preview-statistic__posts-counter">
+													<svg-icon type="views" class="icon" height="14" width="14"
+																		viewBox="0 0 14 12"></svg-icon>
+													<div class="preview-statistic__num">694</div>
+												</div>
+											</div>
+										</div>
+										<a href="#" class="post-preview__title text-white">Энтони Диррелл назвал трех лучших боксеров
+											мира</a>
+									</div>
+								</div>
+							</div>
 						</div>
 					</div>
 

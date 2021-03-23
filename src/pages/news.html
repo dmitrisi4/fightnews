@@ -6,11 +6,113 @@
 	<meta name="Description" content="Put your description here.">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Новости</title>
-	<link rel="stylesheet" href="../styles/main.scss">
+	<link rel="stylesheet" href="../styles/preloader-components.scss">
+	<link rel="stylesheet" href="../styles/criticalcss.scss">
 </head>
 <body>
+<script async src="../scripts/criticaljs.js"></script>
+<main class="main pt-0 pt-md-4" style="overflow-x: hidden; position: relative;">
+	<!--	preloader-->
+	<div class="preloader">
+		<div class="container preloader__wrapper">
+			<div class="preloader-col">
+				<div class="preloader-video">
+					<div class="filler filler_large"></div>
+					<div class="filler filler-text"></div>
+					<div class="filler filler-text filler-text_sm"></div>
+					<span class="filler"></span>
+				</div>
+				<div class="preloader__preloader-list preloader-list">
+					<div class="filler filler_large"></div>
+					<!--	post-list		-->
+					<div class="preloader-list__post-list post-list mt-5">
+						<div class="preloader-item">
+							<div class="preloader-item__header">
+								<div class="preloader-label"></div>
+								<div class="preloader-date"></div>
 
-<main class="main pt-0 pt-md-4" style="overflow-x: hidden">
+							</div>
+							<div class="preloader-item__title">Турнир по вольной борьбе Гран-при "Иван Ярыгин 2020"</div>
+						</div>
+						<div class="preloader-item">
+							<div class="preloader-item__header">
+								<div class="preloader-label"></div>
+								<div class="preloader-date"></div>
+
+							</div>
+							<div class="preloader-item__title">Турнир по вольной борьбе Гран-при "Иван Ярыгин 2020"</div>
+						</div>
+						<div class="preloader-item">
+							<div class="preloader-item__header">
+								<div class="preloader-label"></div>
+								<div class="preloader-date"></div>
+
+							</div>
+							<div class="preloader-item__title">Турнир по вольной борьбе Гран-при "Иван Ярыгин 2020"</div>
+						</div>
+						<div class="preloader-item">
+							<div class="preloader-item__header">
+								<div class="preloader-label"></div>
+								<div class="preloader-date"></div>
+
+							</div>
+							<div class="preloader-item__title">Турнир по вольной борьбе Гран-при "Иван Ярыгин 2020"</div>
+						</div>
+						<div class="preloader-item">
+							<div class="preloader-item__header">
+								<div class="preloader-label"></div>
+								<div class="preloader-date"></div>
+
+							</div>
+							<div class="preloader-item__title">Турнир по вольной борьбе Гран-при "Иван Ярыгин 2020"</div>
+						</div>
+						<div class="preloader-item">
+							<div class="preloader-item__header">
+								<div class="preloader-label"></div>
+								<div class="preloader-date"></div>
+
+							</div>
+							<div class="preloader-item__title">Турнир по вольной борьбе Гран-при "Иван Ярыгин 2020"</div>
+						</div>
+					</div>
+					<div class="preloader-list__btn  preloader-btn "></div>
+					<!--	end - post-list		-->
+				</div>
+				<div class="preloader__preloader-discussions preloader-discussions">
+					<div class="filler filler_large"></div>
+					<div class="filler filler_mt-30"></div>
+					<div class="preloader-discussions__wrapper">
+						<div class="preloader-item">
+							<div class="filler"></div>
+							<div class="filler filler_medium"></div>
+						</div>
+						<div class="preloader-item">
+							<div class="filler"></div>
+							<div class="filler filler_medium"></div>
+						</div>
+						<div class="preloader-item">
+							<div class="filler"></div>
+							<div class="filler filler_medium"></div>
+						</div>
+						<div class="preloader-item">
+							<div class="filler"></div>
+							<div class="filler filler_medium"></div>
+						</div>
+						<div class="preloader-item">
+							<div class="filler"></div>
+							<div class="filler filler_medium"></div>
+						</div>
+						<div class="preloader-item">
+							<div class="filler"></div>
+							<div class="filler filler_medium"></div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+			<div class="preloader-col" style="background-color: darkgray;"></div>
+		</div>
+	</div>
 	<div class="container-fluid container-md">
 		<div class="row mt-5">
 			<div class="col-lg-8 d-flex flex-column pb-1">
@@ -236,8 +338,8 @@
 															viewBox="0 0 21 10"></svg-icon>
 									</a>
 									<div class="article-nav-item__body mt-2 mt-sm-3">
+										<img loading="lazy" src="../../public/images/fighter-3.jpg" alt="nav image" class="article-nav-item__image order-1 order-sm-2 ">
 										<a href="#" class="article-nav-item__title mt-2">Энтони Диррелл назвал трех лучших боксеров мира</a>
-										<img loading="lazy" src="../../public/images/fighter-3.jpg" alt="nav image" class="article-nav-item__image">
 									</div>
 								</div>
 
@@ -294,6 +396,7 @@
 									<!--				text-mma-icon-label							-->
 									<div class="label label_green  label_icon">
 										<span class="label__text">БОКС</span>
+										<svg-icon type="glove" class="label__icon" height="14" width="14" viewbox="0 0 14 14"></svg-icon>
 									</div>
 									<!--											-->
 									<div class="post-preview__post-info post-info">
@@ -3412,8 +3515,10 @@
 	</div>
 </main>
 
-<script src="../scripts/main.js"></script>
-<script src="../scripts/wysiwyg/wysiwyg-comments.js"></script>
-<script src="../scripts/select-tab.js"></script>
+<link rel="stylesheet" href="../styles/main.scss">
+<script async src="../scripts/main.js"></script>
+<script async src="../scripts/wysiwyg/wysiwyg-comments.js"></script>
+<script async src="../scripts/select-tab.js"></script>
+
 </body>
 </html>
