@@ -150,6 +150,7 @@
       grid-column: 1;
       width: 100%;
       min-height: 100%;
+
       object-fit: cover;
       @media screen and (max-width: 576px) {
         min-height: auto;
