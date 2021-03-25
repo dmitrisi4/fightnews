@@ -1,18 +1,4 @@
 import jq from 'jquery';
-//
-// jq('.dropdown-menu .dropdown-toggle').on('click', function (e) {
-// 	if (!jq(this).next().hasClass('show')) {
-// 		jq(this).parents('.dropdown-menu').first().find('.show').removeClass('show');
-// 	}
-// 	let $subMenu = jq(this).next('.dropdown-menu');
-// 	$subMenu.toggleClass('show');
-//
-// 	jq(this).parents('li.nav-item.dropdown.show').on('hidden.bs.dropdown', function (e) {
-// 		jq('.dropdown-submenu .show').removeClass('show');
-// 	});
-//
-// 	return false;
-// });
 
 let toggleBtns = document.querySelectorAll('.dropdown-menu .dropdown-toggle');
 toggleBtns.forEach(el => {
@@ -31,11 +17,7 @@ toggleBtns.forEach(el => {
 			document.querySelectorAll('.dropdown-submenu').forEach(el => el.classList.remove('show'));
 			document.querySelectorAll('.dropdown-submenu .show').forEach(el => el.classList.remove('show'));
 		});
-		// el.closest('li.dropdown.show').addEventListener('hidden.bs.dropdown', function (e) {
-		// 	document.querySelectorAll('.dropdown-submenu .show').forEach(el => {
-		// 		el.classList.remove('show');
-		// 	});
-		// });
+
 	}
 	el.addEventListener('click', btnClickListener)
 })

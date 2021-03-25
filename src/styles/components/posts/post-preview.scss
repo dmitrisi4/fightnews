@@ -102,6 +102,7 @@
   }
 
   &__image-wrapper {
+    display: grid;
   }
 
   &__text {
@@ -197,6 +198,9 @@
     }
   }
   &_column {
+
+  }
+  &_news {
     min-height: 166px;
     grid-template-columns: 238px 1fr;
     grid-template-rows: 1fr;
@@ -206,12 +210,16 @@
       grid-template-columns: minmax(80px, min-content) 1fr;
       min-height: auto;
     }
-
-    .post-preview__text {
-      margin: 0;
+    align-items: start;
+    position: relative;
+    &:first-child {
+      .post-preview__main {
+        border-top: none;
+        padding-top: 0;
+      }
     }
-
     .post-preview__title {
+      margin-bottom: 5px;
       font-size: $font-size-md;
       font-weight: $font-weight-bold;
       line-height: calc(26em / 20);
@@ -219,35 +227,16 @@
         font-size: $font-size-base;
       }
     }
-
-    .post-preview__statistic {
-      padding-bottom: 0;
-      align-items: flex-end;
+    .post-preview__text {
+      margin: 0;
     }
-
-    .post-preview__image {
-      width: 100%;
-      grid-row: 1;
-      border-radius: $border-radius-sm;
-      height: 100%;
-      max-width: 100%;
-      max-height: 166px;
-      @include media-breakpoint-down(sm) {
-        object-fit: cover;
-        max-width: 80px;
-        max-height: 80px;
-      }
-      @include media-breakpoint-up(sm) {
-      }
-    }
-
     .post-preview__main {
+      min-height: 100%;
+      align-content: space-between;
       padding-top: $gutter-width * 1.5;
       display: grid;
       grid-gap: 8px;
-      grid-template-rows: auto auto 1fr auto;
       border-top: 1px solid $gray;
-      align-content: start;
       grid-template-rows: auto;
       @include media-breakpoint-down(sm) {
         &.border-sm-none {
@@ -256,13 +245,54 @@
         }
       }
     }
-
-    &:first-child {
-      .post-preview__main {
-        border-top: none;
-        padding-top: 0;
+    .post-preview__image-wrapper {
+      position: relative;
+    }
+    .post-preview__image {
+      min-height: 100%;
+      width: 100%;
+      grid-row: 1;
+      border-radius: $border-radius-sm;
+      height: 100%;
+      max-width: 100%;
+      max-height: 166px;
+      @include media-breakpoint-down(sm) {
+        object-fit: cover;
+        width: 80px;
+        height: 80px;
       }
     }
+    .post-preview__label {
+      position: absolute;
+      top: 5px;
+      right: 5px;
+    }
+    .post-preview__footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+    }
+    .post-preview__statistic {
+      padding-bottom: 0;
+      align-items: flex-end;
+    }
+    @include media-breakpoint-down(sm) {
+      .post-preview__post-info {
+        position: absolute;
+        top: 90px;
+        left: 0;
+        flex-direction: column;
+        align-items: start;
+      }
+      .post-preview__main {
+        grid-auto-rows: auto;
+      }
+      .post-info__author {
+        display: none;
+      }
+
+    }
+
   }
   &_video {
     width: 100%;
