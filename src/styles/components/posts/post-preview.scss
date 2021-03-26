@@ -198,9 +198,6 @@
       }
     }
   }
-  &_column {
-
-  }
   &_news {
     min-height: 166px;
     grid-template-columns: 238px 1fr;
@@ -265,6 +262,10 @@
       position: absolute;
       top: 5px;
       right: 5px;
+      @include media-breakpoint-down(sm) {
+        top: auto;
+        bottom: 5px;
+      }
     }
     .post-preview__footer {
       display: flex;
