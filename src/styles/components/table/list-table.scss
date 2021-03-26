@@ -9,7 +9,7 @@
     padding-left: 25px;
     padding-right: 25px;
     @include media-breakpoint-down(sm) {
-      grid-template-columns: auto auto;
+      grid-template-columns: 1fr 1fr;
       justify-content: space-between;
     }
     @include media-breakpoint-down(sm){
@@ -98,6 +98,7 @@
         &_time {
           grid-column: 2;
           transform: none;
+          justify-self: end;
         }
         &_way-mobile {
           grid-row: 4;
